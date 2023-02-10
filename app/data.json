@@ -1,0 +1,62 @@
+[
+  {
+    "cover": "/img/drugcode.png",
+    "title": "DrugCode+",
+    "type": "Code editor",
+    "path": "/works/drugcode"
+  },
+  {
+    "cover": "/img/flamingo.png",
+    "title": "Flamingo",
+    "type": "Design System",
+    "path": "/works/drugcode"
+  },
+  {
+    "cover": "/img/bootsyicons.png",
+    "title": "Bootsy Icons",
+    "type": "Icon set",
+    "path": "/works/bootsyicons"
+  },
+  {
+    "cover": "/img/bootsyduotone.png",
+    "title": "Bootsy Icons Duotone",
+    "type": "Icon set",
+    "path": "/works/bootsyduotone"
+  },
+  {
+    "cover": "/img/starc.png",
+    "title": "STARC",
+    "type": "UI/UX, App",
+    "path": "/works/starc"
+  },
+  {
+    "cover": "/img/karusel.png",
+    "title": "Karusel",
+    "type": "Website",
+    "path": "/works/drugcode"
+  },
+  {
+    "cover": "/img/domkino.png",
+    "title": "Domkino",
+    "type": "Website",
+    "path": "/works/domkino"
+  },
+  {
+    "cover": "/img/bober.png",
+    "title": "Bober",
+    "type": "Website",
+    "path": "/works/bober"
+  },
+  {
+    "cover": "/img/darlen.png",
+    "title": "Darlen",
+    "type": "UI/UX, App",
+    "path": "/works/darlen"
+  },
+  {
+    "cover": "/img/poehali.png",
+    "title": "Darlen",
+    "type": "UI/UX, App",
+    "path": "/works/darlen"
+  }
+]
