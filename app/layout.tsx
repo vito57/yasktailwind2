@@ -1,9 +1,7 @@
 import "../styles/globals.css";
-import Image from "next/image";
-import Link from "next/link";
-import { Tabs, Button } from "./components/main";
+
 // FONT
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "@next/font/google";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,7 +18,7 @@ const roboto_mono = Roboto_Mono({
 // END FONT
 
 export const metadata = {
-  title: "Yask",
+  title: "Yaskevi.ch",
   description: "design site test",
 };
 

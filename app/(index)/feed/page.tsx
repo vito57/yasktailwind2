@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "../components/main";
-export default function Person() {
+import { Button } from "../../components/main.tsx";
+export default function Feed() {
   const data = [
     {
       cover: "/about/placeholder.png",

@@ -1,3 +1,3 @@
 export default function Drugcode() {
-  return <h1>sdasd</h1>;
+  return <h1>Drugcode</h1>;
 }
