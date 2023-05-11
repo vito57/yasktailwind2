@@ -30,7 +30,6 @@ export default function About() {
             <figure key={i.path} className="group/item text-center py-10">
               <Image
                 src={i.cover}
-                placeholder="blur"
                 width={176}
                 height={176}
                 className=" inline-block mb-4 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded-full"
