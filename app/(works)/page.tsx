@@ -1,13 +1,14 @@
+
 import Image from "next/image";
 import Link from "next/link";
-import { Tabs, Button, Lay } from "../../components/main";
-import data from "../../data.json";
+import { Tabs, Button, Lay } from "../components/main";
+import data from "../data.json";
 
 export default function Works() {
   return (
-    <>
-  <Lay className="container px-4">
-     
+  
+
+     <Lay cn="container">
         <div className="grid gap-x-8 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
           {data.map((i) => {
             return (
@@ -15,6 +16,7 @@ export default function Works() {
                 <figure>
                   <Image
                     src={i.cover}
+                    placeholder="blur"
                     width={400}
                     height={300}
                     className="w-full group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded"
@@ -29,8 +31,8 @@ export default function Works() {
             );
           })}
         </div>
-     
-    </Lay>
-    </>
+        </Lay>
+
+
   );
 }

@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, LayoutGroup } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import type { AppProps } from "next/app";
+import path from "path";
 export function Button({ children }: { children: React.ReactNode }) {
   return (
     <Link
@@ -12,24 +14,54 @@ export function Button({ children }: { children: React.ReactNode }) {
     </Link>
   );
 }
-export function Lay(
-  { children }: { children: React.ReactNode },
-  props: any,
-  className: string
-) {
+export function Wrap({
+  children,
+  pathname,
+}: {
+  children: React.ReactNode;
+  pathname: props;
+}) {
+  console.log(pathname);
+  return (
+    <AnimatePresence
+      mode="wait"
+      initial={false}
+      // onExitComplete={() => window.scrollTo(0, 0)}
+    >
+      <motion.main
+        //transition={{ duration: 0.2, delay: 0.2 }}
+        initial={{ opacity: 0, y: -200 }}
+        animate={{ opacity: 1, y: 0 }}
+        // exit={{ opacity: 0, y: -200 }}
+        key={pathname}
+        transition={{ type: "linear", duration: 2 }}
+        className="container"
+      >
+        {children}
+      </motion.main>
+    </AnimatePresence>
+  );
+}
+export function Lay({
+  children,
+  cn,
+}: {
+  children: React.ReactNode;
+  cn: props;
+}) {
   const variants = {
-    hidden: { opacity: 0, x: -200, y: 0 },
-    enter: { opacity: 1, x: 0, y: 0 },
-    exit: { opacity: 0, x: 0, y: -100 },
+    hidden: { opacity: 0, y: -20 },
+    enter: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 },
   };
-  console.log(props);
+  console.log("Lay");
   return (
     <motion.main
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ type: "linear" }}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ type: "easeInOut" }}
+      className={cn}
     >
       {children}
     </motion.main>
@@ -44,15 +76,15 @@ export function Tabs() {
   ];
 
   const pathname = usePathname();
+  //console.log(props);
   return (
     <menu className="bg-yask gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center">
-      {data.map((link) => {
+      {data.map((link: string) => {
         const isActive = pathname.endsWith(link.href);
         return (
           <li key={link.href}>
             <Link
               className="px-3 text-sm relative opacity-90 tracking-[-0.006em] hover:opacity-100 rounded-[10px] transition inline-block text-white py-1.5 "
-              key={link.href}
               href={link.href}
             >
               {isActive && (
