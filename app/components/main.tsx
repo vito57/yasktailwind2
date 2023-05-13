@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
+import Image from "next/Image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
-import path from "path";
+
 export function Button({ children }: { children: React.ReactNode }) {
   return (
     <Link
@@ -14,34 +15,7 @@ export function Button({ children }: { children: React.ReactNode }) {
     </Link>
   );
 }
-export function Wrap({
-  children,
-  pathname,
-}: {
-  children: React.ReactNode;
-  pathname: props;
-}) {
-  console.log(pathname);
-  return (
-    <AnimatePresence
-      mode="wait"
-      initial={false}
-      // onExitComplete={() => window.scrollTo(0, 0)}
-    >
-      <motion.main
-        //transition={{ duration: 0.2, delay: 0.2 }}
-        initial={{ opacity: 0, y: -200 }}
-        animate={{ opacity: 1, y: 0 }}
-        // exit={{ opacity: 0, y: -200 }}
-        key={pathname}
-        transition={{ type: "linear", duration: 2 }}
-        className="container"
-      >
-        {children}
-      </motion.main>
-    </AnimatePresence>
-  );
-}
+
 export function Lay({
   children,
   cn,
@@ -102,3 +76,16 @@ export function Tabs() {
     </menu>
   );
 }
+// WORK
+export function WorkHeader(props) {
+  return (
+    <header className="container">
+      <Image width={64} height={64} alt="yask">
+      h<Link href="/">k</Link>
+    </header>
+  );
+}
+export function WorkFooter(props) {
+  return <h1>footer</h1>;
+}
+//END WORK

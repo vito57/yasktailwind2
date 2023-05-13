@@ -16,7 +16,8 @@ export default function Works() {
                 <figure>
                   <Image
                     src={i.cover}
-                   
+                    quality={100}
+                    priority={true}
                     width={400}
                     height={300}
                     className="w-full group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded"
