@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/Image";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
@@ -80,8 +80,7 @@ export function Tabs() {
 export function WorkHeader(props) {
   return (
     <header className="container">
-      <Image width={64} height={64} alt="yask">
-      h<Link href="/">k</Link>
+      <Image width={64} height={64} alt="yask" />h<Link href="/">k</Link>
     </header>
   );
 }
