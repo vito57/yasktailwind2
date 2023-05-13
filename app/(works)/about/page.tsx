@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, Lay } from "../components/main.tsx";
+import { Button, Lay } from "../../components/main.tsx";
 export default function About() {
   const data = [
     {
@@ -32,7 +32,7 @@ export default function About() {
                 src={i.cover}
                 width={176}
                 height={176}
-                className=" inline-block mb-4 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded-full"
+                className="inline-block mb-4 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded-full"
                 alt={i.title}
               />
               <figcaption className=" transition py-0.5 justify-center text-yask">
