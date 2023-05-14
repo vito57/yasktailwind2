@@ -9,7 +9,7 @@
     "cover": "/img/flamingo.png",
     "title": "Flamingo",
     "type": "Design System",
-    "path": "/works/drugcode"
+    "path": "/works/flamingo"
   },
   {
     "cover": "/img/bootsyicons.png",
@@ -33,7 +33,7 @@
     "cover": "/img/karusel.png",
     "title": "Karusel",
     "type": "Website",
-    "path": "/works/drugcode"
+    "path": "/works/karusel"
   },
   {
     "cover": "/img/domkino.png",
@@ -57,6 +57,6 @@
     "cover": "/img/poehali.png",
     "title": "Darlen",
     "type": "UI/UX, App",
-    "path": "/works/darlen"
+    "path": "/works/poehali"
   }
 ]

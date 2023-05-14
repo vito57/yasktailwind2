@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, Lay } from "../../components/main.tsx";
+import { AnimateLayout } from "../../components/client";
+import { Button } from "../../components/server";
+
 export default function About() {
   const data = [
     {
@@ -23,7 +25,7 @@ export default function About() {
     },
   ];
   return (
-    <Lay cn="container">
+    <AnimateLayout>
       <div className="grid gap-x-8 gap-y-6 grid-cols-3">
         {data.map((i) => {
           return (
@@ -44,6 +46,6 @@ export default function About() {
           );
         })}
       </div>
-    </Lay>
+    </AnimateLayout>
   );
 }
