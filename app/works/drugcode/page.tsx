@@ -11,36 +11,22 @@ export default function Drugcode() {
         alt="Drugcode"
       />
       <Accordeon expanded={false} title="About" id="1">
-        <p className="text-xl mb-6">
+        <p className="text-xl ">
           Редактор кода для создания нативных приложений на Айос, Андройд и Веб.
           Цель проекта обьединить в одном месте работу над приложением, от
           дизайна до программирования и тестирования, снизить порог входа для
           начинающих специалистов путем применения готовых паттернов и быстрого
           доступа к ресурсам.
         </p>
-        <p className="text-xl ">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-          excepturi id nulla assumenda qui possimus, aspernatur quo veritatis
-          dolor officia fugit, quasi eveniet. Earum, aliquid? Ex provident odio
-          cum molestiae molestias quae, eligendi facilis. Deleniti accusantium
-          voluptates perspiciatis nulla! Perspiciatis ad quaerat dignissimos,
-          esse et sunt eum id itaque assumenda fuga aut error, voluptatem
-          laudantium!
-        </p>
       </Accordeon>
       <Accordeon expanded={true} title="Branding" id="2">
-        <p className="text-xl mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
-          nesciunt neque voluptates nulla nostrum eaque. Et optio similique
-          recusandae non, ea velit dolores.
-        </p>
         <p className="text-xl">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
           nesciunt neque voluptates nulla nostrum eaque. Et optio similique
           recusandae non, ea velit dolores.
         </p>
       </Accordeon>
-      <div className="flex flex-row gap-8 mb-8">
+      <div className="flex flex-row gap-2 mb-8">
         <div className="basis-1/2">
           <figure>
             <Image
@@ -71,7 +57,7 @@ export default function Drugcode() {
         </div>
       </div>
       <Accordeon expanded={true} title="Branding" id="2">
-        <p className="text-xl mb-6">
+        <p className={`text-xl mb-6 `}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
           nesciunt neque voluptates nulla nostrum eaque. Et optio similique
           recusandae non, ea velit dolores.

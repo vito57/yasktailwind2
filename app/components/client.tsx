@@ -90,7 +90,7 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
     >
       <div className="col-span-3">
         <button
-          className="text-xl flex w-full gap-2 items-center"
+          className="text-xl flex font-bold w-full gap-2 items-center"
           aria-controls={id}
           aria-expanded={exp}
           id={`ac-${id}`}
@@ -108,7 +108,7 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
           </svg>
         </button>
       </div>
-      <div className="col-span-9 " aria-labelledby={`ac-${id}`}>
+      <div className="col-span-9" aria-labelledby={`ac-${id}`}>
         {children}
       </div>
       <button

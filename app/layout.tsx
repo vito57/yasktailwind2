@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Inter, Roboto_Mono } from "@next/font/google";
+import { Inter, Roboto_Mono, Source_Serif_Pro } from "@next/font/google";
 
 export const metadata = {
   title: "Next.js",
@@ -9,7 +9,11 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
+const ssp = Source_Serif_Pro({
+  variable: "--font-ssp",
+  weight: "400",
+  subsets: ["latin"],
+});
 const roboto_mono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
@@ -23,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${roboto_mono.variable} ${ssp.variable}`}
+    >
       <body className="bg-ybg text-yask" suppressHydrationWarning={true}>
         {children}
       </body>

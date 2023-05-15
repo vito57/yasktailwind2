@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function ArticleTopMenu() {
   return (
-    <div className="container z-20 px-4 flex justify-between sticky top-8 mt-8 mb-8  ">
+    <div className="container z-20 px-4 flex justify-between sticky top-0 mt-8 mb-8  ">
       <div className="flex gap-8 items-center">
         <Image src="/yask-logo.svg" width={64} height={64} alt="Yask" />
         Yask
