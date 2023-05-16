@@ -26,7 +26,7 @@ export default function Drugcode() {
           recusandae non, ea velit dolores.
         </p>
       </Accordeon>
-      <div className="flex flex-row gap-2 mb-8">
+      <div className="flex flex-row gap-4 mb-8">
         <div className="basis-1/2">
           <figure>
             <Image
@@ -56,18 +56,56 @@ export default function Drugcode() {
           </figure>
         </div>
       </div>
-      <Accordeon expanded={true} title="Branding" id="2">
+      <Accordeon expanded={true} title="UX design" id="3">
         <p className={`text-xl mb-6 `}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
-          nesciunt neque voluptates nulla nostrum eaque. Et optio similique
-          recusandae non, ea velit dolores.
-        </p>
-        <p className="text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
-          nesciunt neque voluptates nulla nostrum eaque. Et optio similique
-          recusandae non, ea velit dolores.
+          Whenever users have to deal with forms on a page on mobile, consider
+          replacing sticky menus with accordions. Virtual keyboards typically
+          take up to 60% of the screen, and with a sticky bar in view, filling
+          in a form quickly becomes nothing short of impossible.
         </p>
       </Accordeon>
+      <div className="flex flex-row gap-4 mb-8">
+        <div className="basis-1/2">
+          <figure>
+            <Image
+              src="/works/drugcode/brand.png"
+              width={200}
+              height={200}
+              className="w-full"
+              alt="sdd"
+            />
+            <figcaption className="text-sm">
+              A caption for the above image.
+            </figcaption>
+          </figure>
+        </div>
+        <div className="basis-1/2">
+          <figure>
+            <Image
+              src="/works/drugcode/brand-guide.png"
+              width={200}
+              height={200}
+              className="w-full"
+              alt="sdd"
+            />
+            <figcaption className="text-sm">
+              A caption for the above image.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <figure>
+        <Image
+          src="/works/drugcode/brand-guide.png"
+          width={200}
+          height={200}
+          className="w-full"
+          alt="sdd"
+        />
+        <figcaption className="text-sm">
+          A caption for the above image.
+        </figcaption>
+      </figure>
     </AnimateLayout>
   );
 }

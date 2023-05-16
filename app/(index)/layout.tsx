@@ -20,7 +20,7 @@ export default function WorksLayout({
       <header id="header" className="container">
         <hgroup className="text-center ">
           <Image
-            className="inline-block mb-6"
+            className="inline-block mb-6 "
             src="yask-logo.svg"
             width={64}
             height={64}

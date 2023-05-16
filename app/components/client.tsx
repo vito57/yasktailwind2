@@ -80,7 +80,7 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
   };
   return (
     <motion.div
-      className="grid relative group grid-cols-12 gap-8  overflow-hidden mb-8"
+      className="relative group grid grid-cols-6 overflow-hidden mb-8"
       key="content"
       id={id}
       aria-expanded={exp}
@@ -88,7 +88,7 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
       initial={exp ? "open" : "closed"}
       animate={exp ? "open" : "closed"}
     >
-      <div className="col-span-3">
+      <div className="xl:col-start-2 xl:col-span-4">
         <button
           className="text-xl flex font-bold w-full gap-2 items-center"
           aria-controls={id}
@@ -108,7 +108,7 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
           </svg>
         </button>
       </div>
-      <div className="col-span-9" aria-labelledby={`ac-${id}`}>
+      <div className="xl:col-start-2 xl:col-span-4" aria-labelledby={`ac-${id}`}>
         {children}
       </div>
       <button
