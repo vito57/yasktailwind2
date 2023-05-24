@@ -12,7 +12,7 @@ export default function WorkLayout({
   return (
     <>
       <ArticleTopMenu />
-      <div className="container">{children}</div>
+      <article className="container">{children}</article>
     </>
   );
 }

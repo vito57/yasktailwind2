@@ -21,7 +21,7 @@ module.exports = {
         "1.25rem",
         {
           lineHeight: "2rem",
-          // letterSpacing: "-0.017em",
+           letterSpacing: "-0.017em",
         },
       ],
       "2xl": [
@@ -44,6 +44,7 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1152px",
+      //xxl: "1320px"
     },
     container: {
       center: true,
@@ -65,7 +66,7 @@ module.exports = {
     extend: {
       colors: {
         yask: "#050884",
-        ybg: "#FBFBFD",
+        ybg: "#FAFAFD",
         yred: "#FF2423",
         ylime: "#D6F47C",
       },

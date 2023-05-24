@@ -79,8 +79,8 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
     closed: { height: "64px" },
   };
   return (
-    <motion.div
-      className="relative group grid grid-cols-6 overflow-hidden mb-8"
+    <motion.section
+      className="relative overflow-hidden mb-8"
       key="content"
       id={id}
       aria-expanded={exp}
@@ -88,34 +88,31 @@ export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
       initial={exp ? "open" : "closed"}
       animate={exp ? "open" : "closed"}
     >
-      <div className="xl:col-start-2 xl:col-span-4">
-        <button
-          className="text-xl flex font-bold w-full gap-2 items-center"
-          aria-controls={id}
+      <button
+        className="text-xl flex w-full font-bold gap-2 items-center"
+        aria-controls={id}
+        aria-expanded={exp}
+        id={`ac-${id}`}
+        onClick={toggleState}
+      >
+        {title}
+        <svg
+          width="24"
+          height="24"
           aria-expanded={exp}
-          id={`ac-${id}`}
-          onClick={toggleState}
+          className={` block fill-yask aria-expanded:rotate-180 transition-transform `}
+          xmlns="http://www.w3.org/2000/svg"
         >
-          {title}
-          <svg
-            width="24"
-            height="24"
-            aria-expanded={exp}
-            className={` block fill-yask aria-expanded:rotate-180 transition-transform `}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M11.4425 9.16994L5.45157 13.156C4.99357 13.461 4.86557 14.0989 5.17157 14.5569C5.47657 15.0139 6.11657 15.142 6.57557 14.837L12.0045 11.2249L17.4335 14.837C17.8925 15.142 18.5315 15.0139 18.8375 14.5569C19.1435 14.0989 19.0155 13.461 18.5575 13.156L12.5665 9.16994C12.2306 8.94694 11.7785 8.94694 11.4425 9.16994Z" />
-          </svg>
-        </button>
-      </div>
-      <div className="xl:col-start-2 xl:col-span-4" aria-labelledby={`ac-${id}`}>
-        {children}
-      </div>
+          <path d="M11.4425 9.16994L5.45157 13.156C4.99357 13.461 4.86557 14.0989 5.17157 14.5569C5.47657 15.0139 6.11657 15.142 6.57557 14.837L12.0045 11.2249L17.4335 14.837C17.8925 15.142 18.5315 15.0139 18.8375 14.5569C19.1435 14.0989 19.0155 13.461 18.5575 13.156L12.5665 9.16994C12.2306 8.94694 11.7785 8.94694 11.4425 9.16994Z" />
+        </svg>
+      </button>
+
+      <div aria-labelledby={`ac-${id}`}>{children}</div>
       <button
         aria-expanded={exp}
         className="aria-expanded:hidden bg-gradient-to-t absolute w-full h-full from-ybg to-transparent"
         onClick={toggleState}
       ></button>
-    </motion.div>
+    </motion.section>
   );
 }

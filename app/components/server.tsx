@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export function ArticleTopMenu() {
   return (
-    <div className="container z-20 px-4 flex justify-between sticky top-0 mt-8 mb-8  ">
+    <div className="container z-20 px-4 flex justify-between sticky top-8 mt-8 mb-8  ">
       <div className="flex gap-8 items-center">
         <Image src="/yask-logo.svg" width={64} height={64} alt="Yask" />
-        Yask
+        <span className="font-bold"> Drugcode - code and visual editor</span>
       </div>
       <div className="flex gap-8 items-center">
         <Link href="/" className="text-yask hover:text-yred transition">
@@ -19,6 +19,13 @@ export function ArticleTopMenu() {
       </div>
     </div>
   );
+}
+interface SectionProps {
+  className: string;
+  children: React.ReactNode;
+}
+export function Section({ children, className }: SectionProps) {
+  return <section className={className}>{children}</section>;
 }
 export function TopMenu() {
   return (
@@ -49,9 +56,44 @@ export function Button({ children }: { children: React.ReactNode }) {
   return (
     <Link
       href="/"
-      className="outline outline-1 inline-block tracking-tight outline-yask transition rounded-xl px-3 py-2 bg-white text-yask"
+      className="outline outline-1 inline-block  outline-yask transition rounded-xl px-3 py-2 bg-white text-yask"
     >
       {children}
     </Link>
+  );
+}
+interface ArticleImageSectionProps {
+  data1: { src: string; caption: string };
+  data2: { src: string; caption: string };
+}
+
+export function ArticleImageSection(props: ArticleImageSectionProps) {
+  return (
+    <div className="flex  gap-4 mb-8">
+      <div className="basis-1/2">
+        <figure>
+          <Image
+            src={props.data1.src}
+            width={1600}
+            height={1200}
+            className="w-full"
+            alt="sdd"
+          />
+          <figcaption className="text-sm">{props.data1.caption}</figcaption>
+        </figure>
+      </div>
+      <div className="basis-1/2">
+        <figure>
+          <Image
+            src={props.data2.src}
+            width={1600}
+            height={1200}
+            className="w-full"
+            alt="sdd"
+          />
+          <figcaption className="text-sm">{props.data2.caption}</figcaption>
+        </figure>
+      </div>
+    </div>
   );
 }
