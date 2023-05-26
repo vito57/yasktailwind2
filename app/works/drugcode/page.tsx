@@ -1,72 +1,177 @@
 import { AnimateLayout, Accordeon } from "../../components/client";
-import { Section, ArticleImageSection } from "../../components/server";
+import { Article, ArticleSubMenu } from "../../components/server";
+import {
+  Section,
+  ArticleImageSection,
+  ArticleDescription,
+} from "../../components/server";
 import Image from "next/image";
 export default function Drugcode() {
   return (
     <AnimateLayout>
-      <Section className="mb-8">
-        <Image
-          src="/works/drugcode/cover.png"
-          width={1120}
-          height={416}
-          className="w-full mb-8 rounded"
-          alt="Drugcode"
-        />
+      <Article className="bg-neutral-900 relative text-ylightblue">
+        <header
+          id="intro"
+          className="mb-8 pt-[128px] reletive mt-[-128px] bg-[#2367E8]"
+        >
+          <div className="container">
+            <Image
+              src="/works/drugcode/cover.png"
+              width={1120}
+              height={416}
+              className="w-full mb-8 rounded"
+              alt="Drugcode"
+            />
+          </div>
+        </header>
 
-        <div className="mx-auto max-w-screen-md">
-          <h2 className="text-xl font-bold">About</h2>
-          <p className="text-xl ">
-            Редактор кода для создания нативных приложений на Айос, Андройд и
-            Веб. Цель - обьединить в одном месте работу над приложением, от
-            дизайна до программирования и тестирования, снизить порог входа для
-            начинающих специалистов путем применения готовых паттернов и
-            быстрого доступа к ресурсам.
-          </p>
-        </div>
-      </Section>
-      <Section className="mb-8">
-        <div className="mx-auto max-w-screen-md">
-          <h2 className="text-xl font-bold ">Branding</h2>
-          <p className="text-xl mb-8 opacity-80">
-            Редактор кода для создания нативных приложений на Айос, Андройд и
-            Веб.
-          </p>
-        </div>
-        <ArticleImageSection
-          data1={{ src: "/works/drugcode/brand.png", caption: "fasfas" }}
-          data2={{ src: "/works/drugcode/brand-guide.png", caption: "fasfas" }}
-        />
-      </Section>
-      <Section className="mb-8">
-        <div className="mx-auto max-w-screen-md">
-          <h2 className="text-xl font-bold ">UX design</h2>
-          <p className="text-xl mb-8 opacity-80">
-            Редактор кода для создания нативных приложений на Айос, Андройд и
-            Веб.
-          </p>
-        </div>
+        <Section id="about" className="mb-8 relative container">
+          <ArticleDescription>
+            {/* <h2 className="text-2xl font-bold dark mb-4">About</h2> */}
+            <p className="text-2xl mb-4 text-white">
+              Web based Code and visual editor, for building native, IOS,
+              Android and web applications.
+            </p>
+            <p className="text-xl mb-4">
+              Задача — сформульровать предложения по улучшению уже существующего
+              проекта.
+            </p>
+          </ArticleDescription>
+          {/* BRANDING */}
+        </Section>
+        <Section id="branding" className="mb-8 container">
+          <ArticleDescription>
+            <h2 className="text-2xl text-white  mb-4"> 1. Branding</h2>
+            {/* <p className="text-xl mb-4">
+              Для более быстрой и консистентной работы никак без фирменного
+              стиля и логотипа.
+            </p> */}
+          </ArticleDescription>
+          <ArticleImageSection
+            data1={{ src: "/works/drugcode/brand.png" }}
+            data2={{
+              src: "/works/drugcode/brand-guide.png",
+            }}
+          />
+        </Section>
+        {/* UX DESIGN */}
+        <Section id="ux design" className="mb-8 container">
+          <ArticleDescription>
+            <h2 className="text-2xl text-white  mb-4">2. UX design</h2>
+            <p className="text-xl mb-5">
+              Проект для внутреннего пользователя, для сознания микроприложений
+              приложений внутри экосистемы Сбер. Пользователь младший
+              разработчик, средний разраб.
+            </p>
+            <h3 className="text-xl text-white  mb-4"> Дизайн процесс</h3>
+            <ol className="list-decimal list-inside text-xl mb-5">
+              <li>Basic Research</li>
+              <li>Define</li>
+              <li>Scetching</li>
+            </ol>
+            <h3 className="text-xl text-white  mb-4">Основные проблемы</h3>
+            <dl className="text-xl mb-4">
+              <dt className="font-semibold">Масштабирование</dt>
+              <dd className="mb-2">
+                При добавленни функционала добавить его просто не получается
+                структура расширяется
+              </dd>
+              <dt className="font-semibold">Масштабирование</dt>
+              <dd className="mb-2">
+                При добавленни функционала добавить его просто не получается
+                структура расширяется
+              </dd>
+            </dl>
+          </ArticleDescription>
+          <ArticleImageSection
+            data1={{
+              src: "/works/drugcode/structure.png",
+            }}
+            data2={{
+              src: "/works/drugcode/layout.png",
+            }}
+          />
+          <ArticleDescription>
+            <h3 className="text-xl text-white  mb-4">2.2 Итоги</h3>
+            <p className="text-xl mb-5">Пользователь определен.</p>
+          </ArticleDescription>
+        </Section>
+        {/* UI DESIGN */}
+        <Section className="mb-8 container">
+          <ArticleDescription>
+            <h2 className="text-2xl text-white mb-4 ">UI design</h2>
+            <p className="text-xl mb-4 ">
+              Редактор кода для создания нативных приложений на Айос, Андройд и
+              Веб.
+            </p>
+          </ArticleDescription>
+          <Image
+            src="/works/drugcode/ui.png"
+            width={1600}
+            height={1200}
+            className="mb-2 rounded"
+            alt="Drugcode ui"
+          ></Image>
+          <ArticleImageSection
+            data1={{ src: "/works/drugcode/style.png", caption: "Style guide" }}
+            data2={{
+              src: "/works/drugcode/wireframe.png",
+              caption: "Wireframe structure",
+            }}
+          />
+        </Section>
+        {/* NODE */}
+        <Section id="nodeeditor" className="mb-8 container">
+          <ArticleDescription>
+            <h2 className="text-2xl text-white font-bold mb-4">Node editor</h2>
+            <p className="text-xl mb-4">
+              Редактор кода для создания нативных приложений на Айос, Андройд и
+              Веб.
+            </p>
+          </ArticleDescription>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/node-editor.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            />
+            <figcaption className="text-sm">Dark theme</figcaption>
+          </figure>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/node-editor-light.png"
+              width={1600}
+              height={1200}
+              className=" rounded"
+              alt="Drugcode ui"
+            />
+            <figcaption className="text-sm">Light theme</figcaption>
+          </figure>
 
-        <ArticleImageSection
-          data1={{ src: "/works/drugcode/brand.png", caption: "fasfas" }}
-          data2={{ src: "/works/drugcode/brand-guide.png", caption: "fasfas" }}
-        />
-      </Section>
-      <Section className="mb-8">
-        <div className="mx-auto max-w-screen-md">
-          <h2 className="text-xl font-bold ">UI design</h2>
-          <p className="text-xl mb-8 opacity-80">
-            Редактор кода для создания нативных приложений на Айос, Андройд и
-            Веб.
-          </p>
-        </div>
-        <Image
-          src="/works/drugcode/ui.png"
-          width={1600}
-          height={1200}
-          className="mb-8"
-          alt="Drugcode ui"
-        ></Image>
-      </Section>
+          <ArticleDescription>
+            <p className="text-xl mb-4 ">
+              Редактор кода для создания нативных приложений на Айос, Андройд и
+              Веб.
+            </p>
+          </ArticleDescription>
+        </Section>
+
+        <Section id="Process" className="mb-8 container">
+          <ArticleDescription>
+            <h2 className="text-2xl font-bold mb-5">Design process</h2>
+            <p className="text-xl mb-4">
+              This is the design process I followed for this project.
+            </p>
+            <ol className="text-xl list-inside list-decimal">
+              <li>Research</li>
+              <li>Define</li>
+              <li>Prototype</li>
+            </ol>
+          </ArticleDescription>
+        </Section>
+      </Article>
     </AnimateLayout>
   );
 }

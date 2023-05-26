@@ -25,16 +25,24 @@ module.exports = {
         },
       ],
       "2xl": [
-        "2.5rem",
+        "1.5rem",
         {
-          lineHeight: "3.5rem",
-          letterSpacing: "-0.022em",
+          lineHeight: "2rem",
+          letterSpacing: "-0.019em",
         },
       ],
       "3xl": [
-        "3.75rem",
+        "1.875rem",
         {
-          lineHeight: "5rem",
+          lineHeight: "2.5rem",
+          letterSpacing: "-0.021em",
+        },
+        
+      ],
+      "4xl": [
+        "2.5rem",
+        {
+          lineHeight: "3.5rem",
           letterSpacing: "-0.022em",
         },
       ],
@@ -67,6 +75,7 @@ module.exports = {
       colors: {
         yask: "#050884",
         ybg: "#FAFAFD",
+        ylightblue: "#C2D2FF",
         yred: "#FF2423",
         ylime: "#D6F47C",
       },

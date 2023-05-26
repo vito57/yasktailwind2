@@ -8,15 +8,15 @@ import { ReactNode, useState } from "react";
 import { Interface } from "readline";
 export function AnimateLayout({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
+    <motion.main
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ type: "easeInOut" }}
-      className="container px-4"
+      // className="container px-4"
     >
       {children}
-    </motion.div>
+    </motion.main>
   );
 }
 //TABS ON MAIN PAGE
@@ -55,11 +55,7 @@ export function Tabs() {
     </menu>
   );
 }
-// WORK
 
-export function WorkFooter() {
-  return <h1>footer</h1>;
-}
 //END WORK
 
 //ACCORDEON
