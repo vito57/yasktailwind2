@@ -6,6 +6,10 @@ import {
   ArticleDescription,
 } from "../../components/server";
 import Image from "next/image";
+export const metadata = {
+  title: "Drugcode+ design",
+  description: "Story about Drugcode design",
+};
 export default function Drugcode() {
   return (
     <AnimateLayout>
@@ -37,15 +41,61 @@ export default function Drugcode() {
               проекта.
             </p>
           </ArticleDescription>
+
+          {/* UX DESIGN */}
+          <Section id="ux design" className="mb-8 container">
+            <ArticleDescription>
+              <h2 className="text-2xl text-white  mb-4">2. UX design</h2>
+              <p className="text-xl mb-5">
+                Проект для внутреннего пользователя, для сознания
+                микроприложений приложений внутри экосистемы Сбер. Пользователь
+                младший разработчик, средний разраб.
+              </p>
+              <h3 className="text-xl text-white  mb-4"> Дизайн процесс</h3>
+              <ol className="list-decimal list-inside text-xl mb-5">
+                <li>Basic Research</li>
+                <li>Define</li>
+                <li>Ideate</li>
+              </ol>
+              <h3 className="text-xl text-white  mb-4">Основные проблемы</h3>
+              <dl className="text-xl mb-4">
+                <dt className="italic">Масштабирование</dt>
+                <dd className="mb-4">
+                  При добавленни функционала добавить его просто не получается
+                  структура расширяется
+                </dd>
+                <dt className="italic">Консистентность</dt>
+                <dd className="mb-4">
+                  Над проектом работает много разработчиков. Между ними нет
+                  коммуникации. Поэтому разные узлы выглядет и работают по
+                  разному.
+                </dd>
+                <dt className="italic">Документация и процессы</dt>
+                <dd className="mb-4">
+                  Над проектом работает много разработчиков. Между ними нет
+                  коммуникации. Поэтому разные узлы выглядет и работают по
+                  разному.
+                </dd>
+              </dl>
+            </ArticleDescription>
+            <ArticleImageSection
+              data1={{
+                src: "/works/drugcode/structure.png",
+              }}
+              data2={{
+                src: "/works/drugcode/layout.png",
+              }}
+            />
+            <ArticleDescription>
+              <h3 className="text-xl text-white  mb-4">Итоги</h3>
+              <p className="text-xl mb-5">Пользователь определен.</p>
+            </ArticleDescription>
+          </Section>
           {/* BRANDING */}
         </Section>
         <Section id="branding" className="mb-8 container">
           <ArticleDescription>
             <h2 className="text-2xl text-white  mb-4"> 1. Branding</h2>
-            {/* <p className="text-xl mb-4">
-              Для более быстрой и консистентной работы никак без фирменного
-              стиля и логотипа.
-            </p> */}
           </ArticleDescription>
           <ArticleImageSection
             data1={{ src: "/works/drugcode/brand.png" }}
@@ -53,47 +103,11 @@ export default function Drugcode() {
               src: "/works/drugcode/brand-guide.png",
             }}
           />
-        </Section>
-        {/* UX DESIGN */}
-        <Section id="ux design" className="mb-8 container">
           <ArticleDescription>
-            <h2 className="text-2xl text-white  mb-4">2. UX design</h2>
-            <p className="text-xl mb-5">
-              Проект для внутреннего пользователя, для сознания микроприложений
-              приложений внутри экосистемы Сбер. Пользователь младший
-              разработчик, средний разраб.
+            <p className="text-xl mb-4">
+              Для более быстрой и консистентной работы никак без фирменного
+              стиля и логотипа.
             </p>
-            <h3 className="text-xl text-white  mb-4"> Дизайн процесс</h3>
-            <ol className="list-decimal list-inside text-xl mb-5">
-              <li>Basic Research</li>
-              <li>Define</li>
-              <li>Scetching</li>
-            </ol>
-            <h3 className="text-xl text-white  mb-4">Основные проблемы</h3>
-            <dl className="text-xl mb-4">
-              <dt className="font-semibold">Масштабирование</dt>
-              <dd className="mb-2">
-                При добавленни функционала добавить его просто не получается
-                структура расширяется
-              </dd>
-              <dt className="font-semibold">Масштабирование</dt>
-              <dd className="mb-2">
-                При добавленни функционала добавить его просто не получается
-                структура расширяется
-              </dd>
-            </dl>
-          </ArticleDescription>
-          <ArticleImageSection
-            data1={{
-              src: "/works/drugcode/structure.png",
-            }}
-            data2={{
-              src: "/works/drugcode/layout.png",
-            }}
-          />
-          <ArticleDescription>
-            <h3 className="text-xl text-white  mb-4">2.2 Итоги</h3>
-            <p className="text-xl mb-5">Пользователь определен.</p>
           </ArticleDescription>
         </Section>
         {/* UI DESIGN */}

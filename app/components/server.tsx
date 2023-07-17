@@ -7,8 +7,8 @@ export function ArticleTopMenu() {
       <div className="flex gap-8 items-center">
         <Image
           src="/yask-logo.svg"
-          width={64}
-          height={64}
+          width={40}
+          height={40}
           className="dark:fill-slate-50"
           alt="Yask"
         />
@@ -89,7 +89,7 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex  gap-2 mb-8">
+    <div className="flex mt-4 gap-2 mb-8">
       <div className="basis-1/2">
         <figure>
           <Image
