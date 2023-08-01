@@ -6,21 +6,20 @@ import {
   ArticleDescription,
 } from "../../components/server";
 import Image from "next/image";
+import Link from "next/link";
 export const metadata = {
-  title: "Drugcode+ design",
+  title: "Drugcode - Code editor design",
   description: "Story about Drugcode design",
 };
+
 export default function Drugcode() {
   return (
-    <AnimateLayout>
-      <Article className="bg-neutral-900 relative text-ylightblue">
-        <header
-          id="intro"
-          className="mb-8 pt-[128px] reletive mt-[-128px] bg-[#2367E8]"
-        >
-          <div className="container">
+    <AnimateLayout className="bg-black text-[#C2D2FF]">
+      <Article className="relative">
+        <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
+          <div className="container px-4">
             <Image
-              src="/works/drugcode/cover.png"
+              src="/works/drugcode/cover2.png"
               width={1120}
               height={416}
               className="w-full mb-8 rounded"
@@ -29,130 +28,45 @@ export default function Drugcode() {
           </div>
         </header>
 
-        <Section id="about" className="mb-8 relative container">
-          <ArticleDescription>
-            {/* <h2 className="text-2xl font-bold dark mb-4">About</h2> */}
-            <p className="text-2xl mb-4 text-white">
-              Web based Code and visual editor, for building native, IOS,
-              Android and web applications.
+        <Section id="about" className="mb-8 px-4 relative container">
+          <Accordeon title="About" expanded={true} id="1">
+            <p className="text-xl">
+              Code editor design for internal projects.
+              <br />
+              <span className="font-semibold">My role:</span> UI/UX designer{" "}
+              <br /> <span className="font-semibold">Task:</span> redesign of
+              the existing editor, find new features, cteate design system
             </p>
-            <p className="text-xl mb-4">
-              Задача — сформульровать предложения по улучшению уже существующего
-              проекта.
-            </p>
-          </ArticleDescription>
+          </Accordeon>
 
-          {/* UX DESIGN */}
-          <Section id="ux design" className="mb-8 container">
-            <ArticleDescription>
-              <h2 className="text-2xl text-white  mb-4">2. UX design</h2>
-              <p className="text-xl mb-5">
-                Проект для внутреннего пользователя, для сознания
-                микроприложений приложений внутри экосистемы Сбер. Пользователь
-                младший разработчик, средний разраб.
-              </p>
-              <h3 className="text-xl text-white  mb-4"> Дизайн процесс</h3>
-              <ol className="list-decimal list-inside text-xl mb-5">
-                <li>Basic Research</li>
-                <li>Define</li>
-                <li>Ideate</li>
-              </ol>
-              <h3 className="text-xl text-white  mb-4">Основные проблемы</h3>
-              <dl className="text-xl mb-4">
-                <dt className="italic">Масштабирование</dt>
-                <dd className="mb-4">
-                  При добавленни функционала добавить его просто не получается
-                  структура расширяется
-                </dd>
-                <dt className="italic">Консистентность</dt>
-                <dd className="mb-4">
-                  Над проектом работает много разработчиков. Между ними нет
-                  коммуникации. Поэтому разные узлы выглядет и работают по
-                  разному.
-                </dd>
-                <dt className="italic">Документация и процессы</dt>
-                <dd className="mb-4">
-                  Над проектом работает много разработчиков. Между ними нет
-                  коммуникации. Поэтому разные узлы выглядет и работают по
-                  разному.
-                </dd>
-              </dl>
-            </ArticleDescription>
-            <ArticleImageSection
-              data1={{
-                src: "/works/drugcode/structure.png",
-              }}
-              data2={{
-                src: "/works/drugcode/layout.png",
-              }}
-            />
-            <ArticleDescription>
-              <h3 className="text-xl text-white  mb-4">Итоги</h3>
-              <p className="text-xl mb-5">Пользователь определен.</p>
-            </ArticleDescription>
-          </Section>
-          {/* BRANDING */}
-        </Section>
-        <Section id="branding" className="mb-8 container">
-          <ArticleDescription>
-            <h2 className="text-2xl text-white  mb-4"> 1. Branding</h2>
-          </ArticleDescription>
-          <ArticleImageSection
-            data1={{ src: "/works/drugcode/brand.png" }}
-            data2={{
-              src: "/works/drugcode/brand-guide.png",
-            }}
-          />
-          <ArticleDescription>
-            <p className="text-xl mb-4">
-              Для более быстрой и консистентной работы никак без фирменного
-              стиля и логотипа.
-            </p>
-          </ArticleDescription>
-        </Section>
-        {/* UI DESIGN */}
-        <Section className="mb-8 container">
-          <ArticleDescription>
-            <h2 className="text-2xl text-white mb-4 ">UI design</h2>
-            <p className="text-xl mb-4 ">
-              Редактор кода для создания нативных приложений на Айос, Андройд и
-              Веб.
-            </p>
-          </ArticleDescription>
-          <Image
-            src="/works/drugcode/ui.png"
-            width={1600}
-            height={1200}
-            className="mb-2 rounded"
-            alt="Drugcode ui"
-          ></Image>
-          <ArticleImageSection
-            data1={{ src: "/works/drugcode/style.png", caption: "Style guide" }}
-            data2={{
-              src: "/works/drugcode/wireframe.png",
-              caption: "Wireframe structure",
-            }}
-          />
-        </Section>
-        {/* NODE */}
-        <Section id="nodeeditor" className="mb-8 container">
-          <ArticleDescription>
-            <h2 className="text-2xl text-white font-bold mb-4">Node editor</h2>
-            <p className="text-xl mb-4">
-              Редактор кода для создания нативных приложений на Айос, Андройд и
-              Веб.
-            </p>
-          </ArticleDescription>
           <figure className="mb-4">
             <Image
-              src="/works/drugcode/node-editor.png"
+              src="/works/drugcode/code.png"
               width={1600}
               height={1200}
               className="rounded"
               alt="Drugcode ui"
-            />
-            <figcaption className="text-sm">Dark theme</figcaption>
+            ></Image>
+            <figcaption>Code editor</figcaption>
           </figure>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/node.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+            <figcaption>Node editor</figcaption>
+          </figure>
+          <Accordeon title="" expanded={true} id="1">
+            <p className="text-xl">
+              The editor consists of 2 main modes: code editor and node editor.
+              Visual editing is carried out in the preview window. Supports
+              system theming (dark and light theme). The node editor represents
+              any JavaScript object as a node.
+            </p>
+          </Accordeon>
           <figure className="mb-4">
             <Image
               src="/works/drugcode/node-editor-light.png"
@@ -163,27 +77,150 @@ export default function Drugcode() {
             />
             <figcaption className="text-sm">Light theme</figcaption>
           </figure>
+        </Section>
+        {/* WORKFOW */}
+        <Section id="workflow" className="mb-8 px-4 container">
+          <Accordeon title="Workflow" expanded={true} id="1">
+            <ol className="text-xl list-decimal list-inside">
+              <li>
+                Baseline research (Interview, Interview in context,
+                observations)
+              </li>
+              <li>
+                Making a <span className="font-medium">proposal</span> of new
+                features and improvements
+              </li>
+              <li>Prototyping</li>
+              <li>Creating design and specification</li>
+              <li>Field supervision</li>
+            </ol>
+          </Accordeon>
+        </Section>
+        {/* BRANDING */}
 
-          <ArticleDescription>
-            <p className="text-xl mb-4 ">
-              Редактор кода для создания нативных приложений на Айос, Андройд и
-              Веб.
+        <Section id="branding" className="mb-8 px-4 container">
+          <Accordeon title="Branding" expanded={true} id="2">
+            <p className="text-xl">
+              In the process of work, it became necessary to create a logo and
+              style. Didn't take long, but got a lot done.
             </p>
-          </ArticleDescription>
+          </Accordeon>
+          <ArticleImageSection
+            data1={{ src: "/works/drugcode/brand.png" }}
+            data2={{
+              src: "/works/drugcode/brand-guide.png",
+            }}
+          />
+          {/* <ArticleImageSection
+              data1={{
+                src: "/works/drugcode/structure.png",
+              }}
+              data2={{
+                src: "/works/drugcode/layout.png",
+              }}
+            /> */}
+        </Section>
+        {/* UI/UX */}
+        <Section id="ux" className="mb-8 px-4 container">
+          <Accordeon title="UI/UX" expanded={true} id="2">
+            <p className="text-xl">
+              After basic research and creation of a proposal, We take out the
+              styles, making a templates and prepare the specification.{" "}
+              <Link href="" className="text-ylightblue">
+                Material design
+              </Link>{" "}
+              is taken as the basis.
+            </p>
+          </Accordeon>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/ui.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+            <figcaption>UI kit</figcaption>
+          </figure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/drugcode/style.png",
+              caption: "Style guide. Material theme",
+            }}
+            data2={{
+              src: "/works/drugcode/layout.png",
+              caption: "Template structure",
+            }}
+          />
+
+          <Accordeon title="" expanded={true} id="2">
+            <p className="text-xl">
+              We follow the pattern Template / Region / Component / Element and
+              the modifier. A mix of atomic design principles and BEM
+              methodology. More then 80 components are created.
+            </p>
+          </Accordeon>
+          <ArticleImageSection
+            data1={{
+              src: "/works/drugcode/node_func.png",
+              caption: "Representing function as node",
+            }}
+            data2={{
+              src: "/works/drugcode/wireframe.png",
+              caption: "Wireframes",
+            }}
+          />
+
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/drag.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+            <figcaption>UI kit</figcaption>
+          </figure>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/right_side.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+            <figcaption>UI kit</figcaption>
+          </figure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/drugcode/menu.png",
+              caption: "Left menu. File manager",
+            }}
+            data2={{
+              src: "/works/drugcode/viewer.png",
+              caption: "Visual editor and preview window",
+            }}
+          />
         </Section>
 
-        <Section id="Process" className="mb-8 container">
-          <ArticleDescription>
-            <h2 className="text-2xl font-bold mb-5">Design process</h2>
-            <p className="text-xl mb-4">
-              This is the design process I followed for this project.
+        <Section id="havefun" className="mb-8 px-4 container">
+          <Accordeon title="Have fun 😊" expanded={true} id="2">
+            <p className="text-xl">
+              We follow the pattern Template / Region / Component / Element and
+              the modifier. A mix of atomic design principles and BEM
+              methodology. More then 80 components are created.
             </p>
-            <ol className="text-xl list-inside list-decimal">
-              <li>Research</li>
-              <li>Define</li>
-              <li>Prototype</li>
-            </ol>
-          </ArticleDescription>
+          </Accordeon>
+          <figure className="mb-4">
+            <Image
+              src="/works/drugcode/node.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+            <figcaption>Node editor</figcaption>
+          </figure>
         </Section>
       </Article>
     </AnimateLayout>

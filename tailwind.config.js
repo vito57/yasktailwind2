@@ -53,7 +53,7 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1152px",
-      //xxl: "1320px"
+     //xxl: "1320px"
     },
     container: {
       center: true,
@@ -69,14 +69,13 @@ module.exports = {
     // },
     fontFamily: {
       sans: ["var(--font-inter)"],
-      serif: ["var(--font-ssp)"],
-      mono: ["var(--font-roboto-mono)"],
+
     },
     extend: {
       colors: {
         yask: "#050884",
-        ybg: "#FAFAFD",
-        ylightblue: "#C2D2FF",
+        ybg: "#FAFAFD",       
+        ylightblue: "#080BD0",
         yred: "#FF2423",
         ylime: "#D6F47C",
       },
