@@ -1,4 +1,4 @@
-import { Tabs } from "../components/client";
+import { Tabs, Jumbo } from "../components/client";
 import { TopMenu, Button, Footer } from "../components/server";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,7 +13,6 @@ export default function WorksLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const pathname = usePathname();
   return (
     <>
       <TopMenu />
@@ -26,10 +25,7 @@ export default function WorksLayout({
             height={64}
             alt="Yask Design"
           />
-          <h1 className="text-4xl mb-6 text-yask">
-            Hi! We Do Web & App Design
-            <br /> Icons Sets and Frontend
-          </h1>
+          <Jumbo />
         </hgroup>
       </header>
       <nav className="container z-10 text-center mb-10 sticky top-8">
