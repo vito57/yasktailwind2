@@ -31,7 +31,7 @@ export default function Drugcode() {
 
         <Section id="about" className="mb-8 relative container">
           <ArticleDescription>
-            {/* <h2 className="text-2xl font-bold dark mb-4">About</h2> */}
+           <h2 className="text-2xl font-bold dark mb-4">About</h2>
             <p className="text-2xl mb-4 text-white">
               Web based Code and visual editor, for building native, IOS,
               Android and web applications.

@@ -76,7 +76,7 @@ export function Button({ children }: { children: React.ReactNode }) {
   return (
     <Link
       href="/"
-      className="outline outline-1 inline-block  outline-yask transition rounded-xl px-3 py-2 bg-white text-yask"
+      className="inline-block transition rounded-xl px-3 py-2 bg-ylime text-yask"
     >
       {children}
     </Link>
