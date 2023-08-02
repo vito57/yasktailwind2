@@ -6,10 +6,10 @@ export default function WorkLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="bg-black text-white pt-8">
       <ArticleTopMenu />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

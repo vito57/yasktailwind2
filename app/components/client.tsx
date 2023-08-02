@@ -25,6 +25,11 @@ export function AnimateLayout({ children, className }: AnimateLayoutProps) {
     </motion.main>
   );
 }
+//bgcolor
+export function BgColor(){
+  const [color, setColor] = useState("bg-black");
+  return color
+}
 //Jumbotrone
 export function Jumbo() {
   const pathname = usePathname();
