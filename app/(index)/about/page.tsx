@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { AnimateLayout } from "../../../components/client";
-import { Button } from "../../../components/server";
+import { AnimateLayout } from "../../components/client";
+import { Button } from "../../components/server";
 
 export default function About() {
   const data = [
@@ -15,13 +15,13 @@ export default function About() {
       cover: "/about/placeholder.png",
       title: "Gala",
       type: "Icon Designer, Illustrator",
-      path: "/gala",
+      path: "about/gala",
     },
     {
       cover: "/about/placeholder.png",
       title: "Vera",
-      type: "Illustrator",
-      path: "/Vera",
+      type: "Illustrator, Artist",
+      path: "about/vera",
     },
   ];
   return (
@@ -38,9 +38,9 @@ export default function About() {
                 alt={i.title}
               />
               <figcaption className=" transition py-0.5 justify-center text-yask">
-                <p className="font-bold">{i.title}</p>
-                <p className="opacity-50 mb-4">{i.type}</p>
-                <Button>asdsaad </Button>
+                <p className="font-bold text-xl">{i.title}</p>
+                <p className="mb-4 text-sm">{i.type}</p>
+                <Button path={i.path}> Read more </Button>
               </figcaption>
             </figure>
           );

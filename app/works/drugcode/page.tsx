@@ -1,10 +1,6 @@
-import { AnimateLayout, Accordeon } from "../../components/client";
-import { Article } from "../../components/server";
-import {
-  Section,
-  ArticleImageSection
-
-} from "../../components/server";
+import { AnimateLayout } from "../../components/client";
+import { Article, Text } from "../../components/server";
+import { Section, ArticleImageSection } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata = {
@@ -14,7 +10,7 @@ export const metadata = {
 
 export default function Drugcode() {
   return (
-    <AnimateLayout className="">
+    <AnimateLayout>
       <Article className="relative">
         <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
           <div className="container px-4">
@@ -29,15 +25,13 @@ export default function Drugcode() {
         </header>
 
         <Section id="about" className="mb-8 px-4 relative container">
-          <Accordeon title="About" expanded={true} id="1">
+          <Text title="About">
             <p className="text-xl">
-              Code editor design for internal projects.
-              <br />
               <span className="font-semibold">My role:</span> UI/UX designer{" "}
               <br /> <span className="font-semibold">Task:</span> redesign of
               the existing editor, find new features, cteate design system
             </p>
-          </Accordeon>
+          </Text>
 
           <figure className="mb-4">
             <Image
@@ -59,14 +53,13 @@ export default function Drugcode() {
             ></Image>
             <figcaption>Node editor</figcaption>
           </figure>
-          <Accordeon title="" expanded={true} id="1">
+          <Text title="">
             <p className="text-xl">
               The editor consists of 2 main modes: code editor and node editor.
               Visual editing is carried out in the preview window. Supports
-              system theming (dark and light theme). The node editor represents
-              any JavaScript object as a node.
+              system theming (dark and light theme).
             </p>
-          </Accordeon>
+          </Text>
           <figure className="mb-4">
             <Image
               src="/works/drugcode/node-editor-light.png"
@@ -80,7 +73,7 @@ export default function Drugcode() {
         </Section>
         {/* WORKFOW */}
         <Section id="workflow" className="mb-8 px-4 container">
-          <Accordeon title="Workflow" expanded={true} id="1">
+          <Text title="Workflow">
             <ol className="text-xl list-decimal list-inside">
               <li>
                 Baseline research (Interview, Interview in context,
@@ -94,17 +87,17 @@ export default function Drugcode() {
               <li>Creating design and specification</li>
               <li>Field supervision</li>
             </ol>
-          </Accordeon>
+          </Text>
         </Section>
         {/* BRANDING */}
 
         <Section id="branding" className="mb-8 px-4 container">
-          <Accordeon title="Branding" expanded={true} id="2">
+          <Text title="Branding">
             <p className="text-xl">
               In the process of work, it became necessary to create a logo and
               style. Didn't take long, but got a lot done.
             </p>
-          </Accordeon>
+          </Text>
           <ArticleImageSection
             data1={{ src: "/works/drugcode/brand.png" }}
             data2={{
@@ -122,7 +115,7 @@ export default function Drugcode() {
         </Section>
         {/* UI/UX */}
         <Section id="ux" className="mb-8 px-4 container">
-          <Accordeon title="UI/UX" expanded={true} id="2">
+          <Text title="UI/UX">
             <p className="text-xl">
               After basic research and creation of a proposal, We take out the
               styles, making a templates and prepare the specification.{" "}
@@ -131,7 +124,7 @@ export default function Drugcode() {
               </Link>{" "}
               is taken as the basis.
             </p>
-          </Accordeon>
+          </Text>
           <figure className="mb-4">
             <Image
               src="/works/drugcode/ui.png"
@@ -153,13 +146,13 @@ export default function Drugcode() {
             }}
           />
 
-          <Accordeon title="" expanded={true} id="2">
+          <Text title="">
             <p className="text-xl">
               We follow the pattern Template / Region / Component / Element and
               the modifier. A mix of atomic design principles and BEM
               methodology. More then 80 components are created.
             </p>
-          </Accordeon>
+          </Text>
           <ArticleImageSection
             data1={{
               src: "/works/drugcode/node_func.png",
@@ -179,7 +172,7 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>UI kit</figcaption>
+            <figcaption>Drag n drop</figcaption>
           </figure>
           <figure className="mb-4">
             <Image
@@ -189,8 +182,15 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>UI kit</figcaption>
+            <figcaption>Right sidebar</figcaption>
           </figure>
+          <Text title="">
+            <p className="text-xl">
+              You can write CSS values in the fields in any format supported by
+              the specification. CSS variables, SASS, LESS, etc. Autocomplete
+              works according to specification too.
+            </p>
+          </Text>
           <ArticleImageSection
             data1={{
               src: "/works/drugcode/menu.png",
@@ -204,13 +204,13 @@ export default function Drugcode() {
         </Section>
 
         <Section id="havefun" className="mb-8 px-4 container">
-          <Accordeon title="Have fun 😊" expanded={true} id="2">
+          <Text title="Have fun 😊">
             <p className="text-xl">
               We follow the pattern Template / Region / Component / Element and
               the modifier. A mix of atomic design principles and BEM
               methodology. More then 80 components are created.
             </p>
-          </Accordeon>
+          </Text>
           <figure className="mb-4">
             <Image
               src="/works/drugcode/node.png"

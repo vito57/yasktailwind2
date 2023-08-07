@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-
-export function ArticleTopMenu() {
+interface ArticleTopMenuProps {
+  title?: string;
+}
+export function ArticleTopMenu({ title }: ArticleTopMenuProps) {
   return (
-    <div className="container z-20 px-4 flex justify-between sticky top-8 mb-8  ">
+    <div className="container z-20 px-4 flex justify-between sticky top-8 my-8  ">
       <div className="flex gap-8 items-center">
         <Image
           src="/yask-logo.svg"
@@ -12,16 +14,19 @@ export function ArticleTopMenu() {
           className="dark:fill-slate-50"
           alt="Yask"
         />
-        <span className="font-bold">Design code and visual editor</span>
+        <span className="font-bold">{title}</span>
       </div>
       <div className="flex gap-8 items-center">
-        <Link href="/" className="text-yask hover:text-yred transition">
+        <Link href="/" className="hover:text-yred transition">
           Works
         </Link>
-        <Link href="/about" className="text-yask hover:text-yred transition">
+        <Link href="/about" className="hover:text-yred transition">
           About
         </Link>
-        <Button>Send email</Button>
+        <Link href="/feed" className="hover:text-yred transition">
+          Feed
+        </Link>
+        <Button path="/">Send email</Button>
       </div>
     </div>
   );
@@ -41,7 +46,7 @@ export function Section({ children, className, id }: SectionProps) {
 export function TopMenu() {
   return (
     <div className="container z-20 px-4 justify-end flex gap-4 sticky top-8">
-      <Button>Send email</Button>
+      <Button path="/">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
           src="dribbble.svg"
@@ -63,16 +68,34 @@ export function TopMenu() {
     </div>
   );
 }
-export function Button({ children }: { children: React.ReactNode }) {
+interface ButtonProps {
+  path: string;
+  children: React.ReactNode;
+}
+export function Button({ children, path }: ButtonProps) {
   return (
     <Link
-      href="/"
+      href={path || "/"}
       className="text-sm font-medium transition rounded-xl px-3 py-2 bg-ylime text-ylightblue"
     >
       {children}
     </Link>
   );
 }
+//BADGE
+interface BadgeProps {
+  className?: string;
+  children: React.ReactNode;
+}
+export function Badge({ children, className }: BadgeProps) {
+  return (
+    <span className="bg-ygrey text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
+      {children}
+    </span>
+  );
+}
+
+//END BADGE
 interface ArticleImageSectionProps {
   data1: { src: string; caption?: string };
   data2: { src: string; caption?: string };
@@ -112,15 +135,15 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
     </div>
   );
 }
-interface ArticleDescriptionProps {
-  //className: string;
-  children: React.ReactNode;
-}
-export function ArticleDescription({ children }: ArticleDescriptionProps) {
-  return <div className="mx-auto max-w-screen-md">{children}</div>;
-}
+// interface ArticleDescriptionProps {
+//   //className: string;
+//   children: React.ReactNode;
+// }
+// export function ArticleDescription({ children }: ArticleDescriptionProps) {
+//   return <div className="mx-auto max-w-screen-md">{children}</div>;
+// }
 // WORK
-
+//FOOTER
 export function Footer() {
   return (
     <p className="text-sm container text-center mt-8 mb-8">
@@ -147,29 +170,8 @@ export function Footer() {
     </p>
   );
 }
-//get headings
-//push headings to links
-//add ancors
-//on click scroll to ancor
-//
-export function ArticleSubMenu() {
-  return (
-    <menu className="fixed top-0 ml-20">
-      <li>
-        <Link href="ds">About</Link>
-      </li>
-      <li>
-        <Link href="ds">Branding</Link>
-      </li>
-      <li>
-        <Link href="ds">About</Link>
-      </li>
-      <li>
-        <Link href="ds">About</Link>
-      </li>
-    </menu>
-  );
-}
+//END FOOTER
+//ARTICLE
 interface ArticleProps {
   className: string;
   children: React.ReactNode;
@@ -177,3 +179,24 @@ interface ArticleProps {
 export function Article({ children, className }: ArticleProps) {
   return <article className={className}>{children}</article>;
 }
+//END ARTICLE
+
+// TEXT
+//text block
+interface TextProps {
+  title?: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}
+export function Text({ title, subtitle, children }: TextProps) {
+  return (
+    <div className="flex gap-8 mb-8">
+      <div className=" w-3/12 ">
+        <p className="text-xl font-bold">{title}</p>
+        {subtitle ? <p>{subtitle}</p> : false}
+      </div>
+      <div className=" w-9/12 ">{children}</div>
+    </div>
+  );
+}
+//END TEXT

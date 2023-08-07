@@ -13,6 +13,11 @@ export default function WorksLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const data = [
+    { name: "Works", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Feed", href: "/feed" },
+  ];
   return (
     <>
       <TopMenu />
@@ -29,7 +34,7 @@ export default function WorksLayout({
         </hgroup>
       </header>
       <nav className="container z-10 text-center mb-10 sticky top-8">
-        <Tabs />
+        <Tabs datas={data} className="bg-yask text-white" />
       </nav>
       <div className="container">{children}</div>
       <Footer />

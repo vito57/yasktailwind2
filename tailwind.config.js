@@ -53,7 +53,7 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1152px",
-     //xxl: "1320px"
+     xxl: "1320px"
     },
     container: {
       center: true,
@@ -78,6 +78,7 @@ module.exports = {
         ylightblue: "#080BD0",
         yred: "#FF2423",
         ylime: "#D6F47C",
+        ygrey:"#CFD6DF"
       },
     },
   },
