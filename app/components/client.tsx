@@ -46,9 +46,6 @@ interface TabsProps {
   className?: string;
 }
 export function Tabs({ datas, className }: TabsProps) {
-  // const [active, setActive] = useState();
-  // console.log(datas);
-
   const pathname = usePathname();
   const cl = `${className} gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`;
   return (
@@ -64,7 +61,7 @@ export function Tabs({ datas, className }: TabsProps) {
               {isActive && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute rounded-[10px] inset-0 z-1 bg-yred mix-blend-difference"
+                  className="absolute rounded-[10px] inset-0 z-1 bg-yred"
                 ></motion.span>
               )}
               {link.name}

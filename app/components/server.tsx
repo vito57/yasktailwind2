@@ -200,3 +200,41 @@ export function Text({ title, subtitle, children }: TextProps) {
   );
 }
 //END TEXT
+//PORTFOLIO ITEM
+interface portfolioItemProps {
+  keyNum?: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  title?: string;
+  type?: string;
+}
+export function PortfolioItem({
+  keyNum,
+  href,
+  imageSrc,
+  imageAlt,
+  title,
+  type,
+}: portfolioItemProps) {
+  return (
+    <Link key={keyNum} href={href} className="group/item">
+      <figure>
+        <Image
+          src={imageSrc}
+          quality={100}
+          width={400}
+          height={300}
+          className="w-full group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded"
+          alt={imageAlt}
+        />
+
+        <figcaption className="flex text-sm  transition py-0.5 justify-between text-yask">
+          <span>{title}</span>
+          <span className="opacity-50">{type}</span>
+        </figcaption>
+      </figure>
+    </Link>
+  );
+}
+//END PORTFOLIO ITEM

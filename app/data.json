@@ -2,60 +2,70 @@
   {
     "cover": "/img/drugcode2.png",
     "title": "DrugCode+",
+    "by": "Vitaly",
     "type": "Code editor",
     "path": "/works/drugcode"
   },
   {
     "cover": "/img/flamingo2.png",
     "title": "Flamingo",
+    "by": "Vitaly",
     "type": "Design System",
     "path": "/works/flamingo"
   },
   {
     "cover": "/img/bootsyicons.png",
     "title": "Bootsy Icons",
+    "by": "Gala",
     "type": "Icon set",
     "path": "/works/bootsyicons"
   },
   {
     "cover": "/img/bootsyduotone.png",
     "title": "Bootsy Icons Duotone",
+    "by": "Gala",
     "type": "Icon set",
     "path": "/works/bootsyduotone"
   },
   {
     "cover": "/img/starc.png",
     "title": "STARC",
+    "by": "Vitaly",
     "type": "Native App",
     "path": "/works/starc"
   },
   {
     "cover": "/img/karusel.png",
     "title": "Karusel",
+    "by": "Vitaly",
     "type": "Website",
     "path": "/works/karusel"
   },
   {
     "cover": "/img/domkino.png",
     "title": "Domkino",
+    "by": "Vitaly",
     "type": "Website",
     "path": "/works/domkino"
   },
   {
     "cover": "/img/bober.png",
     "title": "Bober",
+    "by": "Vitaly",
     "type": "Website",
     "path": "/works/bober"
   },
   {
     "cover": "/img/darlen.png",
     "title": "Darlen",
+    "by": "Vitaly",
     "type": "UI/UX, App",
     "path": "/works/darlen"
   },
   {
     "cover": "/img/poehali.png",
     "title": "Darlen",
+    "by": "Vitaly",
     "type": "UI/UX, App",
     "path": "/works/poehali"
   }

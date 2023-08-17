@@ -1,4 +1,5 @@
-import { Button, ArticleTopMenu } from "../components/server";
+import { Button, ArticleTopMenu, Footer } from "../components/server";
+import { Tabs } from "../components/client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +16,7 @@ export default function AboutLayout({
   return (
     <div>
       <ArticleTopMenu title="About us" />
+
       <header className="text-center mb-6">
         <Image
           className="inline-block mb-1.5 "
@@ -50,6 +52,7 @@ export default function AboutLayout({
         </Link>
       </div>
       <div className="container px-4">{children}</div>
+      <Footer />
     </div>
   );
 }
