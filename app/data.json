@@ -1,13 +1,13 @@
 [
   {
-    "cover": "/img/drugcode2.png",
+    "cover": "/img/drugcode.png",
     "title": "DrugCode+",
     "by": "Vitaly",
     "type": "Code editor",
     "path": "/works/drugcode"
   },
   {
-    "cover": "/img/flamingo2.png",
+    "cover": "/img/flamingo3.png",
     "title": "Flamingo",
     "by": "Vitaly",
     "type": "Design System",
@@ -29,7 +29,14 @@
   },
   {
     "cover": "/img/starc.png",
-    "title": "STARC",
+    "title": "STARC Android",
+    "by": "Vitaly",
+    "type": "Native App",
+    "path": "/works/starc"
+  },
+  {
+    "cover": "/img/starc.png",
+    "title": "STARC IOS",
     "by": "Vitaly",
     "type": "Native App",
     "path": "/works/starc"

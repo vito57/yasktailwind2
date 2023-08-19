@@ -192,7 +192,7 @@ export function Text({ title, subtitle, children }: TextProps) {
   return (
     <div className="flex gap-8 mb-8">
       <div className=" w-3/12 ">
-        <p className="text-xl font-bold">{title}</p>
+        <p className="text-xl font-medium">{title}</p>
         {subtitle ? <p>{subtitle}</p> : false}
       </div>
       <div className=" w-9/12 ">{children}</div>
@@ -223,15 +223,15 @@ export function PortfolioItem({
         <Image
           src={imageSrc}
           quality={100}
-          width={400}
-          height={300}
+          width={1600}
+          height={1200}
           className="w-full group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded"
           alt={imageAlt}
         />
 
-        <figcaption className="flex text-sm  transition py-0.5 justify-between text-yask">
+        <figcaption className="flex text-sm  group-hover/item:text-ylightblue transition py-0.5 justify-between text-yask">
           <span>{title}</span>
-          <span className="opacity-50">{type}</span>
+          <span>{type}</span>
         </figcaption>
       </figure>
     </Link>

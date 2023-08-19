@@ -2,7 +2,10 @@ import "../styles/globals.css";
 import { Inter } from "@next/font/google";
 
 export const metadata = {
-  title: "Yask",
+  title: {
+    default: "Yask design",
+    template: "%s",
+  },
   description: "Web and app design",
 };
 const inter = Inter({
@@ -19,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body className="bg-ybg text-yask" suppressHydrationWarning={true}>
+      <body className=" text-yask" suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

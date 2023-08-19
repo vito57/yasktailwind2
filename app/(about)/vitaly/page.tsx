@@ -7,8 +7,8 @@ export default function Vito() {
     <>
       <Text title="About">
         <p className="text-xl">
-          Frontend Designer with 12+ years intensive experience in Interfaces
-          design, web and app design, frontend development.
+          Designer with 12+ years intensive experience in Interfaces design, web
+          and app design, frontend development.
         </p>
       </Text>
       <Text title="Top skils">
@@ -90,6 +90,18 @@ export default function Vito() {
             Achievements: launch and development of 3 applications on TV,
             SberPortal and mobile phones. Launch of commercial projects based on
             these applications. The Sport app received the Runet Prize 2021
+            <ul className="list-disc list-inside">
+              <li>
+                <a href="" className="ylink">
+                  Karusel
+                </a>
+              </li>
+              <li>
+                <a href="" className="ylink">
+                  Dom kino
+                </a>
+              </li>
+            </ul>
           </dd>
           <dt className="font-medium">
             Designer at{" "}
@@ -110,7 +122,7 @@ export default function Vito() {
           </dd>
         </dl>
       </Text>
-      <Text title="Works">
+      <Text title="Projects">
         <div className="grid gap-x-8 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
           {data.map((i) => {
             return (

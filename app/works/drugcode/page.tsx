@@ -6,6 +6,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode design",
+  themeColor: "dark",
 };
 
 export default function Drugcode() {
@@ -27,12 +28,25 @@ export default function Drugcode() {
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p className="text-xl">
-              <span className="font-semibold">My role:</span> UI/UX designer{" "}
-              <br /> <span className="font-semibold">Task:</span> redesign of
-              the existing editor, find new features, cteate design system
+              Redesign of the existing editor, find new features, cteate design
+              system
             </p>
           </Text>
-
+          <Text title="Workflow">
+            <ol className="text-xl list-decimal list-inside">
+              <li>
+                Baseline research (Interview, Interview in context,
+                observations)
+              </li>
+              <li>
+                Making a <span className="font-medium">proposal</span> of new
+                features and improvements
+              </li>
+              <li>Prototyping</li>
+              <li>Creating design and specification</li>
+              <li>Field supervision</li>
+            </ol>
+          </Text>
           <figure className="mb-4">
             <Image
               src="/works/drugcode/code.png"
