@@ -15,7 +15,7 @@ export default function Flamingo() {
         <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
           <div className="container px-4">
             <Image
-              src="/works/flamingo/flamingo-cover.png"
+              src="/works/flamingo/flamingo-cover2.png"
               width={2000}
               height={416}
               className="w-full mb-8 rounded"
@@ -35,13 +35,10 @@ export default function Flamingo() {
           <Text title="Workflow">
             <ol className="text-xl list-decimal list-inside">
               <li>
-                Baseline research (research all sysiems and it capatabilities)
+                Baseline research (research all systems and it capatabilities)
               </li>
-              <li>
-                Making a <span className="font-medium">proposal</span> with a
-                list of components and timeline
-              </li>
-              <li>Principles</li>
+              <li>Making a proposal with a list of components and timeline</li>
+              <li>Defining principles</li>
               <li>Styling</li>
               <li>Component design</li>
               <li>Write guidelines</li>
@@ -55,12 +52,12 @@ export default function Flamingo() {
           <figure className="mb-4">
             <Image
               src="/works/flamingo/principles.png"
-              width={2900}
+              width={2400}
               height={1200}
               className="rounded"
               alt="Flamingo styles"
             ></Image>
-            <figcaption>Code editor</figcaption>
+            {/* <figcaption>Code editor</figcaption> */}
           </figure>
         </Section>
         <Section id="priciples" className="mb-8 px-4 relative container">

@@ -28,26 +28,27 @@
     "path": "/works/bootsyduotone"
   },
   {
-    "cover": "/img/starc.png",
-    "title": "STARC Android",
-    "by": "Vitaly",
-    "type": "Native App",
-    "path": "/works/starc"
-  },
-  {
-    "cover": "/img/starc.png",
-    "title": "STARC IOS",
-    "by": "Vitaly",
-    "type": "Native App",
-    "path": "/works/starc"
-  },
-  {
     "cover": "/img/karusel.png",
     "title": "Karusel",
     "by": "Vitaly",
     "type": "Website",
     "path": "/works/karusel"
   },
+  {
+    "cover": "/img/starc.png",
+    "title": "Starc Android",
+    "by": "Vitaly",
+    "type": "Native App",
+    "path": "/works/starc"
+  },
+  {
+    "cover": "/img/starcios.png",
+    "title": "Starc IOS",
+    "by": "Vitaly",
+    "type": "Native App",
+    "path": "/works/starc"
+  },
+
   {
     "cover": "/img/domkino.png",
     "title": "Domkino",

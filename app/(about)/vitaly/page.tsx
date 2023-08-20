@@ -46,12 +46,13 @@ export default function Vito() {
           </dt>
 
           <dd className="mb-8">
-            <span>current workplace, since 2021</span> <br />
-            <span className="underline">Responsible for:</span> scripting,
+            <span className="opacity-60">current workplace, since 2021</span>{" "}
+            <br />
+            <span className="font-medium">Responsible for:</span> scripting,
             design, flow, testing, systematization, theming and branding.
             Content products. Voice Interfaces.
             <br />
-            <span className="underline">Achievements:</span> launch and
+            <span className="font-medium">Achievements:</span> launch and
             development of 3 applications on TV, SberPortal and mobile phones.
             Launch of commercial projects based on these applications. The Sport
             app received the Runet Prize 2021
@@ -64,15 +65,15 @@ export default function Vito() {
           </dt>
 
           <dd className="mb-8">
-            <span>2019—2021</span>
-            <br />
-            <span className="underline">Responsible for:</span> scripting,
+            <span className="opacity-60">2019-2021</span> <br />
+            <span className="font-medium">Responsible for:</span> scripting,
             design, flow, testing, systematization, theming and branding.
+            Content products. Voice Interfaces.
             <br />
-            <span className="underline">Achievements:</span> launch and
+            <span className="font-medium">Achievements:</span> launch and
             development of 3 applications on TV, SberPortal and mobile phones.
             Launch of commercial projects based on these applications. The Sport
-            app received the 🏆 Runet Prize 2021
+            app received the Runet Prize 2021
           </dd>
           <dt className="font-medium">
             Designer at{" "}
@@ -98,7 +99,7 @@ export default function Vito() {
               </li>
               <li>
                 <a href="" className="ylink">
-                  Dom kino
+                  Domkino
                 </a>
               </li>
             </ul>
@@ -111,7 +112,7 @@ export default function Vito() {
           </dt>
 
           <dd className="mb-8">
-            <span className="italic">2019—2021</span>
+            <span>2019—2021</span>
             <br />
             Responsible for: scripting, design, flow, testing, systematization,
             theming and branding.

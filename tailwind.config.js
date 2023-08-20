@@ -49,11 +49,17 @@ module.exports = {
       ],
     },
     screens: {
-      sm: "480px",
+      // sm: "480px",
+      // md: "768px",
+      // lg: "976px",
+      // xl: "1152px",
+      // xxl: "1320px"
+      xs: 0,
+      sm: "576px",
       md: "768px",
-      lg: "976px",
+      lg: "992px",
       xl: "1152px",
-      //xxl: "1320px"
+      //xxl: "1400px"
     },
     container: {
       center: true,

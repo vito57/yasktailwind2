@@ -15,3 +15,6 @@ body {
 .ylink {
   @apply text-ylightblue hover:text-yred transition;
 }
+.ylink-outer {
+  @apply text-ylightblue hover:text-yred transition after:content-['_↗'];
+}

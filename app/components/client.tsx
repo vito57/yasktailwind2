@@ -35,7 +35,7 @@ export function Jumbo() {
   const pathname = usePathname();
   return (
     <h1 className="text-4xl mb-6 text-yask">
-      Hi! We {pathname == "/" ? "Do" : "❤️"} Web & App Design
+      Hi! We {pathname == "/" ? "Do" : "❤️"} Web & App Design,
       <br /> Icons Sets and Code
     </h1>
   );
@@ -61,7 +61,7 @@ export function Tabs({ datas, className }: TabsProps) {
               {isActive && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute rounded-[10px] inset-0 z-1 bg-yred mix-blend-difference"
+                  className="absolute rounded-[10px] inset-0 z-1 bg-yred "
                 ></motion.span>
               )}
               {link.name}

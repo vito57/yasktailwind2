@@ -19,8 +19,8 @@ export default function AboutLayout({
 
       <header className="text-center mb-6">
         <Image
-          className="inline-block mb-1.5 "
-          src="yask-logo.svg"
+          className="inline-block mb-2 "
+          src="/about/vitaly.png"
           width={80}
           height={80}
           alt="Vitaly Yask."
@@ -30,7 +30,7 @@ export default function AboutLayout({
           vitaly@yask.work
         </a>
       </header>
-      <div className="flex gap-2 items-center justify-center mb-8">
+      <div className="flex gap-2 items-center justify-center mb-16">
         <Button path="/">Resume.pdf</Button>
         <Link href="https://dribbble.com/yask">
           <Image

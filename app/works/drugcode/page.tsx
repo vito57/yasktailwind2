@@ -1,6 +1,13 @@
 import { AnimateLayout } from "../../components/client";
-import { Article, Text } from "../../components/server";
-import { Section, ArticleImageSection } from "../../components/server";
+import {
+  Article,
+  Text,
+  ArticleFigure,
+  Section,
+  ArticleImageSection,
+  ArticleHeader,
+} from "../../components/server";
+
 import Image from "next/image";
 import Link from "next/link";
 export const metadata = {
@@ -12,19 +19,16 @@ export const metadata = {
 export default function Drugcode() {
   return (
     <AnimateLayout>
-      <Article className="relative">
-        <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
-          <div className="container px-4">
-            <Image
-              src="/works/drugcode/cover2.png"
-              width={1120}
-              height={416}
-              className="w-full mb-8 rounded"
-              alt="Drugcode"
-            />
-          </div>
-        </header>
-
+      <Article className="relative ">
+        <ArticleHeader>
+          <Image
+            src="/works/drugcode/cover2.png"
+            width={2240}
+            height={832}
+            className="w-full mb-8 rounded"
+            alt="Drugcode"
+          />
+        </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p className="text-xl">
@@ -47,7 +51,7 @@ export default function Drugcode() {
               <li>Field supervision</li>
             </ol>
           </Text>
-          <figure className="mb-4">
+          <ArticleFigure figcaption="Code editor">
             <Image
               src="/works/drugcode/code.png"
               width={1600}
@@ -55,9 +59,8 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>Code editor</figcaption>
-          </figure>
-          <figure className="mb-4">
+          </ArticleFigure>
+          <ArticleFigure figcaption="Node editor">
             <Image
               src="/works/drugcode/node.png"
               width={1600}
@@ -65,8 +68,7 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>Node editor</figcaption>
-          </figure>
+          </ArticleFigure>
           <Text title="">
             <p className="text-xl">
               The editor consists of 2 main modes: code editor and node editor.
@@ -74,7 +76,7 @@ export default function Drugcode() {
               system theming (dark and light theme).
             </p>
           </Text>
-          <figure className="mb-4">
+          <ArticleFigure figcaption="Light theme">
             <Image
               src="/works/drugcode/node-editor-light.png"
               width={1600}
@@ -82,8 +84,7 @@ export default function Drugcode() {
               className=" rounded"
               alt="Drugcode ui"
             />
-            <figcaption className="text-sm">Light theme</figcaption>
-          </figure>
+          </ArticleFigure>
         </Section>
         {/* WORKFOW */}
         <Section id="workflow" className="mb-8 px-4 container">
@@ -118,14 +119,6 @@ export default function Drugcode() {
               src: "/works/drugcode/brand-guide.png",
             }}
           />
-          {/* <ArticleImageSection
-              data1={{
-                src: "/works/drugcode/structure.png",
-              }}
-              data2={{
-                src: "/works/drugcode/layout.png",
-              }}
-            /> */}
         </Section>
         {/* UI/UX */}
         <Section id="ux" className="mb-8 px-4 container">
@@ -139,7 +132,7 @@ export default function Drugcode() {
               is taken as the basis.
             </p>
           </Text>
-          <figure className="mb-4">
+          <ArticleFigure figcaption="UI kit">
             <Image
               src="/works/drugcode/ui.png"
               width={1600}
@@ -147,8 +140,7 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>UI kit</figcaption>
-          </figure>
+          </ArticleFigure>
           <ArticleImageSection
             data1={{
               src: "/works/drugcode/style.png",
@@ -178,7 +170,7 @@ export default function Drugcode() {
             }}
           />
 
-          <figure className="mb-4">
+          <ArticleFigure figcaption="Drag n drop">
             <Image
               src="/works/drugcode/drag.png"
               width={1600}
@@ -186,9 +178,8 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>Drag n drop</figcaption>
-          </figure>
-          <figure className="mb-4">
+          </ArticleFigure>
+          <ArticleFigure figcaption="Right sidebar">
             <Image
               src="/works/drugcode/right_side.png"
               width={1600}
@@ -196,8 +187,7 @@ export default function Drugcode() {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-            <figcaption>Right sidebar</figcaption>
-          </figure>
+          </ArticleFigure>
           <Text title="">
             <p className="text-xl">
               You can write CSS values in the fields in any format supported by
@@ -215,26 +205,6 @@ export default function Drugcode() {
               caption: "Visual editor and preview window",
             }}
           />
-        </Section>
-
-        <Section id="havefun" className="mb-8 px-4 container">
-          <Text title="Have fun 😊">
-            <p className="text-xl">
-              We follow the pattern Template / Region / Component / Element and
-              the modifier. A mix of atomic design principles and BEM
-              methodology. More then 80 components are created.
-            </p>
-          </Text>
-          <figure className="mb-4">
-            <Image
-              src="/works/drugcode/node.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Drugcode ui"
-            ></Image>
-            <figcaption>Node editor</figcaption>
-          </figure>
         </Section>
       </Article>
     </AnimateLayout>

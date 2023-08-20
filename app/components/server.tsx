@@ -45,7 +45,7 @@ export function Section({ children, className, id }: SectionProps) {
 }
 export function TopMenu() {
   return (
-    <div className="container z-20 px-4 justify-end flex gap-4 sticky top-8">
+    <div className="container z-20 px-4 justify-end content-center flex space-x-4 sticky top-8">
       <Button path="/">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
@@ -76,7 +76,7 @@ export function Button({ children, path }: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className="text-sm font-medium transition rounded-xl px-3 py-2 bg-ylime text-ylightblue"
+      className="text-sm font-medium outline outline-2 outline-[#CBEA6E] transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
     >
       {children}
     </Link>
@@ -103,7 +103,7 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex mt-4 gap-2 mb-8">
+    <div className="flex mt-4 gap-2 mb-14">
       <div className="basis-1/2">
         <figure>
           <Image
@@ -220,14 +220,16 @@ export function PortfolioItem({
   return (
     <Link key={keyNum} href={href} className="group/item">
       <figure>
-        <Image
-          src={imageSrc}
-          quality={100}
-          width={1600}
-          height={1200}
-          className="w-full group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded"
-          alt={imageAlt}
-        />
+        <div className="overflow-hidden">
+          <Image
+            src={imageSrc}
+            quality={100}
+            width={2240}
+            height={1680}
+            className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu rounded"
+            alt={imageAlt}
+          />
+        </div>
 
         <figcaption className="flex text-sm  group-hover/item:text-ylightblue transition py-0.5 justify-between text-yask">
           <span>{title}</span>
@@ -238,3 +240,39 @@ export function PortfolioItem({
   );
 }
 //END PORTFOLIO ITEM
+//ARTICLE IMAGE
+interface ArticleFigureProps {
+  figcaption?: string;
+  children: React.ReactNode;
+}
+export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
+  return (
+    <figure className="mb-8">
+      {children}
+
+      <figcaption>{figcaption}</figcaption>
+    </figure>
+  );
+}
+//END ARTICLE IMAGE
+//ARTICLE HEADER
+interface ActicleHeaderProps {
+  children: React.ReactNode;
+}
+export function ArticleHeader({ children }: ActicleHeaderProps) {
+  return (
+    <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
+      <div className="container px-4">
+        {children}
+        {/* <Image
+          src="/works/drugcode/cover2.png"
+          width={1120}
+          height={416}
+          className="w-full mb-8 rounded"
+          alt="Drugcode"
+        /> */}
+      </div>
+    </header>
+  );
+}
+//END ARTICLE HEADER
