@@ -27,8 +27,13 @@ export function AnimateLayout({ children, className }: AnimateLayoutProps) {
 }
 //bgcolor
 export function BgColor() {
-  const [color, setColor] = useState("bg-black");
-  console.log(color);
+  return (
+    <style jsx global>{`
+      body {
+        background-color: black;
+      }
+    `}</style>
+  );
 }
 //Jumbotrone
 export function Jumbo() {

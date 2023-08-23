@@ -10,8 +10,8 @@ export default function WorksLayout({
 }) {
   const data = [
     { name: "Works", href: "/" },
-    { name: "About", href: "/about" },
     { name: "Feed", href: "/feed" },
+    { name: "About", href: "/about" },
   ];
   return (
     <>

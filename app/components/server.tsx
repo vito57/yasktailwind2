@@ -2,10 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 interface ArticleTopMenuProps {
   title?: string;
+  className?: string;
 }
-export function ArticleTopMenu({ title }: ArticleTopMenuProps) {
+export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   return (
-    <div className="container z-20 px-4 flex justify-between sticky top-8 my-8  ">
+    <div
+      className={`$className container z-20 px-4 flex justify-between sticky top-8 my-8`}
+    >
       <div className="flex gap-8 items-center">
         <Image
           src="/yask-logo.svg"
@@ -220,13 +223,13 @@ export function PortfolioItem({
   return (
     <Link key={keyNum} href={href} className="group/item">
       <figure>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden rounded">
           <Image
             src={imageSrc}
             quality={100}
             width={2240}
             height={1680}
-            className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu rounded"
+            className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu "
             alt={imageAlt}
           />
         </div>
@@ -262,17 +265,48 @@ interface ActicleHeaderProps {
 export function ArticleHeader({ children }: ActicleHeaderProps) {
   return (
     <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
-      <div className="container px-4">
-        {children}
-        {/* <Image
-          src="/works/drugcode/cover2.png"
-          width={1120}
-          height={416}
-          className="w-full mb-8 rounded"
-          alt="Drugcode"
-        /> */}
-      </div>
+      <div className="container px-4">{children}</div>
     </header>
   );
 }
 //END ARTICLE HEADER
+
+//FEED ITEM
+interface feedItemProps {
+  keyNum?: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  title?: string;
+  type?: string;
+}
+export function FeedItem({
+  keyNum,
+  href,
+  imageSrc,
+  imageAlt,
+  title,
+  type,
+}: feedItemProps) {
+  return (
+    <Link key={keyNum} href={href} className="group/item">
+      <figure className="overflow-hidden relative rounded">
+        <Image
+          src={imageSrc}
+          quality={100}
+          width={2240}
+          height={1680}
+          className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
+          alt={imageAlt}
+        />
+        <Link
+          href=""
+          className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all"
+        >
+          View on Dribbble
+        </Link>
+      </figure>
+    </Link>
+  );
+}
+//END FEED ITEM

@@ -1,4 +1,4 @@
-import { AnimateLayout } from "../../components/client";
+import { AnimateLayout, BgColor } from "../../components/client";
 import {
   Article,
   Text,
@@ -13,16 +13,15 @@ import Link from "next/link";
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode design",
-  themeColor: "dark",
 };
 
 export default function Drugcode() {
   return (
     <AnimateLayout>
-      <Article className="relative ">
+      <Article className="relative bg-black text-[#C2D2FF]">
         <ArticleHeader>
           <Image
-            src="/works/drugcode/cover2.png"
+            src="/works/drugcode/cover3.png"
             width={2240}
             height={832}
             className="w-full mb-8 rounded"
@@ -36,21 +35,7 @@ export default function Drugcode() {
               system
             </p>
           </Text>
-          <Text title="Workflow">
-            <ol className="text-xl list-decimal list-inside">
-              <li>
-                Baseline research (Interview, Interview in context,
-                observations)
-              </li>
-              <li>
-                Making a <span className="font-medium">proposal</span> of new
-                features and improvements
-              </li>
-              <li>Prototyping</li>
-              <li>Creating design and specification</li>
-              <li>Field supervision</li>
-            </ol>
-          </Text>
+
           <ArticleFigure figcaption="Code editor">
             <Image
               src="/works/drugcode/code.png"
@@ -126,7 +111,7 @@ export default function Drugcode() {
             <p className="text-xl">
               After basic research and creation of a proposal, We take out the
               styles, making a templates and prepare the specification.{" "}
-              <Link href="" className="text-ylightblue">
+              <Link href="" className="ylink">
                 Material design
               </Link>{" "}
               is taken as the basis.
