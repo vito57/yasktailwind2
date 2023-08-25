@@ -28,7 +28,7 @@ export default function WorksLayout({
           <Jumbo />
         </div>
       </header>
-      <nav className=" z-20 text-center mb-10 top-8">
+      <nav className="sticky z-10 text-center mb-10 top-8">
         <Tabs datas={data} className="bg-yask text-white" />
       </nav>
       {children}
