@@ -48,7 +48,7 @@ export function Section({ children, className, id }: SectionProps) {
 }
 export function TopMenu() {
   return (
-    <div className="container z-20 px-4 justify-end content-center flex space-x-4 sticky top-8">
+    <div className="z-21 px-4 items-center justify-end  flex space-x-4 sticky top-8">
       <Button path="/">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
@@ -79,7 +79,7 @@ export function Button({ children, path }: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className="text-sm font-medium outline outline-2 outline-[#CBEA6E] transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
+      className="text-sm block font-medium outline outline-2 outline-[#CBEA6E] transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
     >
       {children}
     </Link>

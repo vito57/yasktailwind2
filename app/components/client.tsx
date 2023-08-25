@@ -52,7 +52,7 @@ interface TabsProps {
 }
 export function Tabs({ datas, className }: TabsProps) {
   const pathname = usePathname();
-  const cl = `${className} gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`;
+  const cl = `${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`;
   return (
     <menu className={cl}>
       {datas.map((link: { name: string; href: string }) => {

@@ -14,10 +14,10 @@ export default function WorksLayout({
     { name: "About", href: "/about" },
   ];
   return (
-    <>
+    <div className="container">
       <TopMenu />
       <header id="header" className="container">
-        <hgroup className="text-center ">
+        <div className="text-center ">
           <Image
             className="inline-block mb-6 "
             src="yask-logo.svg"
@@ -26,13 +26,13 @@ export default function WorksLayout({
             alt="Yask Design"
           />
           <Jumbo />
-        </hgroup>
+        </div>
       </header>
-      <nav className="container z-10 text-center mb-10 sticky top-8">
+      <nav className=" z-20 text-center mb-10 top-8">
         <Tabs datas={data} className="bg-yask text-white" />
       </nav>
-      <div className="container">{children}</div>
+      {children}
       <Footer />
-    </>
+    </div>
   );
 }

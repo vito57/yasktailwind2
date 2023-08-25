@@ -35,6 +35,7 @@ export default async function Feed() {
           {data.map((i: any) =>
             i.tags.includes("portfolio") ? (
               <FeedItem
+                key={i.id}
                 imageSrc={i.images.hidpi}
                 imageAlt={i.title}
                 href={i.html_url}
