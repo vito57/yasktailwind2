@@ -6,7 +6,7 @@ export default function WorkLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className=" bg-black text-[#C2D2FF]">
       <ArticleTopMenu title="Drugcode editor design" />
       {children}
       <div className="container px-4">
@@ -27,6 +27,6 @@ export default function WorkLayout({
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

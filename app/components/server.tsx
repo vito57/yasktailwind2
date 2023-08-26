@@ -88,11 +88,12 @@ export function Button({ children, path }: ButtonProps) {
 //BADGE
 interface BadgeProps {
   className?: string;
+
   children: React.ReactNode;
 }
-export function Badge({ children, className }: BadgeProps) {
+export function Badge({ children }: BadgeProps) {
   return (
-    <span className="bg-ygrey text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
+    <span className="bg-ygrey relative text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
       {children}
     </span>
   );

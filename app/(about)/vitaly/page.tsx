@@ -34,8 +34,10 @@ export default function Vito() {
           <Badge>Illustrator</Badge>
           <Badge>Blender</Badge>
           <Badge>Cinema 4D</Badge>
+          <Badge>D3js</Badge>
         </div>
       </Text>
+
       <Text title="Experience" subtitle="Total experience — 11 years">
         <dl className="mb-8 text-xl">
           <dt className="font-medium">

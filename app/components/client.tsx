@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { Interface } from "readline";
 
 //AnimatedLayout
@@ -34,6 +34,12 @@ export function BgColor() {
       }
     `}</style>
   );
+}
+
+export function BodyClass() {
+  useEffect(() => {
+    console.log("in useEffect");
+  });
 }
 //Jumbotrone
 export function Jumbo() {
@@ -66,7 +72,7 @@ export function Tabs({ datas, className }: TabsProps) {
               {isActive && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute rounded-[10px] inset-0 z-1 bg-yred "
+                  className="absolute rounded-[10px]  inset-0 z-1 bg-ylime mix-blend-difference "
                 ></motion.span>
               )}
               {link.name}

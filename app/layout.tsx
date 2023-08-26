@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Inter } from "@next/font/google";
-import { BgColor } from "./components/client";
+import { Providers } from "./components/providers";
+import ThemeSwitch from "./components/ts";
 export const metadata = {
   title: "Yask design",
   description: "Web and app design",
@@ -18,8 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body className={process.env.defClass} suppressHydrationWarning={true}>
-        {children}
+      <body suppressHydrationWarning={true}>
+        <Providers>
+          <ThemeSwitch />
+          {children}
+        </Providers>
       </body>
     </html>
   );
