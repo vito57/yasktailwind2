@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import { Inter } from "@next/font/google";
-import { Providers } from "./components/providers";
-import ThemeSwitch from "./components/ts";
+
 export const metadata = {
   title: "Yask design",
   description: "Web and app design",
@@ -11,7 +10,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 // END FONT
-//process.env.defClass = "text-yask bg-white";
+
 export default function RootLayout({
   children,
 }: {
@@ -19,11 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body suppressHydrationWarning={true}>
-        <Providers>
-          <ThemeSwitch />
-          {children}
-        </Providers>
+      <body
+        className="text-yask dark:text-yred"
+        suppressHydrationWarning={true}
+      >
+        {children}
       </body>
     </html>
   );

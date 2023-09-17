@@ -7,7 +7,7 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   return (
     <div
-      className={`$className container z-20 px-4 flex justify-between sticky top-8 my-8`}
+      className={`$className container bg-white/90  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-8`}
     >
       <div className="flex gap-8 items-center">
         <Image
@@ -79,7 +79,7 @@ export function Button({ children, path }: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className="text-sm inline-block font-medium outline outline-2 outline-[#CBEA6E] transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
+      className="text-sm inline-block font-medium transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
     >
       {children}
     </Link>
@@ -300,12 +300,9 @@ export function FeedItem({
           className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
           alt={imageAlt}
         />
-        <Link
-          href=""
-          className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all"
-        >
+        <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all">
           View on Dribbble
-        </Link>
+        </span>
       </figure>
     </Link>
   );

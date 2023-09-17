@@ -4,11 +4,6 @@ import { AnimateLayout } from "../../components/client";
 const accessToken =
   "3606dd45845aa61e5b25cd844cbe0dec4e53fe3255009a6a24d97f875ccfaa30";
 import { FeedItem } from "@/app/components/server";
-// export default function Feed(){
-//     return(
-//         <h1>sad</h1>
-//     )
-// }
 
 async function getData() {
   const res = await fetch(
@@ -30,21 +25,19 @@ export default async function Feed() {
 
   return (
     <AnimateLayout>
-      <div className="container">
-        <div className="grid gap-x-8 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
-          {data.map((i: any) =>
-            i.tags.includes("portfolio") ? (
-              <FeedItem
-                key={i.id}
-                imageSrc={i.images.hidpi}
-                imageAlt={i.title}
-                href={i.html_url}
-              />
-            ) : (
-              false
-            )
-          )}
-        </div>
+      <div className="grid gap-x-8 gap-y-6 lg:grid-cols-2 md:grid-cols-2">
+        {data.map((i: any) =>
+          i.tags.includes("portfolio") ? (
+            <FeedItem
+              key={i.id}
+              imageSrc={i.images.hidpi}
+              imageAlt={i.title}
+              href={i.html_url}
+            />
+          ) : (
+            false
+          )
+        )}
       </div>
     </AnimateLayout>
   );

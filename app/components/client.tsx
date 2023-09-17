@@ -44,6 +44,7 @@ export function BodyClass() {
 //Jumbotrone
 export function Jumbo() {
   const pathname = usePathname();
+
   return (
     <h1 className="text-4xl mb-6 text-yask">
       Hi! We {pathname == "/" ? "Do" : "❤️"} Web & App Design,
@@ -72,7 +73,7 @@ export function Tabs({ datas, className }: TabsProps) {
               {isActive && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute rounded-[10px]  inset-0 z-1 bg-ylime mix-blend-difference "
+                  className="absolute rounded-[10px]  inset-0 z-1 bg-white mix-blend-difference "
                 ></motion.span>
               )}
               {link.name}

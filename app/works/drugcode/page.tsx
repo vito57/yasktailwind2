@@ -7,14 +7,14 @@ import {
   ArticleImageSection,
   ArticleHeader,
 } from "../../components/server";
-import ThemeSwitch from "next-themes";
+
 import Image from "next/image";
 import Link from "next/link";
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode design",
 };
-const dark = "true";
+
 export default function Drugcode() {
   return (
     <AnimateLayout>

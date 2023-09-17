@@ -151,7 +151,7 @@ export default function Vito() {
       </Text>
       <Text title="Education">
         <p className="text-xl">
-          Oryol State University of Economics and Trade, Adverising, 2006
+          State University of Economics and Trade, Adverising, Oryol 2006
         </p>
       </Text>
       <Text title="Courses">
@@ -159,13 +159,13 @@ export default function Vito() {
           <li>
             {" "}
             <Link className="text-xl ylink" href="/">
-              Oryol State University of Economics and Trade, Adverising, 2006
+              State University of Economics and Trade, Adverising, Oryol 2006
             </Link>
           </li>
           <li>
             {" "}
             <Link className="text-xl ylink" href="/">
-              Oryol State University of Economics and Trade, Adverising, 2006
+              State University of Economics and Trade, Adverising, Oryol 2006
             </Link>
           </li>
         </ul>

@@ -30,21 +30,7 @@ export default function Flamingo() {
             </p>
           </Text>
         </Section>
-        {/* WORKFOW */}
-        <Section id="workflow" className="mb-8 px-4 container">
-          <Text title="Workflow">
-            <ol className="text-xl list-decimal list-inside">
-              <li>
-                Baseline research (research all systems and it capatabilities)
-              </li>
-              <li>Making a proposal with a list of components and timeline</li>
-              <li>Defining principles</li>
-              <li>Styling</li>
-              <li>Component design</li>
-              <li>Write guidelines</li>
-            </ol>
-          </Text>
-        </Section>
+
         <Section id="styles" className="mb-8 px-4 relative container">
           <Text title="Principles">
             <p className="text-xl">find new features, cteate design system</p>
@@ -59,6 +45,21 @@ export default function Flamingo() {
             ></Image>
             {/* <figcaption>Code editor</figcaption> */}
           </figure>
+        </Section>
+        {/* WORKFOW */}
+        <Section id="workflow" className="mb-8 px-4 container">
+          <Text title="Workflow">
+            <ol className="text-xl list-decimal list-inside">
+              <li>
+                Baseline research (research all systems and it capatabilities)
+              </li>
+              <li>Making a proposal with a list of components and timeline</li>
+              <li>Defining principles</li>
+              <li>Styling</li>
+              <li>Component design</li>
+              <li>Write guidelines</li>
+            </ol>
+          </Text>
         </Section>
         <Section id="priciples" className="mb-8 px-4 relative container">
           <Text title="Principles">
