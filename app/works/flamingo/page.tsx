@@ -37,13 +37,32 @@ export default function Flamingo() {
           </Text>
           <figure className="mb-4">
             <Image
-              src="/works/flamingo/principles.png"
+              src="/works/flamingo/styles.png"
               width={2400}
               height={1200}
               className="rounded"
               alt="Flamingo styles"
             ></Image>
             {/* <figcaption>Code editor</figcaption> */}
+          </figure>
+        </Section>
+
+        <Section id="Guides" className="mb-8 px-4 relative container">
+          <Text title="Guides">
+            <p className="text-xl">
+              My role: UI/UX designer Task: redesign of the existing editor,
+              find new features, cteate design system
+            </p>
+          </Text>
+          <figure className="mb-4">
+            <Image
+              src="/works/flamingo/guides.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Flamingo styles"
+            ></Image>
+            <figcaption>Code editor</figcaption>
           </figure>
         </Section>
         {/* WORKFOW */}
@@ -60,24 +79,6 @@ export default function Flamingo() {
               <li>Write guidelines</li>
             </ol>
           </Text>
-        </Section>
-        <Section id="priciples" className="mb-8 px-4 relative container">
-          <Text title="Principles">
-            <p className="text-xl">
-              My role: UI/UX designer <br /> Task: redesign of the existing
-              editor, find new features, cteate design system
-            </p>
-          </Text>
-          <figure className="mb-4">
-            <Image
-              src="/works/flamingo/principles.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Flamingo styles"
-            ></Image>
-            <figcaption>Code editor</figcaption>
-          </figure>
         </Section>
       </Article>
     </AnimateLayout>

@@ -67,15 +67,17 @@ export function Tabs({ datas, className }: TabsProps) {
         return (
           <li key={link.href}>
             <Link
-              className="px-3 text-sm relative opacity-100  hover:opacity-100 rounded-[10px] transition inline-block py-1.5"
+              className={`px-3 text-sm ${
+                isActive ? "bg-yred" : false
+              } relative opacity-100  hover:opacity-100 rounded-[10px] transition inline-block py-1.5`}
               href={link.href}
             >
-              {isActive && (
+              {/* {isActive && (
                 <motion.span
                   layoutId="underline"
                   className="absolute rounded-[10px]  inset-0 z-1 bg-white mix-blend-difference "
                 ></motion.span>
-              )}
+              )} */}
               {link.name}
             </Link>
           </li>
