@@ -34,11 +34,13 @@ export default function Vito() {
           <Badge>Illustrator</Badge>
           <Badge>Blender</Badge>
           <Badge>Cinema 4D</Badge>
+          <Badge>Spline 3d</Badge>
           <Badge>D3js</Badge>
+          <Badge>Bootstrap/Tailwind</Badge>
         </div>
       </Text>
 
-      <Text title="Experience" subtitle="Total experience — 11 years">
+      <Text title="Experience">
         <dl className="mb-8 text-xl">
           <dt className="font-medium">
             Designer at{" "}
@@ -123,6 +125,23 @@ export default function Vito() {
             SberPortal and mobile phones. Launch of commercial projects based on
             these applications. The Sport app received the Runet Prize 2021
           </dd>
+          <dt className="font-medium">
+            Designer at{" "}
+            <Link href="https://sberdevices.ru/" className="ylink">
+              Yask
+            </Link>
+          </dt>
+
+          <dd className="mb-8">
+            <span>sines 2008</span>
+            <br />
+            Responsible for: scripting, design, flow, testing, systematization,
+            theming and branding.
+            <br />
+            Achievements: launch and development of 3 applications on TV,
+            SberPortal and mobile phones. Launch of commercial projects based on
+            these applications. The Sport app received the Runet Prize 2021
+          </dd>
         </dl>
       </Text>
       <Text title="Projects">
@@ -147,6 +166,14 @@ export default function Vito() {
           <Badge>🏆 Runet Award 2016</Badge>
           <Badge>🏆 Runet Award 2018</Badge>
           <Badge>🏆 Runet Award 2019</Badge>
+        </div>
+      </Text>
+      <Text title="People that inspire me">
+        <div className="flex gap-2">
+          <Badge>Bret Victor</Badge>
+          <Badge>Mike Bostock</Badge>
+          <Badge>Oleg Frolov</Badge>
+          <Badge>Robbie Tilton</Badge>
         </div>
       </Text>
       <Text title="Education">

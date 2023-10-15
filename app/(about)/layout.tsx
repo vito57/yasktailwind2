@@ -26,12 +26,14 @@ export default function AboutLayout({
           alt="Vitaly Yask."
         />
         <h2 className="text-3xl font-bold">Vitaly</h2>
-        <a href="/" className="text-ylightblue">
+        <a href="/" className="ylink">
           vitaly@yask.work
         </a>
       </header>
-      <div className="flex gap-2 items-center justify-center mb-16">
-        <Button path="/">Resume.pdf</Button>
+      <div className="flex gap-2 items-center justify-center sticky z-50 top-2 mb-16">
+        <Button colorClass="bg-ygrey hover:bg-[#C2CBD6]" path="/">
+          Resume.pdf
+        </Button>
         <Link href="https://dribbble.com/yask">
           <Image
             src="dribbble.svg"
@@ -44,6 +46,15 @@ export default function AboutLayout({
         <Link href="https://ui8.net/gala-yask">
           <Image
             src="linkedin.svg"
+            width={40}
+            height={40}
+            className="rounded-full transition-transform hover:scale-105"
+            alt="Yask Dribbble"
+          />
+        </Link>
+        <Link href="https://ui8.net/gala-yask">
+          <Image
+            src="github.svg"
             width={40}
             height={40}
             className="rounded-full transition-transform hover:scale-105"

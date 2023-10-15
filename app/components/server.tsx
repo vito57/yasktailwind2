@@ -73,13 +73,18 @@ export function TopMenu() {
 }
 interface ButtonProps {
   path: string;
+  colorClass?: string;
   children: React.ReactNode;
 }
-export function Button({ children, path }: ButtonProps) {
+export function Button({
+  children,
+  colorClass = "bg-ylime hover:bg-[#CBEA6E]",
+  path,
+}: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className="text-sm inline-block font-medium transition hover:bg-[#CBEA6E] rounded-xl px-3 py-2 bg-ylime text-ylightblue"
+      className={`text-sm inline-block m-0.5 font-medium transition rounded-xl px-3 py-2 text-ylightblue ${colorClass}`}
     >
       {children}
     </Link>
@@ -88,10 +93,10 @@ export function Button({ children, path }: ButtonProps) {
 //BADGE
 interface BadgeProps {
   className?: string;
-
+  href?: string;
   children: React.ReactNode;
 }
-export function Badge({ children }: BadgeProps) {
+export function Badge({ className, href, children }: BadgeProps) {
   return (
     <span className="bg-ygrey relative text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
       {children}
@@ -139,14 +144,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
     </div>
   );
 }
-// interface ArticleDescriptionProps {
-//   //className: string;
-//   children: React.ReactNode;
-// }
-// export function ArticleDescription({ children }: ArticleDescriptionProps) {
-//   return <div className="mx-auto max-w-screen-md">{children}</div>;
-// }
-// WORK
+
 //FOOTER
 export function Footer() {
   return (
