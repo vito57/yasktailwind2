@@ -1,7 +1,8 @@
-import { AnimateLayout } from "../../components/client";
-import { Article, Text } from "../../components/server";
 import {
   Section,
+  AnimateLayout,
+  Article,
+  Text,
   ArticleImageSection,
   ArticleFigure,
 } from "../../components/server";

@@ -1,10 +1,63 @@
-import { Button, Text, Badge, PortfolioItem } from "@/app/components/server";
+import {
+  Button,
+  Text,
+  Badge,
+  PortfolioItem,
+  ArticleTopMenu,
+  Footer,
+} from "@/app/components/server";
 import Link from "next/link";
 import Image from "next/image";
 import data from "../../data.json";
-export default function Vito() {
+export default function Vito({ params }: any) {
   return (
-    <>
+    <div className="container">
+      <ArticleTopMenu title="About us" />
+      <header className="text-center mb-6">
+        <Image
+          className="inline-block mb-2 "
+          src="/about/vitaly.png"
+          width={80}
+          height={80}
+          alt="Vitaly Yask."
+        />
+        <h2 className="text-3xl font-bold">{params.user}</h2>
+        <a href="/" className="ylink">
+          vitaly@yask.work
+        </a>
+      </header>
+      <div className="flex gap-2 items-center justify-center sticky z-50 top-2 mb-16">
+        <Button colorClass="bg-ygrey hover:bg-[#C2CBD6]" path="/">
+          Resume.pdf
+        </Button>
+        <Link href="https://dribbble.com/yask">
+          <Image
+            src="dribbble.svg"
+            width={40}
+            height={40}
+            className="rounded-full transition-transform hover:scale-105"
+            alt="Yask Dribbble"
+          />
+        </Link>
+        <Link href="https://ui8.net/gala-yask">
+          <Image
+            src="linkedin.svg"
+            width={40}
+            height={40}
+            className="rounded-full transition-transform hover:scale-105"
+            alt="Yask Dribbble"
+          />
+        </Link>
+        <Link href="https://ui8.net/gala-yask">
+          <Image
+            src="github.svg"
+            width={40}
+            height={40}
+            className="rounded-full transition-transform hover:scale-105"
+            alt="Yask Dribbble"
+          />
+        </Link>
+      </div>
       <Text title="About">
         <p className="text-xl">
           Designer with 12+ years intensive experience in Interfaces design, web
@@ -197,6 +250,7 @@ export default function Vito() {
           </li>
         </ul>
       </Text>
-    </>
+      <Footer />
+    </div>
   );
 }

@@ -1,6 +1,6 @@
-import { AnimateLayout, BodyClass } from "../../components/client";
 import {
   Article,
+  AnimateLayout,
   Text,
   ArticleFigure,
   Section,

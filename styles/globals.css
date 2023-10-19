@@ -18,3 +18,16 @@ body {
 .ylink-outer {
   @apply text-ylightblue dark:text-slate-800  hover:text-yred transition after:content-['_↗'];
 }
+.animate-fadeIn{
+  animation: fadeIn .3s cubic-bezier(0.4, 0, 0.6, 1);
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

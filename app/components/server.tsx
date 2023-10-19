@@ -306,3 +306,10 @@ export function FeedItem({
   );
 }
 //END FEED ITEM
+//AnimatedLayout
+interface AnimateLayoutProps {
+  children: React.ReactNode;
+}
+export function AnimateLayout({ children }: AnimateLayoutProps) {
+  return <main className="animate-fadeIn">{children}</main>;
+}

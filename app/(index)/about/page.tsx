@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import { AnimateLayout } from "../../components/client";
+import { AnimateLayout } from "../../components/server";
 import { Button } from "../../components/server";
 
 export default function About() {

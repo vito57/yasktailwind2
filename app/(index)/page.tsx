@@ -1,10 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { PortfolioItem } from "../components/server";
-import { Tabs, AnimateLayout } from "../components/client";
-import { Button } from "../components/server";
+import { PortfolioItem, AnimateLayout } from "../components/server";
 import data from "../data.json";
-
 
 export default function Works() {
   return (

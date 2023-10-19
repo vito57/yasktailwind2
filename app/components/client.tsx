@@ -1,46 +1,16 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import type { AppProps } from "next/app";
 import { ReactNode, useState, useEffect } from "react";
-import { Interface } from "readline";
 
 //AnimatedLayout
 interface AnimateLayoutProps {
-  className?: string;
   children: ReactNode;
 }
-export function AnimateLayout({ children, className }: AnimateLayoutProps) {
-  return (
-    <motion.main
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ type: "easeInOut" }}
-      className={className}
-    >
-      {children}
-    </motion.main>
-  );
-}
-//bgcolor
-export function BgColor() {
-  return (
-    <style jsx global>{`
-      body {
-        background-color: black;
-      }
-    `}</style>
-  );
+export function AnimateLayout({ children }: AnimateLayoutProps) {
+  return <main className="animate-fadeIn">{children}</main>;
 }
 
-export function BodyClass() {
-  useEffect(() => {
-    console.log("in useEffect");
-  });
-}
 //Jumbotrone
 export function Jumbo() {
   const pathname = usePathname();
@@ -88,51 +58,3 @@ export function Tabs({ datas, className }: TabsProps) {
 }
 
 //END WORK
-
-//ACCORDEON
-interface AccordeonProps {
-  expanded: boolean;
-  title: string;
-  children: ReactNode;
-  id: string;
-}
-export function Accordeon({ expanded, children, title, id }: AccordeonProps) {
-  const [exp, setExp] = useState(expanded);
-  function toggleState() {
-    setExp(exp ? false : true);
-  }
-  const variants = {
-    open: { height: "auto" },
-    closed: { height: "64px" },
-  };
-  return (
-    <motion.div
-      className="relative overflow-hidden flex  gap-8 mb-8"
-      key="content"
-      id={id}
-      aria-expanded={exp}
-      variants={variants}
-      initial={exp ? "open" : "closed"}
-      animate={exp ? "open" : "closed"}
-    >
-      <button
-        className="text-xl w-3/12 text-left self-baseline  inline-block font-bold"
-        aria-controls={id}
-        aria-expanded={exp}
-        id={`ac-${id}`}
-        onClick={toggleState}
-      >
-        {title}
-      </button>
-
-      <div className="w-9/12" aria-labelledby={`ac-${id}`}>
-        {children}
-      </div>
-      <button
-        aria-expanded={exp}
-        className="aria-expanded:hidden bg-gradient-to-t absolute w-full h-full from-ybg to-transparent"
-        onClick={toggleState}
-      ></button>
-    </motion.div>
-  );
-}

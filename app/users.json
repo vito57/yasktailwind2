@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Vito Yask",
+    "email": "vito@yaskevi.ch",
+    "avatar": "/about/vitaly.jpg",
+    "resume": "/img/drugcode.png",
+    "social": [
+      {
+        "name": "Dribbble",
+        "url": "https://dribbble.com/yask",
+        "image": "dribbble.svg"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "http://localhost:3000/linkedin.svg",
+        "image": "linkedin.svg"
+      },
+      {
+        "name": "Github",
+        "url": "http://localhost:3000/linkedin.svg",
+        "image": "github.svg"
+      }
+    ],
+    "about": "Designer with 12+ years intensive experience in Interfaces design, web and app design, frontend development.",
+    "top skills": [
+      "UI/UX",
+      "Web Dev",
+      "Web Design",
+      "Design Systems",
+      "Material Design",
+      "Apple Guidelines"
+    ],
+    "tools": [
+      "Figma",
+      "Framer",
+      "React",
+      "HTML/CSS/JS",
+      "NextJS",
+      "Framer Motion",
+      "Photoshop",
+      "Origami Studio",
+      "Illustrator",
+      "Blender",
+      "Cinema 4D",
+      "Spline 3d",
+      "D3js",
+      "Bootstrap/Tailwind"
+    ],
+    "expirience": [
+      {
+        "position": "Designer",
+        "place": "SberDevices",
+        "placeLink": "https://sberdevices.ru/",
+        "date": "since 2021",
+        "responcible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achivements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      },
+      {
+        "position": "Designer",
+        "place": "Sber",
+        "placeLink": "https://www.sberbank.com",
+        "date": "since 2021",
+        "responcible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achivements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      }
+    ],
+    "Projects": ""
+  }
+]
