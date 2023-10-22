@@ -1,27 +1,29 @@
 [
   {
-    "name": "Vito Yask",
-    "email": "vito@yaskevi.ch",
+    "name": "Vitaly",
+    "email": "v@yask-design.com",
     "avatar": "/about/vitaly.jpg",
+    "occupation":"Interactive Designer",
     "resume": "/img/drugcode.png",
+    "path": "/vitaly",
     "social": [
       {
         "name": "Dribbble",
         "url": "https://dribbble.com/yask",
-        "image": "dribbble.svg"
+        "image_path": "/dribbble.svg"
       },
       {
         "name": "LinkedIn",
         "url": "http://localhost:3000/linkedin.svg",
-        "image": "linkedin.svg"
+        "image_path": "/linkedin.svg"
       },
       {
         "name": "Github",
         "url": "http://localhost:3000/linkedin.svg",
-        "image": "github.svg"
+        "image_path": "/github.svg"
       }
     ],
-    "about": "Designer with 12+ years intensive experience in Interfaces design, web and app design, frontend development.",
+    "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
     "top skills": [
       "UI/UX",
       "Web Dev",
@@ -46,24 +48,269 @@
       "D3js",
       "Bootstrap/Tailwind"
     ],
-    "expirience": [
+    "experience": [
       {
         "position": "Designer",
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
         "date": "since 2021",
-        "responcible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achivements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
       },
       {
         "position": "Designer",
         "place": "Sber",
         "placeLink": "https://www.sberbank.com",
-        "date": "since 2021",
-        "responcible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achivements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "date": "2019—2021",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      },
+      {
+        "position": "Designer",
+        "place": "PKVS",
+        "placeLink": "https://www.sberbank.com",
+        "date": "2015—2019",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      },
+      {
+        "position": "Designer",
+        "place": "Art. Lebedev Studio",
+        "placeLink": "https://www.sberbank.com",
+        "date": "2013—2015",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      },
+      {
+        "position": "Designer",
+        "place": "Yask",
+        "placeLink": "https://www.sberbank.com",
+        "date": "since 2008",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
       }
     ],
-    "Projects": ""
+    "projects": [
+      {
+        "cover": "/img/drugcode.png",
+        "title": "DrugCode+",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/drugcode"
+      },
+      {
+        "cover": "/img/flamingo3.png",
+        "title": "Flamingo",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/flamingo"
+      },
+      {
+        "cover": "/img/bootsyicons.png",
+        "title": "Bootsy Icons",
+        "by": "Gala",
+        "type": "producer",
+        "path": "/works/bootsyicons"
+      },
+      {
+        "cover": "/img/bootsyduotone.png",
+        "title": "Bootsy Icons Duotone",
+        "by": "Gala",
+        "type": "producer",
+        "path": "/works/bootsyduotone"
+      },
+      {
+        "cover": "/img/karusel.png",
+        "title": "Karusel",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/karusel"
+      },
+      {
+        "cover": "/img/starc.png",
+        "title": "Starc Android",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/starc"
+      },
+      {
+        "cover": "/img/starcios.png",
+        "title": "Starc IOS",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/starc"
+      },
+    
+      {
+        "cover": "/img/domkino.png",
+        "title": "Domkino",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/domkino"
+      },
+      {
+        "cover": "/img/bober.png",
+        "title": "Bober",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/bober"
+      },
+      {
+        "cover": "/img/darlen.png",
+        "title": "Darlen",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/darlen"
+      },
+      {
+        "cover": "/img/poehali.png",
+        "title": "Darlen",
+        "by": "Vitaly",
+        "type": "designer",
+        "path": "/works/poehali"
+      }
+    ],
+    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
+    "education":"B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
+    "courses":["1","2"]
+    
+  },
+  {
+    "name": "Gala",
+    "email": "gala@yask-design.com",
+    "avatar": "/about/gal.png",
+    "occupation":"Icon Designer, Illustrator",
+   
+    "path": "/gala",
+    "social": [
+      {
+        "name": "Dribbble",
+        "url": "https://dribbble.com/yask",
+        "image_path": "/dribbble.svg"
+      },
+      {
+        "name": "UI8",
+        "url": "http://localhost:3000/linkedin.svg",
+        "image_path": "/ui8.svg"
+      }
+    ],
+    "about": "Experienced Icon designer and illustrator",
+    "top skills": [
+      "Icon Systems",
+      "Logo Design",
+      "Icon Design",
+      "Illustration"
+    ],
+    "tools": [
+      "Figma",
+      "Photoshop",  
+      "Illustrator",
+      "Procreate",
+      "Pen and Pencil"
+    
+    ],
+    "experience": [
+
+      {
+        "position": "Designer",
+        "place": "Yask",
+        "placeLink": "https://www.sberbank.com",
+        "date": "since 2020",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      }
+    ],
+    "projects": [
+
+
+      {
+        "cover": "/img/bootsyicons.png",
+        "title": "Bootsy Icons",
+        "by": "Gala",
+        "type": "Designer",
+        "path": "/works/bootsyicons"
+      },
+      {
+        "cover": "/img/bootsyduotone.png",
+        "title": "Bootsy Icons Duotone",
+        "by": "Gala",
+        "type": "Designer",
+        "path": "/works/bootsyduotone"
+      }
+
+
+    ],
+    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
+    "education":"B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
+    "courses":["1","2"]
+    
+  },
+  {
+    "name": "Vera",
+    "email": "vitaly@yask-design.com",
+    "avatar": "/about/ver.png",
+    "occupation":"Junior Designer",
+   
+    "path": "/vera",
+    "social": [
+      {
+        "name": "Dribbble",
+        "url": "https://dribbble.com/yask",
+        "image_path": "/dribbble.svg"
+      },
+      {
+        "name": "Youtube",
+        "url": "https://dribbble.com/yask",
+        "image_path": "/youtube.png"
+      }
+    ],
+    "about": "Artist, Illustrator and Blogger",
+    "top skills": [
+      "Illustrations",
+      "Procreate",
+      "Video",
+      "Blogging"
+
+    ],
+    "tools": [
+      "Procreate",
+      "CupCut",
+      "iPad",
+      "Photoshop"
+
+    ],
+    "experience": [
+
+
+
+      {
+        "position": "Have Fun",
+        "place": "Yask",
+        "placeLink": "https://www.sberbank.com",
+        "date": "since 2020",
+        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+      }
+    ],
+    "projects": [
+      {
+        "cover": "/img/drugcode.png",
+        "title": "Verkavinerka",
+        "by": "Vitaly",
+        "type": "Youtube chanel",
+        "path": "/works/drugcode"
+      },
+      {
+        "cover": "/img/drugcode.png",
+        "title": "DrugCode+",
+        "by": "Vitaly",
+        "type": "Code editor",
+        "path": "/works/drugcode"
+      }
+    ],
+    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
+    "education":"1494 elmentry school, since 2023",
+    "courses":["1","2"]
+    
   }
 ]

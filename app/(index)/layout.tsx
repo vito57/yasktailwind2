@@ -9,9 +9,9 @@ export default function WorksLayout({
   children: React.ReactNode;
 }) {
   const data = [
-    { name: "Works", href: "/" },
-    { name: "Feed", href: "/feed" },
-    { name: "About", href: "/about" },
+    { name: "Works", default:true, title:"Hi! We Do Web & App Design, Icons Sets and Code", href: "/" },
+    { name: "Feed", default:false, title:"Hi! We Love Web & App Design, Icons Sets and Code", href: "/feed" },
+    { name: "About", default:false, title:"Hi! We Feed Web & App Design, Icons Sets and Code", href: "/about" },
   ];
   return (
     <div className="container">
@@ -29,7 +29,7 @@ export default function WorksLayout({
         </div>
       </header>
       <nav className="sticky z-10 text-center mb-10 top-8">
-        <Tabs datas={data} className="bg-yask text-white" />
+        <Tabs datas={data} className="bg-yask dark:bg-red-500 text-white" />
       </nav>
       {children}
       <Footer />

@@ -6,37 +6,39 @@ import {
   Section,
   ArticleImageSection,
   ArticleHeader,
-} from "../../components/server";
 
+} from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata = {
   title: "Drugcode - Code editor design",
-  description: "Story about Drugcode design",
+  description: "Story about Drugcode editor design",
 };
 
-export default function Drugcode() {
+const Page = () => {
   return (
-    <AnimateLayout>
+    <AnimateLayout>     
       <Article className="relative">
         <ArticleHeader>
+        <ArticleFigure >
           <Image
-            src="/works/drugcode/cover3.png"
+            src="/works/drugcode/cover.png"
             width={2240}
             height={832}
             className="w-full mb-8 rounded"
             alt="Drugcode"
           />
+           </ArticleFigure >
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p className="text-xl">
               Redesign of the existing editor, find new features, cteate design
-              system
+              system. 
             </p>
           </Text>
 
-          <ArticleFigure figcaption="Code editor">
+          <ArticleFigure >
             <Image
               src="/works/drugcode/code.png"
               width={1600}
@@ -45,9 +47,14 @@ export default function Drugcode() {
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
-          <ArticleFigure figcaption="Node editor">
+          <Text title="">
+            <p className="text-xl">
+              Code editor baced on Monaco editor with all features. Any code have 2 representation view - as text and as node. Node functionality is useful for designer and management
+            </p>
+          </Text>
+          <ArticleFigure >
             <Image
-              src="/works/drugcode/node.png"
+              src="/works/drugcode/node-editor.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -61,34 +68,35 @@ export default function Drugcode() {
               system theming (dark and light theme).
             </p>
           </Text>
-          <ArticleFigure figcaption="Light theme">
+          <ArticleFigure >
             <Image
-              src="/works/drugcode/node-editor-light.png"
+              src="/works/drugcode/node.png"
               width={1600}
               height={1200}
-              className=" rounded"
+              className="rounded"
               alt="Drugcode ui"
-            />
+            ></Image>
+          </ArticleFigure>
+          <ArticleFigure >
+            <Image
+              src="/works/drugcode/viewer.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+          </ArticleFigure>
+          <ArticleFigure >
+            <Image
+              src="/works/drugcode/overview.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
           </ArticleFigure>
         </Section>
-        {/* WORKFOW */}
-        <Section id="workflow" className="mb-8 px-4 container">
-          <Text title="Workflow">
-            <ol className="text-xl list-decimal list-inside">
-              <li>
-                Baseline research (Interview, Interview in context,
-                observations)
-              </li>
-              <li>
-                Making a <span className="font-medium">proposal</span> of new
-                features and improvements
-              </li>
-              <li>Prototyping</li>
-              <li>Creating design and specification</li>
-              <li>Field supervision</li>
-            </ol>
-          </Text>
-        </Section>
+
         {/* BRANDING */}
 
         <Section id="branding" className="mb-8 px-4 container">
@@ -117,7 +125,7 @@ export default function Drugcode() {
               is taken as the basis.
             </p>
           </Text>
-          <ArticleFigure figcaption="UI kit">
+          <ArticleFigure>
             <Image
               src="/works/drugcode/ui.png"
               width={1600}
@@ -136,7 +144,15 @@ export default function Drugcode() {
               caption: "Template structure",
             }}
           />
-
+          <ArticleFigure>
+            <Image
+              src="/works/drugcode/preview.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+          </ArticleFigure>
           <Text title="">
             <p className="text-xl">
               We follow the pattern Template / Region / Component / Element and
@@ -191,7 +207,27 @@ export default function Drugcode() {
             }}
           />
         </Section>
+        {/* WORKFOW */}
+        <Section id="workflow" className="mb-8 px-4 container">
+          <Text title="Workflow">
+            <ol className="text-xl list-decimal list-inside">
+              <li>
+                Baseline research (Interview, Interview in context,
+                observations)
+              </li>
+              <li>
+                Making a proposal of new
+                features and improvements
+              </li>
+              <li>Prototyping</li>
+              <li>Creating design and specification</li>
+              <li>Field supervision</li>
+            </ol>
+          </Text>
+        </Section>
       </Article>
     </AnimateLayout>
   );
 }
+
+export default Page;

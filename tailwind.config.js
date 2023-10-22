@@ -86,7 +86,8 @@ module.exports = {
         ylightblue: "#080BD0",
         yred: "#FF2423",
         ylime: "#D6F47C",
-        ygrey:"#CFD6DF"
+        ygrey:"#CFD6DF",
+        ytextdark:"C2D2FF",
       },
     },
   },

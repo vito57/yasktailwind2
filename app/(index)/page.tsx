@@ -1,5 +1,5 @@
 import { PortfolioItem, AnimateLayout } from "../components/server";
-import data from "../data.json";
+import data from "../works.json";
 
 export default function Works() {
   return (

@@ -7,9 +7,10 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   return (
     <div
-      className={`$className container bg-white/90  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-8`}
+      className="container bg-white/90  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4"
     >
       <div className="flex gap-8 items-center">
+        <Link href="/">
         <Image
           src="/yask-logo.svg"
           width={40}
@@ -17,18 +18,20 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
           className="dark:fill-slate-50"
           alt="Yask"
         />
+        </Link>
         <span className="font-bold">{title}</span>
       </div>
       <div className="flex gap-8 items-center">
         <Link href="/" className="hover:text-yred transition">
           Works
         </Link>
-        <Link href="/about" className="hover:text-yred transition">
-          About
-        </Link>
         <Link href="/feed" className="hover:text-yred transition">
           Feed
         </Link>
+        <Link href="/about" className="hover:text-yred transition">
+          About
+        </Link>
+
         <Button path="/">Send email</Button>
       </div>
     </div>
@@ -192,7 +195,7 @@ interface TextProps {
 }
 export function Text({ title, subtitle, children }: TextProps) {
   return (
-    <div className="flex gap-8 mb-8">
+    <div className="flex gap-8 mb-10">
       <div className=" w-3/12 ">
         <p className="text-xl font-medium">{title}</p>
         {subtitle ? <p>{subtitle}</p> : false}
@@ -233,7 +236,7 @@ export function PortfolioItem({
           />
         </div>
 
-        <figcaption className="flex text-sm  group-hover/item:text-ylightblue transition py-0.5 justify-between text-yask">
+        <figcaption className="flex text-sm  group-hover/item:text-ylightblue dark:text-ygrey transition py-0.5 justify-between text-yask">
           <span>{title}</span>
           <span>{type}</span>
         </figcaption>
@@ -249,10 +252,9 @@ interface ArticleFigureProps {
 }
 export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
-    <figure className="mb-8">
+    <figure className="mb-8 dark:bg-zinc-700">
       {children}
-
-      <figcaption>{figcaption}</figcaption>
+     {figcaption && <figcaption>{figcaption}</figcaption>}
     </figure>
   );
 }
@@ -263,7 +265,7 @@ interface ActicleHeaderProps {
 }
 export function ArticleHeader({ children }: ActicleHeaderProps) {
   return (
-    <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
+    <header id="intro" className="mb-8 pt-[128px]  reletive mt-[-128px] ">
       <div className="container px-4">{children}</div>
     </header>
   );

@@ -1,8 +1,21 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { Button } from "./server";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { ReactNode, useState, useEffect } from "react";
 
+
+//Background color
+interface BodyColorProps {
+  children: React.ReactNode;
+}
+export function BodyColor({ children }: BodyColorProps){
+  const pathname = usePathname();
+  const dark = ["/works/drugcode"];
+  const colorClass = (dark.includes(pathname) ) ? "dark bg-black text-ygrey" : "light text-yask";
+  return <body className={colorClass}>{children}</body>
+}
 //AnimatedLayout
 interface AnimateLayoutProps {
   children: ReactNode;
@@ -10,13 +23,50 @@ interface AnimateLayoutProps {
 export function AnimateLayout({ children }: AnimateLayoutProps) {
   return <main className="animate-fadeIn">{children}</main>;
 }
+//Article top menu
+interface ArticleTopMenuProps {
 
+  className?: string;
+}
+export function ArticleTopMenu({  className }: ArticleTopMenuProps) {
+  const pathname = useSelectedLayoutSegment();
+  return (
+    <div
+      className="container bg-white/90 dark:bg-black/80  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4"
+    >
+      <div className="flex gap-8 items-center">
+        <Link href="/">
+        <Image
+          src="/yask-logo.svg"
+          width={40}
+          height={40}     
+          alt="Yask"
+        />
+        </Link>
+        <span className="font-bold capitalize">{pathname}</span>
+      </div>
+      <div className="flex gap-8 items-center">
+        <Link href="/" className="hover:text-yred transition">
+          Works
+        </Link>
+        <Link href="/feed" className="hover:text-yred transition">
+          Feed
+        </Link>
+        <Link href="/about" className="hover:text-yred transition">
+          About
+        </Link>
+
+        <Button path="/">Send email</Button>
+      </div>
+    </div>
+  );
+} 
 //Jumbotrone
 export function Jumbo() {
   const pathname = usePathname();
 
   return (
-    <h1 className="text-4xl mb-6 text-yask">
+    <h1 className="text-4xl mb-6 text-yask animate-fadeIn">
       Hi! We {pathname == "/" ? "Do" : "❤️"} Web & App Design,
       <br /> Icons Sets and Code
     </h1>
