@@ -3,7 +3,10 @@ import { AnimateLayout } from "../../components/server";
 // Set the Access Token
 
 import { FeedItem } from "@/app/components/server";
-
+export const metadata = {
+  title: "Design Feed",
+  description: "Design feed",
+};
 async function getData() {
   const res = await fetch(
     `https://api.dribbble.com/v2/user/shots?access_token=${process.env.DRIBBBLE}&per_page=100`

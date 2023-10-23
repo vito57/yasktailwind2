@@ -5,16 +5,18 @@ import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { ReactNode, useState, useEffect } from "react";
 
-
-//Background color
+//Background color. No theming
 interface BodyColorProps {
   children: React.ReactNode;
 }
-export function BodyColor({ children }: BodyColorProps){
+export function BodyColor({ children }: BodyColorProps) {
   const pathname = usePathname();
+  //array of pages that must have dark theme
   const dark = ["/works/drugcode"];
-  const colorClass = (dark.includes(pathname) ) ? "dark bg-black text-ygrey" : "light text-yask";
-  return <body className={colorClass}>{children}</body>
+  const colorClass = dark.includes(pathname)
+    ? "dark bg-black text-ygrey"
+    : "light text-yask";
+  return <body className={colorClass}>{children}</body>;
 }
 //AnimatedLayout
 interface AnimateLayoutProps {
@@ -25,23 +27,15 @@ export function AnimateLayout({ children }: AnimateLayoutProps) {
 }
 //Article top menu
 interface ArticleTopMenuProps {
-
   className?: string;
 }
-export function ArticleTopMenu({  className }: ArticleTopMenuProps) {
+export function ArticleTopMenu({ className }: ArticleTopMenuProps) {
   const pathname = useSelectedLayoutSegment();
   return (
-    <div
-      className="container bg-white/90 dark:bg-black/80  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4"
-    >
+    <div className="container bg-white/90 dark:bg-black/80  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4">
       <div className="flex gap-8 items-center">
         <Link href="/">
-        <Image
-          src="/yask-logo.svg"
-          width={40}
-          height={40}     
-          alt="Yask"
-        />
+          <Image src="/yask-logo.svg" width={40} height={40} alt="Yask" />
         </Link>
         <span className="font-bold capitalize">{pathname}</span>
       </div>
@@ -60,15 +54,21 @@ export function ArticleTopMenu({  className }: ArticleTopMenuProps) {
       </div>
     </div>
   );
-} 
+}
 //Jumbotrone
-export function Jumbo() {
+interface JumboProps {
+  datas?: any;
+}
+export function Jumbo({ datas }: JumboProps) {
   const pathname = usePathname();
+  const title = datas.find((i: any) => i.href === pathname);
 
   return (
-    <h1 className="text-4xl mb-6 text-yask animate-fadeIn">
-      Hi! We {pathname == "/" ? "Do" : "❤️"} Web & App Design,
-      <br /> Icons Sets and Code
+    <h1
+      key={pathname}
+      className="text-4xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
+    >
+      {title.title}
     </h1>
   );
 }
@@ -93,10 +93,10 @@ export function Tabs({ datas, className }: TabsProps) {
               href={link.href}
             >
               {/* {isActive && (
-                <motion.span
-                  layoutId="underline"
+                <span
+                  //layoutId="underline"
                   className="absolute rounded-[10px]  inset-0 z-1 bg-white mix-blend-difference "
-                ></motion.span>
+                ></span>
               )} */}
               {link.name}
             </Link>

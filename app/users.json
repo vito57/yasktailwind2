@@ -1,10 +1,11 @@
 [
   {
     "name": "Vitaly",
-    "email": "v@yask-design.com",
+    "email": "yask@yask-design.com",
     "avatar": "/about/vitaly.jpg",
-    "occupation":"Interactive Designer",
+    "occupation": "Interactive Designer",
     "resume": "/img/drugcode.png",
+    "tagline": "Hi! I can help with design systems, banners, landings & coding.",
     "path": "/vitaly",
     "social": [
       {
@@ -28,6 +29,7 @@
       "UI/UX",
       "Web Dev",
       "Web Design",
+      "Open Source",
       "Design Systems",
       "Material Design",
       "Apple Guidelines"
@@ -54,24 +56,24 @@
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
         "date": "since 2021",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "content creation, virtual assistant skills, scripting, design, flow, testing, systematization, theming and branding.",
+        "achievements": "launch and development of the skill News, Sports, Magazine. Launching commercial projects based on skills. Runet Prize 2021"
       },
       {
         "position": "Designer",
         "place": "Sber",
         "placeLink": "https://www.sberbank.com",
         "date": "2019—2021",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "a) systematization of the design process (design system), writing guidelines, implementation and development of components (IOS, Android, Web), internal team processes (review, design supervision, etc., creation and implementation); b) DrugCode - a platform for creating micro-applications in Sberdrug. Design, systematization, flow, processes.",
+        "achievements": "a) Creation of a design system, systematization of the design process, implementation and description of the review process and the principles and metrics of the team’s work; b) Implementation of a component system in DrugCode, quality control, review of micro-applications from third-party developers, collection of information and addition to the library of components (IOS, Android, Web)."
       },
       {
         "position": "Designer",
         "place": "PKVS",
         "placeLink": "https://www.sberbank.com",
         "date": "2015—2019",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "user interaction design and interface design, responsive web design, front-end development, graphic design.",
+        "achievements": " design ans front-end of karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru(Runet Award 2019), kanal-o.ru, poehali.tv, и etc."
       },
       {
         "position": "Designer",
@@ -140,7 +142,7 @@
         "type": "designer",
         "path": "/works/starc"
       },
-    
+
       {
         "cover": "/img/domkino.png",
         "title": "Domkino",
@@ -170,17 +172,23 @@
         "path": "/works/poehali"
       }
     ],
-    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
-    "education":"B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses":["1","2"]
-    
+    "awards": [
+      "Runet Award 2015",
+      "Runet Award 2016",
+      "Runet Award 2018",
+      "Runet Award 2021"
+    ],
+    "people": ["Ton Roosendaal", "Bret Voctor", "Mike Bostock", "Steve"],
+    "education": "B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
+    "courses": ["1", "2"]
   },
   {
     "name": "Gala",
-    "email": "gala@yask-design.com",
+    "email": "yask@yask-design.com",
     "avatar": "/about/gal.png",
-    "occupation":"Icon Designer, Illustrator",
-   
+    "occupation": "Icon Designer, Illustrator",
+    "resume": null,
+    "tagline": "Hi! I can help with logo design, illustrations, icon systems.",
     "path": "/gala",
     "social": [
       {
@@ -203,14 +211,12 @@
     ],
     "tools": [
       "Figma",
-      "Photoshop",  
+      "Photoshop",
       "Illustrator",
       "Procreate",
       "Pen and Pencil"
-    
     ],
     "experience": [
-
       {
         "position": "Designer",
         "place": "Yask",
@@ -221,8 +227,6 @@
       }
     ],
     "projects": [
-
-
       {
         "cover": "/img/bootsyicons.png",
         "title": "Bootsy Icons",
@@ -237,20 +241,23 @@
         "type": "Designer",
         "path": "/works/bootsyduotone"
       }
-
-
     ],
-    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
-    "education":"B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses":["1","2"]
-    
+    "awards": [
+      "Runet Award 2015",
+      "Runet Award 2016",
+      "Runet Award 2018",
+      "Runet Award 2021"
+    ],
+    "education": "B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
+    "courses": ["1", "2"]
   },
   {
     "name": "Vera",
-    "email": "vitaly@yask-design.com",
+    "email": "yask@yask-design.com",
     "avatar": "/about/ver.png",
-    "occupation":"Junior Designer",
-   
+    "occupation": "Junior Designer",
+    "resume": null,
+    "tagline": "Hi! I can help with ideas, concepts and illustrations.",
     "path": "/vera",
     "social": [
       {
@@ -265,24 +272,9 @@
       }
     ],
     "about": "Artist, Illustrator and Blogger",
-    "top skills": [
-      "Illustrations",
-      "Procreate",
-      "Video",
-      "Blogging"
-
-    ],
-    "tools": [
-      "Procreate",
-      "CupCut",
-      "iPad",
-      "Photoshop"
-
-    ],
+    "top skills": ["Illustrations", "Procreate", "Video", "Blogging"],
+    "tools": ["Procreate", "CapCut", "iPad", "Photoshop"],
     "experience": [
-
-
-
       {
         "position": "Have Fun",
         "place": "Yask",
@@ -308,9 +300,13 @@
         "path": "/works/drugcode"
       }
     ],
-    "awards":["Runet Award 2015","Runet Award 2016", "Runet Award 2018", "Runet Award 2021"],
-    "education":"1494 elmentry school, since 2023",
-    "courses":["1","2"]
-    
+    "awards": [
+      "Runet Award 2015",
+      "Runet Award 2016",
+      "Runet Award 2018",
+      "Runet Award 2021"
+    ],
+    "education": "1494 elmentry school, since 2023",
+    "courses": ["1", "2"]
   }
 ]

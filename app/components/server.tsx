@@ -4,20 +4,19 @@ interface ArticleTopMenuProps {
   title?: string;
   className?: string;
 }
+import users from "../users.json";
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   return (
-    <div
-      className="container bg-white/90  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4"
-    >
+    <div className="container bg-white/90  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
       <div className="flex gap-8 items-center">
         <Link href="/">
-        <Image
-          src="/yask-logo.svg"
-          width={40}
-          height={40}
-          className="dark:fill-slate-50"
-          alt="Yask"
-        />
+          <Image
+            src="/yask-logo.svg"
+            width={40}
+            height={40}
+            className="dark:fill-slate-50"
+            alt="Yask"
+          />
         </Link>
         <span className="font-bold">{title}</span>
       </div>
@@ -152,7 +151,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 export function Footer() {
   return (
     <p className="text-sm container text-center mt-8 mb-8">
-      Copyright © 2023 Yaskevich. <br /> Thanks:{" "}
+      Copyright © 2023 Yaskevich. v@yask-design.com <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="text-ylightblue">
         React
       </Link>
@@ -254,7 +253,7 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
     <figure className="mb-8 dark:bg-zinc-700">
       {children}
-     {figcaption && <figcaption>{figcaption}</figcaption>}
+      {figcaption && <figcaption>{figcaption}</figcaption>}
     </figure>
   );
 }

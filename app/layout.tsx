@@ -1,21 +1,21 @@
 import "../styles/globals.css";
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 import { Inter } from "@next/font/google";
 import { BodyColor } from "./components/client";
 export const metadata: Metadata = {
   // metadataBase: new URL('https://yask-design.github.io'),
   title: {
-    default: 'Yask Design',
-    template: '%s | Yask Design',
+    default: "Yask Design",
+    template: "%s | Yask Design",
   },
-  description: 'Web and App design, icon sets and code.',
+  description: "Web and App design, icon sets and code.",
   openGraph: {
-    title: 'Yask Design',
-    description: 'Web and App design, icon sets and code.',
-    url: '',
-    siteName: 'Yask Design',
-    locale: 'en_US',
-    type: 'website',
+    title: "Yask Design",
+    description: "Web and App design, icon sets and code.",
+    url: "",
+    siteName: "Yask Design",
+    locale: "en_US",
+    type: "website",
   },
   // robots: {
   //   index: true,
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   //   },
   // },
   twitter: {
-    title: 'Yask Design',
-    card: 'summary_large_image',
+    title: "Yask Design",
+    card: "summary_large_image",
   },
   // verification: {
   //   google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
@@ -48,16 +48,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-    <html lang="en" suppressHydrationWarning={true} className={`${inter.variable}`}>
-     
-   <BodyColor>
-  
-            {children}
-            </BodyColor> 
-     
-     
+    <html
+      lang="en"
+      suppressHydrationWarning={true}
+      className={`${inter.variable}`}
+    >
+      <BodyColor>{children}</BodyColor>
     </html>
   );
 }

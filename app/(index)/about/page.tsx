@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { Button, AnimateLayout } from "../../components/server";
 import users from "../../users.json";
-export default function About() {
 
+export const metadata = {
+  title: "About us",
+  description: "We are the People who care about People",
+};
+
+export default function About() {
   return (
     <AnimateLayout>
       <div className="grid gap-x-8 gap-y-6 grid-cols-3">
