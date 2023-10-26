@@ -32,7 +32,7 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ className }: ArticleTopMenuProps) {
   const pathname = useSelectedLayoutSegment();
   return (
-    <div className="container bg-white/90 dark:bg-black/80  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4">
+    <div className="container bg-white/90 rounded-full dark:bg-black/80  backdrop-blur-xl z-20 px-4 py-2 flex justify-between sticky top-0 my-4">
       <div className="flex gap-8 items-center">
         <Link href="/">
           <Image src="/yask-logo.svg" width={40} height={40} alt="Yask" />

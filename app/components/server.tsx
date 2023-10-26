@@ -7,16 +7,10 @@ interface ArticleTopMenuProps {
 import users from "../users.json";
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   return (
-    <div className="container bg-white/90  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
+    <div className="container bg-white/90 rounded-full  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
       <div className="flex gap-8 items-center">
         <Link href="/">
-          <Image
-            src="/yask-logo.svg"
-            width={40}
-            height={40}
-            className="dark:fill-slate-50"
-            alt="Yask"
-          />
+          <Image src="/yask-logo.svg" width={40} height={40} alt="Yask" />
         </Link>
         <span className="font-bold">{title}</span>
       </div>
@@ -260,11 +254,15 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
 //END ARTICLE IMAGE
 //ARTICLE HEADER
 interface ActicleHeaderProps {
+  className?: string;
   children: React.ReactNode;
 }
-export function ArticleHeader({ children }: ActicleHeaderProps) {
+export function ArticleHeader({ className, children }: ActicleHeaderProps) {
   return (
-    <header id="intro" className="mb-8 pt-[128px]  reletive mt-[-128px] ">
+    <header
+      id="intro"
+      className={`mb-8 pt-[128px] reletive mt-[-128px] ${className}`}
+    >
       <div className="container px-4">{children}</div>
     </header>
   );

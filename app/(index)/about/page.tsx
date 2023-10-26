@@ -4,7 +4,7 @@ import users from "../../users.json";
 
 export const metadata = {
   title: "About us",
-  description: "We are the People who care about People",
+  description: "We design websites and apps",
 };
 
 export default function About() {
