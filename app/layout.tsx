@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import { BodyColor } from "./components/client";
 export const metadata: Metadata = {
   // metadataBase: new URL('https://yask-design.github.io'),

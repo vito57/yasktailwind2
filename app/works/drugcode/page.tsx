@@ -36,26 +36,9 @@ const Page = () => {
               system.
             </p>
           </Text>
-
           <ArticleFigure>
             <Image
-              src="/works/drugcode/code.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Drugcode ui"
-            ></Image>
-          </ArticleFigure>
-          <Text title="">
-            <p className="text-xl">
-              Code editor baced on Monaco editor with all features. Any code
-              have 2 representation, as text and as node. Node functionality is
-              useful for designer and management
-            </p>
-          </Text>
-          <ArticleFigure>
-            <Image
-              src="/works/drugcode/node-editor.png"
+              src="/works/drugcode/node_editor.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -71,7 +54,24 @@ const Page = () => {
           </Text>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/node.png"
+              src="/works/drugcode/code_editor.png"
+              width={1600}
+              height={1200}
+              className="rounded"
+              alt="Drugcode ui"
+            ></Image>
+          </ArticleFigure>
+          <Text title="">
+            <p className="text-xl">
+              Code editor baced on Monaco editor with all features. Any code
+              have 2 representation, as text and as node. Node functionality is
+              useful for designer and management
+            </p>
+          </Text>
+
+          <ArticleFigure>
+            <Image
+              src="/works/drugcode/file_system.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -80,14 +80,14 @@ const Page = () => {
           </ArticleFigure>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/viewer.png"
+              src="/works/drugcode/preview.png"
               width={1600}
               height={1200}
               className="rounded"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <Image
               src="/works/drugcode/overview.png"
               width={1600}
@@ -95,7 +95,7 @@ const Page = () => {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
 
         {/* BRANDING */}
@@ -157,7 +157,7 @@ const Page = () => {
           </Text>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/structure.png"
+              src="/works/drugcode/overview.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -165,7 +165,7 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
 
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <Image
               src="/works/drugcode/layout.png"
               width={1600}
@@ -173,10 +173,16 @@ const Page = () => {
               className="rounded"
               alt="Drugcode ui"
             ></Image>
-          </ArticleFigure>
+          </ArticleFigure> */}
+          <Text title="">
+            <p className="text-xl">
+              Left sidebar - navigation, top - states, right - props, bottom -
+              status, preview - visual edit
+            </p>
+          </Text>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/right_side.png"
+              src="/works/drugcode/letf_side_bar.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -185,7 +191,7 @@ const Page = () => {
           </ArticleFigure>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/menu.png"
+              src="/works/drugcode/right_side_bar.png"
               width={1600}
               height={1200}
               className="rounded"
@@ -201,7 +207,7 @@ const Page = () => {
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <Image
               src="/works/drugcode/node_func.png"
               width={1600}
@@ -209,7 +215,7 @@ const Page = () => {
               className="rounded"
               alt="Functions as nodes"
             ></Image>
-          </ArticleFigure>
+          </ArticleFigure> */}
 
           <Text title="">
             <p className="text-xl">
