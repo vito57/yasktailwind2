@@ -8,7 +8,7 @@ import {
   ArticleHeader,
 } from "../../components/server";
 import Image from "next/image";
-import Link from "next/link";
+
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode editor design",
@@ -18,11 +18,12 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
+        <ArticleHeader className="bg-[#3A404B]">
           <ArticleFigure>
             <Image
               src="/works/drugcode/cover.png"
               width={2240}
+              quality={100}
               height={832}
               className="w-full mb-8 rounded"
               alt="Drugcode"
@@ -41,7 +42,7 @@ const Page = () => {
               src="/works/drugcode/node_editor.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
@@ -57,7 +58,7 @@ const Page = () => {
               src="/works/drugcode/code_editor.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
@@ -68,34 +69,30 @@ const Page = () => {
               useful for designer and management
             </p>
           </Text>
-
           <ArticleFigure>
             <Image
               src="/works/drugcode/file_system.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
+          <Text>
+            <p className="text-xl">
+              Redesign of the existing editor, find new features, cteate design
+              system.
+            </p>
+          </Text>
           <ArticleFigure>
             <Image
-              src="/works/drugcode/preview.png"
+              src="/works/drugcode/node_preview.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
-          {/* <ArticleFigure>
-            <Image
-              src="/works/drugcode/overview.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Drugcode ui"
-            ></Image>
-          </ArticleFigure> */}
         </Section>
 
         {/* BRANDING */}
@@ -114,7 +111,9 @@ const Page = () => {
             }}
           />
         </Section>
+
         {/* UI/UX */}
+
         <Section id="ux" className="mb-8 px-4 container">
           <Text title="UI/UX">
             <p className="text-xl">
@@ -128,7 +127,7 @@ const Page = () => {
               src="/works/drugcode/ui.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
@@ -144,7 +143,7 @@ const Page = () => {
               src="/works/drugcode/style.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
           </ArticleFigure>
@@ -155,25 +154,16 @@ const Page = () => {
               halps to understand each other
             </p>
           </Text>
-          <ArticleFigure>
-            <Image
-              src="/works/drugcode/overview.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Drugcode ui"
-            ></Image>
-          </ArticleFigure>
 
-          {/* <ArticleFigure>
+          <ArticleFigure>
             <Image
               src="/works/drugcode/layout.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Drugcode ui"
             ></Image>
-          </ArticleFigure> */}
+          </ArticleFigure>
           <Text title="">
             <p className="text-xl">
               Left sidebar - navigation, top - states, right - props, bottom -
@@ -185,57 +175,56 @@ const Page = () => {
               src="/works/drugcode/letf_side_bar.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Right sidebar"
             ></Image>
           </ArticleFigure>
+          <Text title="">
+            <p className="text-xl">
+              Collapsible left sidebar, represent file system, with drag and
+              drop functionality. Feature - file can be parsed, and view any
+              block inside a file.
+            </p>
+          </Text>
           <ArticleFigure>
             <Image
               src="/works/drugcode/right_side_bar.png"
               width={1600}
               height={1200}
-              className="rounded"
+              className="bg-zinc-900"
               alt="Right sidebar"
             ></Image>
           </ArticleFigure>
-          <ArticleFigure>
-            <Image
-              src="/works/drugcode/preview.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Drugcode ui"
-            ></Image>
-          </ArticleFigure>
-          {/* <ArticleFigure>
-            <Image
-              src="/works/drugcode/node_func.png"
-              width={1600}
-              height={1200}
-              className="rounded"
-              alt="Functions as nodes"
-            ></Image>
-          </ArticleFigure> */}
-
           <Text title="">
+            <p className="text-xl">
+              The task is to display in an understandable form, props, CSS
+              rules, states, etc. Do not invent new properties, but use the
+              properties provided by the standard(w3c) or library (example
+              D3.js)
+            </p>
             <p className="text-xl">
               You can write CSS values in the fields in any format supported by
               the specification. CSS variables, SASS, LESS, etc. Autocomplete
               works according to specification too.
             </p>
           </Text>
-        </Section>
-        {/* HAVE FUN SECTION */}
-        <Section id="have_fun" className="mb-8 px-4 container">
-          <Text title="Heve some fun">
+          <ArticleFigure>
+            <Image
+              src="/works/drugcode/preview.png"
+              width={1600}
+              height={1200}
+              className="bg-zinc-900"
+              alt="Drugcode ui"
+            ></Image>
+          </ArticleFigure>
+          <Text title="">
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, incidunt! Molestias dolorum quo impedit ipsam
-              deleniti ut praesentium delectus placeat? Cum a porro error
-              eveniet nesciunt, aut vel quos vero.
+              Visual editor and preview. Change colors, add or remove elements,
+              drag, resize, etc.
             </p>
           </Text>
         </Section>
+
         {/* WORKFOW */}
         <Section id="workflow" className="mb-8 px-4 container">
           <Text title="Workflow">
@@ -249,6 +238,12 @@ const Page = () => {
               <li>Creating design and specification</li>
               <li>Field supervision</li>
             </ol>
+          </Text>
+        </Section>
+        {/* HAVE FUN*/}
+        <Section id="have_fun" className="mb-8 px-4 container">
+          <Text title="Heve fun 😊">
+            <p className="text-xl">Nice editor must have copilot)</p>
           </Text>
         </Section>
       </Article>

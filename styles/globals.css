@@ -4,11 +4,9 @@
 
 /* Input */
 .ylink {
-  @apply text-ylightblue dark:text-ytextdark hover:text-yred transition;
+  @apply text-ylightblue dark:text-slate-800 hover:text-yred transition;
 }
-.ylink-outer {
-  @apply text-ylightblue dark:text-slate-800  hover:text-yred transition after:content-['_↗'];
-}
+
 .animate-fadeIn{
   animation: fadeIn .4s cubic-bezier(0.4, 0, 0.6, 1);
 }

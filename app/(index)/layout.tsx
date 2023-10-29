@@ -1,4 +1,4 @@
-import { Tabs, Jumbo } from "../components/client";
+import { Tabs, Jumbo, Logo } from "../components/client";
 import { TopMenu, Footer } from "../components/server";
 import Image from "next/image";
 
@@ -31,7 +31,7 @@ export default function WorksLayout({
         <div className="text-center">
           <Image
             className="inline-block mb-6 "
-            src="yask-logo.svg"
+            src="yask.svg"
             width={64}
             height={64}
             alt="Yask Design"

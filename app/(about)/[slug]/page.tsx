@@ -3,9 +3,9 @@ import {
   Text,
   Badge,
   PortfolioItem,
-  ArticleTopMenu,
   Footer,
 } from "@/app/components/server";
+import { ArticleTopMenu } from "@/app/components/client";
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";

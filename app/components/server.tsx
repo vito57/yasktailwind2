@@ -1,35 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
-interface ArticleTopMenuProps {
-  title?: string;
-  className?: string;
-}
-import users from "../users.json";
-export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
-  return (
-    <div className="container bg-white/90 rounded-full  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
-      <div className="flex gap-8 items-center">
-        <Link href="/">
-          <Image src="/yask-logo.svg" width={40} height={40} alt="Yask" />
-        </Link>
-        <span className="font-bold">{title}</span>
-      </div>
-      <div className="flex gap-8 items-center">
-        <Link href="/" className="hover:text-yred transition">
-          Works
-        </Link>
-        <Link href="/feed" className="hover:text-yred transition">
-          Feed
-        </Link>
-        <Link href="/about" className="hover:text-yred transition">
-          About
-        </Link>
+// interface ArticleTopMenuProps {
+//   title?: string;
+//   className?: string;
+// }
 
-        <Button path="/">Send email</Button>
-      </div>
-    </div>
-  );
-}
+// export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
+//   return (
+//     <div className="container bg-white/90 rounded-full  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
+//       <div className="flex gap-8 items-center">
+//         <Link href="/">
+//           <Image src="/yask.svg" width={40} height={40} alt="Yask" />
+//         </Link>
+//         <span className="font-bold">{title}</span>
+//       </div>
+//       <div className="flex gap-8 items-center">
+//         <Link href="/" className="hover:text-yred transition">
+//           Works
+//         </Link>
+//         <Link href="/feed" className="hover:text-yred transition">
+//           Feed
+//         </Link>
+//         <Link href="/about" className="hover:text-yred transition">
+//           About
+//         </Link>
+//         <Button path="/">Send email</Button>
+//       </div>
+//     </div>
+//   );
+// }
 interface SectionProps {
   className: string;
   id?: string;
@@ -183,15 +182,14 @@ export function Article({ children, className }: ArticleProps) {
 //text block
 interface TextProps {
   title?: string;
-  subtitle?: string;
+
   children: React.ReactNode;
 }
-export function Text({ title, subtitle, children }: TextProps) {
+export function Text({ title, children }: TextProps) {
   return (
     <div className="flex gap-8 mb-10">
       <div className=" w-3/12 ">
-        <p className="text-xl font-medium">{title}</p>
-        {subtitle ? <p>{subtitle}</p> : false}
+        <p className="text-xl dark:text-white font-bold">{title}</p>
       </div>
       <div className=" w-9/12 ">{children}</div>
     </div>
