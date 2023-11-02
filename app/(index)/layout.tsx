@@ -25,12 +25,12 @@ export default function WorksLayout({
     },
   ];
   return (
-    <div className="container">
+    <div className="container px-4">
       <TopMenu />
       <header id="header" className="container">
         <div className="text-center">
           <Image
-            className="inline-block mb-6 "
+            className="inline-block mb-6"
             src="yask.svg"
             width={64}
             height={64}
@@ -39,7 +39,7 @@ export default function WorksLayout({
           <Jumbo datas={data} />
         </div>
       </header>
-      <nav className="sticky z-10 text-center mb-10 top-8">
+      <nav className="sticky z-10 text-center bottom-0 mb-10 top-8">
         <Tabs datas={data} className="bg-yask dark:bg-red-500 text-white" />
       </nav>
       {children}

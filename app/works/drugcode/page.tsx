@@ -6,6 +6,8 @@ import {
   Section,
   ArticleImageSection,
   ArticleHeader,
+  BodyText,
+  BodyImage,
 } from "../../components/server";
 import Image from "next/image";
 
@@ -18,24 +20,22 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[#3A404B]">
+        <ArticleHeader className="bg-[#222225]">
           <ArticleFigure>
             <Image
               src="/works/drugcode/cover.png"
-              width={2240}
-              quality={100}
-              height={832}
-              className="w-full mb-8 rounded"
-              alt="Drugcode"
+              width={1600}
+              height={1200}
+              alt="dssd"
             />
           </ArticleFigure>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
-            <p className="text-xl">
+            <BodyText>
               Redesign of the existing editor, find new features, cteate design
               system.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -47,11 +47,11 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               The editor consists of 2 main modes: code editor and node editor.
               Visual editing is carried out in the preview window. Supports
               system theming (dark and light theme).
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -63,11 +63,11 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               Code editor baced on Monaco editor with all features. Any code
               have 2 representation, as text and as node. Node functionality is
               useful for designer and management
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -79,10 +79,10 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text>
-            <p className="text-xl">
+            <BodyText>
               Redesign of the existing editor, find new features, cteate design
               system.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -99,10 +99,10 @@ const Page = () => {
 
         <Section id="branding" className="mb-8 px-4 container">
           <Text title="Branding">
-            <p className="text-xl">
+            <BodyText>
               The brand allows you to increase consistency and improve external
               communication.
-            </p>
+            </BodyText>
           </Text>
           <ArticleImageSection
             data1={{ src: "/works/drugcode/brand.png" }}
@@ -116,11 +116,11 @@ const Page = () => {
 
         <Section id="ux" className="mb-8 px-4 container">
           <Text title="UI/UX">
-            <p className="text-xl">
+            <BodyText>
               After basic research and creation of a proposal, We take out the
               styles, making a templates and prepare the specification. Material
               design is taken as the basis.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -132,11 +132,11 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               We follow the pattern Template/Region/Component/Element/Modifier.
               A mix of atomic design principles and BEM methodology. More then
               80 components are created.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -148,11 +148,11 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               Understanding how material design works, help to prepare tokens
               for dark and light themes. The same structure in Figma and in Code
               halps to understand each other
-            </p>
+            </BodyText>
           </Text>
 
           <ArticleFigure>
@@ -165,10 +165,10 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               Left sidebar - navigation, top - states, right - props, bottom -
               status, preview - visual edit
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -180,11 +180,11 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               Collapsible left sidebar, represent file system, with drag and
               drop functionality. Feature - file can be parsed, and view any
               block inside a file.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -196,17 +196,17 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               The task is to display in an understandable form, props, CSS
               rules, states, etc. Do not invent new properties, but use the
               properties provided by the standard(w3c) or library (example
               D3.js)
-            </p>
-            <p className="text-xl">
+            </BodyText>
+            <BodyText>
               You can write CSS values in the fields in any format supported by
               the specification. CSS variables, SASS, LESS, etc. Autocomplete
               works according to specification too.
-            </p>
+            </BodyText>
           </Text>
           <ArticleFigure>
             <Image
@@ -218,10 +218,10 @@ const Page = () => {
             ></Image>
           </ArticleFigure>
           <Text title="">
-            <p className="text-xl">
+            <BodyText>
               Visual editor and preview. Change colors, add or remove elements,
               drag, resize, etc.
-            </p>
+            </BodyText>
           </Text>
         </Section>
 
@@ -243,7 +243,7 @@ const Page = () => {
         {/* HAVE FUN*/}
         <Section id="have_fun" className="mb-8 px-4 container">
           <Text title="Heve fun 😊">
-            <p className="text-xl">Nice editor must have copilot)</p>
+            <BodyText>Nice editor must have copilot)</BodyText>
           </Text>
         </Section>
       </Article>

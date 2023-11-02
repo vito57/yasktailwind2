@@ -1,5 +1,12 @@
 [
   {
+    "cover": "/img/iconsaur.png",
+    "title": "Iconsaur",
+    "by": "Gala",
+    "type": "Icon set",
+    "path": "/works/iconsaur"
+  },
+  {
     "cover": "/img/drugcode.png",
     "title": "DrugCode+",
     "by": "Vitaly",

@@ -95,7 +95,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="text-4xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
+      className="lg:text-4xl text-2xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
     >
       {title.title}
     </h1>
@@ -108,9 +108,11 @@ interface TabsProps {
 }
 export function Tabs({ datas, className }: TabsProps) {
   const pathname = usePathname();
-  const cl = `${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`;
+
   return (
-    <menu className={cl}>
+    <menu
+      className={`${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`}
+    >
       {datas.map((link: { name: string; href: string }) => {
         const isActive = pathname.endsWith(link.href);
         return (

@@ -1,34 +1,36 @@
 import Link from "next/link";
 import Image from "next/image";
-// interface ArticleTopMenuProps {
-//   title?: string;
-//   className?: string;
-// }
 
-// export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
-//   return (
-//     <div className="container bg-white/90 rounded-full  backdrop-blur-xl z-20 px-4 py-3 flex justify-between sticky top-0 mt-8 mb-10">
-//       <div className="flex gap-8 items-center">
-//         <Link href="/">
-//           <Image src="/yask.svg" width={40} height={40} alt="Yask" />
-//         </Link>
-//         <span className="font-bold">{title}</span>
-//       </div>
-//       <div className="flex gap-8 items-center">
-//         <Link href="/" className="hover:text-yred transition">
-//           Works
-//         </Link>
-//         <Link href="/feed" className="hover:text-yred transition">
-//           Feed
-//         </Link>
-//         <Link href="/about" className="hover:text-yred transition">
-//           About
-//         </Link>
-//         <Button path="/">Send email</Button>
-//       </div>
-//     </div>
-//   );
-// }
+//Body image
+interface BodyImage {
+  src: string;
+  width?: number;
+  height?: number;
+  className?: string;
+  alt?: string;
+}
+export function BodyImage({
+  src,
+  width = 1600,
+  height = 1200,
+  className = "bg-zinc-900",
+  alt = "yask",
+}: BodyImage) {
+  <Image
+    src={src}
+    width={width}
+    height={height}
+    className={className}
+    alt={alt}
+  ></Image>;
+}
+//Body text
+interface BodyTextProps {
+  children: React.ReactNode;
+}
+export function BodyText({ children }: BodyTextProps) {
+  return <p className="text-xl">{children}</p>;
+}
 interface SectionProps {
   className: string;
   id?: string;
@@ -187,11 +189,11 @@ interface TextProps {
 }
 export function Text({ title, children }: TextProps) {
   return (
-    <div className="flex gap-8 mb-10">
-      <div className=" w-3/12 ">
+    <div className="grid grid-cols-12 gap-8 mb-8">
+      <div className="col-span-3">
         <p className="text-xl dark:text-white font-bold">{title}</p>
       </div>
-      <div className=" w-9/12 ">{children}</div>
+      <div className="col-span-9">{children}</div>
     </div>
   );
 }
@@ -220,9 +222,9 @@ export function PortfolioItem({
           <Image
             src={imageSrc}
             quality={100}
-            width={2240}
-            height={1680}
-            className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu "
+            width={1600}
+            height={1200}
+            className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
             alt={imageAlt}
           />
         </div>
