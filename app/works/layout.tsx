@@ -1,21 +1,18 @@
-import {  Footer, PortfolioItem } from "../components/server";
-import {ArticleTopMenu} from "../components/client"
+import { Footer, PortfolioItem } from "../components/server";
+import { ArticleTopMenu } from "../components/client";
 import data from "../works.json";
 export default function WorkLayout({
   children,
- 
 }: {
   children: React.ReactNode;
- 
 }) {
- 
   return (
-    <> 
-     <ArticleTopMenu />   
+    <>
+      <ArticleTopMenu />
       {children}
       <div className="container px-4">
         <h2 className="text-xl font-medium mb-8">More works</h2>
-        <div className="grid gap-x-8 gap-y-6 lg:grid-cols-4 md:grid-cols-2">
+        <div className="grid gap-x-2 gap-y-2 md:gap-x-8 md:gap-y-6 md:grid-cols-4 grid-cols-2">
           {data.map((i) => {
             return (
               <PortfolioItem

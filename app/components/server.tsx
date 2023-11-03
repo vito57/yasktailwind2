@@ -13,24 +13,55 @@ export function BodyImage({
   src,
   width = 1600,
   height = 1200,
-  className = "bg-zinc-900",
+  className = "bg-zinc-950  rounded-md",
   alt = "yask",
 }: BodyImage) {
-  <Image
-    src={src}
-    width={width}
-    height={height}
-    className={className}
-    alt={alt}
-  ></Image>;
+  return (
+    <Image
+      src={src}
+      width={width}
+      height={height}
+      className={className}
+      alt={alt}
+    ></Image>
+  );
 }
 //Body text
 interface BodyTextProps {
   children: React.ReactNode;
 }
 export function BodyText({ children }: BodyTextProps) {
-  return <p className="text-xl">{children}</p>;
+  return <p className="md:text-xl text-base">{children}</p>;
 }
+//end body text
+// TEXT
+interface TextProps {
+  title?: string;
+
+  children: React.ReactNode;
+}
+export function Text({ title, children }: TextProps) {
+  return (
+    <div className="grid grid-cols-12 gap-y-1 gap-x-8 mb-8">
+      {title && (
+        <div className="md:col-span-3 col-span-12">
+          <p className="md:text-xl text-base dark:text-white font-bold">
+            {title}
+          </p>
+        </div>
+      )}
+
+      <div
+        className={` ${
+          title ? false : "md:col-start-4"
+        } md:col-span-9 col-span-12`}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+//END TEXT
 interface SectionProps {
   className: string;
   id?: string;
@@ -180,24 +211,6 @@ export function Article({ children, className }: ArticleProps) {
 }
 //END ARTICLE
 
-// TEXT
-//text block
-interface TextProps {
-  title?: string;
-
-  children: React.ReactNode;
-}
-export function Text({ title, children }: TextProps) {
-  return (
-    <div className="grid grid-cols-12 gap-8 mb-8">
-      <div className="col-span-3">
-        <p className="text-xl dark:text-white font-bold">{title}</p>
-      </div>
-      <div className="col-span-9">{children}</div>
-    </div>
-  );
-}
-//END TEXT
 //PORTFOLIO ITEM
 interface portfolioItemProps {
   keyNum?: string;

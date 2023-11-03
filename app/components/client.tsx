@@ -51,9 +51,10 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   const pathname = title || useSelectedLayoutSegment();
   const [scroll, setScroll] = useState("");
+  const [open, setOpen] = useState();
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 500
+      window.scrollY
         ? setScroll("backdrop-blur-xl bg-white/90 dark:bg-black/90")
         : setScroll("");
     });
@@ -62,25 +63,39 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
     <div
       className={`container z-20 px-4 py-2 flex justify-between sticky top-0 my-4 ${scroll}`}
     >
-      <div className="flex gap-8 items-center">
+      <div className="flex gap-4 md:gap-8 items-center">
         <Link href="/">
           <Logo width={40} height={40} />
         </Link>
         <span className="font-bold capitalize">{pathname}</span>
       </div>
-      <div className="flex gap-8 items-center">
-        <Link href="/" className="hover:text-yred transition">
+      <div className="flex  gap-8 items-center md:flex-raw p-8 place-content-center z-30 bg-black fixed top-0 left-20 right-0 bottom-0 flex-col">
+        <Link href="/" className="ylink py-1">
           Works
         </Link>
-        <Link href="/feed" className="hover:text-yred transition">
+        <Link href="/feed" className="ylink py-2">
           Feed
         </Link>
-        <Link href="/about" className="hover:text-yred transition">
+        <Link href="/about" className="ylink py-2">
           About
         </Link>
-
         <Button path="/">Send email</Button>
       </div>
+      {/* menu trigger */}
+      {/* <Link href="#" className="p-3 block md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="stroke-yask dark:stroke-ytextdark stroke-2"
+        >
+          <path d="M3 12H21" />
+          <path d="M3 6H21" />
+          <path d="M3 18H21" />
+        </svg>
+      </Link> */}
     </div>
   );
 }

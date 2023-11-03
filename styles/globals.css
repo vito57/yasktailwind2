@@ -4,7 +4,7 @@
 
 /* Input */
 .ylink {
-  @apply text-ylightblue dark:text-slate-800 hover:text-yred transition;
+  @apply text-ylightblue dark:text-ytextdark dark:hover:text-yred hover:text-yred transition;
 }
 
 .animate-fadeIn{

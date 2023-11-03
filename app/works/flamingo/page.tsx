@@ -5,8 +5,8 @@ import {
   Text,
   ArticleImageSection,
   ArticleFigure,
-  ArticleTopMenu
 } from "../../components/server";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,9 +17,11 @@ export const metadata = {
 export default function Flamingo() {
   return (
     <AnimateLayout>
-    
       <Article className="relative">
-        <header id="intro" className="mb-8 pt-[128px] reletive mt-[-128px] ">
+        <header
+          id="intro"
+          className="mb-8 pt-[128px] bg-[#F3F3F9] reletive mt-[-128px] "
+        >
           <div className="container px-4">
             <Image
               src="/works/flamingo/flamingo-cover2.png"

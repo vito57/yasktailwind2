@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <div className="container">
       <ArticleTopMenu title={`Hi i am ${user.name}`} />
-      <header className="text-center relative rounded-xl mb-4">
+      <header className="text-center relative rounded-xl mb-4 pt-10">
         <Image
           className="inline-block mb-2 rounded-full"
           src={user.avatar}

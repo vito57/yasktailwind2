@@ -16,7 +16,7 @@ module.exports = {
       base: [
         "1rem",
         {
-          lineHeight: "1.25rem",
+          lineHeight: "1.75rem" , //28
           letterSpacing: "-0.011em",
         },
       ],
@@ -24,7 +24,7 @@ module.exports = {
         "1.25rem",
         {
           lineHeight: "2rem",
-           letterSpacing: "-0.017em",
+          letterSpacing: "-0.017em",
         },
       ],
       "2xl": [

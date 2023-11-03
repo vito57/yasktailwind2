@@ -20,13 +20,14 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[#222225]">
+        <ArticleHeader className="bg-indigo-950">
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/cover.png"
-              width={1600}
-              height={1200}
-              alt="dssd"
+              width={1120}
+              height={416}
+              className="bg-indigo-950"
+              alt="Drugcode cover"
             />
           </ArticleFigure>
         </ArticleHeader>
@@ -38,15 +39,12 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/node_editor.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+              alt="Node editor"
+            />
           </ArticleFigure>
-          <Text title="">
+          <Text>
             <BodyText>
               The editor consists of 2 main modes: code editor and node editor.
               Visual editing is carried out in the preview window. Supports
@@ -54,13 +52,10 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/code_editor.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+              alt="Code editor"
+            />
           </ArticleFigure>
           <Text title="">
             <BodyText>
@@ -70,28 +65,25 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/file_system.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+              alt="File system"
+            />
           </ArticleFigure>
           <Text>
-            <BodyText>
-              Redesign of the existing editor, find new features, cteate design
-              system.
-            </BodyText>
+            <BodyText>Add, delete, rename projects</BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/node_preview.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+              alt="Node preview"
+            />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage
+              src="/works/drugcode/light_theme.png"
+              alt="Light theme"
+            />
           </ArticleFigure>
         </Section>
 
@@ -123,13 +115,7 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
-              src="/works/drugcode/ui.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+            <BodyImage src="/works/drugcode/ui.png" alt="Drugcode ui" />
           </ArticleFigure>
           <Text title="">
             <BodyText>
@@ -139,13 +125,7 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
-              src="/works/drugcode/style.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+            <BodyImage src="/works/drugcode/style.png" alt="Drugcode styles" />
           </ArticleFigure>
           <Text title="">
             <BodyText>
@@ -156,28 +136,10 @@ const Page = () => {
           </Text>
 
           <ArticleFigure>
-            <Image
-              src="/works/drugcode/layout.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
-          </ArticleFigure>
-          <Text title="">
-            <BodyText>
-              Left sidebar - navigation, top - states, right - props, bottom -
-              status, preview - visual edit
-            </BodyText>
-          </Text>
-          <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/letf_side_bar.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Right sidebar"
-            ></Image>
+              alt="Left sidebar"
+            />
           </ArticleFigure>
           <Text title="">
             <BodyText>
@@ -187,35 +149,27 @@ const Page = () => {
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/right_side_bar.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
               alt="Right sidebar"
-            ></Image>
+            />
           </ArticleFigure>
           <Text title="">
             <BodyText>
               The task is to display in an understandable form, props, CSS
               rules, states, etc. Do not invent new properties, but use the
               properties provided by the standard(w3c) or library (example
-              D3.js)
-            </BodyText>
-            <BodyText>
+              D3.js) <br />
               You can write CSS values in the fields in any format supported by
               the specification. CSS variables, SASS, LESS, etc. Autocomplete
               works according to specification too.
             </BodyText>
           </Text>
           <ArticleFigure>
-            <Image
+            <BodyImage
               src="/works/drugcode/preview.png"
-              width={1600}
-              height={1200}
-              className="bg-zinc-900"
-              alt="Drugcode ui"
-            ></Image>
+              alt="Drugcode preview"
+            />
           </ArticleFigure>
           <Text title="">
             <BodyText>
