@@ -37,11 +37,32 @@ export function BodyColor({ children }: BodyColorProps) {
   return <body className={colorClass}>{children}</body>;
 }
 //AnimatedLayout
-interface AnimateLayoutProps {
-  children: ReactNode;
-}
-export function AnimateLayout({ children }: AnimateLayoutProps) {
-  return <main className="animate-fadeIn">{children}</main>;
+// interface AnimateLayoutProps {
+//   className?: string;
+//   children: ReactNode;
+// }
+// export function AnimateLayout({ children, className }: AnimateLayoutProps) {
+//   return (
+//     <main className={`${className} animate-fadeIn text-base md:text-xl`}>
+//       {children}
+//     </main>
+//   );
+// }
+//Mobile navbar
+export function MobileNavBar() {
+  return (
+    <div className="flex md:hidden gap-4 py-2 bg-white  justify-center z-20 container fixed bottom-0 dark:bg-black">
+      <Link href="/" className="ylink p-2">
+        Works
+      </Link>
+      <Link href="/feed" className="ylink p-2">
+        Feed
+      </Link>
+      <Link href="/about" className="ylink p-2">
+        About
+      </Link>
+    </div>
+  );
 }
 //Article top menu
 interface ArticleTopMenuProps {
@@ -51,51 +72,37 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   const pathname = title || useSelectedLayoutSegment();
   const [scroll, setScroll] = useState("");
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState("hidden");
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      setOpen("hidden");
       window.scrollY
         ? setScroll("backdrop-blur-xl bg-white/90 dark:bg-black/90")
         : setScroll("");
     });
   }, [scroll]);
   return (
-    <div
-      className={`container z-20 px-4 py-2 flex justify-between sticky top-0 my-4 ${scroll}`}
-    >
-      <div className="flex gap-4 md:gap-8 items-center">
-        <Link href="/">
-          <Logo width={40} height={40} />
-        </Link>
-        <span className="font-bold capitalize">{pathname}</span>
+    <div className={`z-20 sticky top-0 ${scroll}`}>
+      <div className={`container  px-4 py-2 flex justify-between  my-4 `}>
+        <div className="flex gap-4 md:gap-8 items-center">
+          <Link href="/">
+            <Logo width={40} height={40} />
+          </Link>
+          <span className="font-bold capitalize">{pathname}</span>
+        </div>
+        <div className={`flex gap-8 items-center`}>
+          <Link href="/" className="ylink py-1 md:block hidden ">
+            Works
+          </Link>
+          <Link href="/feed" className="ylink py-1 md:block hidden">
+            Feed
+          </Link>
+          <Link href="/about" className="ylink py-1 md:block hidden">
+            About
+          </Link>
+          <Button path="/">Send email</Button>
+        </div>
       </div>
-      <div className="flex  gap-8 items-center md:flex-raw p-8 place-content-center z-30 bg-black fixed top-0 left-20 right-0 bottom-0 flex-col">
-        <Link href="/" className="ylink py-1">
-          Works
-        </Link>
-        <Link href="/feed" className="ylink py-2">
-          Feed
-        </Link>
-        <Link href="/about" className="ylink py-2">
-          About
-        </Link>
-        <Button path="/">Send email</Button>
-      </div>
-      {/* menu trigger */}
-      {/* <Link href="#" className="p-3 block md:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="stroke-yask dark:stroke-ytextdark stroke-2"
-        >
-          <path d="M3 12H21" />
-          <path d="M3 6H21" />
-          <path d="M3 18H21" />
-        </svg>
-      </Link> */}
     </div>
   );
 }
@@ -110,7 +117,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl text-2xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
+      className="lg:text-4xl text-3xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
     >
       {title.title}
     </h1>

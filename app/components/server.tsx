@@ -31,7 +31,7 @@ interface BodyTextProps {
   children: React.ReactNode;
 }
 export function BodyText({ children }: BodyTextProps) {
-  return <p className="md:text-xl text-base">{children}</p>;
+  return <p>{children}</p>;
 }
 //end body text
 // TEXT
@@ -45,9 +45,7 @@ export function Text({ title, children }: TextProps) {
     <div className="grid grid-cols-12 gap-y-1 gap-x-8 mb-8">
       {title && (
         <div className="md:col-span-3 col-span-12">
-          <p className="md:text-xl text-base dark:text-white font-bold">
-            {title}
-          </p>
+          <p className=" dark:text-white font-medium">{title}</p>
         </div>
       )}
 
@@ -63,7 +61,7 @@ export function Text({ title, children }: TextProps) {
 }
 //END TEXT
 interface SectionProps {
-  className: string;
+  className?: string;
   id?: string;
   children: React.ReactNode;
 }
@@ -242,7 +240,7 @@ export function PortfolioItem({
           />
         </div>
 
-        <figcaption className="flex text-sm  group-hover/item:text-ylightblue dark:text-ygrey transition py-0.5 justify-between text-yask">
+        <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-yred dark:text-ytextdark transition py-0.5 justify-between text-yask">
           <span>{title}</span>
           <span>{type}</span>
         </figcaption>
@@ -320,8 +318,13 @@ export function FeedItem({
 //END FEED ITEM
 //AnimatedLayout
 interface AnimateLayoutProps {
+  className?: string;
   children: React.ReactNode;
 }
-export function AnimateLayout({ children }: AnimateLayoutProps) {
-  return <main className="animate-fadeIn">{children}</main>;
+export function AnimateLayout({ children, className }: AnimateLayoutProps) {
+  return (
+    <main className={`${className} animate-fadeIn text-base md:text-xl`}>
+      {children}
+    </main>
+  );
 }

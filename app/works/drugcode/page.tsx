@@ -6,7 +6,6 @@ import {
   Section,
   ArticleImageSection,
   ArticleHeader,
-  BodyText,
   BodyImage,
 } from "../../components/server";
 import Image from "next/image";
@@ -20,23 +19,23 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-indigo-950">
+        <ArticleHeader className="bg-indigo-900">
           <ArticleFigure>
             <BodyImage
               src="/works/drugcode/cover.png"
               width={1120}
               height={416}
-              className="bg-indigo-950"
+              className="bg-indigo-900"
               alt="Drugcode cover"
             />
           </ArticleFigure>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
-            <BodyText>
-              Redesign of the existing editor, find new features, cteate design
-              system.
-            </BodyText>
+            <p>
+              Node and code editor design, based on standards. Finding new
+              features. Create design system. Brand design.
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -45,11 +44,11 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text>
-            <BodyText>
+            <p>
               The editor consists of 2 main modes: code editor and node editor.
               Visual editing is carried out in the preview window. Supports
               system theming (dark and light theme).
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -58,11 +57,11 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               Code editor baced on Monaco editor with all features. Any code
               have 2 representation, as text and as node. Node functionality is
               useful for designer and management
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -71,7 +70,7 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text>
-            <BodyText>Add, delete, rename projects</BodyText>
+            <p>Add, delete, rename projects</p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -91,10 +90,10 @@ const Page = () => {
 
         <Section id="branding" className="mb-8 px-4 container">
           <Text title="Branding">
-            <BodyText>
+            <p>
               The brand allows you to increase consistency and improve external
               communication.
-            </BodyText>
+            </p>
           </Text>
           <ArticleImageSection
             data1={{ src: "/works/drugcode/brand.png" }}
@@ -108,31 +107,31 @@ const Page = () => {
 
         <Section id="ux" className="mb-8 px-4 container">
           <Text title="UI/UX">
-            <BodyText>
+            <p>
               After basic research and creation of a proposal, We take out the
               styles, making a templates and prepare the specification. Material
               design is taken as the basis.
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage src="/works/drugcode/ui.png" alt="Drugcode ui" />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               We follow the pattern Template/Region/Component/Element/Modifier.
               A mix of atomic design principles and BEM methodology. More then
               80 components are created.
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage src="/works/drugcode/style.png" alt="Drugcode styles" />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               Understanding how material design works, help to prepare tokens
               for dark and light themes. The same structure in Figma and in Code
               halps to understand each other
-            </BodyText>
+            </p>
           </Text>
 
           <ArticleFigure>
@@ -142,11 +141,11 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               Collapsible left sidebar, represent file system, with drag and
               drop functionality. Feature - file can be parsed, and view any
               block inside a file.
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -155,7 +154,7 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               The task is to display in an understandable form, props, CSS
               rules, states, etc. Do not invent new properties, but use the
               properties provided by the standard(w3c) or library (example
@@ -163,7 +162,7 @@ const Page = () => {
               You can write CSS values in the fields in any format supported by
               the specification. CSS variables, SASS, LESS, etc. Autocomplete
               works according to specification too.
-            </BodyText>
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -172,10 +171,10 @@ const Page = () => {
             />
           </ArticleFigure>
           <Text title="">
-            <BodyText>
+            <p>
               Visual editor and preview. Change colors, add or remove elements,
               drag, resize, etc.
-            </BodyText>
+            </p>
           </Text>
         </Section>
 
@@ -194,12 +193,12 @@ const Page = () => {
             </ol>
           </Text>
         </Section>
-        {/* HAVE FUN*/}
+        {/* HAVE FUN
         <Section id="have_fun" className="mb-8 px-4 container">
           <Text title="Heve fun 😊">
-            <BodyText>Nice editor must have copilot)</BodyText>
+            <p>Nice editor must have copilot)</p>
           </Text>
-        </Section>
+        </Section> */}
       </Article>
     </AnimateLayout>
   );

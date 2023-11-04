@@ -16,7 +16,7 @@ module.exports = {
       base: [
         "1rem",
         {
-          lineHeight: "1.75rem" , //28
+          lineHeight: "1.5rem" , //24
           letterSpacing: "-0.011em",
         },
       ],
@@ -65,6 +65,7 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: "1rem"
     },
     // colors: {
     //   blue: "#1fb6ff",

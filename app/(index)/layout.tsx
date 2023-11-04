@@ -20,7 +20,7 @@ export default function WorksLayout({
     },
     {
       name: "About",
-      title: "We are the People, who think about People 😘",
+      title: "Super! Nice to Meet You! Let's Introduce Ourselves ✋",
       href: "/about",
     },
   ];
@@ -39,7 +39,7 @@ export default function WorksLayout({
           <Jumbo datas={data} />
         </div>
       </header>
-      <nav className="sticky z-10 text-center bottom-0 mb-10 top-8">
+      <nav className="md:sticky fixed z-10 bg-yask md:bg-transparent text-center bottom-0 left-0 py-2 right-0 md:mb-10 md:top-8">
         <Tabs datas={data} className="bg-yask dark:bg-red-500 text-white" />
       </nav>
       {children}

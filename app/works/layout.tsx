@@ -1,5 +1,5 @@
 import { Footer, PortfolioItem } from "../components/server";
-import { ArticleTopMenu } from "../components/client";
+import { ArticleTopMenu, MobileNavBar } from "../components/client";
 import data from "../works.json";
 export default function WorkLayout({
   children,
@@ -9,6 +9,7 @@ export default function WorkLayout({
   return (
     <>
       <ArticleTopMenu />
+      <MobileNavBar />
       {children}
       <div className="container px-4">
         <h2 className="text-xl font-medium mb-8">More works</h2>
