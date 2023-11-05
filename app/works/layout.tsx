@@ -9,7 +9,7 @@ export default function WorkLayout({
   return (
     <>
       <ArticleTopMenu />
-      <MobileNavBar />
+
       {children}
       <div className="container px-4">
         <h2 className="text-xl font-medium mb-8">More works</h2>

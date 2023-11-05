@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { ReactNode, useState, useEffect } from "react";
+import data from "../main.json";
 //Logo
 interface LogoProps {
   width?: number;
@@ -36,19 +37,7 @@ export function BodyColor({ children }: BodyColorProps) {
     : "light text-yask";
   return <body className={colorClass}>{children}</body>;
 }
-//AnimatedLayout
-// interface AnimateLayoutProps {
-//   className?: string;
-//   children: ReactNode;
-// }
-// export function AnimateLayout({ children, className }: AnimateLayoutProps) {
-//   return (
-//     <main className={`${className} animate-fadeIn text-base md:text-xl`}>
-//       {children}
-//     </main>
-//   );
-// }
-//Mobile navbar
+
 export function MobileNavBar() {
   return (
     <div className="flex md:hidden gap-4 py-2 bg-white  justify-center z-20 container fixed bottom-0 dark:bg-black">
@@ -82,24 +71,18 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
     });
   }, [scroll]);
   return (
-    <div className={`z-20 sticky top-0 ${scroll}`}>
-      <div className={`container  px-4 py-2 flex justify-between  my-4 `}>
+    <div className={`z-20 sticky top-0`}>
+      <div className={`container  px-4 py-2 flex justify-between  mb-4 `}>
         <div className="flex gap-4 md:gap-8 items-center">
           <Link href="/">
             <Logo width={40} height={40} />
           </Link>
           <span className="font-bold capitalize">{pathname}</span>
         </div>
-        <div className={`flex gap-8 items-center`}>
-          <Link href="/" className="ylink py-1 md:block hidden ">
-            Works
-          </Link>
-          <Link href="/feed" className="ylink py-1 md:block hidden">
-            Feed
-          </Link>
-          <Link href="/about" className="ylink py-1 md:block hidden">
-            About
-          </Link>
+        <div
+          className={`flex fixed md:static py-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
+        >
+          <Tabs className="bg-yask md:bg-transparent" />
           <Button path="/">Send email</Button>
         </div>
       </div>
@@ -117,7 +100,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl text-3xl mx-auto mb-6 max-w-xl text-yask animate-fadeIn"
+      className="lg:text-4xl text-3xl mx-auto max-w-xl text-yask animate-fadeIn"
     >
       {title.title}
     </h1>
@@ -125,24 +108,22 @@ export function Jumbo({ datas }: JumboProps) {
 }
 //TABS ON MAIN PAGE
 interface TabsProps {
-  datas?: any;
   className?: string;
 }
-export function Tabs({ datas, className }: TabsProps) {
+export function Tabs({ className }: TabsProps) {
   const pathname = usePathname();
-
   return (
     <menu
       className={`${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`}
     >
-      {datas.map((link: { name: string; href: string }) => {
+      {data.map((link: { name: string; href: string }) => {
         const isActive = pathname.endsWith(link.href);
         return (
           <li key={link.href}>
             <Link
               className={`px-3 text-sm ${
-                isActive ? "bg-yred" : false
-              } relative opacity-100  hover:opacity-100 rounded-[10px] transition inline-block py-1.5`}
+                isActive ? "bg-yred opacity-100" : false
+              } relative rounded-[10px] transition inline-block py-1.5`}
               href={link.href}
             >
               {/* {isActive && (

@@ -10,7 +10,7 @@ export const metadata = {
 export default function About() {
   return (
     <AnimateLayout>
-      <div className="grid gap-x-8 gap-y-6 grid-cols-3">
+      <div className="grid gap-x-8 gap-y-6 md:grid-cols-3">
         {users.map((i) => {
           return (
             <figure key={i.path} className="group/item text-center py-10">

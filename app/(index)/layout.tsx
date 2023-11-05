@@ -1,36 +1,19 @@
 import { Tabs, Jumbo, Logo } from "../components/client";
 import { TopMenu, Footer } from "../components/server";
 import Image from "next/image";
+import data from "../main.json";
 
 export default function WorksLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const data = [
-    {
-      name: "Works",
-      title: "Hi! We Do Web & App Design, Icons Sets and Code",
-      href: "/",
-    },
-    {
-      name: "Feed",
-      title: "We are Happy to Share Design Ideas and Freebies ",
-      href: "/feed",
-    },
-    {
-      name: "About",
-      title: "Super! Nice to Meet You! Let's Introduce Ourselves ✋",
-      href: "/about",
-    },
-  ];
   return (
-    <div className="container px-4">
-      <TopMenu />
-      <header id="header" className="container">
+    <div className="container relative px-4">
+      <header id="header" className="container pt-4 md:pt-10">
         <div className="text-center">
           <Image
-            className="inline-block mb-6"
+            className="inline-block mb-4"
             src="yask.svg"
             width={64}
             height={64}
@@ -39,8 +22,12 @@ export default function WorksLayout({
           <Jumbo datas={data} />
         </div>
       </header>
-      <nav className="md:sticky fixed z-10 bg-yask md:bg-transparent text-center bottom-0 left-0 py-2 right-0 md:mb-10 md:top-8">
-        <Tabs datas={data} className="bg-yask dark:bg-red-500 text-white" />
+      <div className="sticky container md:fixed py-4 flex md:justify-end justify-center  top-0 z-10 w-full">
+        <TopMenu />
+      </div>
+
+      <nav className="md:sticky w-fit m-auto fixed z-20 md:bg-transparent text-center bottom-0 left-0 py-4 right-0 md:mb-10 md:top-0">
+        <Tabs className="bg-yask dark:bg-red-500 text-white" />
       </nav>
       {children}
       <Footer />

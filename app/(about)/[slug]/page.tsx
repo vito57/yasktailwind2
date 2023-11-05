@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     <>
       <ArticleTopMenu title={`Hi i am ${user.name}`} />
       <AnimateLayout className="container">
-        <header className="text-center relative rounded-xl mb-4 pt-10">
+        <header className="text-center relative rounded-xl pt-10">
           <Image
             className="inline-block mb-2 rounded-full"
             src={user.avatar}
@@ -44,7 +44,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             !
           </blockquote>
         </header>
-        <div className="flex gap-2 items-center justify-center sticky z-50 top-2 mb-16">
+        <div className="flex py-4 gap-2 items-center justify-center top-0 sticky z-20 mb-10">
           {user.resume ? (
             <Button colorClass="bg-ygrey hover:bg-[#C2CBD6]" path="/">
               Resume.pdf

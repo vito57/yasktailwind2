@@ -44,15 +44,15 @@ export function Text({ title, children }: TextProps) {
   return (
     <div className="grid grid-cols-12 gap-y-1 gap-x-8 mb-8">
       {title && (
-        <div className="md:col-span-3 col-span-12">
+        <div className="md:col-span-4 col-span-12">
           <p className=" dark:text-white font-medium">{title}</p>
         </div>
       )}
 
       <div
         className={` ${
-          title ? false : "md:col-start-4"
-        } md:col-span-9 col-span-12`}
+          title ? false : "md:col-start-5"
+        } md:col-span-8 col-span-12`}
       >
         {children}
       </div>
@@ -74,7 +74,7 @@ export function Section({ children, className, id }: SectionProps) {
 }
 export function TopMenu() {
   return (
-    <div className="ml-auto z-20 px-4 w-fit items-center flex space-x-4 sticky top-8">
+    <div className="px-4 w-fit flex gap-2">
       <Button path="/">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
@@ -175,24 +175,24 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 export function Footer() {
   return (
     <p className="text-sm container text-center mt-8 mb-8">
-      Copyright © 2023 Yaskevich. v@yask-design.com <br /> Thanks:{" "}
-      <Link href="https://react.dev/" className="text-ylightblue">
+      Copyright © 2023 Yaskevich. <br /> Thanks:{" "}
+      <Link href="https://react.dev/" className="ylink">
         React
       </Link>
       ,
-      <Link href="https://tailwindcss.com/" className="text-ylightblue">
+      <Link href="https://tailwindcss.com/" className="ylink">
         Tailwind
       </Link>
       ,
-      <Link href="https://codesandbox.io/" className="text-ylightblue">
+      <Link href="https://codesandbox.io/" className="ylink">
         Codesandbox
       </Link>
       ,
-      <Link href="https://nextjs.org/" className="text-ylightblue">
+      <Link href="https://nextjs.org/" className="ylink">
         Next
       </Link>
       ,
-      <Link href="https://github.com/" className="text-ylightblue">
+      <Link href="https://github.com/" className="ylink">
         Github
       </Link>
     </p>
@@ -258,7 +258,11 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
     <figure className="mb-8">
       {children}
-      {figcaption && <figcaption>{figcaption}</figcaption>}
+      {figcaption && (
+        <figcaption className="text-right text-sm dark:text-white text-yask/80">
+          {figcaption}
+        </figcaption>
+      )}
     </figure>
   );
 }
