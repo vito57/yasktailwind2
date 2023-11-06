@@ -44,7 +44,7 @@ export function Text({ title, children }: TextProps) {
   return (
     <div className="grid grid-cols-12 gap-y-1 gap-x-8 mb-8">
       {title && (
-        <div className="md:col-span-4 col-span-12">
+        <div className="md:col-span-3 col-span-12">
           <p className=" dark:text-white font-medium">{title}</p>
         </div>
       )}
@@ -52,7 +52,7 @@ export function Text({ title, children }: TextProps) {
       <div
         className={` ${
           title ? false : "md:col-start-5"
-        } md:col-span-8 col-span-12`}
+        } md:col-span-9 col-span-12`}
       >
         {children}
       </div>

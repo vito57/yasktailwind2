@@ -61,18 +61,17 @@ interface ArticleTopMenuProps {
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   const pathname = title || useSelectedLayoutSegment();
   const [scroll, setScroll] = useState("");
-  const [open, setOpen] = useState("hidden");
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setOpen("hidden");
       window.scrollY
         ? setScroll("backdrop-blur-xl bg-white/90 dark:bg-black/90")
         : setScroll("");
     });
   }, [scroll]);
   return (
-    <div className={`z-20 sticky top-0`}>
-      <div className={`container  px-4 py-2 flex justify-between  mb-4 `}>
+    <div className={`z-10 sticky md:sticky top-0`}>
+      <div className={`container px-4 py-2 flex justify-between  mb-4 `}>
         <div className="flex gap-4 md:gap-8 items-center">
           <Link href="/">
             <Logo width={40} height={40} />
@@ -114,7 +113,7 @@ export function Tabs({ className }: TabsProps) {
   const pathname = usePathname();
   return (
     <menu
-      className={`${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 inline-flex justify-center`}
+      className={`${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 my-0.5 inline-flex justify-center`}
     >
       {data.map((link: { name: string; href: string }) => {
         const isActive = pathname.endsWith(link.href);

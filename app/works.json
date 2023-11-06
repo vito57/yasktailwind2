@@ -2,78 +2,78 @@
   {
     "cover": "/img/drugcode.png",
     "title": "DrugCode+",
-    "by": "Vitaly",
+    "by": ["vitaly", "vera"],
     "type": "Code editor, Branding",
     "path": "/works/drugcode"
   },
   {
     "cover": "/img/flamingo3.png",
     "title": "Flamingo",
-    "by": "Vitaly",
+    "by": ["Vitaly"],
     "type": "Design System",
     "path": "/works/flamingo"
   },
   {
     "cover": "/img/bootsyicons.png",
     "title": "Bootsy Icons",
-    "by": "Gala",
+    "by": ["gala", "vitaly"],
     "type": "Icon set",
     "path": "/works/bootsyicons"
   },
   {
     "cover": "/img/bootsyduotone.png",
     "title": "Bootsy Icons Duotone",
-    "by": "Gala",
+    "by": ["gala", "vitaly"],
     "type": "Icon set",
     "path": "/works/bootsyduotone"
   },
   {
     "cover": "/img/karusel.png",
     "title": "Karusel",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "Website",
     "path": "/works/karusel"
   },
   {
     "cover": "/img/starc.png",
     "title": "Starc Android",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "Native App",
     "path": "/works/starc"
   },
   {
     "cover": "/img/starcios.png",
     "title": "Starc IOS",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "Native App",
-    "path": "/works/starcIos"
+    "path": "/works/starcios"
   },
 
   {
     "cover": "/img/domkino.png",
     "title": "Domkino",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "Website",
     "path": "/works/domkino"
   },
   {
     "cover": "/img/bober.png",
     "title": "Bober",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "Website",
     "path": "/works/bober"
   },
   {
     "cover": "/img/darlen.png",
     "title": "Darlen",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "UI/UX, App",
     "path": "/works/darlen"
   },
   {
     "cover": "/img/poehali.png",
     "title": "Darlen",
-    "by": "Vitaly",
+    "by": ["vitaly"],
     "type": "UI/UX, App",
     "path": "/works/poehali"
   }

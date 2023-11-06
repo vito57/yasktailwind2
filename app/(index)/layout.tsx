@@ -15,6 +15,7 @@ export default function WorksLayout({
           <Image
             className="inline-block mb-4"
             src="yask.svg"
+            priority={true}
             width={64}
             height={64}
             alt="Yask Design"
@@ -26,8 +27,8 @@ export default function WorksLayout({
         <TopMenu />
       </div>
 
-      <nav className="md:sticky w-fit m-auto fixed z-20 md:bg-transparent text-center bottom-0 left-0 py-4 right-0 md:mb-10 md:top-0">
-        <Tabs className="bg-yask dark:bg-red-500 text-white" />
+      <nav className="md:sticky w-fit m-auto fixed z-20 md:bg-transparent text-center bottom-0 left-0 py-4 right-0 md:mb-6 md:top-0">
+        <Tabs className="bg-yask text-white" />
       </nav>
       {children}
       <Footer />

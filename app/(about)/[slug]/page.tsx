@@ -10,6 +10,7 @@ import { ArticleTopMenu } from "@/app/components/client";
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";
+import allWorks from "../../works.json";
 import { notFound } from "next/navigation";
 export const metadata = {
   title: "About us",
@@ -17,6 +18,8 @@ export const metadata = {
 };
 export default function Page({ params }: { params: { slug: string } }) {
   const user = users.find((i) => i.path === `/${params.slug}`);
+  const userWorks = allWorks.filter((i) => i.by.includes(params.slug));
+
   if (!user) {
     notFound();
   }
@@ -36,7 +39,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <Link href={`mailto:${user.email}`} className="ylink text-base">
             {user.email}
           </Link>
-          <blockquote className="absolute top-0 text-sm right-0 italic text-left max-w-xs">
+          <blockquote className="absolute top-0 text-base right-0 italic text-left max-w-xs">
             {user.tagline} Feel free to{" "}
             <Link href={user.email} className="ylink ">
               drop me a line
@@ -44,7 +47,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             !
           </blockquote>
         </header>
-        <div className="flex py-4 gap-2 items-center justify-center top-0 sticky z-20 mb-10">
+        <div className="flex py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
             <Button colorClass="bg-ygrey hover:bg-[#C2CBD6]" path="/">
               Resume.pdf
@@ -54,7 +57,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           )}
 
           {user.social.map((i) => (
-            <Link href={i.url}>
+            <Link key={i.url} href={i.url}>
               <Image
                 src={i.image_path}
                 width={40}
@@ -71,28 +74,28 @@ export default function Page({ params }: { params: { slug: string } }) {
         <Text title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"].map((i) => (
-              <Badge>{i}</Badge>
+              <Badge key={i}>{i}</Badge>
             ))}
           </div>
         </Text>
         <Text title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools.map((i) => (
-              <Badge>{i}</Badge>
+              <Badge key={i}>{i}</Badge>
             ))}
           </div>
         </Text>
         <Text title="Experience">
           <dl className="mb-8">
             {user.experience.map((i) => (
-              <>
-                <dt className="font-medium">
+              <div key={i.date}>
+                <dt key={i.placeLink} className="font-medium">
                   {i.position} at{" "}
                   <Link href={i.placeLink} className="ylink">
                     {i.place}
                   </Link>
                 </dt>
-                <dd className="mb-8">
+                <dd key={i.date} className="mb-8">
                   <span className="italic">{i.date}</span> <br />
                   <span>
                     <span className="font-medium">Responciable:</span>{" "}
@@ -104,16 +107,16 @@ export default function Page({ params }: { params: { slug: string } }) {
                     {i.achievements}
                   </span>
                 </dd>
-              </>
+              </div>
             ))}
           </dl>
         </Text>
         <Text title="Projects">
           <div className="grid gap-x-8 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
-            {user.projects.map((i) => {
+            {userWorks.map((i) => {
               return (
                 <PortfolioItem
-                  keyNum={i.path}
+                  key={i.path}
                   href={i.path}
                   imageSrc={i.cover}
                   imageAlt={i.title}
@@ -127,14 +130,14 @@ export default function Page({ params }: { params: { slug: string } }) {
         <Text title="Awards">
           <div className="flex gap-2">
             {user.awards.map((i) => (
-              <Badge>🏆 {i}</Badge>
+              <Badge key={i}>🏆 {i}</Badge>
             ))}
           </div>
         </Text>
         {user.people ? (
           <Text title="People who inspire me">
             {user.people.map((i) => (
-              <Badge>{i}</Badge>
+              <Badge key={i}>{i}</Badge>
             ))}
           </Text>
         ) : null}
