@@ -33,7 +33,7 @@ export function BodyColor({ children }: BodyColorProps) {
   //array of pages that must have dark theme
   const dark = ["/works/drugcode"];
   const colorClass = dark.includes(pathname)
-    ? "dark bg-black text-ytextdark"
+    ? "dark bg-zinc-950 text-ytextdark"
     : "light text-yask";
   return <body className={colorClass}>{children}</body>;
 }
@@ -99,7 +99,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl text-3xl mx-auto max-w-xl text-yask animate-fadeIn"
+      className="lg:text-4xl text-3xl mx-auto max-w-xl antialiased text-yask animate-fadeIn"
     >
       {title.title}
     </h1>
@@ -120,7 +120,7 @@ export function Tabs({ className }: TabsProps) {
         return (
           <li key={link.href}>
             <Link
-              className={`px-3 text-sm ${
+              className={`px-3 text-sm font-medium ${
                 isActive ? "bg-yred opacity-100" : false
               } relative rounded-[10px] transition inline-block py-1.5`}
               href={link.href}

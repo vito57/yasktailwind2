@@ -18,7 +18,7 @@ export default function About() {
                 src={i.avatar}
                 width={176}
                 height={176}
-                className="inline-block mb-4 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu rounded-full"
+                className="inline-block mb-4 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu"
                 alt={i.name}
               />
               <figcaption className=" transition py-0.5 justify-center text-yask">

@@ -52,7 +52,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning={true}
-      className={`${inter.variable}`}
+      className={`${inter.variable} antialiased`}
     >
       <BodyColor>{children}</BodyColor>
     </html>

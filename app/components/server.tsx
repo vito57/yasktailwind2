@@ -13,7 +13,7 @@ export function BodyImage({
   src,
   width = 1600,
   height = 1200,
-  className = "bg-zinc-950  rounded-md",
+  className = "dark:bg-zinc-900 bg-slate-100  rounded-md",
   alt = "yask",
 }: BodyImage) {
   return (
@@ -42,18 +42,14 @@ interface TextProps {
 }
 export function Text({ title, children }: TextProps) {
   return (
-    <div className="grid grid-cols-12 gap-y-1 gap-x-8 mb-8">
+    <div className="flex flex-col md:flex-row mb-8">
       {title && (
-        <div className="md:col-span-3 col-span-12">
-          <p className=" dark:text-white font-medium">{title}</p>
+        <div className="basis-1/4">
+          <h3 className="font-bold">{title}</h3>
         </div>
       )}
 
-      <div
-        className={` ${
-          title ? false : "md:col-start-5"
-        } md:col-span-9 col-span-12`}
-      >
+      <div className={` ${title ? false : "ml-auto"} basis-3/4`}>
         {children}
       </div>
     </div>
@@ -67,7 +63,7 @@ interface SectionProps {
 }
 export function Section({ children, className, id }: SectionProps) {
   return (
-    <section className={className} id={id}>
+    <section className={`${className} mb-8`} id={id}>
       {children}
     </section>
   );
@@ -99,18 +95,18 @@ export function TopMenu() {
 }
 interface ButtonProps {
   path: string;
-  colorClass?: string;
+  className?: string;
   children: React.ReactNode;
 }
 export function Button({
   children,
-  colorClass = "bg-ylime hover:bg-[#CBEA6E]",
+  className = "bg-ylime hover:bg-[#CBEA6E]",
   path,
 }: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className={`text-sm inline-block m-0.5 font-medium transition rounded-xl px-3 py-2 text-ylightblue ${colorClass}`}
+      className={`text-sm inline-block m-0.5 font-medium transition rounded-xl px-3 py-2 text-ylightblue ${className}`}
     >
       {children}
     </Link>
@@ -138,18 +134,18 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex mt-4 gap-2 mb-14">
+    <div className="flex  gap-2 mb-2">
       <div className="basis-1/2">
         <figure>
           <Image
             src={props.data1.src}
             width={1600}
             height={1200}
-            className="w-full rounded"
+            className="w-full rounded bg-stone-100 dark:bg-zinc-950"
             alt={props.data1.caption || props.data1.src}
           />
           {props.data1.caption && (
-            <figcaption>{props.data1.caption}</figcaption>
+            <figcaption className="text-sm">{props.data1.caption}</figcaption>
           )}
         </figure>
       </div>
@@ -159,11 +155,11 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             src={props.data2.src}
             width={1600}
             height={1200}
-            className="w-full rounded"
+            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
             alt={props.data2.caption || props.data2.src}
           />
           {props.data2.caption && (
-            <figcaption>{props.data2.caption}</figcaption>
+            <figcaption className="text-sm">{props.data2.caption}</figcaption>
           )}
         </figure>
       </div>
@@ -205,7 +201,7 @@ interface ArticleProps {
   children: React.ReactNode;
 }
 export function Article({ children, className }: ArticleProps) {
-  return <article className={className}>{children}</article>;
+  return <article className={`${className} mb-8`}>{children}</article>;
 }
 //END ARTICLE
 
@@ -256,7 +252,7 @@ interface ArticleFigureProps {
 }
 export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
-    <figure className="mb-8">
+    <figure className="mb-2">
       {children}
       {figcaption && (
         <figcaption className="text-right text-sm dark:text-white text-yask/80">

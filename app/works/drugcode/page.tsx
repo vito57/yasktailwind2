@@ -9,7 +9,7 @@ import {
   BodyImage,
 } from "../../components/server";
 import Image from "next/image";
-
+import Link from "next/link";
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode editor design",
@@ -200,7 +200,7 @@ const Page = () => {
         </Section>
 
         {/* WORKFOW */}
-        <Section id="workflow" className="mb-8 px-4 container">
+        <Section id="workflow" className="mb-8  container">
           <Text title="Workflow">
             <ol className="text-xl list-decimal list-inside">
               <li>
@@ -214,12 +214,19 @@ const Page = () => {
             </ol>
           </Text>
         </Section>
-        {/* HAVE FUN
-        <Section id="have_fun" className="mb-8 px-4 container">
-          <Text title="Heve fun 😊">
-            <p>Nice editor must have copilot)</p>
+        {/* HAVE FUN */}
+        <Section id="summary" className="mb-8 px-4 container">
+          <Text title="Summary">
+            <p>
+              Designer:{" "}
+              <Link className="ylink" href="/vitaly">
+                Vitaly
+              </Link>{" "}
+            </p>
+            <p>Client: Sber </p>
+            <p>Year: 2020-2021 </p>
           </Text>
-        </Section> */}
+        </Section>
       </Article>
     </AnimateLayout>
   );

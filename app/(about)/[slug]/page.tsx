@@ -49,7 +49,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         </header>
         <div className="flex py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
-            <Button colorClass="bg-ygrey hover:bg-[#C2CBD6]" path="/">
+            <Button className="bg-ygrey hover:bg-[#C2CBD6]" path="/">
               Resume.pdf
             </Button>
           ) : (
@@ -98,7 +98,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <dd key={i.date} className="mb-8">
                   <span className="italic">{i.date}</span> <br />
                   <span>
-                    <span className="font-medium">Responciable:</span>{" "}
+                    <span className="font-medium">Responsibilities:</span>{" "}
                     {i.responsible}
                   </span>
                   <br />
