@@ -77,7 +77,12 @@ const Page = () => {
                 Gala
               </Link>{" "}
             </p>
-
+            <p>
+              Helper:{" "}
+              <Link className="ylink" href="/vitaly">
+                Vitaly
+              </Link>{" "}
+            </p>
             <p>Year: 2022 </p>
           </Text>
           <Button

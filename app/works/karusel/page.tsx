@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
+        <ArticleHeader className="bg-slate-100">
           <ArticleFigure>
             <BodyImage
               src="/works/karusel/cover.png"
@@ -41,22 +41,22 @@ const Page = () => {
             <BodyImage src="/works/karusel/main_desktop.png" />
           </ArticleFigure>
           <ArticleFigure>
+            <BodyImage src="/works/karusel/games_desktop.png" />
+          </ArticleFigure>
+          <ArticleFigure>
             <BodyImage
               src="/works/karusel/style_guide.png"
               width={1600}
               height={1200}
             />
           </ArticleFigure>
-          <ArticleImageSection
-            data1={{
-              src: "/works/karusel/main_desktop.png",
-              caption: "Main page",
-            }}
-            data2={{
-              src: "/works/karusel/games_desktop.png",
-              caption: "Games page",
-            }}
-          />
+          <ArticleFigure>
+            <BodyImage
+              src="/works/karusel/templates.png"
+              width={1600}
+              height={1200}
+            />
+          </ArticleFigure>
           <ArticleFigure>
             <BodyImage src="/works/karusel/article_mobile.png" />
           </ArticleFigure>
@@ -119,6 +119,14 @@ const Page = () => {
             }}
             data2={{
               src: "/works/karusel/sadovod_header.gif",
+            }}
+          />
+          <ArticleImageSection
+            data1={{
+              src: "/works/karusel/blue.gif",
+            }}
+            data2={{
+              src: "/works/karusel/red.gif",
             }}
           />
         </Section>

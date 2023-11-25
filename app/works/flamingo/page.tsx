@@ -33,7 +33,7 @@ export default function Flamingo() {
 
         <Section id="styles" className="mb-8 container">
           <Text title="About">
-            <p className="mb-8">
+            <p>
               I worked with our team and developers to craft a style guide for
               superapp, which contains the library of common components used in
               the product and expands out to design principles for the design
@@ -41,6 +41,12 @@ export default function Flamingo() {
               for every piece used in the product, from form elements to
               typography and entire screen configurations.
             </p>
+          </Text>
+
+          <ArticleFigure>
+            <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
+          </ArticleFigure>
+          <Text>
             <p>
               The style guide was vital for both our developers and our
               designers, giving us a shared kit of parts to work from and
@@ -49,10 +55,6 @@ export default function Flamingo() {
               teams at the company today.
             </p>
           </Text>
-
-          <ArticleFigure>
-            <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
-          </ArticleFigure>
         </Section>
         {/* GUIDE */}
         <Section id="Guides" className="mb-8 container">
@@ -81,6 +83,15 @@ export default function Flamingo() {
               alt="Flamingo"
             />
           </ArticleFigure>
+          <Text>
+            Principles are the most important part of any system. They determine
+            the shape of the future product, and the product review process will
+            be built on them in the future. Sbergdrug is an internal product and
+            has no competitors, so we chose speed, predictability, uniformity
+            and simplicity as the main principles. As a designer, you should
+            view a good solution as being as simple, predictable, fast to
+            produce, and consistent in style as possible.
+          </Text>
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/list_and_flow.png"
@@ -96,13 +107,16 @@ export default function Flamingo() {
             <p>
               The Style Guide also served as a home for product design
               principles and general advice about typography, accessibility, and
-              UX best practices. The Power BI design team was composed of
-              designers who ranged from folks who had worked at Microsoft for
-              decades, to young designers working on their first product team.
-              The Style Guide was a way to help reach consensus on common
-              paradigms and industry standards.
+              UX best practices. The design team was composed of designers who
+              ranged from folks who had worked at Sber for decades, to young
+              designers working on their first product team. The Style Guide was
+              a way to help reach consensus on common paradigms and industry
+              standards.
             </p>
           </Text>
+          <ArticleFigure>
+            <BodyImage src="/works/flamingo/styles.png" alt="Flamingo" />
+          </ArticleFigure>
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/guides.png"
@@ -126,9 +140,10 @@ export default function Flamingo() {
           <Text title="Examples">
             <p>
               In addition to documenting components and their usage, I crafted
-              do/do not scenarios for many elements in the style guide, to help
-              illustrate best practice and prevent easily avoided pratfalls. The
-              Style Guide was both documentation and education.
+              do/do not scenarios, and tons of test examples for many elements
+              in the style guide, to help illustrate best practice and prevent
+              easily avoided pratfalls. The Style Guide was both documentation
+              and education.
             </p>
           </Text>
           <ArticleImageSection
@@ -161,6 +176,18 @@ export default function Flamingo() {
               // caption: "Wireframes",
             }}
           />
+        </Section>
+        <Section id="summary" className="container">
+          <Text title="Summary">
+            <p>
+              Designer:{" "}
+              <Link className="ylink" href="/vitaly">
+                Vitaly
+              </Link>{" "}
+            </p>
+
+            <p>Year: 2022 </p>
+          </Text>
         </Section>
       </Article>
     </AnimateLayout>

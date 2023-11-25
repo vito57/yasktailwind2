@@ -134,14 +134,14 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex  gap-2 mb-2">
+    <div className="flex  gap-8 mb-8">
       <div className="basis-1/2">
         <figure>
           <Image
             src={props.data1.src}
             width={1600}
             height={1200}
-            className="w-full rounded bg-stone-100 dark:bg-zinc-950"
+            className="w-full rounded bg-transpatent dark:bg-zinc-950"
             alt={props.data1.caption || props.data1.src}
           />
           {props.data1.caption && (
@@ -155,7 +155,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             src={props.data2.src}
             width={1600}
             height={1200}
-            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
+            className="w-full rounded bg-transparent dark:bg-zinc-950"
             alt={props.data2.caption || props.data2.src}
           />
           {props.data2.caption && (
@@ -170,7 +170,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 //FOOTER
 export function Footer() {
   return (
-    <p className="text-sm container text-center mt-8 mb-8">
+    <p className="text-sm text-center mt-8 mb-8">
       Copyright © 2023 Yaskevich. <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="ylink">
         React
@@ -252,7 +252,7 @@ interface ArticleFigureProps {
 }
 export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
-    <figure className="mb-2">
+    <figure className="mb-8">
       {children}
       {figcaption && (
         <figcaption className="text-right text-sm dark:text-white text-yask/80">
