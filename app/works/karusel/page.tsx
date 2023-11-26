@@ -20,12 +20,13 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-100">
+        <ArticleHeader className="bg-green-200">
           <ArticleFigure>
             <BodyImage
               src="/works/karusel/cover.png"
               width={1120}
               height={416}
+              className="bg-green-200"
               alt="Karusel TV"
             />
           </ArticleFigure>
@@ -33,77 +34,80 @@ const Page = () => {
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p>
-              Adaptive design, content creation, and layout of a children's TV
-              channel website.
+            Adaptive website for the children's TV channel Carousel. Big job. 
+            Sections - poster, TV program, competitions, 
+            full-fledged online store, program tracking, 
+            social network for children, graphic content. 
+            Made by a small team of 5 people. My role is designer.
+            </p>
+          </Text>
+          <ArticleFigure figcaption="Main page">
+            <BodyImage src="/works/karusel/main_desktop.png" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Games and TV program">
+            <BodyImage src="/works/karusel/games_desktop.png" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Video and news">
+            <BodyImage src="/works/karusel/video_desktop.png" />
+          </ArticleFigure>
+
+
+          
+        </Section>
+        <Section id="mobile" className="container">
+          <Text title="Mobile">
+            <p>The website is fully responsive.</p>
+          </Text>
+          <ArticleFigure figcaption="Main, Schedule, Article">
+            <BodyImage src="/works/karusel/main_mobile.png" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Game, Video, Videos">
+            <BodyImage src="/works/karusel/article_mobile.png" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Navigation">
+            <BodyImage src="/works/karusel/mobile_menu.png" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Videos, Games, News">
+            <BodyImage src="/works/karusel/games_mobile.png" />
+          </ArticleFigure>
+        </Section>
+        <Section id="styles" className="container">
+
+
+          <Text title="Styles">
+            <p>
+            The design is based on Bootstrap. Prepared Bootstrap theme, created wireframes and prototypes.
             </p>
           </Text>
           <ArticleFigure>
-            <BodyImage src="/works/karusel/main_desktop.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/games_desktop.png" />
-          </ArticleFigure>
-          <ArticleFigure>
             <BodyImage
               src="/works/karusel/style_guide.png"
-              width={1600}
-              height={1200}
+     
             />
           </ArticleFigure>
           <ArticleFigure>
             <BodyImage
               src="/works/karusel/templates.png"
-              width={1600}
-              height={1200}
+         
             />
           </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/article_mobile.png" />
-          </ArticleFigure>
-        </Section>
-        <Section id="styles" className="container">
-          {/* <ArticleFigure>
-            <BodyImage src="/works/karusel/games_mobile.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/article_mobile.png" />
-          </ArticleFigure> */}
-
-          <Text title="About">
-            <p>
-              Adaptive website design and layout for a children's TV channel
-            </p>
-          </Text>
-          <ArticleImageSection
-            data1={{
-              src: "/works/karusel/games_mobile.png",
-              caption: "Games",
-            }}
-            data2={{
-              src: "/works/karusel/article_mobile.png",
-              caption: "Article",
-            }}
-          />
-          <ArticleImageSection
-            data1={{
-              src: "/works/karusel/style_guide.png",
-              caption: "style guide",
-            }}
-            data2={{
-              src: "/works/karusel/templates.png",
-              caption: "Templates",
-            }}
-          />
+     
         </Section>
         {/* BRANDING */}
         <Section id="content" className="container">
           <Text title="Content design">
             <p>
-              I created and drew content for a large number of parallax headers
+              I created and drew tons of 2d and 3d content for a large number of parallax headers
             </p>
           </Text>
           <ArticleFigure>
             <BodyImage src="/works/karusel/content.png" />
+          </ArticleFigure>
+          <Text>
+            <p>I designed and code the adaptive parallax Hero header. 2 types of such headers have been made - for pages and for sections</p>
+          </Text>
+          <ArticleFigure>
+            <BodyImage src="/works/karusel/parallax.png" />
           </ArticleFigure>
           <ArticleImageSection
             data1={{
@@ -113,6 +117,7 @@ const Page = () => {
               src: "/works/karusel/contest_header.gif",
             }}
           />
+
           <ArticleImageSection
             data1={{
               src: "/works/karusel/pitomets_header.gif",
