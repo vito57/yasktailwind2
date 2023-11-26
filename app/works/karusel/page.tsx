@@ -34,11 +34,10 @@ const Page = () => {
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p>
-            Adaptive website for the children's TV channel Carousel. Big job. 
-            Sections - poster, TV program, competitions, 
-            full-fledged online store, program tracking, 
-            social network for children, graphic content. 
-            Made by a small team of 5 people. My role is designer.
+              Adaptive website for the children's TV channel Carousel. Big job.
+              Poster, TV program, competitions, full-fledged online store,
+              program tracking, social network for children, graphic content and
+              many more. Made by a small team of 5 people. My role is designer.
             </p>
           </Text>
           <ArticleFigure figcaption="Main page">
@@ -50,9 +49,6 @@ const Page = () => {
           <ArticleFigure figcaption="Video and news">
             <BodyImage src="/works/karusel/video_desktop.png" />
           </ArticleFigure>
-
-
-          
         </Section>
         <Section id="mobile" className="container">
           <Text title="Mobile">
@@ -72,39 +68,35 @@ const Page = () => {
           </ArticleFigure>
         </Section>
         <Section id="styles" className="container">
-
-
           <Text title="Styles">
             <p>
-            The design is based on Bootstrap. Prepared Bootstrap theme, created wireframes and prototypes.
+              The design is based on Bootstrap. Prepared Bootstrap theme,
+              created wireframes and prototypes.
             </p>
           </Text>
           <ArticleFigure>
-            <BodyImage
-              src="/works/karusel/style_guide.png"
-     
-            />
+            <BodyImage src="/works/karusel/style_guide.png" />
           </ArticleFigure>
           <ArticleFigure>
-            <BodyImage
-              src="/works/karusel/templates.png"
-         
-            />
+            <BodyImage src="/works/karusel/templates.png" />
           </ArticleFigure>
-     
         </Section>
         {/* BRANDING */}
         <Section id="content" className="container">
           <Text title="Content design">
             <p>
-              I created and drew tons of 2d and 3d content for a large number of parallax headers
+              I created and drew tons of 2d and 3d content for a large number of
+              parallax headers
             </p>
           </Text>
           <ArticleFigure>
             <BodyImage src="/works/karusel/content.png" />
           </ArticleFigure>
           <Text>
-            <p>I designed and code the adaptive parallax Hero header. 2 types of such headers have been made - for pages and for sections</p>
+            <p>
+              I designed and code the adaptive parallax Hero header. 2 types of
+              such headers have been made - for pages and for sections
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage src="/works/karusel/parallax.png" />
