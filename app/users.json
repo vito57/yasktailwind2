@@ -99,9 +99,9 @@
       "Runet Award 2018",
       "Runet Award 2021"
     ],
-    "people": ["Ton Roosendaal", "Bret Voctor", "Mike Bostock", "Steve"],
+
     "education": "B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses": ["1", "2"]
+    "courses": ["MITx: Mobile Application Experiences"]
   },
   {
     "name": "Gala",
@@ -141,21 +141,15 @@
       {
         "position": "Designer",
         "place": "Yask",
-        "placeLink": "https://www.sberbank.com",
+        "placeLink": "/",
         "date": "since 2020",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "Icon systems design, logo design, lettering, illustrations",
+        "achievements": "Designed and launch 3 huge icon systems. Bootsy Icons Duotone is featured product on UI8"
       }
     ],
 
-    "awards": [
-      "Runet Award 2015",
-      "Runet Award 2016",
-      "Runet Award 2018",
-      "Runet Award 2021"
-    ],
-    "education": "B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses": ["1", "2"]
+    "awards": ["UI8 featured product"],
+    "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)"
   },
   {
     "name": "Vera",

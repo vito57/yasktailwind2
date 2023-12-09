@@ -134,32 +134,27 @@ export default function Page({ params }: { params: { slug: string } }) {
             ))}
           </div>
         </Text>
-        {user.people ? (
-          <Text title="People who inspire me">
-            {user.people.map((i) => (
-              <Badge key={i}>{i}</Badge>
-            ))}
-          </Text>
-        ) : null}
+
         <Text title="Education">
           <p>{user.education}</p>
         </Text>
-        <Text title="Courses">
-          <ul>
-            <li>
-              {" "}
-              <Link className="ylink" href="/">
-                State University of Economics and Trade, Adverising, Oryol 2006
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="ylink" href="/">
-                State University of Economics and Trade, Adverising, Oryol 2006
-              </Link>
-            </li>
-          </ul>
-        </Text>
+        {user.courses && (
+          <Text title="Courses">
+            <ul>
+              {user.courses.map((i) => {
+                return (
+                  <li>
+                    <Link className="ylink" href="/">
+                      State University of Economics and Trade, Adverising, Oryol
+                      2006
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Text>
+        )}
+
         <Footer />
       </AnimateLayout>
     </>
