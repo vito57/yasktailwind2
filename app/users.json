@@ -1,7 +1,7 @@
 [
   {
     "name": "Vitaly",
-    "email": "vitaly@yask-design.com",
+    "email": "work@yask.work",
     "avatar": "/about/vitaly.png",
     "occupation": "User Interface Designer",
     "resume": "/img/drugcode.png",
@@ -65,7 +65,7 @@
         "placeLink": "https://www.sberbank.com",
         "date": "2019—2021",
         "responsible": "a) systematization of the design process (design system), writing guidelines, implementation and development of components (IOS, Android, Web), internal team processes (review, design supervision, etc., creation and implementation); b) DrugCode - a platform for creating micro-applications in Sberdrug. Design, systematization, flow, processes.",
-        "achievements": "a) Creation of a design system, systematization of the design process, implementation and description of the review process and the principles and metrics of the team’s work; b) Implementation of a component system in DrugCode, quality control, review of micro-applications from third-party developers, collection of information and addition to the library of components (IOS, Android, Web)."
+        "achievements": "a) creating of a design system, systematization of the design process, implementation and description of the review process and the principles and metrics of the team’s work; b) Implementation of a component system in DrugCode, quality control, review of micro-applications from third-party developers, collection of information and addition to the library of components (IOS, Android, Web)."
       },
       {
         "position": "Designer",
@@ -73,7 +73,7 @@
         "placeLink": "https://www.karusel-tv.ru/",
         "date": "2015—2019",
         "responsible": "user interaction design and interface design, responsive web design, front-end development, graphic design.",
-        "achievements": " design ans front-end of karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru(Runet Award 2019), kanal-o.ru, poehali.tv, и etc."
+        "achievements": "design and front-end development of karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru(Runet Award 2019), kanal-o.ru, poehali.tv, и etc."
       },
       {
         "position": "Designer",
@@ -81,15 +81,14 @@
         "placeLink": "https://www.artlebedev.ru/vetrov/",
         "date": "2013—2015",
         "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "achievements": "launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
       },
       {
         "position": "Designer",
         "place": "Yask",
         "placeLink": "/",
         "date": "since 2008",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "Launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "responsible": "user interface design, coding, theming and branding"
       }
     ],
 

@@ -96,16 +96,17 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </Link>
                 </dt>
                 <dd key={i.date} className="mb-8">
-                  <span className="italic">{i.date}</span> <br />
-                  <span>
+                  <p>{i.date}</p>
+                  <p>
                     <span className="font-medium">Responsibilities:</span>{" "}
                     {i.responsible}
-                  </span>
-                  <br />
-                  <span>
-                    <span className="font-medium">Achivments:</span>{" "}
-                    {i.achievements}
-                  </span>
+                  </p>
+                  {i.achievements && (
+                    <p>
+                      <span className="font-medium">Achivments:</span>{" "}
+                      {i.achievements}
+                    </p>
+                  )}
                 </dd>
               </div>
             ))}
