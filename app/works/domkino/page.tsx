@@ -5,6 +5,7 @@ import {
   ArticleFigure,
   Section,
   ArticleHeader,
+  ArticleImageSection,
   BodyImage,
 } from "../../components/server";
 import Image from "next/image";
@@ -36,24 +37,59 @@ const Page = () => {
         </Section>
 
         <Section id="mobile" className="container">
-          <ArticleFigure>
-            <BodyImage
-              src="/works/domkino/main.png"
-              alt="DomKino website layout"
-            />
-          </ArticleFigure>
-          <ArticleFigure>
+
+
+          <ArticleFigure figcaption="Different types of layout">
             <BodyImage
               src="/works/domkino/layout_1.png"
               alt="DomKino website layout"
             />
           </ArticleFigure>
+          <Text title="">
+            <p>When designing a layout, it is necessary to provide as many advertising places as possible. I prepared different options for layouts with an adaptive and tested them.</p>
+          </Text>
           <ArticleFigure>
             <BodyImage
               src="/works/domkino/layout_2.png"
               alt="DomKino website layout"
             />
           </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage
+              src="/works/domkino/article.png"
+              alt="DomKino website article"
+            />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage
+              src="/works/domkino/styles.png"
+              alt="DomKino website styles"
+            />
+          </ArticleFigure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/domkino/1.png",
+            }}
+            data2={{
+              src: "/works/domkino/2.png",
+            }}
+          />
+          <ArticleImageSection
+            data1={{
+              src: "/works/domkino/3.png",
+            }}
+            data2={{
+              src: "/works/domkino/4.png",
+            }}
+          />
+          <ArticleImageSection
+            data1={{
+              src: "/works/domkino/5.png",
+            }}
+            data2={{
+              src: "/works/domkino/6.png",
+            }}
+          />
         </Section>
 
         <Section id="summary" className="container">
