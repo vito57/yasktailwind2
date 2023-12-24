@@ -106,7 +106,7 @@ export function Button({
   return (
     <Link
       href={path || "/"}
-      className={` ${className}`}
+      className={`${className}`}
     >
       {children}
     </Link>
@@ -288,7 +288,7 @@ export function ArticleHeader({ className, children }: ActicleHeaderProps) {
       id="intro"
       className={`mb-8 pt-[128px] reletive mt-[-128px] ${className}`}
     >
-      <div className="container px-4">{children}</div>
+      <div className="container">{children}</div>
     </header>
   );
 }

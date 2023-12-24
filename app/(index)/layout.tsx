@@ -10,7 +10,7 @@ export default function WorksLayout({
 }) {
   return (
     <div className="container relative px-4">
-      <header id="header" className="container pt-4 md:pt-10">
+      <header id="header" className="pt-4 md:pt-10">
         <div className="text-center">
           <Image
             className="inline-block mb-4"

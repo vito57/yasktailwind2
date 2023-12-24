@@ -32,18 +32,18 @@ const Page = () => {
               alt="Bootsy Icons"
             />
 
-            <figcaption className="absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0 right-0 bottom-0 flex flex-col justify-center ">
-              <div className="max-w-sm text-white">
-                <p className="text-sm md:text-base mb-2 hidden md:block opacity-75">Bootsy Icons</p>
-                <h1 className="text-base md:text-4xl mb-2 font-bold ">
+            <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
+              <div className="md:max-w-sm text-white">
+                <p className="text-sm md:text-base mb-2  opacity-75">Bootsy Icons</p>
+                <h1 className="text-xl md:text-4xl mb-2 font-bold ">
                   {" "}
                   1700+ High-Quality <br/> UI Vector Icons
                 </h1>
-                <p className="text-base hidden md:block mb-4 opacity-75">
+                <p className="text-base  mb-4 opacity-75">
                   High-quality handcrafted icon set for websites, apps, social
                   networks, prints.
                 </p>
-                <Button className="ybutton secondary" path="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set">Download on UI8</Button>
+                <Button className="ybutton secondary w-full md:w-auto" path="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set">Download on UI8</Button>
               </div>
             </figcaption>
           </ArticleHeroSection>
