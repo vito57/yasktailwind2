@@ -82,13 +82,13 @@ const Page = () => {
           <Text>
             <p>Add, delete, rename projects</p>
           </Text>
-          <ArticleFigure figcaption="Dark theme">
+          <ArticleFigure>
             <BodyImage
               src="/works/drugcode/node_preview.png"
               alt="Node preview"
             />
           </ArticleFigure>
-          <ArticleFigure figcaption="Light theme">
+          <ArticleFigure>
             <BodyImage
               src="/works/drugcode/light_theme.png"
               alt="Light theme"

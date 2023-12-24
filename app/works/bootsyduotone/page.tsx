@@ -42,7 +42,7 @@ const Page = () => {
                   High-quality handcrafted icon set for websites, apps, social
                   networks, prints.
                 </p>
-                <Button className="ybutton secondary w-full" path="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set">Download on UI8</Button>
+                <Button className="ybutton secondary w-full md:w-auto" path="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set">Download on UI8</Button>
               </div>
             </figcaption>
           </ArticleHeroSection>
