@@ -20,13 +20,13 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-green-200">
+        <ArticleHeader className="bg-[url('/works/karusel/bg.png')] bg-cover">
           <ArticleFigure>
             <BodyImage
               src="/works/karusel/cover.png"
               width={1120}
-              height={416}
-              className="bg-green-200"
+              height={416} 
+              className="bg-transparent"          
               alt="Karusel TV"
             />
           </ArticleFigure>
@@ -34,7 +34,7 @@ const Page = () => {
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p>
-              Adaptive website for the children's TV channel Carousel. Big job.
+              Adaptive website for the childrens TV channel Carousel. Big job.
               Poster, TV program, competitions, full-fledged online store,
               program tracking, social network for children, graphic content and
               many more. Made by a small team of 5 people. My role is designer.
@@ -135,11 +135,17 @@ const Page = () => {
                 Vitaly
               </Link>{" "}
             </p>
-            <p>Client: PKVS </p>
+           
             <p>
               Live:{" "}
               <Link className="ylink" href="https://www.karusel-tv.ru/">
                 karusel-tv.ru
+              </Link>
+            </p>
+            <p>
+              Full design:
+              <Link className="ylink" href="https://xd.adobe.com/view/1a850fed-be7f-4ecc-4394-85bbb759d9a9-6cb4/screen/4991d63d-36a1-4724-b5b7-f77ec795e2fd/?fullscreen">
+Adobe XD Prototype
               </Link>
             </p>
             <p>Year: 2016 </p>

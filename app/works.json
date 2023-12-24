@@ -15,14 +15,7 @@
     "path": "/works/flamingo",
     "date": "2021"
   },
-  {
-    "cover": "/img/windy_icons.png",
-    "title": "Windy Icons",
-    "by": ["vitaly", "gala"],
-    "type": "UI Icon Set",
-    "path": "/works/windy_icons",
-    "date": "2023"
-  },
+
   {
     "cover": "/img/bootsyicons.png",
     "title": "Bootsy Icons",

@@ -8,6 +8,7 @@ import {
   ArticleHeader,
   BodyImage,
   Button,
+  ArticleHeroSection,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,15 +21,30 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
-          <ArticleFigure>
+        <ArticleHeader className="bg-[url('/works/bootsyduotone/bg.png')] bg-cover">
+          <ArticleHeroSection>
             <BodyImage
               src="/works/bootsyduotone/cover.png"
               width={1120}
               height={416}
-              alt="Drugcode cover"
+              className="bg-transparent"
+              alt="Bootsy duotone icons"
             />
-          </ArticleFigure>
+            <figcaption className="absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0 right-0 bottom-0 flex flex-col justify-center ">
+              <div className="max-w-sm">
+                <p className="text-sm md:text-base mb-2 hidden md:block opacity-75">Bootsy Duotone Icons</p>
+                <h1 className="text-base md:text-4xl mb-2 font-bold ">
+                  {" "}
+                  1700+ High-Quality <br/> UI Vector Icons
+                </h1>
+                <p className="text-base hidden md:block mb-4 opacity-75">
+                  High-quality handcrafted icon set for websites, apps, social
+                  networks, prints.
+                </p>
+                <Button className="ybutton secondary" path="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set">Download on UI8</Button>
+              </div>
+            </figcaption>
+          </ArticleHeroSection>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
@@ -83,14 +99,13 @@ const Page = () => {
                 Vitaly
               </Link>{" "}
             </p>
+            <p>
+              Download:{" "}
+              <Link className="ylink" href="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set">UI8</Link>
+            </p>
             <p>Year: 2022 </p>
           </Text>
-          <Button
-            className="bg-ylime hover:bg-[#CBEA6E] w-full text-center text-xl"
-            path="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"
-          >
-            Download on UI8
-          </Button>
+
         </Section>
       </Article>
     </AnimateLayout>

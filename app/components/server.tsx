@@ -13,8 +13,8 @@ export function BodyImage({
   src,
   width = 1600,
   height = 1200,
-  className = "dark:bg-zinc-900 bg-slate-100  rounded-md",
-  alt = "yask",
+  className = "dark:bg-zinc-900 bg-slate-100 rounded-md",
+  alt = "Yask",
 }: BodyImage) {
   return (
     <Image
@@ -42,7 +42,7 @@ interface TextProps {
 }
 export function Text({ title, children }: TextProps) {
   return (
-    <div className="flex flex-col md:flex-row mb-8">
+    <div className="flex flex-col md:flex-row gap-2 mb-8">
       {title && (
         <div className="basis-1/4">
           <h3 className="font-bold">{title}</h3>
@@ -100,13 +100,13 @@ interface ButtonProps {
 }
 export function Button({
   children,
-  className = "bg-ylime hover:bg-[#CBEA6E]",
+  className = "ybutton primary",
   path,
 }: ButtonProps) {
   return (
     <Link
       href={path || "/"}
-      className={`text-sm inline-block m-0.5 font-medium transition rounded-xl px-3 py-2 text-ylightblue ${className}`}
+      className={` ${className}`}
     >
       {children}
     </Link>
@@ -134,8 +134,8 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex  gap-8 mb-8">
-      <div className="basis-1/2">
+    <div className="flex md:gap-x-8 mb-8">
+      <div className="basis-auto md:basis-1/2">
         <figure>
           <Image
             src={props.data1.src}
@@ -149,7 +149,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           )}
         </figure>
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1 md:basis-1/2">
         <figure>
           <Image
             src={props.data2.src}
@@ -236,7 +236,7 @@ export function PortfolioItem({
           />
         </div>
 
-        <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-yred dark:text-ytextdark transition py-0.5 justify-between text-yask">
+        <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
           <span>{title}</span>
           <span>{type}</span>
         </figcaption>
@@ -263,6 +263,20 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   );
 }
 //END ARTICLE IMAGE
+//Article Hero
+interface ArticleHeroSectionProps {
+ 
+  children: React.ReactNode;
+}
+export function ArticleHeroSection({ children }: ArticleHeroSectionProps){
+  return(
+    <figure className="mb-8 relative">
+    {children}
+
+  </figure>
+  )
+}
+//End Aticle Header
 //ARTICLE HEADER
 interface ActicleHeaderProps {
   className?: string;

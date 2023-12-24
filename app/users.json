@@ -1,10 +1,10 @@
 [
   {
     "name": "Vitaly",
-    "email": "work@yask.work",
+    "email": "vito57rus@gmail.com",
     "avatar": "/about/vitaly.png",
     "occupation": "User Interface Designer",
-    "resume": "/img/drugcode.png",
+    "resume": "/about/vitaly_yaskevich_sv.pdf",
     "tagline": "Hi! I can help with design systems, banners, landings & coding.",
     "path": "/vitaly",
     "social": [
@@ -99,12 +99,12 @@
       "Runet Award 2021"
     ],
 
-    "education": "B.S Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses": ["MITx: Mobile Application Experiences"]
+    "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
+    "courses": ["MITx: Mobile Application Experiences, 2012"]
   },
   {
     "name": "Gala",
-    "email": "gala@yask-design.com",
+    "email": "vito57rus@gmail.com",
     "avatar": "/about/gala.png",
     "occupation": "Icon Designer, Illustrator",
     "resume": null,
@@ -148,11 +148,12 @@
     ],
 
     "awards": ["UI8 featured product"],
-    "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)"
+    "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
+    "courses": null
   },
   {
     "name": "Vera",
-    "email": "vera@yask-design.com",
+    "email": "vito57rus@gmail.com",
     "avatar": "/about/vera.png",
     "occupation": "Illustrator",
     "resume": null,
@@ -179,13 +180,8 @@
       }
     ],
 
-    "awards": [
-      "Runet Award 2015",
-      "Runet Award 2016",
-      "Runet Award 2018",
-      "Runet Award 2021"
-    ],
+    "awards": null,
     "education": "1494 elmentry school, since 2023",
-    "courses": ["1", "2"]
+    "courses": null
   }
 ]

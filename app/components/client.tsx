@@ -31,7 +31,7 @@ interface BodyColorProps {
 export function BodyColor({ children }: BodyColorProps) {
   const pathname = usePathname();
   //array of pages that must have dark theme
-  const dark = ["/works/drugcode", "/works/bootsyduotone"];
+  const dark = ["/works/drugcode", "/works/bootsyduotone", "/works/poehali"];
   const colorClass = dark.includes(pathname)
     ? "dark bg-zinc-950 text-ytextdark"
     : "light text-yask";
@@ -59,7 +59,8 @@ interface ArticleTopMenuProps {
   className?: string;
 }
 export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
-  const pathname = title || useSelectedLayoutSegment();
+  const pn = useSelectedLayoutSegment();
+  const pathname = title || pn;
   const [scroll, setScroll] = useState("");
 
   useEffect(() => {
@@ -70,24 +71,40 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
     });
   }, [scroll]);
   return (
-    <div className={`z-10 sticky md:sticky top-0`}>
-      <div className={`container px-4 py-2 flex justify-between  mb-4 `}>
-        <div className="flex gap-4 md:gap-8 items-center">
+    <div className={`z-10 ${title ? "static" : "sticky"} md:sticky top-0 ${scroll}`}>
+      <div className={`container px-4 py-1 md:py-2 flex justify-between  md:mb-4 `}>
+        <div className="flex gap-4 grow md:gap-8 items-center">
           <Link href="/">
             <Logo width={40} height={40} />
           </Link>
-          <span className="font-bold capitalize">{pathname}</span>
+          <span className={`font-bold capitalize`}>{pathname}</span>
         </div>
+
         <div
-          className={`flex fixed md:static py-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
+          className={`hidden md:flex fixed md:static py-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
         >
-          <Tabs className="bg-yask md:bg-transparent" />
-          <Button path="/">Send email</Button>
+          <Tabs className="bg-yask  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
+          {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
+        </div>
+        <div className="py-2">
+          <Button path="mailto:vito57rus@yandex.ru">Send email</Button>
         </div>
       </div>
     </div>
   );
 }
+//MOBILE ARTICLE FOOTER
+export function MobileArticleFooter(){
+  return (
+    <div
+    className={`flex md:hidden fixed md:static py-4 justify-center left-0 right-0 bottom-0 gap-2 z-10 items-center`}
+  >
+    <Tabs className="bg-yred  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
+    {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
+  </div>
+  )
+}
+//END MOBILE ARTICLE FOOTER
 //Jumbotrone
 interface JumboProps {
   datas?: any;

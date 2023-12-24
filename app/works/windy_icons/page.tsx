@@ -8,6 +8,7 @@ import {
   ArticleHeader,
   BodyImage,
   Button,
+  ArticleHeroSection
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,15 +21,30 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
-          <ArticleFigure>
+        <ArticleHeader className="bg-[url('/works/windy_icons/bg.png')] bg-cover">
+        <ArticleHeroSection>
             <BodyImage
               src="/works/windy_icons/cover.png"
               width={1120}
               height={416}
-              alt="Drugcode cover"
+             className="bg-transparent"
+              alt="Bootsy Icons"
             />
-          </ArticleFigure>
+            <figcaption className="absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0 right-0 bottom-0 flex flex-col justify-center ">
+              <div className="max-w-sm">
+                <p className="text-sm md:text-base mb-2 hidden md:block opacity-75">Windy Icons</p>
+                <h1 className="text-base md:text-4xl mb-2 font-bold ">
+                  {" "}
+                  2300+ High-Quality <br/> UI Vector Icons
+                </h1>
+                <p className="text-base hidden md:block mb-4 opacity-75">
+                  High-quality handcrafted icon set for websites, apps, social
+                  networks, prints.
+                </p>
+                <Button className="bg-white hover:bg-slate-100" path="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set">Download on UI8</Button>
+              </div>
+            </figcaption>
+          </ArticleHeroSection>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
@@ -36,7 +52,7 @@ const Page = () => {
               Windy Icons - multi-purpose icon system. These are bright and
               original icons for the user interface. Windy Icons good choise for
               Bootstrap or Tailwind users. All icon names are the same as
-              Boostrap's icon names. Makes your website or app look different.
+              Boostraps icon names. Makes your website or app look different.
             </p>
           </Text>
         </Section>
@@ -63,15 +79,7 @@ const Page = () => {
               customizable to suit different styles.
             </p>
           </Text>
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/windy_icons/fill_icons.png"
-              width={2240}
-              height={1792}
-              className="bg-white"
-              alt="All Icons"
-            />
-          </ArticleFigure> */}
+
         </Section>
         <Section id="summary" className="container">
           <Text title="Summary">

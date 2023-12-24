@@ -11,8 +11,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 export const metadata = {
-  title: "Starc - IOS native App",
-  description: "Script writing app for IOS",
+  title: "DomKino",
+  description: "Adaptive website for TV",
 };
 
 const Page = () => {
@@ -30,36 +30,57 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
+
         <Section id="about" className="mb-8 px-4 relative container">
           <Text title="About">
             <p>Design of an adaptive website for the Dom Kino TV channel</p>
           </Text>
         </Section>
-
+        
         <Section id="mobile" className="container">
 
 
-          <ArticleFigure figcaption="Different types of layout">
+          <ArticleFigure >
             <BodyImage
               src="/works/domkino/layout_1.png"
               alt="DomKino website layout"
             />
           </ArticleFigure>
           <Text title="">
-            <p>When designing a layout, it is necessary to provide as many advertising places as possible. I prepared different options for layouts with an adaptive and tested them.</p>
+            <p>When designing a layout, it was necessary to provide as many advertising places as possible and dont forget about users. I prepared different options for layouts with an adaptive and tested them.</p>
           </Text>
           <ArticleFigure>
             <BodyImage
               src="/works/domkino/layout_2.png"
               alt="DomKino website layout"
+              height={1354}
             />
           </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage
+              src="/works/domkino/layout_3.png"
+              alt="DomKino website article"
+            />
+          </ArticleFigure>
+          <Text title="">
+            <p>Regular and rich article(with image header) templates. </p>
+          </Text>
+          <ArticleFigure>
+            <BodyImage
+              src="/works/domkino/article_image.png"
+              alt="DomKino website article"
+            />
+          </ArticleFigure>
+
           <ArticleFigure>
             <BodyImage
               src="/works/domkino/article.png"
               alt="DomKino website article"
             />
           </ArticleFigure>
+          <Text title="Styles">
+            <p>All elements provided in style guide.</p>
+          </Text>
           <ArticleFigure>
             <BodyImage
               src="/works/domkino/styles.png"
@@ -74,14 +95,7 @@ const Page = () => {
               src: "/works/domkino/2.png",
             }}
           />
-          <ArticleImageSection
-            data1={{
-              src: "/works/domkino/3.png",
-            }}
-            data2={{
-              src: "/works/domkino/4.png",
-            }}
-          />
+
           <ArticleImageSection
             data1={{
               src: "/works/domkino/5.png",
@@ -100,6 +114,7 @@ const Page = () => {
                 Vitaly
               </Link>{" "}
             </p>
+            <p>Client: PKVS</p>
             <p>
               Live:{" "}
               <Link className="ylink" href="https://www.domkino.tv/">

@@ -1,5 +1,5 @@
 import { Footer, PortfolioItem } from "../components/server";
-import { ArticleTopMenu, MobileNavBar } from "../components/client";
+import { ArticleTopMenu, MobileNavBar, MobileArticleFooter } from "../components/client";
 import data from "../works.json";
 export default function WorkLayout({
   children,
@@ -9,7 +9,7 @@ export default function WorkLayout({
   return (
     <>
       <ArticleTopMenu />
-
+<MobileArticleFooter />
       {children}
       <div className="container px-4">
         <h2 className="text-xl font-medium mb-8">More works</h2>
@@ -17,6 +17,7 @@ export default function WorkLayout({
           {data.map((i) => {
             return (
               <PortfolioItem
+              key={i.title}
                 keyNum={i.path}
                 href={i.path}
                 imageSrc={i.cover}

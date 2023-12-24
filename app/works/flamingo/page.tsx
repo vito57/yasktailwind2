@@ -26,6 +26,7 @@ export default function Flamingo() {
               src="/works/flamingo/cover.png"
               width={1120}
               height={416}
+              className="bg-transparent"
               alt="Flamingo cover"
             />
           </ArticleFigure>
@@ -42,10 +43,17 @@ export default function Flamingo() {
               typography and entire screen configurations.
             </p>
           </Text>
-
-          <ArticleFigure>
+</Section>
+<Section className="bg-slate-100">
+<div className="container">
+<ArticleFigure>
             <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
           </ArticleFigure>
+</div>
+
+</Section>
+
+          <Section className="container">
           <Text>
             <p>
               The style guide was vital for both our developers and our
@@ -185,7 +193,12 @@ export default function Flamingo() {
                 Vitaly
               </Link>{" "}
             </p>
-
+            <p>
+              Owner:{" "}
+             
+                Sber
+          
+            </p>
             <p>Year: 2022 </p>
           </Text>
         </Section>

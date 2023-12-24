@@ -32,11 +32,11 @@ const Page = () => {
           </ArticleFigure>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
-          <Text title="Promt">
+          <Text title="About">
             <p>
               Design a native application for IOS. For mobile devices and
               tablets. Be close to platform gesign guides as possible.{" "}
-              <Link href={"/works/starcios"} className="ylink">
+              <Link href={"/works/starc"} className="ylink">
                 Android{" "}
               </Link>
               and IOS experience was made.

@@ -6,7 +6,7 @@ import {
   Footer,
   AnimateLayout,
 } from "@/app/components/server";
-import { ArticleTopMenu } from "@/app/components/client";
+import { ArticleTopMenu, MobileArticleFooter } from "@/app/components/client";
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";
@@ -26,8 +26,9 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <ArticleTopMenu title={`Hi i am ${user.name}`} />
+      <MobileArticleFooter />
       <AnimateLayout className="container">
-        <header className="text-center relative rounded-xl pt-10">
+        <header className="text-center relative rounded-xl pt-4">
           <Image
             className="inline-block mb-2 rounded-full"
             src={user.avatar}
@@ -39,7 +40,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <Link href={`mailto:${user.email}`} className="ylink text-base">
             {user.email}
           </Link>
-          <blockquote className="absolute top-0 text-base right-0 italic text-left max-w-xs">
+          <blockquote className="absolute hidden md:block top-0 text-base right-0 italic text-left max-w-xs">
             {user.tagline} Feel free to{" "}
             <Link href={user.email} className="ylink ">
               drop me a line
@@ -47,9 +48,9 @@ export default function Page({ params }: { params: { slug: string } }) {
             !
           </blockquote>
         </header>
-        <div className="flex py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
+        <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
-            <Button className="bg-ygrey hover:bg-[#C2CBD6]" path="/">
+            <Button className="ybutton secondary" path={user.resume}>
               Resume.pdf
             </Button>
           ) : (
@@ -128,13 +129,14 @@ export default function Page({ params }: { params: { slug: string } }) {
             })}
           </div>
         </Text>
-        <Text title="Awards">
+        {user.awards &&         <Text title="Awards">
           <div className="flex gap-2">
-            {user.awards.map((i) => (
+            { user.awards.map((i) => (
               <Badge key={i}>🏆 {i}</Badge>
             ))}
           </div>
-        </Text>
+        </Text>}
+
 
         <Text title="Education">
           <p>{user.education}</p>
@@ -144,11 +146,10 @@ export default function Page({ params }: { params: { slug: string } }) {
             <ul>
               {user.courses.map((i) => {
                 return (
-                  <li>
-                    <Link className="ylink" href="/">
-                      State University of Economics and Trade, Adverising, Oryol
-                      2006
-                    </Link>
+                  <li key={i}>
+                  
+                      {i}
+                   
                   </li>
                 );
               })}

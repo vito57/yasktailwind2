@@ -20,3 +20,12 @@
     opacity: 1;
   }
 }
+.ybutton{
+  @apply text-sm inline-block m-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue 
+}
+.ybutton.primary{
+  @apply bg-ylime hover:bg-[#CBEA6E]
+}
+.ybutton.secondary{
+  @apply bg-ytextdark hover:bg-[#B2C4F9]
+}

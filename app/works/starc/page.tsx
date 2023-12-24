@@ -20,19 +20,19 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-emerald-100">
+        <ArticleHeader className="bg-yellow-100">
           <ArticleFigure>
             <BodyImage
               src="/works/starc/cover.png"
               width={1120}
               height={416}
-              className="bg-emerald-100"
+              className="bg-yellow-100"
               alt="Starc Android App"
             />
           </ArticleFigure>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">
-          <Text title="Promt">
+          <Text title="About">
             <p>
               Design a native application for Android. For mobile devices and
               tablets. Be close to platform gesign guides as possible. Android

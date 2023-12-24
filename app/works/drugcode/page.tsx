@@ -19,13 +19,13 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-indigo-900">
+        <ArticleHeader className="bg-[url('/works/drugcode/bg.png')] bg-cover">
           <ArticleFigure>
             <BodyImage
               src="/works/drugcode/cover.png"
               width={1120}
               height={416}
-              className="bg-indigo-900"
+              className="bg-transparent"
               alt="Drugcode cover"
             />
           </ArticleFigure>
@@ -202,7 +202,7 @@ const Page = () => {
         {/* WORKFOW */}
         <Section id="workflow" className="mb-8  container">
           <Text title="Workflow">
-            <ol className="text-xl list-decimal list-inside">
+            <ol className=" list-decimal list-inside">
               <li>
                 Baseline research (Interview, Interview in context,
                 observations)
@@ -223,7 +223,7 @@ const Page = () => {
                 Vitaly
               </Link>{" "}
             </p>
-            <p>Client: Sber </p>
+         
             <p>Year: 2020-2021 </p>
           </Text>
         </Section>

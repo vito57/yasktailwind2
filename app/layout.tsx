@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { BodyColor } from "./components/client";
 export const metadata: Metadata = {
-  // metadataBase: new URL('https://yask-design.github.io'),
+  metadataBase: new URL('https://vito57.github.io'),
   title: {
     default: "Yask Design",
     template: "%s | Yask Design",
@@ -17,17 +17,17 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   },
-  // },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   twitter: {
     title: "Yask Design",
     card: "summary_large_image",
@@ -40,6 +40,8 @@ export const metadata: Metadata = {
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ['400', '500', '700'],
+  fallback: ["system-ui"," -apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
 });
 // END FONT
 
