@@ -2,20 +2,24 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { BodyColor } from "./components/client";
+
+import image from "./twitter-image.png";
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vito57.github.io'),
+  metadataBase: new URL('http://yask.work'),
   title: {
     default: "Yask Design",
     template: "%s | Yask Design",
   },
   description: "Web and App design, icon sets and code.",
+  
   openGraph: {
     title: "Yask Design",
     description: "Web and App design, icon sets and code.",
-    url: "",
+    url: "http://yask.work",
     siteName: "Yask Design",
     locale: "en_US",
-    type: "website",
+    type: "website"
+   
   },
   robots: {
     index: true,
@@ -30,12 +34,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Yask Design",
-    card: "summary_large_image",
-  },
-  // verification: {
-  //   google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-  //   yandex: '14d2e73487fa6c71',
-  // },
+    card: "summary_large_image"
+   
+  }
+
 };
 const inter = Inter({
   variable: "--font-inter",
