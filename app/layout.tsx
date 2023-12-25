@@ -5,7 +5,7 @@ import { BodyColor } from "./components/client";
 
 import image from "./twitter-image.png";
 export const metadata: Metadata = {
-  metadataBase: new URL('http://yask.work'),
+  metadataBase: new URL('https://yask.vercel.app/'),
   title: {
     default: "Yask Design",
     template: "%s | Yask Design",
