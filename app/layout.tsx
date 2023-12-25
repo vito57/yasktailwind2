@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yask Design",
     description: "Web and App design, icon sets and code.",
-    url: "http://yask.work",
+    url: "/",
     siteName: "Yask Design",
     locale: "en_US",
     type: "website"
