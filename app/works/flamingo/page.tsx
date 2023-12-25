@@ -59,7 +59,7 @@ export default function Flamingo() {
               The style guide was vital for both our developers and our
               designers, giving us a shared kit of parts to work from and
               ensures consistency within our designs. This framework was adopted
-              by additional suites in the Power line and it used across multiple
+              by additional suites and it used across multiple
               teams at the company today.
             </p>
           </Text>
