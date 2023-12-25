@@ -71,7 +71,7 @@ export function Section({ children, className, id }: SectionProps) {
 export function TopMenu() {
   return (
     <div className="px-4 w-fit flex gap-2">
-      <Button path="/">Send email</Button>
+      <Button path="mailto:vito57rus@gmail.com">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
           src="dribbble.svg"
