@@ -228,9 +228,8 @@ export function PortfolioItem({
         <div className="overflow-hidden rounded">
           <Image
             src={imageSrc}
-            quality={100}
-            width={1600}
-            height={1200}
+            width={800}
+            height={600}
             className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
             alt={imageAlt}
           />
@@ -316,9 +315,8 @@ export function FeedItem({
       <figure className="overflow-hidden relative rounded">
         <Image
           src={imageSrc}
-          quality={100}
-          width={2240}
-          height={1680}
+          width={800}
+          height={600}
           className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
           alt={imageAlt}
         />

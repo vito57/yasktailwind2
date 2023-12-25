@@ -8,7 +8,7 @@ export default function Works() {
         {data.map((i) => {
           return (
             <PortfolioItem
-            key={i.title}
+              key={i.title}
               keyNum={i.path}
               href={i.path}
               imageSrc={i.cover}
