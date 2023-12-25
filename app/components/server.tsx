@@ -134,7 +134,7 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex md:gap-x-8 mb-8">
+    <div className="flex flex-col md:flex-row gap-8 mb-8">
       <div className="basis-auto md:basis-1/2">
         <figure>
           <Image
@@ -149,7 +149,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           )}
         </figure>
       </div>
-      <div className="basis-1 md:basis-1/2">
+      <div className="basis-auto md:basis-1/2">
         <figure>
           <Image
             src={props.data2.src}
