@@ -103,7 +103,7 @@ const Page = () => {
             </p>
             <p>
               Download:{" "}
-              <Link href="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set">UI8</Link>
+              <Link className="ylink" href="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set">UI8</Link>
             </p>
             <p>Year: 2022 </p>
           </Text>
