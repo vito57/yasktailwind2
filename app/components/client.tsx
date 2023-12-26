@@ -3,8 +3,33 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
-import { ReactNode, useState, useEffect } from "react";
+import { ReactNode, useState, useEffect, useLayoutEffect } from "react";
 import data from "../main.json";
+//PWA
+
+export function Pwa() {
+  console.log("start")
+  let sw: ServiceWorkerContainer | undefined;
+
+  if (typeof window !== "undefined") {
+    sw = window?.navigator?.serviceWorker;
+  }
+
+  useEffect(() => {
+    if (sw) {
+      sw.register("/sw.js", { scope: "/" }).then((registration) => {
+        console.log("Service Worker registration successful with scope: ", registration.scope);
+      }).catch((err) => {
+        console.log("Service Worker registration failed: ", err);
+      });
+    }
+  }, [sw]);
+
+  return (
+    <></>
+  )
+}
+
 //Logo
 interface LogoProps {
   width?: number;

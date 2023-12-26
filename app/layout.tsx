@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { BodyColor } from "./components/client";
-
+import { BodyColor, Pwa } from "./components/client";
+import { Viewport } from "next";
 import image from "./twitter-image.png";
 export const metadata: Metadata = {
   metadataBase: new URL('https://yask.work'),
@@ -46,7 +46,9 @@ const inter = Inter({
   fallback: ["system-ui"," -apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
 });
 // END FONT
-
+export const viewport: Viewport = {
+  themeColor: 'white',
+}
 export default function RootLayout({
   children,
 }: {
@@ -59,6 +61,7 @@ export default function RootLayout({
       className={`${inter.variable} antialiased`}
     >
       <BodyColor>{children}</BodyColor>
+      <Pwa/>
     </html>
   );
 }
