@@ -139,7 +139,7 @@ const Page = () => {
           </ArticleFigure>
           <Text title="">
             <p>
-              We follow the pattern Template/Region/Component/Element/Modifier.
+              We follow the pattern Template / Region / Component / Element / Modifier.
               A mix of atomic design principles and BEM methodology. More then
               80 components are created.
             </p>

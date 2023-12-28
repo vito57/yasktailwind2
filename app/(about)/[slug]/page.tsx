@@ -129,10 +129,10 @@ export default function Page({ params }: { params: { slug: string } }) {
             })}
           </div>
         </Text>
-        {user.awards &&         <Text title="Awards">
-          <div className="flex gap-2">
+        {user.awards && <Text title="Awards">
+          <div className="flex gap-1 flex-wrap">
             { user.awards.map((i) => (
-              <Badge key={i}>🏆 {i}</Badge>
+              <Badge key={i}>{i}</Badge>
             ))}
           </div>
         </Text>}

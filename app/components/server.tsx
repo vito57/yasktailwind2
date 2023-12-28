@@ -120,7 +120,7 @@ interface BadgeProps {
 }
 export function Badge({ className, href, children }: BadgeProps) {
   return (
-    <span className="bg-ygrey relative text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
+    <span className="bg-ygrey relative whitespace-nowrap text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
       {children}
     </span>
   );
