@@ -22,7 +22,13 @@ const Page = () => {
     <AnimateLayout>
       <Article className="relative">
         <ArticleHeader className="bg-[url('/works/bootsyduotone/bg.png')] bg-cover">
-          <ArticleHeroSection>
+          <ArticleHeroSection
+          underTitle="Bootsy Doutone Icons"
+          title="1700+ High-Quality UI Vector Icons"
+          subTitle="High-quality handcrafted icon set for websites, apps, social
+          networks, prints."
+          buttonUrl="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"
+          >
             <BodyImage
               src="/works/bootsyduotone/cover.png"
               width={1120}
@@ -31,7 +37,7 @@ const Page = () => {
               alt="Bootsy duotone icons"
             />
 
-            <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
+            {/* <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
               <div className="md:max-w-sm text-white">
                 <p className="text-sm md:text-base mb-2  opacity-75">Bootsy Doutone Icons</p>
                 <h1 className="text-xl md:text-4xl mb-2 font-bold ">
@@ -44,7 +50,7 @@ const Page = () => {
                 </p>
                 <Button className="ybutton secondary w-full md:w-auto" path="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set">Download on UI8</Button>
               </div>
-            </figcaption>
+            </figcaption> */}
           </ArticleHeroSection>
         </ArticleHeader>
         <Section id="about" className="mb-8 px-4 relative container">

@@ -266,12 +266,27 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
 interface ArticleHeroSectionProps {
  
   children: React.ReactNode;
+  underTitle?: string;
+  title?: string;
+  subTitle?: string;
+  buttonUrl?: any;
 }
-export function ArticleHeroSection({ children }: ArticleHeroSectionProps){
+export function ArticleHeroSection({ children, buttonUrl, underTitle, title, subTitle }: ArticleHeroSectionProps){
   return(
     <figure className="mb-8 relative">
     {children}
-
+    <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
+              <div className="md:max-w-sm text-white">
+                <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
+                <h1 className="text-xl md:text-4xl mb-2 font-bold ">
+              {title}
+                </h1>
+                <p className="text-base  mb-4 opacity-75">
+              {subTitle}
+                </p>
+                <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>Download on UI8</Button>
+              </div>
+            </figcaption>
   </figure>
   )
 }
