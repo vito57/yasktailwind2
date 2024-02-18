@@ -1,6 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
+//shimmer
+const shimmer = (w: number, h: number) => `
+<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="g">
+      <stop stop-color="#f5f5f5" offset="20%" stop-opacity="0" />
+      <stop stop-color="#f5f5f5" offset="50%" stop-opacity="0.5" />
+      <stop stop-color="#f5f5f5" offset="70%" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="${w}" height="${h}" fill="#f5f5f5" opacity="0" />
+  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
+  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
+</svg>`;
 
+const toBase64 = (str: string) =>
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
+    : window.btoa(str);
+    
 //Body image
 interface BodyImage {
   src: string;
@@ -22,6 +41,7 @@ export function BodyImage({
       width={width}
       height={height}
       className={className}
+      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width, height))}`}
       alt={alt}
     ></Image>
   );
@@ -142,6 +162,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             width={1600}
             height={1200}
             className="w-full rounded bg-transpatent dark:bg-zinc-950"
+            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
             alt={props.data1.caption || props.data1.src}
           />
           {props.data1.caption && (
@@ -156,6 +177,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             width={1600}
             height={1200}
             className="w-full rounded bg-transparent dark:bg-zinc-950"
+            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
             alt={props.data2.caption || props.data2.src}
           />
           {props.data2.caption && (
@@ -230,6 +252,7 @@ export function PortfolioItem({
             src={imageSrc}
             width={800}
             height={600}
+            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(800, 600))}`}
             className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
             alt={imageAlt}
           />
