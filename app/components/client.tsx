@@ -8,7 +8,7 @@ import data from "../main.json";
 //PWA
 
 export function Pwa() {
-  console.log("start")
+  console.log("start");
   let sw: ServiceWorkerContainer | undefined;
 
   if (typeof window !== "undefined") {
@@ -17,17 +17,20 @@ export function Pwa() {
 
   useEffect(() => {
     if (sw) {
-      sw.register("/sw.js", { scope: "/" }).then((registration) => {
-        console.log("Service Worker registration successful with scope: ", registration.scope);
-      }).catch((err) => {
-        console.log("Service Worker registration failed: ", err);
-      });
+      sw.register("/sw.js", { scope: "/" })
+        .then((registration) => {
+          console.log(
+            "Service Worker registration successful with scope: ",
+            registration.scope
+          );
+        })
+        .catch((err) => {
+          console.log("Service Worker registration failed: ", err);
+        });
     }
   }, [sw]);
 
-  return (
-    <></>
-  )
+  return <></>;
 }
 
 //Logo
@@ -96,8 +99,14 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
     });
   }, [scroll]);
   return (
-    <div className={`z-10 ${title ? "static" : "sticky"} md:sticky top-0 ${scroll}`}>
-      <div className={`container px-4 py-1 md:py-2 flex justify-between  md:mb-4 `}>
+    <div
+      className={`z-10 ${
+        title ? "static" : "sticky"
+      } md:sticky top-0 ${scroll}`}
+    >
+      <div
+        className={`container px-4 py-1 md:py-2 flex justify-between  md:mb-4 `}
+      >
         <div className="flex gap-4 grow md:gap-8 items-center">
           <Link href="/">
             <Logo width={40} height={40} />
@@ -119,15 +128,15 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
   );
 }
 //MOBILE ARTICLE FOOTER
-export function MobileArticleFooter(){
+export function MobileArticleFooter() {
   return (
     <div
-    className={`flex md:hidden fixed md:static py-4 justify-center left-0 right-0 bottom-0 gap-2 z-10 items-center`}
-  >
-    <Tabs className="bg-yred  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
-    {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
-  </div>
-  )
+      className={`flex md:hidden fixed md:static py-4 justify-center left-0 right-0 bottom-0 gap-2 z-10 items-center`}
+    >
+      <Tabs className="bg-yred  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
+      {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
+    </div>
+  );
 }
 //END MOBILE ARTICLE FOOTER
 //Jumbotrone
@@ -162,7 +171,7 @@ export function Tabs({ className }: TabsProps) {
         return (
           <li key={link.href}>
             <Link
-              className={`px-3 text-sm font-medium ${
+              className={`px-3 text-sm text-white/90 hover:text-white font-medium ${
                 isActive ? "bg-yred opacity-100" : false
               } relative rounded-[10px] transition inline-block py-1.5`}
               href={link.href}

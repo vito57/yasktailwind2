@@ -81,7 +81,7 @@
         "placeLink": "https://www.artlebedev.ru/vetrov/",
         "date": "2013—2015",
         "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
-        "achievements": "launch and development of 3 applications on TV, SberPortal and mobile phones. Launch of commercial projects based on these applications. The Sport app received the Runet Prize 2021"
+        "achievements": false
       },
       {
         "position": "Designer",
@@ -167,7 +167,13 @@
       }
     ],
     "about": "Artist, Illustrator and Blogger",
-    "top skills": ["Roblox Livel Design", "Illustrations", "Procreate", "Video", "Blogging"],
+    "top skills": [
+      "Roblox Livel Design",
+      "Illustrations",
+      "Procreate",
+      "Video",
+      "Blogging"
+    ],
     "tools": ["Procreate", "CapCut", "iPad", "Photoshop"],
     "experience": [
       {
