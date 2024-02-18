@@ -171,7 +171,7 @@ export function Tabs({ className }: TabsProps) {
         return (
           <li key={link.href}>
             <Link
-              className={`px-3 text-sm text-white/90 hover:text-white font-medium ${
+              className={`px-3 text-sm font-medium ${
                 isActive ? "bg-yred opacity-100" : false
               } relative rounded-[10px] transition inline-block py-1.5`}
               href={link.href}

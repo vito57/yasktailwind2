@@ -41,7 +41,7 @@ export function BodyImage({
       width={width}
       height={height}
       className={className}
-      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width, height))}`}
+      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width=1600, height=1200))}`}
       alt={alt}
     ></Image>
   );
