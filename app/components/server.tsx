@@ -355,6 +355,8 @@ export function FeedItem({
           src={imageSrc}
           width={800}
           height={600}
+          placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(800, 600))}`}
+
           className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
           alt={imageAlt}
         />
