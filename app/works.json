@@ -1,5 +1,13 @@
 [
   {
+    "cover": "/img/iconsaur.png",
+    "title": "Iconsaur",
+    "by": ["vitaly", "gala"],
+    "type": "Icon System",
+    "path": "/works/iconsaur",
+    "date": "2024"
+  },
+  {
     "cover": "/img/drugcode.png",
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
