@@ -79,7 +79,16 @@ const Page = () => {
              
             }}
           />
-
+          <ArticleImageSection
+            data1={{
+              src: "/works/iconsaur/7.png",
+              
+            }}
+            data2={{
+              src: "/works/iconsaur/8.png",
+             
+            }}
+          />
         </Section>
         <Section className="container">
         <BodyImage
