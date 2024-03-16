@@ -91,17 +91,36 @@ const Page = () => {
           />
         </Section>
         <Section className="container">
-        <BodyImage
-              src="/works/iconsaur/preview1.png"
-              width={1120}
-              alt="Iconsaur preview"
-            />
-                    <BodyImage
-              src="/works/iconsaur/preview.png"
-              width={1120}
-              alt="Iconsaur preview"
-            />
- 
+        <ArticleImageSection
+            data1={{
+              src: "/works/iconsaur/iconsaur_preview_1.png",
+              
+            }}
+            data2={{
+              src: "/works/iconsaur/iconsaur_preview_2.png",
+             
+            }}
+          />
+        <ArticleImageSection
+            data1={{
+              src: "/works/iconsaur/iconsaur_preview_3.png",
+              
+            }}
+            data2={{
+              src: "/works/iconsaur/iconsaur_preview_4.png",
+             
+            }}
+          /> 
+        <ArticleImageSection
+            data1={{
+              src: "/works/iconsaur/iconsaur_preview_5.png",
+              
+            }}
+            data2={{
+              src: "/works/iconsaur/iconsaur_preview_6.png",
+             
+            }}
+          />   
         </Section>
         <Section id="summary" className="container">
           <Text title="Summary">

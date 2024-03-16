@@ -161,7 +161,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             src={props.data1.src}
             width={1600}
             height={1200}
-            className="w-full rounded bg-transpatent dark:bg-zinc-950"
+            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
             placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
             alt={props.data1.caption || props.data1.src}
           />
@@ -176,7 +176,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             src={props.data2.src}
             width={1600}
             height={1200}
-            className="w-full rounded bg-transparent dark:bg-zinc-950"
+            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
             placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
             alt={props.data2.caption || props.data2.src}
           />
