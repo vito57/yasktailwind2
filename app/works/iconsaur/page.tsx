@@ -2,12 +2,12 @@ import {
   Article,
   AnimateLayout,
   Text,
-  ArticleFigure,
+  
   Section,
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
-  Button,
+  
   ArticleHeroSection
 } from "../../components/server";
 import Image from "next/image";

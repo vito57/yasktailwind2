@@ -298,7 +298,7 @@ export function ArticleHeroSection({ children, buttonUrl, underTitle, title, sub
   return(
     <figure className="mb-8 relative">
     {children}
-    <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
+    <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-12 top-0 left-0  flex flex-col justify-center ">
               <div className="md:max-w-sm">
                 <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
                 <h1 className="text-xl md:text-4xl mb-2 font-bold ">
