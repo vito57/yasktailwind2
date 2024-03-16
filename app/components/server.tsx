@@ -292,9 +292,10 @@ interface ArticleHeroSectionProps {
   underTitle?: string;
   title?: string;
   subTitle?: string;
+  btnTxt?:string;
   buttonUrl?: any;
 }
-export function ArticleHeroSection({ children, buttonUrl, underTitle, title, subTitle }: ArticleHeroSectionProps){
+export function ArticleHeroSection({ children, buttonUrl, btnTxt="Download on UI8", underTitle, title, subTitle }: ArticleHeroSectionProps){
   return(
     <figure className="mb-8 relative">
     {children}
@@ -307,7 +308,7 @@ export function ArticleHeroSection({ children, buttonUrl, underTitle, title, sub
                 <p className="text-base  mb-4 opacity-75">
               {subTitle}
                 </p>
-                <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>Download on UI8</Button>
+                <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>{btnTxt}</Button>
               </div>
             </figcaption>
   </figure>

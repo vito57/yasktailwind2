@@ -23,10 +23,12 @@ const Page = () => {
       <Article className="relative">
         <ArticleHeader className="bg-[#B4EA44]">
         <ArticleHeroSection  underTitle="Iconsaur" 
-          buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
+          buttonUrl="/"
           subTitle="High-quality handcrafted icon set for websites, apps, social
                   networks, prints." 
-                  title="2400 High-Quality UI Vector Icons">
+                  title="2400 High-Quality UI Vector Icons"
+                  btnTxt="Coming Soon"
+                  >
             <BodyImage
               src="/works/iconsaur/cover.png"
               width={1120}
