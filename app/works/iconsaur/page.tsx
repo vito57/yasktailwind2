@@ -21,8 +21,8 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader >
-        <ArticleHeroSection underTitle="Iconsaur" 
+        <ArticleHeader className="bg-[#B4EA44]">
+        <ArticleHeroSection  underTitle="Iconsaur" 
           buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
           subTitle="High-quality handcrafted icon set for websites, apps, social
                   networks, prints." 
