@@ -15,7 +15,7 @@ export default function WorksLayout({
           <Image
             className="inline-block mb-4"
             src="yask.svg"
-            priority={true}
+            priority
             width={64}
             height={64}
             alt="Yask Design"
