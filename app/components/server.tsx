@@ -213,6 +213,8 @@ export function Footer() {
       <Link href="https://github.com/" className="ylink">
         Github
       </Link>
+      <br/>
+      The site does not collect any information about the users.
     </p>
   );
 }
