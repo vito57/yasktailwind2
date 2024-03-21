@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import dribbble from "../../public/dribbble.svg";
+import ui8 from "../../public/ui8.svg";
 //shimmer
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,7 +96,7 @@ export function TopMenu() {
       <Button path="mailto:vito57rus@gmail.com">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
-          src="dribbble.svg"
+          src={dribbble}
           width={40}
           height={40}
           className="rounded-full transition-transform hover:scale-105"
@@ -103,7 +105,7 @@ export function TopMenu() {
       </Link>
       <Link href="https://ui8.net/gala-yask">
         <Image
-          src="ui8.svg"
+          src={ui8}
           width={40}
           height={40}
           className="rounded-full transition-transform hover:scale-105"

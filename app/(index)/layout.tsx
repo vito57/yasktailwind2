@@ -12,14 +12,8 @@ export default function WorksLayout({
     <div className="container relative px-4">
       <header id="header" className="pt-4 md:pt-10">
         <div className="text-center">
-          <Image
-            className="inline-block mb-4"
-            src="yask.svg"
-            priority
-            width={64}
-            height={64}
-            alt="Yask Design"
-          />
+          <Logo/>
+
           <Jumbo datas={data} />
         </div>
       </header>

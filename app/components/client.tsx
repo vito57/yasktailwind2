@@ -44,7 +44,7 @@ export function Logo({ width = 64, height = 64 }: LogoProps) {
       width={width}
       height={height}
       viewBox="0 0 64 64"
-      className="fill-yask dark:fill-ytextdark"
+      className="fill-yask inline-block text-center dark:fill-ytextdark"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M51.8066 16.2279C51.7526 20.089 51.0149 23.7849 49.7089 27.1997C44.7645 28.8402 39.8981 30.6519 35.1168 32.6276C34.0856 31.7852 33.0467 30.9519 32 30.1279C38.3304 25.1444 44.9418 20.5018 51.8066 16.2279Z" />
