@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-lime-400">
+        <ArticleHeader className="bg-slate-100">
         <ArticleHeroSection  underTitle="Iconsaur" 
           buttonUrl="/"
           subTitle="High-quality handcrafted icon set for websites, apps, social
