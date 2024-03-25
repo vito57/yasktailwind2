@@ -50,19 +50,19 @@ module.exports = {
         },
       ],
     },
-    screens: {
+    // screens: {
       // sm: "480px",
       // md: "768px",
       // lg: "976px",
       // xl: "1152px",
       // xxl: "1320px"
      // xs: 0,
-      sm: "576px",
-      md: "768px",
-      lg: "992px",
-      xl: "1152px",
+      // sm: "576px",
+      // md: "768px",
+      // lg: "992px",
+      // xl: "1152px",
    // xxl: "1320px"
-    },
+    // },
     container: {
       center: true,
       padding: "1rem"
