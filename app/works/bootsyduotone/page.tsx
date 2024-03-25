@@ -33,7 +33,7 @@ const Page = () => {
               src="/works/bootsyduotone/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent"
+              className="bg-transparent  w-full"
               alt="Bootsy duotone icons"
             />
 

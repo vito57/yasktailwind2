@@ -65,7 +65,7 @@ module.exports = {
     // },
     container: {
       center: true,
-      padding: "1rem"
+      // padding: "1rem"
     },
     // colors: {
     //   blue: "#1fb6ff",

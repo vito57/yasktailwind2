@@ -25,7 +25,7 @@ const Page = () => {
               src="/works/drugcode/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent"
+              className="bg-transparen  w-full"
               alt="Drugcode cover"
             />
           </ArticleFigure>

@@ -26,7 +26,7 @@ const Page = () => {
               src="/works/starc/cover.png"
               width={1120}
               height={416}
-              className="bg-yellow-100"
+              className="bg-yellow-100  w-full"
               alt="Starc Android App"
             />
           </ArticleFigure>

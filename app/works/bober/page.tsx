@@ -26,7 +26,7 @@ const Page = () => {
               src="/works/bober/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent"
+              className="bg-transparent  w-full"
               alt="Bober TV"
             />
           </ArticleFigure>

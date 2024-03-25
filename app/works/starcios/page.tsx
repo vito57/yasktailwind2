@@ -26,7 +26,7 @@ const Page = () => {
               src="/works/starcios/cover.png"
               width={1120}
               height={416}
-              className="bg-green-100"
+              className="bg-green-100  w-full"
               alt="Starc IOS App"
             />
           </ArticleFigure>

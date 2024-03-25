@@ -34,7 +34,7 @@ export function BodyImage({
   src,
   width = 1600,
   height = 1200,
-  className = "dark:bg-zinc-900 bg-slate-100 rounded-md",
+  className = "dark:bg-zinc-900 bg-slate-100 w-full rounded-md",
   alt = "Yask",
 }: BodyImage) {
   return (

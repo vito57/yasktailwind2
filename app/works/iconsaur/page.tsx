@@ -33,7 +33,7 @@ const Page = () => {
               src="/works/iconsaur/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent"
+              className="bg-transparent  w-full"
               alt="Iconsaur"
             /></ArticleHeroSection>
         </ArticleHeader>
