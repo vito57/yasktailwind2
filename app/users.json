@@ -22,6 +22,11 @@
         "name": "Github",
         "url": "https://github.com/vito57",
         "image_path": "/github.svg"
+      },
+      {
+        "name": "Behance",
+        "url": "https://www.behance.com/yask",
+        "image_path": "/be.svg"
       }
     ],
     "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
@@ -188,6 +193,7 @@
 
     "awards": null,
     "education": "1494 elmentry school, since 2023",
+
     "courses": null
   }
 ]

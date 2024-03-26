@@ -13,7 +13,7 @@ export default function WorkLayout({
       {children}
       <div className="container px-4">
         <h2 className="text-xl font-medium mb-8">More works</h2>
-        <div className="grid gap-x-2 gap-y-2 md:gap-x-8 md:gap-y-6 md:grid-cols-4 grid-cols-2">
+        <div className="grid gap-x-2 gap-y-2 md:gap-x-6 md:gap-y-6 md:grid-cols-4 grid-cols-2">
           {data.map((i) => {
             return (
               <PortfolioItem

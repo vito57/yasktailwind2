@@ -13,7 +13,6 @@ export default function WorksLayout({
       <header id="header" className="pt-4 md:pt-10">
         <div className="text-center">
           <Logo className="mb-2"/>
-
           <Jumbo datas={data} />
         </div>
       </header>
