@@ -27,7 +27,7 @@ export default async function Feed() {
 
   return (
     <AnimateLayout>
-      <div className="grid gap-x-8 gap-y-8 lg:grid-cols-3 md:grid-cols-2">
+      <div className="grid gap-x-6 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
         {data.map((i: any) =>
           i.tags.includes("portfolio") ? (
             <FeedItem
