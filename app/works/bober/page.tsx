@@ -36,6 +36,10 @@ const Page = () => {
             <p>Adaptive web site and logo for TV channel</p>
           </Text>
 
+
+          <ArticleFigure figcaption="New main page layout">
+            <BodyImage src="/works/bober/main.png" alt="Bober main" />
+          </ArticleFigure>
           <ArticleFigure figcaption="New logo">
             <BodyImage
               src="/works/bober/logo.png"
@@ -44,10 +48,6 @@ const Page = () => {
               height={974}
             />
           </ArticleFigure>
-          <ArticleFigure figcaption="New main page layout">
-            <BodyImage src="/works/bober/main.png" alt="Bober main" />
-          </ArticleFigure>
-
           <ArticleFigure figcaption="Main page">
             <BodyImage src="/works/bober/3.png" alt="Bober main" />
           </ArticleFigure>
