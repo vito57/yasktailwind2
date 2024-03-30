@@ -9,10 +9,10 @@ export default function WorksLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="container relative px-4">
+    <div className="container">
       <header id="header" className="pt-4 md:pt-10">
         <div className="text-center">
-          <Logo className="mb-2"/>
+          <Logo className="mb-2" />
           <Jumbo datas={data} />
         </div>
       </header>

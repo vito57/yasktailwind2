@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Bober TV",
+    "description": "Adaptive web site and logo for TV channel",
+    "autor": "vitaly",
+    "client": "PKVS",
+    "year": "2016",
+    "header": { "coverPath": "/works/bober/cover.png" },
+    "sections": [
+      {
+        "name": "About",
+        "blocks": [
+          {
+            "id": "0",
+            "type": "text",
+            "content": {
+              "title": "about",
+              "text": "Adaptive web site and logo for TV channel"
+            }
+          },
+          {
+            "id": "1",
+            "type": "image",
+            "content": {
+              "figcaption": "BoberTV Logo",
+              "imgurl": "/works/bober/logo.png",
+              "width": 2240,
+              "height": 974
+            }
+          },
+          {
+            "id": "2",
+            "type": "image",
+            "content": {
+              "figcaption": "Bober main page",
+              "src": "/works/bober/main.png",
+              "width": "default",
+              "height": "default"
+            }
+          },
+          {
+            "id": "3",
+            "type": "image",
+            "content": {
+              "figcaption": "Bober main page",
+              "src": "/works/bober/3.png",
+              "width": "default",
+              "height": "default"
+            }
+          },
+          {
+            "id": "3",
+            "type": "image",
+            "content": {
+              "figcaption": "Bober main page",
+              "src": "/works/bober/2.png",
+              "width": "default",
+              "height": "default"
+            }
+          },
+          {
+            "id": "3",
+            "type": "image",
+            "content": {
+              "figcaption": "Bober main page",
+              "src": "/works/bober/4.png",
+              "width": "default",
+              "height": "default"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
