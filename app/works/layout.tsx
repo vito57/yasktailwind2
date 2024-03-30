@@ -1,4 +1,4 @@
-import { Footer, PortfolioItem } from "../components/server";
+import { Footer, PortfolioItem, Section } from "../components/server";
 import { ArticleTopMenu, MobileNavBar, MobileArticleFooter } from "../components/client";
 import data from "../works.json";
 export default function WorkLayout({
@@ -11,8 +11,8 @@ export default function WorkLayout({
       <ArticleTopMenu />
 <MobileArticleFooter />
       {children}
-      <div className="container px-4">
-        <h2 className="text-xl font-medium mb-8">More works</h2>
+      <Section id="moreworks">
+        <h2 className="text-xl font-bold mb-8">More works</h2>
         <div className="grid gap-x-2 gap-y-2 md:gap-x-6 md:gap-y-6 md:grid-cols-4 grid-cols-2">
           {data.map((i) => {
             return (
@@ -28,7 +28,7 @@ export default function WorkLayout({
             );
           })}
         </div>
-      </div>
+      </Section>
       <Footer />
     </>
   );

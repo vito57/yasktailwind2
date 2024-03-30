@@ -7,7 +7,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
-  
+  Summary,
   ArticleHeroSection
 } from "../../components/server";
 import Image from "next/image";
@@ -23,11 +23,11 @@ const Page = () => {
       <Article className="relative">
         <ArticleHeader className="bg-slate-100">
         <ArticleHeroSection  underTitle="Iconsaur" 
-          buttonUrl="/"
+          buttonUrl="https://ui8.net/gala-yask/products/iconsaur---bootstrap-icon-system"
           subTitle="High-quality handcrafted icon set for websites, apps, social
                   networks, prints." 
                   title="2400 High-Quality UI Vector Icons"
-                  btnTxt="Coming Soon"
+                  btnTxt="Download on UI8"
                   >
             <BodyImage
               src="/works/iconsaur/cover.png"
@@ -37,7 +37,7 @@ const Page = () => {
               alt="Iconsaur"
             /></ArticleHeroSection>
         </ArticleHeader>
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about">
           <Text title="About">
             <p>
               Iconsaur - multi-purpose icon system. These are bright and
@@ -46,11 +46,7 @@ const Page = () => {
               Boostraps icon names. Makes your website or app look different.
             </p>
           </Text>
-        </Section>
-
-        {/* BRANDING */}
-
-        <Section className="container">
+  
           <ArticleImageSection
             data1={{
               src: "/works/iconsaur/1.png",
@@ -91,8 +87,7 @@ const Page = () => {
              
             }}
           />
-        </Section>
-        <Section className="container">
+    
         <ArticleImageSection
             data1={{
               src: "/works/iconsaur/iconsaur_preview_1.png",
@@ -125,20 +120,10 @@ const Page = () => {
           />   
         </Section>
         <Section id="summary" className="container">
+     
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/gala">
-                Gala
-              </Link>{" "}
-            </p>
-            <p>
-              Helper:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-            <p>Year: 2024 </p>
+          <Summary designer="gala" year="2024" client="UI8" link="https://ui8.net/gala-yask/products/iconsaur---bootstrap-icon-system"/>
+
           </Text>
 
         </Section>

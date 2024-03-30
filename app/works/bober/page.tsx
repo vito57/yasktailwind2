@@ -7,7 +7,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
-  Button,
+  Summary,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,20 +26,16 @@ const Page = () => {
               src="/works/bober/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent  w-full"
+              className="bg-transparent w-full"
               alt="Bober TV"
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about" >
           <Text title="About">
             <p>Adaptive web site and logo for TV channel</p>
           </Text>
-        </Section>
 
-        {/* UI */}
-
-        <Section id="ui" className="mb-2 px-4 container">
           <ArticleFigure figcaption="New logo">
             <BodyImage
               src="/works/bober/logo.png"
@@ -63,22 +59,10 @@ const Page = () => {
           </ArticleFigure>
         </Section>
 
-        <Section id="summary" className="container">
+        <Section id="summary">
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-            <p>Owner: PKVS</p>
-            <p>
-              Live:{" "}
-              <Link className="ylink" href="https://bober.ru">
-                bober.ru
-              </Link>{" "}
-            </p>
-            <p>Year: 2019 </p>
+            <Summary designer="vitaly" year="2019" client="PKVS" link="https://bober.ru"/>
+         
           </Text>
         </Section>
       </Article>

@@ -7,7 +7,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
-  Button,
+  Summary,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/karusel/bg.png')] bg-cover">
+        <ArticleHeader className="bg-slate-100">
           <ArticleFigure>
             <BodyImage
               src="/works/karusel/cover.png"
@@ -31,7 +31,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about">
           <Text title="About">
             <p>
               Adaptive website for the childrens TV channel Carousel. Big job.
@@ -40,34 +40,34 @@ const Page = () => {
               many more. Made by a small team of 5 people. My role is designer.
             </p>
           </Text>
-          <ArticleFigure figcaption="Main page">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/main_desktop.png" />
           </ArticleFigure>
-          <ArticleFigure figcaption="Games and TV program">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/games_desktop.png" />
           </ArticleFigure>
-          <ArticleFigure figcaption="Video and news">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/video_desktop.png" />
           </ArticleFigure>
         </Section>
-        <Section id="mobile" className="container">
+        <Section id="mobile">
           <Text title="Mobile">
             <p>The website is fully responsive.</p>
           </Text>
-          <ArticleFigure figcaption="Main, Schedule, Article">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/main_mobile.png" />
           </ArticleFigure>
-          <ArticleFigure figcaption="Game, Video, Videos">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/article_mobile.png" />
           </ArticleFigure>
-          <ArticleFigure figcaption="Navigation">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/mobile_menu.png" />
           </ArticleFigure>
-          <ArticleFigure figcaption="Videos, Games, News">
+          <ArticleFigure>
             <BodyImage src="/works/karusel/games_mobile.png" />
           </ArticleFigure>
         </Section>
-        <Section id="styles" className="container">
+        <Section id="styles">
           <Text title="Styles">
             <p>
               The design is based on Bootstrap. Prepared Bootstrap theme,
@@ -82,7 +82,7 @@ const Page = () => {
           </ArticleFigure>
         </Section>
         {/* BRANDING */}
-        <Section id="content" className="container">
+        <Section id="content">
           <Text title="Content design">
             <p>
               I created and drew tons of 2d and 3d content for a large number of
@@ -127,28 +127,15 @@ const Page = () => {
             }}
           />
         </Section>
-        <Section id="summary" className="container">
+        <Section id="summary">
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-           
-            <p>
-              Live:{" "}
-              <Link className="ylink" href="https://www.karusel-tv.ru/">
-                karusel-tv.ru
-              </Link>
-            </p>
-            <p>
-              Full design:
-              <Link className="ylink" href="https://xd.adobe.com/view/1a850fed-be7f-4ecc-4394-85bbb759d9a9-6cb4/screen/4991d63d-36a1-4724-b5b7-f77ec795e2fd/?fullscreen">
+          <Summary designer="vitaly" year="2015-2016" client="PKVS" link="https://www.karusel-tv.ru/"/>
+
+          
+              {/* <Link className="ylink" href="https://xd.adobe.com/view/1a850fed-be7f-4ecc-4394-85bbb759d9a9-6cb4/screen/4991d63d-36a1-4724-b5b7-f77ec795e2fd/?fullscreen">
 Adobe XD Prototype
-              </Link>
-            </p>
-            <p>Year: 2016 </p>
+              </Link> */}
+          
           </Text>
         </Section>
       </Article>

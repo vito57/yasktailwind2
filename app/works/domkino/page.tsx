@@ -7,6 +7,7 @@ import {
   ArticleHeader,
   ArticleImageSection,
   BodyImage,
+  Summary
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,13 +32,11 @@ const Page = () => {
           </ArticleFigure>
         </ArticleHeader>
 
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about">
           <Text title="About">
             <p>Design of an adaptive website for the Dom Kino TV channel</p>
           </Text>
-        </Section>
-        
-        <Section id="mobile" className="container">
+
 
 
           <ArticleFigure >
@@ -106,22 +105,11 @@ const Page = () => {
           />
         </Section>
 
-        <Section id="summary" className="container">
+        <Section id="summary">
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-            <p>Client: PKVS</p>
-            <p>
-              Live:{" "}
-              <Link className="ylink" href="https://www.domkino.tv/">
-                domkino.tv
-              </Link>{" "}
-            </p>
-            <p>Year: 2018 </p>
+          <Summary designer="vitaly" year="2018" client="PKVS" link="https://www.domkino.tv/"/>
+
+           
           </Text>
         </Section>
       </Article>

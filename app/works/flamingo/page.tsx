@@ -7,6 +7,7 @@ import {
   ArticleFigure,
   BodyImage,
   ArticleHeader,
+  Summary
 } from "../../components/server";
 
 import Image from "next/image";
@@ -32,7 +33,7 @@ export default function Flamingo() {
           </ArticleFigure>
         </ArticleHeader>
 
-        <Section id="styles" className="mb-8 container">
+        <Section id="About">
           <Text title="About">
             <p>
               I worked with our team and developers to craft a style guide for
@@ -43,17 +44,17 @@ export default function Flamingo() {
               typography and entire screen configurations.
             </p>
           </Text>
-</Section>
-<Section className="bg-slate-100">
-<div className="container">
-<ArticleFigure>
-            <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
-          </ArticleFigure>
-</div>
+        </Section>
+        <Section id="preview" className="bg-slate-100" fluid>
+          <div className="container">
+            <ArticleFigure>
+              <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
+            </ArticleFigure>
+          </div>
 
-</Section>
+        </Section>
 
-          <Section className="container">
+        <Section id="style">
           <Text>
             <p>
               The style guide was vital for both our developers and our
@@ -65,7 +66,7 @@ export default function Flamingo() {
           </Text>
         </Section>
         {/* GUIDE */}
-        <Section id="Guides" className="mb-8 container">
+        <Section id="guides">
           <Text title="Process">
             <ol className="list-decimal list-inside">
               <li>Defining a goals and finding a problems</li>
@@ -110,7 +111,7 @@ export default function Flamingo() {
           </ArticleFigure>
         </Section>
         {/* COMPONENTS */}
-        <Section id="Components" className="mb-8 container">
+        <Section id="components">
           <Text title="Guides">
             <p>
               The Style Guide also served as a home for product design
@@ -144,7 +145,7 @@ export default function Flamingo() {
           </ArticleFigure>
         </Section>
         {/* WORKFOW */}
-        <Section id="workflow" className="mb-8 container">
+        <Section id="workflow">
           <Text title="Examples">
             <p>
               In addition to documenting components and their usage, I crafted
@@ -185,21 +186,11 @@ export default function Flamingo() {
             }}
           />
         </Section>
-        <Section id="summary" className="container">
+        <Section id="summary" >
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-            <p>
-              Owner:{" "}
-             
-                Sber
-          
-            </p>
-            <p>Year: 2022 </p>
+          <Summary designer="vitaly" year="2021" client="Sber"/>
+
+           
           </Text>
         </Section>
       </Article>

@@ -4,10 +4,10 @@ import {
   Text,
   ArticleFigure,
   Section,
-  ArticleImageSection,
+ 
   ArticleHeader,
   BodyImage,
-  Button,
+  Summary,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +31,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about" >
           <Text title="About">
             <p>
               Design a native application for Android. For mobile devices and
@@ -45,7 +45,7 @@ const Page = () => {
           </Text>
         </Section>
 
-        <Section id="mobile" className="container">
+        <Section id="mobile">
           <Text title="Mobile experience">
             <p>
               The Starc application simplifies the process of writing scripts
@@ -67,7 +67,7 @@ const Page = () => {
             <BodyImage src="/works/starc/f1.png" alt="Starc Mobile" />
           </ArticleFigure>
         </Section>
-        <Section id="tablet" className="container">
+        <Section id="tablet">
           <Text title="Tablet experience">
             <p></p>
           </Text>
@@ -84,21 +84,11 @@ const Page = () => {
             <BodyImage src="/works/starc/f2.png" alt="Starc tablet" />
           </ArticleFigure>
         </Section>
-        <Section id="summary" className="container">
+        <Section id="summary">
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-            <p>
-              Client:{" "}
-              <Link className="ylink" href="https://starc.app/">
-                starc.app
-              </Link>{" "}
-            </p>
-            <p>Year: 2021 </p>
+          <Summary designer="vitaly" year="2021" client="Starc" link="https://starc.app/"/>
+
+           
           </Text>
         </Section>
       </Article>

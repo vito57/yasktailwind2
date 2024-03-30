@@ -21,7 +21,7 @@ const toBase64 = (str: string) =>
   typeof window === "undefined"
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
-    
+
 //Body image
 interface BodyImage {
   src: string;
@@ -43,7 +43,7 @@ export function BodyImage({
       width={width}
       height={height}
       className={className}
-      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width=1600, height=1200))}`}
+      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width = 1600, height = 1200))}`}
       alt={alt}
     ></Image>
   );
@@ -80,12 +80,14 @@ export function Text({ title, children }: TextProps) {
 //END TEXT
 interface SectionProps {
   className?: string;
+  fluid?: boolean;
   id?: string;
   children: React.ReactNode;
 }
-export function Section({ children, className, id }: SectionProps) {
+export function Section({ children, fluid = false, className, id }: SectionProps) {
+  const isFluid = fluid ? null : "container";
   return (
-    <section className={`${className} mb-8`} id={id}>
+    <section className={`${className} ${isFluid} mb-8`} id={id}>
       {children}
     </section>
   );
@@ -215,7 +217,7 @@ export function Footer() {
       <Link href="https://github.com/" className="ylink">
         Github
       </Link>
-      <br/>
+      <br />
       The site does not collect any information about the users.
     </p>
   );
@@ -291,31 +293,31 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
 //END ARTICLE IMAGE
 //Article Hero
 interface ArticleHeroSectionProps {
- 
+
   children: React.ReactNode;
   underTitle?: string;
   title?: string;
   subTitle?: string;
-  btnTxt?:string;
+  btnTxt?: string;
   buttonUrl?: any;
 }
-export function ArticleHeroSection({ children, buttonUrl, btnTxt="Download on UI8", underTitle, title, subTitle }: ArticleHeroSectionProps){
-  return(
+export function ArticleHeroSection({ children, buttonUrl, btnTxt = "Download on UI8", underTitle, title, subTitle }: ArticleHeroSectionProps) {
+  return (
     <figure className="mb-8 relative">
-    {children}
-    <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
-              <div className="md:max-w-sm">
-                <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
-                <h1 className="text-xl md:text-4xl mb-2 font-bold ">
-              {title}
-                </h1>
-                <p className="text-base  mb-4 opacity-75">
-              {subTitle}
-                </p>
-                <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>{btnTxt}</Button>
-              </div>
-            </figcaption>
-  </figure>
+      {children}
+      <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
+        <div className="md:max-w-sm">
+          <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
+          <h1 className="text-xl md:text-4xl mb-2 font-bold ">
+            {title}
+          </h1>
+          <p className="text-base  mb-4 opacity-75">
+            {subTitle}
+          </p>
+          <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>{btnTxt}</Button>
+        </div>
+      </figcaption>
+    </figure>
   )
 }
 //End Aticle Header
@@ -385,3 +387,31 @@ export function AnimateLayout({ children, className }: AnimateLayoutProps) {
     </main>
   );
 }
+//Summary
+interface SummaryProps {
+  designer: string;
+  client?: string;
+  link?: any;
+  year: string;
+}
+export function Summary({ designer, client, link, year }: SummaryProps) {
+  return (<> 
+  <p>
+    Designer:{" "}
+    <Link className="ylink capitalize" href={`/${designer}`}>
+      {designer}
+    </Link>
+  </p>
+    <p>
+      Client:{" "}
+
+      {client}
+
+    </p>
+    {link && <p>Live:   <Link className="ylink" href={link}>
+      {link}
+    </Link>
+    </p>}
+    <p>Year: {year} </p></>)
+}
+//End Summary

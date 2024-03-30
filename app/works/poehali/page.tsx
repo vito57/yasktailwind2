@@ -4,10 +4,10 @@ import {
     Text,
     ArticleFigure,
     Section,
-    ArticleImageSection,
+   
     ArticleHeader,
     BodyImage,
-    Button,
+    Summary,
   } from "../../components/server";
   import Image from "next/image";
   import Link from "next/link";
@@ -31,15 +31,11 @@ import {
               />
             </ArticleFigure>
           </ArticleHeader>
-          <Section id="about" className="mb-8 px-4 relative container">
+          <Section id="about">
             <Text title="About">
             <p>Adaptive web site for TV channel</p>
             </Text>
-          </Section>
-  
-          {/* UI */}
-  
-          <Section id="ui" className="mb-2 px-4 container">
+      
 
 <ArticleFigure>
               <BodyImage
@@ -79,21 +75,11 @@ import {
           </Section>
   
 
-          <Section id="summary" className="container">
+          <Section id="summary">
             <Text title="Summary">
-              <p>
-                Designer:{" "}
-                <Link className="ylink" href="/vitaly">
-                  Vitaly
-                </Link>{" "}
-              </p>
-  <p>
-    Live:{" "}
-    <Link className="ylink" href="https://www.poehali.tv/">
-   poehali.tv
-    </Link>
-  </p>
-              <p>Year: 2019 </p>
+            <Summary designer="vitaly" year="2019" client="PKVS" link="https://www.poehali.tv/"/>
+
+        
             </Text>
 
           </Section>

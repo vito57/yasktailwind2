@@ -7,6 +7,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
+  Summary
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,11 +31,10 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" className="mb-8 px-4 relative container">
+        <Section id="about">
           <Text title="About">
             <p>
-              {/* Node and code editor design, based on standards. Finding new
-              features. Create design system. Brand design. */}
+
               Drugcode allows users to use banking data and create usefull
               internal apps for the web and mobile platforms. As the Designer
               for Drugcode, I was responsible for branding, UI/UX and visual
@@ -98,7 +98,7 @@ const Page = () => {
 
         {/* BRANDING */}
 
-        <Section id="branding" className="mb-8 px-4 container">
+        <Section id="branding">
           <Text title="Branding">
             <p>
               When I joined in February 2019, the web service was in its
@@ -118,7 +118,7 @@ const Page = () => {
 
         {/* UI/UX */}
 
-        <Section id="ux" className="mb-8 px-4 container">
+        <Section id="ux" >
           <Text title="Style Guide">
             <p className="mb-8">
               I worked with our team and the Drugcode developers to craft a
@@ -200,7 +200,7 @@ const Page = () => {
         </Section>
 
         {/* WORKFOW */}
-        <Section id="workflow" className="mb-8  container">
+        <Section id="workflow">
           <Text title="Workflow">
             <ol className=" list-decimal list-inside">
               <li>
@@ -215,16 +215,11 @@ const Page = () => {
           </Text>
         </Section>
         {/* HAVE FUN */}
-        <Section id="summary" className="mb-8 px-4 container">
+        <Section id="summary">
           <Text title="Summary">
-            <p>
-              Designer:{" "}
-              <Link className="ylink" href="/vitaly">
-                Vitaly
-              </Link>{" "}
-            </p>
-         
-            <p>Year: 2020-2021 </p>
+          <Summary designer="vitaly" year="2020-2021" client="Sber"/>
+
+           
           </Text>
         </Section>
       </Article>
