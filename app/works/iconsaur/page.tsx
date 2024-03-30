@@ -6,6 +6,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
+  Summary,
   ArticleHeroSection,
 } from "../../components/server";
 import Image from "next/image";
