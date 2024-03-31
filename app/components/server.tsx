@@ -299,13 +299,15 @@ interface VideoProps {
   src: string;
   poster?: string;
 }
-export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
+function Video({ width = 800, poster, height = 600, src }: VideoProps) {
   return (
+    <Suspense fallback={<p>Loading video...</p>}>
     <video
       className="w-full ease-in -z-10 object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
       width={width}
       height={height}
       poster={poster}
+      controls={false}
       playsInline
       autoPlay
       muted
@@ -314,6 +316,7 @@ export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+    </Suspense>
   );
 }
 //End Video
