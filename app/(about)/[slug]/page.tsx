@@ -120,7 +120,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <PortfolioItem
                   key={i.path}
                   href={i.path}
-                  imageSrc={i.cover}
+                  imageSrc={i.cover.url}
                   imageAlt={i.title}
                   title={i.title}
                   type={i.type}

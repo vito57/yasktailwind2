@@ -1,6 +1,6 @@
 [
   {
-    "cover": "/img/iconsaur.png",
+    "cover": {"url":"/img/iconsaur.png", "videoUrl":null},
     "coverVideo": false,
     "title": "Iconsaur",
     "by": ["gala"],
@@ -9,8 +9,8 @@
     "date": "2024"
   },
   {
-    "cover": "/img/drugcode.png",
-    "coverVideo": false,
+    "cover":{"url": "/img/drugcode.png", "videoUrl":null},
+  
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
     "type": "Code editor, Branding",
@@ -18,8 +18,8 @@
     "date": "2021"
   },
   {
-    "cover": "/img/flamingo.png",
-    "coverVideo": false,
+    "cover":{"url": "/img/flamingo.png", "videoUrl":null},
+   
     "title": "Flamingo",
     "by": ["vitaly"],
     "type": "Design System",
@@ -28,8 +28,8 @@
   },
 
   {
-    "cover": "/img/bootsyicons.png",
-    "coverVideo": false,
+    "cover": {"url":"/img/bootsyicons.png", "videoUrl":null},
+   
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
@@ -37,8 +37,8 @@
     "date": "2021"
   },
   {
-    "cover": "/img/bootsyduotone.png",
-    "coverVideo": false,
+    "cover": {"url":"/img/bootsyduotone.png", "videoUrl":null},
+   
     "title": "Bootsy Icons Duotone",
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
@@ -46,8 +46,8 @@
     "date": "2022"
   },
   {
-    "cover": "/img/karusel.png",
-    "coverVideo": false,
+    "cover":{"url": "/img/karusel.png", "videoUrl":null},
+   
     "title": "Karusel",
     "by": ["vitaly"],
     "type": "Website",
@@ -55,8 +55,7 @@
     "date": "2021"
   },
   {
-    "cover": "/img/starc.png",
-    "coverVideo": false,
+    "cover": {"url":"/img/starc.png", "videoUrl":null},
     "title": "Starc Android",
     "by": ["vitaly"],
     "type": "Native App",
@@ -64,9 +63,7 @@
     "date": "2020"
   },
   {
-    "cover": "/img/starcios.mp4",
-    "poster": "/img/starcios.png",
-    "coverVideo": true,
+    "cover": {"url":"/img/starcios.png", "videoUrl":"/img/starcios.mp4"},
     "title": "Starc IOS",
     "by": ["vitaly"],
     "type": "Native App",
@@ -75,8 +72,8 @@
   },
 
   {
-    "cover": "/img/domkino.png",
-    "coverVideo": false,
+    "cover": {"url":"/img/domkino.png", "videoUrl":null},
+   
     "title": "Domkino",
     "by": ["vitaly"],
     "type": "Website",
@@ -84,8 +81,8 @@
     "date": "2019"
   },
   {
-    "cover": "/img/bober.png",
-    "coverVideo": false,
+    "cover":{"url": "/img/bober.png", "videoUrl":null},
+   
     "title": "Bober",
     "by": ["vitaly"],
     "type": "Website",
@@ -93,8 +90,8 @@
     "date": "2019"
   },
   {
-    "cover": "/img/darlen.png",
-    "coverVideo": false,
+    "cover":{"url": "/img/darlen.png", "videoUrl":null},
+   
     "title": "Darlen",
     "by": ["vitaly"],
     "type": "UI/UX, App",
@@ -102,8 +99,8 @@
     "date": "2021"
   },
   {
-    "cover": "/img/poehali.png",
-    "coverVideo": false,
+    "cover": {"url":"/img/poehali.png", "videoUrl":null},
+   
     "title": "Poehali TV",
     "by": ["vitaly"],
     "type": "UI/UX, App",

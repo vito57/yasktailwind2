@@ -252,6 +252,7 @@ interface portfolioItemProps {
   type?: string;
   poster?: string;
   isVideo?: boolean;
+  videoUrl?: any ;
 }
 export function PortfolioItem({
   keyNum,
@@ -260,6 +261,7 @@ export function PortfolioItem({
   imageAlt,
   title,
   type,
+  videoUrl,
   poster,
   isVideo = false,
 }: portfolioItemProps) {
@@ -268,7 +270,7 @@ export function PortfolioItem({
       <figure>
         <div className="overflow-hidden rounded">
           {isVideo ? (
-            <Video src={imageSrc} poster={poster} />
+            <Video src={videoUrl} poster={poster} />
           ) : (
             <Image
               src={imageSrc}

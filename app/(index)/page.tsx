@@ -11,11 +11,11 @@ export default function Works() {
               key={i.title}
               keyNum={i.path}
               href={i.path}
-              imageSrc={i.cover}
+              imageSrc={i.cover.url}
               imageAlt={i.title}
               title={i.title}
-              poster={i.poster}
-              isVideo={i.coverVideo}
+              poster={i.cover.url}
+              isVideo={!!i.cover.videoUrl}
               type={i.type}
             />
           );
