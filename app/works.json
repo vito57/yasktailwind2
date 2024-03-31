@@ -1,6 +1,6 @@
 [
   {
-    "cover": {"url":"/img/iconsaur.png", "videoUrl":null},
+    "cover": {"url":"/img/iconsaur.png", "videoUrl":""},
     "coverVideo": false,
     "title": "Iconsaur",
     "by": ["gala"],
@@ -9,7 +9,7 @@
     "date": "2024"
   },
   {
-    "cover":{"url": "/img/drugcode.png", "videoUrl":null},
+    "cover":{"url": "/img/drugcode.png", "videoUrl":""},
   
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
@@ -18,7 +18,7 @@
     "date": "2021"
   },
   {
-    "cover":{"url": "/img/flamingo.png", "videoUrl":null},
+    "cover":{"url": "/img/flamingo.png", "videoUrl":""},
    
     "title": "Flamingo",
     "by": ["vitaly"],
@@ -28,7 +28,7 @@
   },
 
   {
-    "cover": {"url":"/img/bootsyicons.png", "videoUrl":null},
+    "cover": {"url":"/img/bootsyicons.png", "videoUrl":""},
    
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
@@ -37,7 +37,7 @@
     "date": "2021"
   },
   {
-    "cover": {"url":"/img/bootsyduotone.png", "videoUrl":null},
+    "cover": {"url":"/img/bootsyduotone.png", "videoUrl":""},
    
     "title": "Bootsy Icons Duotone",
     "by": ["gala", "vitaly"],
@@ -46,7 +46,7 @@
     "date": "2022"
   },
   {
-    "cover":{"url": "/img/karusel.png", "videoUrl":null},
+    "cover":{"url": "/img/karusel.png", "videoUrl":""},
    
     "title": "Karusel",
     "by": ["vitaly"],
@@ -55,7 +55,7 @@
     "date": "2021"
   },
   {
-    "cover": {"url":"/img/starc.png", "videoUrl":null},
+    "cover": {"url":"/img/starc.png", "videoUrl":""},
     "title": "Starc Android",
     "by": ["vitaly"],
     "type": "Native App",
@@ -72,7 +72,7 @@
   },
 
   {
-    "cover": {"url":"/img/domkino.png", "videoUrl":null},
+    "cover": {"url":"/img/domkino.png", "videoUrl":""},
    
     "title": "Domkino",
     "by": ["vitaly"],
@@ -81,7 +81,7 @@
     "date": "2019"
   },
   {
-    "cover":{"url": "/img/bober.png", "videoUrl":null},
+    "cover":{"url": "/img/bober.png", "videoUrl":""},
    
     "title": "Bober",
     "by": ["vitaly"],
@@ -90,7 +90,7 @@
     "date": "2019"
   },
   {
-    "cover":{"url": "/img/darlen.png", "videoUrl":null},
+    "cover":{"url": "/img/darlen.png", "videoUrl":""},
    
     "title": "Darlen",
     "by": ["vitaly"],
@@ -99,7 +99,7 @@
     "date": "2021"
   },
   {
-    "cover": {"url":"/img/poehali.png", "videoUrl":null},
+    "cover": {"url":"/img/poehali.png", "videoUrl":""},
    
     "title": "Poehali TV",
     "by": ["vitaly"],

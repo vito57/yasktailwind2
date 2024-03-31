@@ -252,7 +252,7 @@ interface portfolioItemProps {
   type?: string;
   poster?: string;
   isVideo?: boolean;
-  videoUrl?: any ;
+  videoUrl: string;
 }
 export function PortfolioItem({
   keyNum,
@@ -301,7 +301,7 @@ interface VideoProps {
   src: string;
   poster?: string;
 }
-function Video({ width = 800, poster, height = 600, src }: VideoProps) {
+export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
   return (
     <Suspense fallback={<p>Loading video...</p>}>
     <video

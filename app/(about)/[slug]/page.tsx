@@ -124,6 +124,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   imageAlt={i.title}
                   title={i.title}
                   type={i.type}
+                  isVideo={!!i.cover.videoUrl}
+                  videoUrl={i.cover.videoUrl}
                 />
               );
             })}
