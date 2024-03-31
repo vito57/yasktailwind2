@@ -14,6 +14,7 @@ export default function Works() {
               imageSrc={i.cover}
               imageAlt={i.title}
               title={i.title}
+              isVideo={i.coverVideo}
               type={i.type}
             />
           );

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dribbble from "../../public/dribbble.svg";
 import ui8 from "../../public/ui8.svg";
+import { Suspense } from "react";
 //shimmer
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -43,7 +44,9 @@ export function BodyImage({
       width={width}
       height={height}
       className={className}
-      placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(width = 1600, height = 1200))}`}
+      placeholder={`data:image/svg+xml;base64,${toBase64(
+        shimmer((width = 1600), (height = 1200))
+      )}`}
       alt={alt}
     ></Image>
   );
@@ -84,7 +87,12 @@ interface SectionProps {
   id?: string;
   children: React.ReactNode;
 }
-export function Section({ children, fluid = false, className, id }: SectionProps) {
+export function Section({
+  children,
+  fluid = false,
+  className,
+  id,
+}: SectionProps) {
   const isFluid = fluid ? null : "container";
   return (
     <section className={`${className} ${isFluid} mb-8`} id={id}>
@@ -128,10 +136,7 @@ export function Button({
   path,
 }: ButtonProps) {
   return (
-    <Link
-      href={path || "/"}
-      className={`${className}`}
-    >
+    <Link href={path || "/"} className={`${className}`}>
       {children}
     </Link>
   );
@@ -166,7 +171,9 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             width={1600}
             height={1200}
             className="w-full rounded bg-slate-100 dark:bg-zinc-950"
-            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
+            placeholder={`data:image/svg+xml;base64,${toBase64(
+              shimmer(1600, 1200)
+            )}`}
             alt={props.data1.caption || props.data1.src}
           />
           {props.data1.caption && (
@@ -181,7 +188,9 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             width={1600}
             height={1200}
             className="w-full rounded bg-slate-100 dark:bg-zinc-950"
-            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
+            placeholder={`data:image/svg+xml;base64,${toBase64(
+              shimmer(1600, 1200)
+            )}`}
             alt={props.data2.caption || props.data2.src}
           />
           {props.data2.caption && (
@@ -241,6 +250,7 @@ interface portfolioItemProps {
   imageAlt: string;
   title?: string;
   type?: string;
+  isVideo?: boolean;
 }
 export function PortfolioItem({
   keyNum,
@@ -249,19 +259,26 @@ export function PortfolioItem({
   imageAlt,
   title,
   type,
+  isVideo = false,
 }: portfolioItemProps) {
   return (
     <Link key={keyNum} href={href} className="group/item">
       <figure>
         <div className="overflow-hidden rounded">
-          <Image
-            src={imageSrc}
-            width={800}
-            height={600}
-            placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(800, 600))}`}
-            className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
-            alt={imageAlt}
-          />
+          {isVideo ? (
+            <Video src={imageSrc} />
+          ) : (
+            <Image
+              src={imageSrc}
+              width={800}
+              height={600}
+              placeholder={`data:image/svg+xml;base64,${toBase64(
+                shimmer(800, 600)
+              )}`}
+              className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
+              alt={imageAlt}
+            />
+          )}
         </div>
 
         <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
@@ -273,6 +290,30 @@ export function PortfolioItem({
   );
 }
 //END PORTFOLIO ITEM
+//Video
+interface VideoProps {
+  width?: number;
+  height?: number;
+  src: string;
+}
+export function Video({ width = 800, height = 600, src }: VideoProps) {
+  return (
+    <Suspense fallback={<p>Loading video...</p>}>
+      <video
+        className="w-full ease-in object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
+        width={width}
+        height={height}
+        autoPlay
+        muted
+        loop
+      >
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </Suspense>
+  );
+}
+//End Video
 //ARTICLE IMAGE
 interface ArticleFigureProps {
   figcaption?: string;
@@ -293,7 +334,6 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
 //END ARTICLE IMAGE
 //Article Hero
 interface ArticleHeroSectionProps {
-
   children: React.ReactNode;
   underTitle?: string;
   title?: string;
@@ -301,24 +341,32 @@ interface ArticleHeroSectionProps {
   btnTxt?: string;
   buttonUrl?: any;
 }
-export function ArticleHeroSection({ children, buttonUrl, btnTxt = "Download on UI8", underTitle, title, subTitle }: ArticleHeroSectionProps) {
+export function ArticleHeroSection({
+  children,
+  buttonUrl,
+  btnTxt = "Download on UI8",
+  underTitle,
+  title,
+  subTitle,
+}: ArticleHeroSectionProps) {
   return (
     <figure className="mb-8 relative">
       {children}
       <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
         <div className="md:max-w-sm">
           <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
-          <h1 className="text-xl md:text-4xl mb-2 font-bold ">
-            {title}
-          </h1>
-          <p className="text-base  mb-4 opacity-75">
-            {subTitle}
-          </p>
-          <Button className="ybutton secondary w-full md:w-auto" path={buttonUrl}>{btnTxt}</Button>
+          <h1 className="text-xl md:text-4xl mb-2 font-bold ">{title}</h1>
+          <p className="text-base  mb-4 opacity-75">{subTitle}</p>
+          <Button
+            className="ybutton secondary w-full md:w-auto"
+            path={buttonUrl}
+          >
+            {btnTxt}
+          </Button>
         </div>
       </figcaption>
     </figure>
-  )
+  );
 }
 //End Aticle Header
 //ARTICLE HEADER
@@ -362,8 +410,9 @@ export function FeedItem({
           src={imageSrc}
           width={800}
           height={600}
-          placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(800, 600))}`}
-
+          placeholder={`data:image/svg+xml;base64,${toBase64(
+            shimmer(800, 600)
+          )}`}
           className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
           alt={imageAlt}
         />
@@ -395,23 +444,25 @@ interface SummaryProps {
   year: string;
 }
 export function Summary({ designer, client, link, year }: SummaryProps) {
-  return (<> 
-  <p>
-    Designer:{" "}
-    <Link className="ylink capitalize" href={`/${designer}`}>
-      {designer}
-    </Link>
-  </p>
-    <p>
-      Client:{" "}
-
-      {client}
-
-    </p>
-    {link && <p>Live:   <Link className="ylink" href={link}>
-      {link}
-    </Link>
-    </p>}
-    <p>Year: {year} </p></>)
+  return (
+    <>
+      <p>
+        Designer:{" "}
+        <Link className="ylink capitalize" href={`/${designer}`}>
+          {designer}
+        </Link>
+      </p>
+      <p>Client: {client}</p>
+      {link && (
+        <p>
+          Live:{" "}
+          <Link className="ylink" href={link}>
+            {link}
+          </Link>
+        </p>
+      )}
+      <p>Year: {year} </p>
+    </>
+  );
 }
 //End Summary

@@ -1,6 +1,7 @@
 [
   {
     "cover": "/img/iconsaur.png",
+    "coverVideo": false,
     "title": "Iconsaur",
     "by": ["gala"],
     "type": "Icon System",
@@ -9,6 +10,7 @@
   },
   {
     "cover": "/img/drugcode.png",
+    "coverVideo": false,
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
     "type": "Code editor, Branding",
@@ -17,6 +19,7 @@
   },
   {
     "cover": "/img/flamingo.png",
+    "coverVideo": false,
     "title": "Flamingo",
     "by": ["vitaly"],
     "type": "Design System",
@@ -26,6 +29,7 @@
 
   {
     "cover": "/img/bootsyicons.png",
+    "coverVideo": false,
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
@@ -34,6 +38,7 @@
   },
   {
     "cover": "/img/bootsyduotone.png",
+    "coverVideo": false,
     "title": "Bootsy Icons Duotone",
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
@@ -42,6 +47,7 @@
   },
   {
     "cover": "/img/karusel.png",
+    "coverVideo": false,
     "title": "Karusel",
     "by": ["vitaly"],
     "type": "Website",
@@ -50,6 +56,7 @@
   },
   {
     "cover": "/img/starc.png",
+    "coverVideo": false,
     "title": "Starc Android",
     "by": ["vitaly"],
     "type": "Native App",
@@ -57,7 +64,8 @@
     "date": "2020"
   },
   {
-    "cover": "/img/starcios.png",
+    "cover": "/img/starcios.mp4",
+    "coverVideo": true,
     "title": "Starc IOS",
     "by": ["vitaly"],
     "type": "Native App",
@@ -67,6 +75,7 @@
 
   {
     "cover": "/img/domkino.png",
+    "coverVideo": false,
     "title": "Domkino",
     "by": ["vitaly"],
     "type": "Website",
@@ -75,6 +84,7 @@
   },
   {
     "cover": "/img/bober.png",
+    "coverVideo": false,
     "title": "Bober",
     "by": ["vitaly"],
     "type": "Website",
@@ -83,6 +93,7 @@
   },
   {
     "cover": "/img/darlen.png",
+    "coverVideo": false,
     "title": "Darlen",
     "by": ["vitaly"],
     "type": "UI/UX, App",
@@ -91,6 +102,7 @@
   },
   {
     "cover": "/img/poehali.png",
+    "coverVideo": false,
     "title": "Poehali TV",
     "by": ["vitaly"],
     "type": "UI/UX, App",
