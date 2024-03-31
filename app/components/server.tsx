@@ -250,6 +250,7 @@ interface portfolioItemProps {
   imageAlt: string;
   title?: string;
   type?: string;
+  poster?: string;
   isVideo?: boolean;
 }
 export function PortfolioItem({
@@ -259,6 +260,7 @@ export function PortfolioItem({
   imageAlt,
   title,
   type,
+  poster,
   isVideo = false,
 }: portfolioItemProps) {
   return (
@@ -266,7 +268,7 @@ export function PortfolioItem({
       <figure>
         <div className="overflow-hidden rounded">
           {isVideo ? (
-            <Video src={imageSrc} />
+            <Video src={imageSrc} poster={poster} />
           ) : (
             <Image
               src={imageSrc}
@@ -295,22 +297,23 @@ interface VideoProps {
   width?: number;
   height?: number;
   src: string;
+  poster?: string;
 }
-export function Video({ width = 800, height = 600, src }: VideoProps) {
+export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
   return (
-    <Suspense fallback={<p>Loading video...</p>}>
-      <video
-        className="w-full ease-in object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
-        width={width}
-        height={height}
-        autoPlay
-        muted
-        loop
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </Suspense>
+    <video
+      className="w-full ease-in -z-10 object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
+      width={width}
+      height={height}
+      poster={poster}
+      playsInline
+      autoPlay
+      muted
+      loop
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   );
 }
 //End Video

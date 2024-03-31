@@ -65,6 +65,7 @@
   },
   {
     "cover": "/img/starcios.mp4",
+    "poster": "/img/starcios.png",
     "coverVideo": true,
     "title": "Starc IOS",
     "by": ["vitaly"],
