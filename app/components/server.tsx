@@ -250,7 +250,7 @@ interface portfolioItemProps {
   imageAlt: string;
   title?: string;
   type?: string;
-  poster?: string;
+  poster: string;
   isVideo?: boolean;
   videoUrl: string;
 }
@@ -299,25 +299,26 @@ interface VideoProps {
   width?: number;
   height?: number;
   src: string;
-  poster?: string;
+  poster: string;
 }
 export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
   return (
     <Suspense fallback={<p>Loading video...</p>}>
-    <video
-      className="w-full ease-in -z-10 object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
-      width={width}
-      height={height}
-      poster={poster}
-      controls={false}
-      playsInline
-      autoPlay
-      muted
-      loop
-    >
-      <source src={src} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      <video
+        className="w-full ease-in -z-10 object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
+        width={width}
+        height={height}
+        poster={poster}
+        controls={false}
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+      >
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </Suspense>
   );
 }

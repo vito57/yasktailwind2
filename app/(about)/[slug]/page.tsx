@@ -123,7 +123,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   imageSrc={i.cover.url}
                   imageAlt={i.title}
                   title={i.title}
-                  type={i.type}
+                  poster={i.cover.url}
                   isVideo={!!i.cover.videoUrl}
                   videoUrl={i.cover.videoUrl}
                 />
@@ -131,14 +131,15 @@ export default function Page({ params }: { params: { slug: string } }) {
             })}
           </div>
         </Text>
-        {user.awards && <Text title="Awards">
-          <div className="flex gap-1 flex-wrap">
-            { user.awards.map((i) => (
-              <Badge key={i}>{i}</Badge>
-            ))}
-          </div>
-        </Text>}
-
+        {user.awards && (
+          <Text title="Awards">
+            <div className="flex gap-1 flex-wrap">
+              {user.awards.map((i) => (
+                <Badge key={i}>{i}</Badge>
+              ))}
+            </div>
+          </Text>
+        )}
 
         <Text title="Education">
           <p>{user.education}</p>
@@ -147,13 +148,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <Text title="Courses">
             <ul>
               {user.courses.map((i) => {
-                return (
-                  <li key={i}>
-                  
-                      {i}
-                   
-                  </li>
-                );
+                return <li key={i}>{i}</li>;
               })}
             </ul>
           </Text>
