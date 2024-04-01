@@ -37,6 +37,15 @@
     "date": "2021"
   },
   {
+    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
+
+    "title": "Bootsy Icons Duotone",
+    "by": ["gala", "vitaly"],
+    "type": "UI Icon Set",
+    "path": "/works/bootsyduotone",
+    "date": "2022"
+  },
+  {
     "cover": { "url": "/img/starc.png", "videoUrl": "" },
     "title": "Starc Android",
     "by": ["vitaly"],
@@ -61,15 +70,7 @@
     "path": "/works/bootsy",
     "date": "2021"
   },
-  {
-    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
 
-    "title": "Bootsy Icons Duotone",
-    "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
-    "path": "/works/bootsyduotone",
-    "date": "2022"
-  },
   {
     "cover": { "url": "/img/domkino.png", "videoUrl": "" },
 
