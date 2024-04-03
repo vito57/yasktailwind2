@@ -110,18 +110,22 @@ const Page = () => {
               parallax headers
             </p>
           </Text>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/content.png" />
-          </ArticleFigure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/karusel/content.png",
+            }}
+            data2={{
+              src: "/works/karusel/parallax.png",
+            }}
+          />
+       
           <Text>
             <p>
               I designed and code the adaptive parallax Hero header. 2 types of
               such headers have been made - for pages and for sections
             </p>
           </Text>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/parallax.png" />
-          </ArticleFigure>
+    
           <ArticleImageSection
             data1={{
               src: "/works/karusel/decorator_header.gif",
