@@ -40,32 +40,45 @@ const Page = () => {
               many more. Made by a small team of 5 people. My role is designer.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/karusel/main_desktop.png",
+            }}
+            data2={{
+              src: "/works/karusel/games_desktop.png",
+            }}
+          />
+          {/* <ArticleFigure>
             <BodyImage src="/works/karusel/main_desktop.png" />
           </ArticleFigure>
           <ArticleFigure>
             <BodyImage src="/works/karusel/games_desktop.png" />
-          </ArticleFigure>
-          <ArticleFigure>
+          </ArticleFigure> */}
+          {/* <ArticleFigure>
             <BodyImage src="/works/karusel/video_desktop.png" />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <Section id="mobile">
           <Text title="Mobile">
             <p>The website is fully responsive.</p>
           </Text>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/main_mobile.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/article_mobile.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/mobile_menu.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/games_mobile.png" />
-          </ArticleFigure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/karusel/main_mobile.png",
+            }}
+            data2={{
+              src: "/works/karusel/article_mobile.png",
+            }}
+          />
+                    <ArticleImageSection
+            data1={{
+              src: "/works/karusel/mobile_menu.png",
+            }}
+            data2={{
+              src: "/works/karusel/games_mobile.png",
+            }}
+          />
+
         </Section>
         <Section id="styles">
           <Text title="Styles">
@@ -74,12 +87,20 @@ const Page = () => {
               created wireframes and prototypes.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleImageSection
+            data1={{
+              src: "/works/karusel/style_guide.png",
+            }}
+            data2={{
+              src: "/works/karusel/templates.png",
+            }}
+          />
+          {/* <ArticleFigure>
             <BodyImage src="/works/karusel/style_guide.png" />
           </ArticleFigure>
           <ArticleFigure>
             <BodyImage src="/works/karusel/templates.png" />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         {/* BRANDING */}
         <Section id="content">
