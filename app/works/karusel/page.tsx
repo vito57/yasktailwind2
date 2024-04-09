@@ -95,12 +95,7 @@ const Page = () => {
               src: "/works/karusel/templates.png",
             }}
           />
-          {/* <ArticleFigure>
-            <BodyImage src="/works/karusel/style_guide.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/templates.png" />
-          </ArticleFigure> */}
+      
         </Section>
         {/* BRANDING */}
         <Section id="content">
