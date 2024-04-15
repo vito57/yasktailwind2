@@ -45,7 +45,7 @@
     "date": "2020"
   },
   {
-    "cover": { "url": "/img/starcios.png", "videoUrl": "/img/starcios.mp4" },
+    "cover": { "url": "/img/starcios.png", "videoUrl": "" },
     "title": "Starc IOS",
     "by": ["vitaly"],
     "type": "Native App",
