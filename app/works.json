@@ -26,7 +26,24 @@
     "path": "/works/flamingo",
     "date": "2021"
   },
+  {
+    "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
 
+    "title": "Bootsy Icons",
+    "by": ["gala", "vitaly"],
+    "type": "UI Icon Set",
+    "path": "/works/bootsy",
+    "date": "2021"
+  },
+  {
+    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
+
+    "title": "Bootsy Icons Duotone",
+    "by": ["gala", "vitaly"],
+    "type": "UI Icon Set",
+    "path": "/works/bootsyduotone",
+    "date": "2022"
+  },
   {
     "cover": { "url": "/img/karusel.png", "videoUrl": "" },
 
@@ -52,24 +69,7 @@
     "path": "/works/starcios",
     "date": "2021"
   },
-  {
-    "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
 
-    "title": "Bootsy Icons",
-    "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
-    "path": "/works/bootsy",
-    "date": "2021"
-  },
-  {
-    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
-
-    "title": "Bootsy Icons Duotone",
-    "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
-    "path": "/works/bootsyduotone",
-    "date": "2022"
-  },
   {
     "cover": { "url": "/img/domkino.png", "videoUrl": "" },
 
