@@ -114,7 +114,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </dl>
         </Text>
         <Text title="Projects">
-          <div className="grid gap-x-6 gap-y-6 lg:grid-cols-3 md:grid-cols-2">
+          <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
             {userWorks.map((i) => {
               return (
                 <PortfolioItem
