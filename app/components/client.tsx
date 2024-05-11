@@ -60,7 +60,12 @@ interface BodyColorProps {
 export function BodyColor({ children }: BodyColorProps) {
   const pathname = usePathname();
   //array of pages that must have dark theme
-  const dark = ["/works/drugcode", "/works/bootsyduotone", "/works/poehali"];
+  const dark = [
+    "/works/drugcode",
+    "/works/bootsyduotone",
+    "/works/poehali",
+    "/works/bowlerslink",
+  ];
   const colorClass = dark.includes(pathname)
     ? "dark bg-zinc-950 text-ytextdark"
     : "light text-yask";
