@@ -159,6 +159,7 @@ export function Badge({ className, href, children }: BadgeProps) {
 interface ArticleImageSectionProps {
   data1: { src: string; caption?: string };
   data2: { src: string; caption?: string };
+  className?: string;
 }
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
@@ -166,16 +167,12 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
     <div className="flex flex-col md:flex-row gap-4 mb-4">
       <div className="basis-auto md:basis-1/2">
         <figure>
-          <Image
+          <BodyImage
             src={props.data1.src}
-            width={1600}
-            height={1200}
-            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
-            placeholder={`data:image/svg+xml;base64,${toBase64(
-              shimmer(1600, 1200)
-            )}`}
+            className={props.className}
             alt={props.data1.caption || props.data1.src}
           />
+
           {props.data1.caption && (
             <figcaption className="text-sm">{props.data1.caption}</figcaption>
           )}
@@ -183,16 +180,12 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
       </div>
       <div className="basis-auto md:basis-1/2">
         <figure>
-          <Image
+          <BodyImage
             src={props.data2.src}
-            width={1600}
-            height={1200}
-            className="w-full rounded bg-slate-100 dark:bg-zinc-950"
-            placeholder={`data:image/svg+xml;base64,${toBase64(
-              shimmer(1600, 1200)
-            )}`}
+            className={props.className}
             alt={props.data2.caption || props.data2.src}
           />
+
           {props.data2.caption && (
             <figcaption className="text-sm">{props.data2.caption}</figcaption>
           )}
@@ -349,23 +342,26 @@ interface ArticleHeroSectionProps {
   subTitle?: string;
   btnTxt?: string;
   buttonUrl?: any;
+  credits?: string;
 }
 export function ArticleHeroSection({
   children,
   buttonUrl,
-  btnTxt = "Download on UI8",
+  btnTxt = "Purchase Set →",
   underTitle,
   title,
   subTitle,
+  credits,
 }: ArticleHeroSectionProps) {
   return (
     <figure className="mb-8 relative">
       {children}
       <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
-        <div className="md:max-w-sm">
-          <p className="text-sm md:text-base mb-2 opacity-75">{underTitle}</p>
+        <div className="md:max-w-md">
+          <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-xl md:text-4xl mb-2 font-bold ">{title}</h1>
-          <p className="text-base  mb-4 opacity-75">{subTitle}</p>
+          <p className="text-base mb-4 ">{subTitle}</p>
+          {credits && <p className="text-base mb-4 ">{credits}</p>}
           <Button
             className="ybutton secondary w-full md:w-auto"
             path={buttonUrl}

@@ -21,7 +21,7 @@
   }
 }
 .ybutton{
-  @apply text-sm text-center inline-block m-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue 
+  @apply text-sm text-center inline-block my-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue 
 }
 .ybutton.primary{
   @apply bg-ylime hover:bg-[#CBEA6E]

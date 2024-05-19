@@ -27,6 +27,7 @@ const Page = () => {
             title="1700+ High-Quality UI Vector Icons"
             subTitle="High-quality handcrafted icon set for websites, apps, social
           networks, prints."
+            credits="Designed by Gala • Distributed by UI8 • Released 2021"
             buttonUrl="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"
           >
             <BodyImage
@@ -36,8 +37,6 @@ const Page = () => {
               className="bg-transparent w-full"
               alt="Bootsy duotone icons"
             />
-
-
           </ArticleHeroSection>
         </ArticleHeader>
         <Section id="about">
@@ -77,11 +76,13 @@ const Page = () => {
         </Section>
         <Section id="summary" className="container">
           <Text title="Summary">
-          <Summary designer="gala" year="2022" client="Yask" link="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"/>
-
-       
+            <Summary
+              designer="gala"
+              year="2022"
+              client="Yask"
+              link="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"
+            />
           </Text>
-
         </Section>
       </Article>
     </AnimateLayout>

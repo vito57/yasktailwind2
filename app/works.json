@@ -9,12 +9,12 @@
     "date": "2024"
   },
   {
-    "cover": { "url": "/img/iconsaur.png", "videoUrl": "" },
+    "cover": { "url": "/img/angleicons.png", "videoUrl": "" },
     "coverVideo": false,
-    "title": "Iconsaur",
+    "title": "AngleIcons",
     "by": ["gala"],
     "type": "Icon System",
-    "path": "/works/iconsaur",
+    "path": "/works/angleicons",
     "date": "2024"
   },
   {
@@ -27,7 +27,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/flamingo2.png", "videoUrl": "" },
+    "cover": { "url": "/img/flamingo.png", "videoUrl": "" },
 
     "title": "Flamingo",
     "by": ["vitaly"],

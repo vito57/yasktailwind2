@@ -7,7 +7,7 @@ import {
   ArticleImageSection,
   ArticleHeader,
   BodyImage,
-  Summary
+  Summary,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/drugcode/bg.png')] bg-cover">
+        <ArticleHeader className="bg-zinc-900">
           <ArticleFigure>
             <BodyImage
               src="/works/drugcode/cover.png"
@@ -34,7 +34,6 @@ const Page = () => {
         <Section id="about">
           <Text title="About">
             <p>
-
               Drugcode allows users to use banking data and create usefull
               internal apps for the web and mobile platforms. As the Designer
               for Drugcode, I was responsible for branding, UI/UX and visual
@@ -118,7 +117,7 @@ const Page = () => {
 
         {/* UI/UX */}
 
-        <Section id="ux" >
+        <Section id="ux">
           <Text title="Style Guide">
             <p className="mb-8">
               I worked with our team and the Drugcode developers to craft a
@@ -139,9 +138,9 @@ const Page = () => {
           </ArticleFigure>
           <Text title="">
             <p>
-              We follow the pattern Template / Region / Component / Element / Modifier.
-              A mix of atomic design principles and BEM methodology. More then
-              80 components are created.
+              We follow the pattern Template / Region / Component / Element /
+              Modifier. A mix of atomic design principles and BEM methodology.
+              More then 80 components are created.
             </p>
           </Text>
           <ArticleFigure>
@@ -160,6 +159,9 @@ const Page = () => {
               src="/works/drugcode/letf_side_bar.png"
               alt="Left sidebar"
             />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage src="/works/drugcode/drag.png" alt="Drug n Drop" />
           </ArticleFigure>
           <Text title="">
             <p>
@@ -217,9 +219,7 @@ const Page = () => {
         {/* HAVE FUN */}
         <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2020-2021" client="Sber"/>
-
-           
+            <Summary designer="vitaly" year="2021" client="Sber" />
           </Text>
         </Section>
       </Article>

@@ -1,5 +1,9 @@
 import { Footer, PortfolioItem, Section } from "../components/server";
-import { ArticleTopMenu, MobileNavBar, MobileArticleFooter } from "../components/client";
+import {
+  ArticleTopMenu,
+  MobileNavBar,
+  MobileArticleFooter,
+} from "../components/client";
 import data from "../works.json";
 export default function WorkLayout({
   children,
@@ -9,7 +13,7 @@ export default function WorkLayout({
   return (
     <>
       <ArticleTopMenu />
-<MobileArticleFooter />
+      <MobileArticleFooter />
       {children}
       <Section id="moreworks">
         <h2 className="text-xl font-bold mb-8">More works</h2>

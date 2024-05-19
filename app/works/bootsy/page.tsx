@@ -8,7 +8,7 @@ import {
   ArticleHeader,
   BodyImage,
   Summary,
-  ArticleHeroSection
+  ArticleHeroSection,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,13 +21,15 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/bootsy/bg.png')] bg-cover">
-
-          <ArticleHeroSection underTitle="Bootsy Icons" 
-          buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
-          subTitle="High-quality handcrafted icon set for websites, apps, social
-                  networks, prints." 
-                  title="1700+ High-Quality UI Vector Icons">
+        <ArticleHeader>
+          <ArticleHeroSection
+            underTitle="Bootsy Icons"
+            buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
+            subTitle="High-quality handcrafted icon set for websites, apps, social
+                  networks, prints."
+            title="1700+ High-Quality UI Vector Icons"
+            credits="Designed by Gala • Distributed by UI8 • Released 2021"
+          >
             <BodyImage
               src="/works/bootsy/cover.png"
               width={1120}
@@ -35,8 +37,6 @@ const Page = () => {
               className="bg-transparent w-full"
               alt="Bootsy Icons"
             />
-
-   
           </ArticleHeroSection>
         </ArticleHeader>
         <Section id="about">
@@ -62,7 +62,7 @@ const Page = () => {
               src: "/works/bootsy/6.png",
             }}
           />
-  
+
           <ArticleFigure>
             <BodyImage
               src="/works/bootsy/f1.png"
@@ -74,11 +74,13 @@ const Page = () => {
         </Section>
         <Section id="summary" className="container">
           <Text title="Summary">
-          <Summary designer="gala" year="2022" client="Yask" link="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"/>
-
-         
+            <Summary
+              designer="gala"
+              year="2022"
+              client="Yask"
+              link="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
+            />
           </Text>
-
         </Section>
       </Article>
     </AnimateLayout>

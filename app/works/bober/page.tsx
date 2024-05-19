@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/bober/bg.png')] bg-cover">
+        <ArticleHeader className="bg-green-100">
           <ArticleFigure>
             <BodyImage
               src="/works/bober/cover.png"
@@ -31,14 +31,16 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" >
+        <Section id="about">
           <Text title="About">
             <p>Adaptive web site and logo for TV channel</p>
           </Text>
 
-
           <ArticleFigure figcaption="New main page layout">
             <BodyImage src="/works/bober/main.png" alt="Bober main" />
+          </ArticleFigure>
+          <ArticleFigure figcaption="Alternative main and article page">
+            <BodyImage src="/works/bober/main2.png" alt="Bober main" />
           </ArticleFigure>
           <ArticleFigure figcaption="New logo">
             <BodyImage
@@ -49,7 +51,11 @@ const Page = () => {
             />
           </ArticleFigure>
           <ArticleFigure figcaption="Main page">
-            <BodyImage src="/works/bober/3.png" alt="Bober main" />
+            <BodyImage
+              src="/works/bober/3.png"
+              className="bg-green-100"
+              alt="Bober main"
+            />
           </ArticleFigure>
           <ArticleFigure>
             <BodyImage src="/works/bober/1.png" alt="Bober main" />
@@ -61,8 +67,12 @@ const Page = () => {
 
         <Section id="summary">
           <Text title="Summary">
-            <Summary designer="vitaly" year="2019" client="PKVS" link="https://bober.ru"/>
-         
+            <Summary
+              designer="vitaly"
+              year="2019"
+              client="PKVS"
+              link="https://bober.ru"
+            />
           </Text>
         </Section>
       </Article>
