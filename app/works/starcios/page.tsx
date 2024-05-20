@@ -20,13 +20,13 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-green-100">
+        <ArticleHeader className="bg-slate-100">
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/cover.png"
               width={1120}
               height={416}
-              className="bg-green-100  w-full"
+              className=" w-full"
               alt="Starc IOS App"
             />
           </ArticleFigure>
@@ -68,6 +68,7 @@ const Page = () => {
               alt="Starc Mobile"
               width={2068}
               height={5790}
+              className="bg-transparent"
             />
           </ArticleFigure>
         </Section>
@@ -90,6 +91,7 @@ const Page = () => {
               width={3501}
               height={1776}
               alt="Starc tablet"
+             
             />
           </ArticleFigure>
         </Section>

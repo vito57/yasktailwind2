@@ -20,13 +20,13 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-yellow-100">
+        <ArticleHeader className="bg-slate-100">
           <ArticleFigure>
             <BodyImage
               src="/works/starc/cover.png"
               width={1120}
               height={416}
-              className="bg-yellow-100  w-full"
+              className="w-full"
               alt="Starc Android App"
             />
           </ArticleFigure>
