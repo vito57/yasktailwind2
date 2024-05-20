@@ -108,6 +108,15 @@
     "date": "2021"
   },
   {
+    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
+
+    "title": "Podeda TV",
+    "by": ["vitaly"],
+    "type": "Website",
+    "path": "/works/pobeda",
+    "date": "2018"
+  },
+  {
     "cover": { "url": "/img/poehali.png", "videoUrl": "" },
 
     "title": "Poehali TV",

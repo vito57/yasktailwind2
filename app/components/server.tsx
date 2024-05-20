@@ -326,7 +326,7 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
     <figure className="mb-8">
       {children}
       {figcaption && (
-        <figcaption className="dark:text-white text-yask/80">
+        <figcaption className="dark:text-ytextdark text-yask/80">
           {figcaption}
         </figcaption>
       )}
