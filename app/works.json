@@ -12,7 +12,7 @@
     "cover": { "url": "/img/angleicons.png", "videoUrl": "" },
     "coverVideo": false,
     "title": "AngleIcons",
-    "by": ["gala"],
+    "by": ["gala", "vitaly"],
     "type": "Icon System",
     "path": "/works/angleicons",
     "date": "2024"
@@ -34,34 +34,6 @@
     "type": "Website",
     "path": "/works/bowlerslink",
     "date": "2024"
-  },
-
-  {
-    "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
-
-    "title": "Bootsy Icons",
-    "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
-    "path": "/works/bootsy",
-    "date": "2021"
-  },
-  {
-    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
-
-    "title": "Bootsy Icons Duotone",
-    "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
-    "path": "/works/bootsyduotone",
-    "date": "2022"
-  },
-  {
-    "cover": { "url": "/img/karusel.png", "videoUrl": "" },
-
-    "title": "Karusel",
-    "by": ["vitaly"],
-    "type": "Website",
-    "path": "/works/karusel",
-    "date": "2021"
   },
   {
     "cover": { "url": "/img/starc.png", "videoUrl": "" },
@@ -90,6 +62,15 @@
     "date": "2019"
   },
   {
+    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
+
+    "title": "Podeda TV",
+    "by": ["vitaly"],
+    "type": "Website",
+    "path": "/works/pobeda",
+    "date": "2018"
+  },
+  {
     "cover": { "url": "/img/bober.png", "videoUrl": "" },
 
     "title": "Bober",
@@ -108,14 +89,35 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
+    "cover": { "url": "/img/karusel.png", "videoUrl": "" },
 
-    "title": "Podeda TV",
+    "title": "Karusel",
     "by": ["vitaly"],
     "type": "Website",
-    "path": "/works/pobeda",
-    "date": "2018"
+    "path": "/works/karusel",
+    "date": "2021"
   },
+  {
+    "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
+
+    "title": "Bootsy Icons",
+    "by": ["gala", "vitaly"],
+    "type": "UI Icon Set",
+    "path": "/works/bootsy",
+    "date": "2021"
+  },
+  {
+    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
+
+    "title": "Bootsy Icons Duotone",
+    "by": ["gala", "vitaly"],
+    "type": "UI Icon Set",
+    "path": "/works/bootsyduotone",
+    "date": "2022"
+  },
+ 
+
+
   {
     "cover": { "url": "/img/poehali.png", "videoUrl": "" },
 

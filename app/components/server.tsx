@@ -279,8 +279,8 @@ export function PortfolioItem({
         </div>
 
         <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
-          <span>{title}</span>
-          <span>{type}</span>
+         {title && <span>{title}</span>} 
+         {type && <span>{type}</span>} 
         </figcaption>
       </figure>
     </Link>

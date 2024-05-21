@@ -27,8 +27,8 @@ export default function WorkLayout({
                 imageSrc={i.cover.url}
                 poster={i.cover.url}
                 imageAlt={i.title}
-                title={i.title}
-                type={i.type}
+                //title={i.title}
+               // type={i.type}
                 isVideo={!!i.cover.videoUrl}
                 videoUrl={i.cover.videoUrl}
               />
