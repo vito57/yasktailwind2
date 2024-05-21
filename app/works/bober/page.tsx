@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-green-100">
+        <ArticleHeader className="bg-slate-100">
           <ArticleFigure>
             <BodyImage
               src="/works/bober/cover.png"
@@ -42,27 +42,19 @@ const Page = () => {
           <ArticleFigure figcaption="Alternative main and article page">
             <BodyImage src="/works/bober/main2.png" alt="Bober main" />
           </ArticleFigure>
-          <ArticleFigure figcaption="New logo">
-            <BodyImage
-              src="/works/bober/logo.png"
-              alt="Bober logo"
-              width={2240}
-              height={974}
-            />
-          </ArticleFigure>
-          <ArticleFigure figcaption="Main page">
-            <BodyImage
-              src="/works/bober/3.png"
-              className="bg-green-100"
-              alt="Bober main"
-            />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/bober/1.png" alt="Bober main" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/bober/2.png" alt="Bober main" />
-          </ArticleFigure>
+
+          <ArticleImageSection
+            data1={{ src: "/works/bober/3.png" }}
+            data2={{
+              src: "/works/bober/logo.png",
+            }}
+          />
+          <ArticleImageSection
+            data1={{ src: "/works/bober/1.png" }}
+            data2={{
+              src: "/works/bober/3.png",
+            }}
+          />
         </Section>
 
         <Section id="summary">
