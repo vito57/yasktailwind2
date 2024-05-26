@@ -65,11 +65,7 @@ const Page = () => {
 
         <Section id="summary">
           <Text title="Summary">
-            <Summary
-              designer="vitaly"
-              year="2024"
-              link="https://www.figma.com/proto/e6ugrMjY9Fs15pc2bq5KmQ/riveo-refactoring?page-id=0%3A1&node-id=37-359&viewport=1469%2C-276%2C0.33&t=bb84aYNz3GHqDfYe-1&scaling=min-zoom"
-            />
+            <Summary designer="vitaly" year="2024" />
           </Text>
         </Section>
       </Article>
