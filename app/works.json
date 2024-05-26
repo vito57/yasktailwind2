@@ -9,6 +9,15 @@
     "date": "2021"
   },
   {
+    "cover": { "url": "/img/riveo.png", "videoUrl": "" },
+
+    "title": "Riveo",
+    "by": ["vitaly"],
+    "type": "Refactoring UI",
+    "path": "/works/riveo",
+    "date": "2024"
+  },
+  {
     "cover": { "url": "/img/angleicons.png", "videoUrl": "" },
     "coverVideo": false,
     "title": "AngleIcons",
@@ -115,8 +124,6 @@
     "path": "/works/bootsyduotone",
     "date": "2022"
   },
- 
-
 
   {
     "cover": { "url": "/img/poehali.png", "videoUrl": "" },
