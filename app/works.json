@@ -1,14 +1,5 @@
 [
   {
-    "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
-
-    "title": "DrugCode+",
-    "by": ["vitaly", "vera"],
-    "type": "Code editor, Branding",
-    "path": "/works/drugcode",
-    "date": "2021"
-  },
-  {
     "cover": { "url": "/img/riveo.png", "videoUrl": "" },
 
     "title": "Riveo",
@@ -17,6 +8,16 @@
     "path": "/works/riveo",
     "date": "2024"
   },
+  {
+    "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
+
+    "title": "DrugCode+",
+    "by": ["vitaly", "vera"],
+    "type": "Code editor, Branding",
+    "path": "/works/drugcode",
+    "date": "2021"
+  },
+
   {
     "cover": { "url": "/img/angleicons.png", "videoUrl": "" },
     "coverVideo": false,
