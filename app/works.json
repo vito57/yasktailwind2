@@ -1,7 +1,6 @@
 [
   {
     "cover": { "url": "/img/riveo.png", "videoUrl": "" },
-
     "title": "Riveo",
     "by": ["vitaly"],
     "type": "Refactoring UI",
@@ -10,7 +9,6 @@
   },
   {
     "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
-
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
     "type": "Code editor, Branding",
@@ -71,15 +69,7 @@
     "path": "/works/domkino",
     "date": "2019"
   },
-  {
-    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
 
-    "title": "Podeda TV",
-    "by": ["vitaly"],
-    "type": "Website",
-    "path": "/works/pobeda",
-    "date": "2018"
-  },
   {
     "cover": { "url": "/img/bober.png", "videoUrl": "" },
 
