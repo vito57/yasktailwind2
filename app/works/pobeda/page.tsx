@@ -33,7 +33,7 @@ const Page = () => {
         </ArticleHeader>
         <Section id="about">
           <Text title="About">
-            <p>Adaptive web site for TV channel</p>
+            <p>Adaptive website for the channel of Soviet films about the Second World War</p>
           </Text>
 
           <ArticleFigure figcaption="New main page">
