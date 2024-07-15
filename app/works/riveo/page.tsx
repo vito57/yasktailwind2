@@ -35,9 +35,9 @@ const Page = () => {
           <Text title="About">
             <p>Refactoring UI/UX of Riveo app</p>
           </Text>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage src="/works/riveo/about.png" alt="riveo main" />
-          </ArticleFigure>
+          </ArticleFigure> */}
           <ArticleFigure>
             <BodyImage src="/works/riveo/review.png" alt="riveo main" />
           </ArticleFigure>

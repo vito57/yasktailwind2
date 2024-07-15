@@ -153,7 +153,14 @@ export default function Page({ params }: { params: { slug: string } }) {
             </ul>
           </Text>
         )}
-
+{user.learn &&(
+  <Text title="Learning curve">
+               {user.learn.map((i) => {
+                return  <Badge key={i}>{i}</Badge>
+              })}
+   
+  </Text>
+)}
         <Footer />
       </AnimateLayout>
     </>

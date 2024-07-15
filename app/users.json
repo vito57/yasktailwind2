@@ -105,7 +105,8 @@
     ],
 
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
-    "courses": ["MITx: Mobile Application Experiences, 2012"]
+    "courses": ["MITx: Mobile Application Experiences, 2012"],
+    "learn":["Blender Shading 10%", "Blender Geometry nodes 0%", "React Three Fiber 0%"]
   },
   {
     "name": "Gala",
@@ -154,7 +155,9 @@
 
     "awards": ["🏆 UI8 featured product"],
     "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
-    "courses": null
+    "courses": null,
+    "learn":["Painting"]
+
   },
   {
     "name": "Vera",
@@ -194,6 +197,7 @@
     "awards": null,
     "education": "1494 elmentry school, since 2023",
 
-    "courses": null
+    "courses": null,
+    "learn":["Painting"]
   }
 ]
