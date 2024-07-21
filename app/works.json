@@ -1,5 +1,13 @@
 [
   {
+    "cover": { "url": "/img/chess.png", "videoUrl": "" },
+    "title": "Mikhail Tal Chess",
+    "by": ["vitaly"],
+    "type": "AI Chess",
+    "path": "/works/chess",
+    "date": "2024"
+  },
+  {
     "cover": { "url": "/img/riveo.png", "videoUrl": "" },
     "title": "Riveo",
     "by": ["vitaly"],

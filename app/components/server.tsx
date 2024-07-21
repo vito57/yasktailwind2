@@ -160,6 +160,7 @@ interface ArticleImageSectionProps {
   data1: { src: string; caption?: string };
   data2: { src: string; caption?: string };
   className?: string;
+  height?:number;
 }
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
@@ -170,11 +171,12 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           <BodyImage
             src={props.data1.src}
             className={props.className}
+            height={props.height}
             alt={props.data1.caption || props.data1.src}
           />
 
           {props.data1.caption && (
-            <figcaption className="text-sm">{props.data1.caption}</figcaption>
+            <figcaption className="text-sm text-center font-mono">{props.data1.caption}</figcaption>
           )}
         </figure>
       </div>
@@ -187,7 +189,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           />
 
           {props.data2.caption && (
-            <figcaption className="text-sm">{props.data2.caption}</figcaption>
+            <figcaption className="text-sm text-center font-mono">{props.data2.caption}</figcaption>
           )}
         </figure>
       </div>
@@ -326,7 +328,7 @@ export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
     <figure className="mb-8">
       {children}
       {figcaption && (
-        <figcaption className="dark:text-ytextdark text-yask/80">
+        <figcaption className="dark:text-ytextdark text-sm font-mono text-yask/80">
           {figcaption}
         </figcaption>
       )}
@@ -358,10 +360,10 @@ export function ArticleHeroSection({
       {children}
       <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
         <div className="md:max-w-md">
-          <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
+          <p className="text-sm font-mono md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-xl md:text-4xl mb-2 font-bold ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
-          {credits && <p className="text-base mb-4 ">{credits}</p>}
+          {credits && <p className="text-base font-mono text-sm mb-4 ">{credits}</p>}
           <Button
             className="ybutton secondary w-full md:w-auto"
             path={buttonUrl}

@@ -76,10 +76,9 @@ module.exports = {
     //   gray: "#8492a6",
     //   "gray-light": "#d3dce6",
     // },
-    fontFamily: {
-      sans: ["var(--font-inter)"],
-
-    },
+    // fontFamily: {
+    //   sans: ["var(--font-inter)"],
+    // },
     extend: {
       colors: {
         yask: "#050884",
