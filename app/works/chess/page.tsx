@@ -34,15 +34,16 @@ const Page = () => {
         </ArticleHeader>
         <Section id="about">
           <Text title="About">
-            <p>Chess with artificial intelligence trained on the games of Mikhail Tal. UI/UX MVP design</p>
+            <p>Chess with artificial intelligence trained on the games of Mikhail Tal. UI/UX MVP design.</p>
 
-            <p>Focus on the game. The user starts playing immediately, there are no pre-settings, any settings can be made during the game. It is important.
-              The layout is divided into 2 independent parts. The navigation bar is hidden without disturbing the player. It opens without blocking the game</p>
+          
 
           </Text>
           <ArticleFigure >
             <BodyImage height={1980} src="/works/chess/overview.png" alt="Main" />
           </ArticleFigure>
+          <Text>  <p>Focus on the game. The user starts playing immediately, there are no pre-settings, any settings can be made during the game. It is important.
+              The layout is divided into 2 independent parts. The navigation bar is hidden without disturbing the player. It opens without blocking the game.</p></Text>
           <ArticleImageSection
            height={1060}
             data1={{ src: "/works/chess/main_light.png" }}
