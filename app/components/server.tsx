@@ -460,23 +460,23 @@ interface SummaryProps {
 export function Summary({ designer, client, link, year }: SummaryProps) {
   return (
     <>
-      <p>
+      <p className="font-mono">
         Designer:{" "}
         <Link className="ylink capitalize" href={`/${designer}`}>
           {designer}
         </Link>
       </p>
-      {client && <p>Client: {client}</p>}
+      {client && <p className="font-mono">Client: {client}</p>}
 
       {link && (
-        <p>
+        <p className="font-mono">
           Live:{" "}
           <Link className="ylink" href={link}>
             {link}
           </Link>
         </p>
       )}
-      <p>Year: {year} </p>
+      <p className="font-mono">Year: {year} </p>
     </>
   );
 }
