@@ -160,7 +160,7 @@ interface ArticleImageSectionProps {
   data1: { src: string; caption?: string };
   data2: { src: string; caption?: string };
   className?: string;
-  height?:number;
+  height?: number;
 }
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
@@ -176,7 +176,9 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           />
 
           {props.data1.caption && (
-            <figcaption className="text-sm text-center font-mono">{props.data1.caption}</figcaption>
+            <figcaption className="text-sm text-center font-mono">
+              {props.data1.caption}
+            </figcaption>
           )}
         </figure>
       </div>
@@ -184,12 +186,15 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
         <figure>
           <BodyImage
             src={props.data2.src}
+            height={props.height}
             className={props.className}
             alt={props.data2.caption || props.data2.src}
           />
 
           {props.data2.caption && (
-            <figcaption className="text-sm text-center font-mono">{props.data2.caption}</figcaption>
+            <figcaption className="text-sm text-center font-mono">
+              {props.data2.caption}
+            </figcaption>
           )}
         </figure>
       </div>
@@ -363,7 +368,9 @@ export function ArticleHeroSection({
           <p className="text-sm font-mono md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-xl md:text-4xl mb-2 font-bold ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
-          {credits && <p className="text-base font-mono text-sm mb-4 ">{credits}</p>}
+          {credits && (
+            <p className="text-base font-mono text-sm mb-4 ">{credits}</p>
+          )}
           <Button
             className="ybutton secondary w-full md:w-auto"
             path={buttonUrl}
