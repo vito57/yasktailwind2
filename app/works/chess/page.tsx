@@ -22,7 +22,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[#D3DEE5]">
+        <ArticleHeader className="bg-[#F1F2FF]">
           <ArticleFigure>
             <BodyImage
               src="/works/chess/cover.png"
