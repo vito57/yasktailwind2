@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: 'class',
@@ -10,7 +11,7 @@ module.exports = {
         "0.875rem",
         {
           lineHeight: "1.25rem",
-          letterSpacing: "-0.006em",
+          //letterSpacing: "-0.006em",
         },
       ],
       base: [
@@ -24,21 +25,21 @@ module.exports = {
         "1.25rem",
         {
           lineHeight: "2rem",
-          letterSpacing: "-0.017em",
+          //letterSpacing: "-0.017em",
         },
       ],
       "2xl": [
         "1.5rem",
         {
           lineHeight: "2rem",
-          letterSpacing: "-0.019em",
+          //letterSpacing: "-0.019em",
         },
       ],
       "3xl": [
         "1.875rem",
         {
           lineHeight: "2.5rem",
-          letterSpacing: "-0.021em",
+          //letterSpacing: "-0.021em",
         },
         
       ],
@@ -46,7 +47,7 @@ module.exports = {
         "2.5rem",
         {
           lineHeight: "3.5rem",
-          letterSpacing: "-0.022em",
+          //letterSpacing: "-0.022em",
         },
       ],
     },
@@ -76,9 +77,11 @@ module.exports = {
     //   gray: "#8492a6",
     //   "gray-light": "#d3dce6",
     // },
-    // fontFamily: {
-    //   sans: ["var(--font-inter)"],
-    // },
+    fontFamily: {
+      sans: ['var(--font-inter)'],
+      'mono': [...defaultTheme.fontFamily.mono],
+      'display': ['var(--font-serotiva)'],
+    },
     extend: {
       colors: {
         yask: "#050884",

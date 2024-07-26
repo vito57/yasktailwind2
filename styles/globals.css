@@ -29,3 +29,13 @@
 .ybutton.secondary{
   @apply bg-ytextdark hover:bg-[#B2C4F9]
 }
+
+@layer base {
+  @font-face {
+    font-family: 'Serotiva';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Serotiva.woff2) format('woff2');
+  }
+}
