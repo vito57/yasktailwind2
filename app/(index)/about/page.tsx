@@ -23,7 +23,7 @@ export default function About() {
               />
               <figcaption className=" transition py-0.5 justify-center text-yask">
                 <p className="font-bold text-xl">{i.name}</p>
-                <p className="mb-4 text-sm">{i.occupation}</p>
+                <p className="mb-4  text-sm">{i.occupation}</p>
                 <Button path={i.path} className="ybutton secondary">
                   {" "}
                   Read more{" "}

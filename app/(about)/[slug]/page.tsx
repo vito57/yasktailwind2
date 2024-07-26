@@ -36,7 +36,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             height={80}
             alt={user.name}
           />
-          <h2 className="text-3xl font-bold">{user.name}</h2>
+          <h1 className="text-3xl font-bold">{user.name}</h1>
           <Link href={`mailto:${user.email}`} className="ylink text-base">
             {user.email}
           </Link>

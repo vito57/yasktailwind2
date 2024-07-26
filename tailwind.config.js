@@ -18,7 +18,7 @@ module.exports = {
         "1rem",
         {
           lineHeight: "1.5rem" , //24
-          letterSpacing: "-0.011em",
+          //letterSpacing: "-0.011em",
         },
       ],
       xl: [
