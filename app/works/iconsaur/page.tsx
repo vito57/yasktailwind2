@@ -32,8 +32,8 @@ const Page = () => {
           >
             <BodyImage
               src="/works/iconsaur/cover.png"
-              width={3200}
-              height={1372}
+              width={3360}
+              height={1248}
               className="bg-transparent  w-full"
               alt="Iconsaur"
             />
