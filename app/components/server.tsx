@@ -365,7 +365,7 @@ export function ArticleHeroSection({
       {children}
       <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
         <div className="md:max-w-md">
-          <p className="text-sm font-mono md:text-base mb-2 ">{underTitle}</p>
+          <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-xl font-display md:text-4xl mb-2 ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
           {credits && (

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: 'class',
@@ -79,7 +79,7 @@ module.exports = {
     // },
     fontFamily: {
       sans: ['var(--font-inter)'],
-      'mono': [...defaultTheme.fontFamily.mono],
+      'mono': ['var(--font-cousine)'],
       'display': ['var(--font-serotiva)'],
     },
     extend: {
