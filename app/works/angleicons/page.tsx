@@ -24,7 +24,7 @@ const Page = () => {
         <ArticleHeader className="bg-stone-100">
           <ArticleHeroSection
             underTitle="2400 Unique Icons"
-            buttonUrl="https://ui8.net/gala-yask/products/iconsaur---bootstrap-icon-system"
+            buttonUrl="https://ui8.net/gala-yask/products/angleicons-ui-icon-set"
             subTitle="Handcrafted multi-purpose icon set for websites, apps, social networks, print and more."
             title="High-Quality Modern Vector UI Icons Set"
             credits="Designed by Gala • Distributed by UI8 • Released 2024"
@@ -136,7 +136,7 @@ const Page = () => {
               designer="gala"
               year="2024"
               client="UI8"
-              link="https://ui8.net/gala-yask/products/iconsaur---bootstrap-icon-system"
+             
             />
           </Text>
         </Section>
