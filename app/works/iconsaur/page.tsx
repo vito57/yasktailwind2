@@ -31,7 +31,7 @@ const Page = () => {
             btnTxt="Purchase Set →"
           >
             <BodyImage
-              src="/works/Iconsaur/cover.png"
+              src="/works/iconsaur/cover.png"
               width={3200}
               height={1372}
               className="bg-transparent  w-full"
