@@ -13,7 +13,7 @@ export default function About() {
       <div className="grid md:grid-cols-3">
         {users.map((i) => {
           return (
-            <figure key={i.path} className="group/item mb-4 gap-2 items-center md:justify-self-center flex flex-row md:flex-col py-3 md:py-10">
+            <figure key={i.path} className="group/item mb-4 gap-2 items-center md:justify-self-center flex flex-row md:flex-col  md:py-10">
               <Image
                 src={i.avatar}
                 width={176}
