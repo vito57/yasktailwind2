@@ -128,15 +128,17 @@ export function TopMenu() {
 interface ButtonProps {
   path: string;
   className?: string;
+  rel?: string;
   children: React.ReactNode;
 }
 export function Button({
   children,
+  rel,
   className = "ybutton primary",
   path,
 }: ButtonProps) {
   return (
-    <Link href={path || "/"} className={`${className}`}>
+    <Link href={path || "/"} rel={rel} className={`${className}`}>
       {children}
     </Link>
   );
