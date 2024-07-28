@@ -86,7 +86,7 @@ export default function About() {
 <p className="text-base mb-8">Feel free to ask questions in any way convenient for you.</p>
 <ul className="text-base list-inside md:list-outside list-decimal">
   <li className="mb-8">
-    <Button className="ybutton secondary" path="">vitalyyask@gmail.com</Button>
+    <Button className="ybutton secondary" path="mailto:vito57rus@gmail.com">vitalyyask@gmail.com</Button>
    
     </li>
   <li >
