@@ -113,7 +113,7 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
       } md:sticky top-0 ${scroll}`}
     >
       <div
-        className={`container px-4 py-1 md:py-2 flex justify-between  md:mb-4 `}
+        className={`container px-4 py-1 md:py-2 flex justify-between items-center md:mb-4 `}
       >
         <div className="flex gap-4 grow md:gap-8 items-center">
           <Link href="/">
