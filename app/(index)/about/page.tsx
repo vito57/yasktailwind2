@@ -47,7 +47,7 @@ export default function About() {
 
             </dd>
 
-            <dt className="font-bold">Web and app design</dt>
+            <dt className="font-bold">UI/UX design</dt>
             <dd className="mb-8">Design of any complexity. Desktop, mobile, web. Figma or Framer.
             </dd>
 
@@ -57,8 +57,8 @@ export default function About() {
             <dt className="font-bold">Design icon systems</dt>
             <dd className="mb-8">Design of icon systems. Large icon sets in the style of your brand.
             </dd>
-            <dt className="font-bold">Illustrations</dt>
-            <dd className="mb-8">Illustrations and animations
+            <dt className="font-bold">Content design</dt>
+            <dd className="mb-8">Illustrations, banners, graphics and animations
             </dd>
           </dl>
         </div>
