@@ -132,15 +132,7 @@
     "path": "/works/iconsaur",
     "date": "2024"
   },
-  {
-    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
 
-    "title": "Pobeda",
-    "by": ["vitaly"],
-    "type": "Website",
-    "path": "/works/pobeda",
-    "date": "2015"
-  },
   {
     "cover": { "url": "/img/poehali.png", "videoUrl": "" },
 
