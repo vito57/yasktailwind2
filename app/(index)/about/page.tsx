@@ -64,13 +64,16 @@ export default function About() {
         </div>
         <div className="md:w-3/12 ">
           <h2 className="md:text-3xl text-2xl mb-8 "><span className="text-yred">(b)</span><br />Principles.</h2>
+          <blockquote className="mb-8 px-2 border-l border-yask bg-slate-50 text-sm">Everything you need — simple, <br/> everything complicated — not need. </blockquote>
           <dl className="text-base">
             <dt className="font-bold ">Time respectful</dt>
             <dd className="mb-8">Time is the main resource. The user deserves not to see loading or unnecessary animations, the client deserves to get the job done on time.
             </dd>
 
             <dt className="font-bold">Robust design</dt>
-            <dd className="mb-8">Design is not just about how a product looks and works, it about how it lives. Understanding the product, following platform guidelines, understand technologies and process, makes the design robustness.
+            <dd className="mb-8">
+             
+              Design is not just about how a product looks and works, it about how it lives. Understanding the product, following platform guidelines, understand technologies and process, makes the design robustness.
             </dd>
 
             <dt className="font-bold">Infinite learning</dt>
