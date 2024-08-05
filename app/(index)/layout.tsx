@@ -2,7 +2,6 @@ import { Tabs, Jumbo, Logo } from "../components/client";
 import { TopMenu, Footer } from "../components/server";
 import Image from "next/image";
 import data from "../main.json";
-
 export default function WorksLayout({
   children,
 }: {
@@ -12,7 +11,7 @@ export default function WorksLayout({
     <div className="container">
       <header id="header" className="pt-4 md:pt-10">
         <div className="text-center">
-          <Logo className="mb-2" />
+        <Logo/>
           <Jumbo datas={data} />
         </div>
       </header>
