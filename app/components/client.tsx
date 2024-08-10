@@ -42,12 +42,16 @@ interface LogoProps {
 }
 export function Logo({ width = 64, height = 64, className }: LogoProps) {
   return (
-    <svg width={width} height={height} viewBox="0 0 64 64" className={`fill-yask inline-block text-center dark:fill-ytextdark ${className}`} xmlns="http://www.w3.org/2000/svg">
-
-<path d="M29.827 47.1719C33.9827 46.1611 37.8403 43.7955 40.6778 40.1636C40.7768 40.0369 40.8741 39.9093 40.9695 39.7809C39.0122 38.1338 37.0369 36.5074 35.0438 34.9022C38.6136 33.2201 42.4069 31.9345 46.3672 31.1023C48.3237 27.1202 49.7299 22.9538 50.5951 18.71C44.2248 23.0849 38.0046 27.6626 31.9439 32.4338C25.8832 27.6626 19.663 23.0849 13.2927 18.71C15.5836 29.9556 21.5257 39.8735 29.827 47.1719Z" />
-<path d="M16.1952 45.578C18.1961 43.8071 20.2173 42.0584 22.2582 40.3324C23.0667 40.9202 23.893 41.4851 24.7361 42.0262C26.3113 43.8578 28.0129 45.577 29.827 47.1719C25.3272 48.2664 20.4776 47.7731 16.1952 45.578Z" />
-</svg>
-
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 64 64"
+      className={`fill-yask inline-block text-center dark:fill-ytextdark ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M29.827 47.1719C33.9827 46.1611 37.8403 43.7955 40.6778 40.1636C40.7768 40.0369 40.8741 39.9093 40.9695 39.7809C39.0122 38.1338 37.0369 36.5074 35.0438 34.9022C38.6136 33.2201 42.4069 31.9345 46.3672 31.1023C48.3237 27.1202 49.7299 22.9538 50.5951 18.71C44.2248 23.0849 38.0046 27.6626 31.9439 32.4338C25.8832 27.6626 19.663 23.0849 13.2927 18.71C15.5836 29.9556 21.5257 39.8735 29.827 47.1719Z" />
+      <path d="M16.1952 45.578C18.1961 43.8071 20.2173 42.0584 22.2582 40.3324C23.0667 40.9202 23.893 41.4851 24.7361 42.0262C26.3113 43.8578 28.0129 45.577 29.827 47.1719C25.3272 48.2664 20.4776 47.7731 16.1952 45.578Z" />
+    </svg>
 
     // <svg
     //   width={width}
@@ -166,7 +170,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl font-display text-3xl mx-auto max-w-xl antialiased text-yask animate-fadeIn"
+      className="lg:text-4xl font-display whitespace-pre-wrap	 text-3xl mx-auto max-w-xl antialiased text-yask animate-fadeIn"
     >
       {title.title}
     </h1>
