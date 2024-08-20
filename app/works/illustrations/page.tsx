@@ -19,7 +19,7 @@ export const metadata = {
 const Page = () => {
   return (
     <AnimateLayout>
-      <Article className="container">
+      <Article className="relative">
         <Section>
           <ArticleFigure>
             <BodyImage src="/works/illustrations/1.png" alt="1" />
