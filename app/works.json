@@ -133,7 +133,15 @@
     "path": "/works/iconsaur",
     "date": "2024"
   },
+  {
+    "cover": { "url": "/img/illustrations.png", "videoUrl": "" },
 
+    "title": "Hand-drawn illustrations",
+    "by": ["gala"],
+    "type": "Illustrations",
+    "path": "/works/illustrations",
+    "date": "2018"
+  },
   {
     "cover": { "url": "/img/poehali.png", "videoUrl": "" },
 
