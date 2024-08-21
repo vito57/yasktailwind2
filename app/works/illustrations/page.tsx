@@ -37,7 +37,7 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            height={1760}
+            height={1760 / 2}
             data1={{
               src: "/works/illustrations/2s1760.png",
             }}
@@ -47,7 +47,7 @@ const Page = () => {
           />
 
           <ArticleImageSection
-            height={2170}
+            height={2170 / 2}
             data1={{
               src: "/works/illustrations/4s2170.png",
             }}
@@ -56,7 +56,7 @@ const Page = () => {
             }}
           />
           <ArticleImageSection
-            height={2000}
+            height={2000 / 2}
             data1={{
               src: "/works/illustrations/6s2000.png",
             }}
@@ -65,7 +65,7 @@ const Page = () => {
             }}
           />
           <ArticleImageSection
-            height={2230}
+            height={2230 / 2}
             data1={{
               src: "/works/illustrations/8s2230.png",
             }}
@@ -74,7 +74,7 @@ const Page = () => {
             }}
           />
           <ArticleImageSection
-            height={2160}
+            height={2160 / 2}
             data1={{
               src: "/works/illustrations/10s2160.png",
             }}
@@ -83,7 +83,7 @@ const Page = () => {
             }}
           />
           <ArticleImageSection
-            height={1900}
+            height={1900 / 2}
             data1={{
               src: "/works/illustrations/12s1900.png",
             }}
