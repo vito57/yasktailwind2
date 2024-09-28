@@ -39,13 +39,21 @@ const Page = () => {
               Tal. UI/UX MVP design.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleImageSection
+            height={924}
+            className="bg-transparent"
+            data1={{ src: "/works/chess/overview.png" }}
+            data2={{
+              src: "/works/chess/overview-dark.png",
+            }}
+          />
+          {/* <ArticleFigure>
             <BodyImage
               height={1980}
               src="/works/chess/overview.png"
               alt="Main"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
           <Text>
             {" "}
             <p>
