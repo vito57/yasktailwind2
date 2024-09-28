@@ -67,7 +67,7 @@ interface TextProps {
 }
 export function Text({ title, children }: TextProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-2 mb-8">
+    <div className="flex flex-col md:flex-row gap-2 mb-6">
       {title && (
         <div className="basis-1/4">
           <h3 className="font-bold">{title}</h3>
@@ -167,7 +167,7 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-4 mb-4">
+    <div className="flex flex-col md:flex-row gap-6 mb-6">
       <div className="basis-auto md:basis-1/2">
         <figure>
           <BodyImage
