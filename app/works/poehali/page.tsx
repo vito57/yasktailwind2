@@ -1,92 +1,70 @@
 import {
-    Article,
-    AnimateLayout,
-    Text,
-    ArticleFigure,
-    Section,
-   
-    ArticleHeader,
-    BodyImage,
-    Summary,
-  } from "../../components/server";
-  import Image from "next/image";
-  import Link from "next/link";
-  export const metadata = {
-    title: "Poehali - Adaptive web site",
-    description: "Website for TV channel",
-  };
-  
-  const Page = () => {
-    return (
-      <AnimateLayout>
-        <Article className="relative">
-          <ArticleHeader className="bg-[url('/works/poehali/bg.png')] bg-cover">
-            <ArticleFigure>
-              <BodyImage
-                src="/works/poehali/cover.png"
-                width={1120}
-                height={416}
-                className="bg-transparent  w-full"
-                alt="Poehali TV"
-              />
-            </ArticleFigure>
-          </ArticleHeader>
-          <Section id="about">
-            <Text title="About">
+  Article,
+  AnimateLayout,
+  Text,
+  ArticleFigure,
+  Section,
+  ArticleHeader,
+  BodyImage,
+  Summary,
+} from "../../components/server";
+import Image from "next/image";
+import Link from "next/link";
+export const metadata = {
+  title: "Poehali - Adaptive web site",
+  description: "Website for TV channel",
+};
+
+const Page = () => {
+  return (
+    <AnimateLayout>
+      <Article className="relative">
+        <ArticleHeader className="bg-[url('/works/poehali/bg.png')] bg-cover">
+          <ArticleFigure>
+            <BodyImage
+              src="/works/poehali/cover.png"
+              width={1120}
+              height={416}
+              className="bg-transparent  w-full"
+              alt="Poehali TV"
+            />
+          </ArticleFigure>
+        </ArticleHeader>
+        <Section id="about">
+          <Text title="About">
             <p>Adaptive web site for TV channel</p>
-            </Text>
-      
+          </Text>
 
-<ArticleFigure>
-              <BodyImage
-                src="/works/poehali/main.png"
-              
-                alt="Poehali main"
-              />
-            </ArticleFigure>
-            <ArticleFigure>
-              <BodyImage
-                src="/works/poehali/2.png"
-              
-                alt="Poehali main"
-              />
-            </ArticleFigure>
-            <ArticleFigure>
-              <BodyImage
-                src="/works/poehali/adaptive1.png"
-              
-                alt="Poehali main"
-              />
-            </ArticleFigure>
-            <ArticleFigure>
-              <BodyImage
-                src="/works/poehali/adaptive2.png"
-              
-                alt="Poehali main"
-              />
-            </ArticleFigure>
-            <ArticleFigure>
-              <BodyImage
-                src="/works/poehali/styles.png"
-              
-                alt="Poehali main"
-              />
-            </ArticleFigure>
-          </Section>
-  
+          <ArticleFigure>
+            <BodyImage src="/works/poehali/main.png" alt="Restevents main" />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage src="/works/poehali/2.png" alt="Poehali main" />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage src="/works/poehali/adaptive1.png" alt="Poehali main" />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage src="/works/poehali/adaptive2.png" alt="Poehali main" />
+          </ArticleFigure>
+          <ArticleFigure>
+            <BodyImage src="/works/poehali/styles.png" alt="Poehali main" />
+          </ArticleFigure>
+        </Section>
 
-          <Section id="summary">
-            <Text title="Summary">
-            <Summary designer="vitaly" year="2019" client="PKVS" link="https://www.poehali.tv/"/>
+        <Section id="summary">
+          <Text title="Summary">
+            <Summary
+              designer="vitaly"
+              year="2019"
+              client="PKVS"
+              link="https://www.poehali.tv/"
+            />
+          </Text>
+        </Section>
+      </Article>
+    </AnimateLayout>
+  );
+};
 
-        
-            </Text>
-
-          </Section>
-        </Article>
-      </AnimateLayout>
-    );
-  };
-  
-  export default Page;
-  
+export default Page;
