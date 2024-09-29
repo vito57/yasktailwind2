@@ -102,7 +102,7 @@
     "cover": { "url": "/img/restevents.png", "videoUrl": "" },
 
     "title": "RestEvents",
-    "by": ["vitaly"],
+    "by": ["vitaly", "gala"],
     "type": "Website",
     "path": "/works/restevents",
     "date": "2024"
