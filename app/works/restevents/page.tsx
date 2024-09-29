@@ -37,25 +37,47 @@ const Page = () => {
           </Text>
           <div className="columns-2 mb-6">
             <ArticleFigure>
-              <BodyImage src="/works/restevents/main.png" />
+              <BodyImage
+                width={1440}
+                height={6948}
+                src="/works/restevents/main.png"
+              />
             </ArticleFigure>
             <ArticleFigure>
-              <BodyImage src="/works/restevents/event.png" />
+              <BodyImage
+                width={1440}
+                height={4837}
+                src="/works/restevents/event.png"
+              />
             </ArticleFigure>
             <ArticleFigure>
-              <BodyImage src="/works/restevents/category.png" />
+              <BodyImage
+                width={1440}
+                height={3725}
+                src="/works/restevents/category.png"
+              />
             </ArticleFigure>
 
             <ArticleFigure>
-              <BodyImage src="/works/restevents/about.png" />
+              <BodyImage
+                width={1440}
+                height={5044}
+                src="/works/restevents/about.png"
+              />
             </ArticleFigure>
             <ArticleFigure>
-              <BodyImage src="/works/restevents/portfolio.png" />
+              <BodyImage
+                width={1440}
+                height={3474}
+                src="/works/restevents/portfolio.png"
+              />
             </ArticleFigure>
           </div>
           <ArticleFigure>
             <BodyImage
               className="bg-transparent"
+              width={3880}
+              height={1864}
               src="/works/restevents/adaptive.png"
             />
           </ArticleFigure>
