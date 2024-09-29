@@ -40,10 +40,10 @@ const Page = () => {
               <BodyImage src="/works/restevents/main.png" />
             </ArticleFigure>
             <ArticleFigure>
-              <BodyImage src="/works/restevents/Event.png" />
+              <BodyImage src="/works/restevents/event.png" />
             </ArticleFigure>
             <ArticleFigure>
-              <BodyImage src="/works/restevents/Category.png" />
+              <BodyImage src="/works/restevents/category.png" />
             </ArticleFigure>
 
             <ArticleFigure>
