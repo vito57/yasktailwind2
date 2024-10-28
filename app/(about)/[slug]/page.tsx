@@ -16,7 +16,8 @@ export const metadata = {
   title: "About us",
   description: "We design websites and apps",
 };
-export default function Page({ params }: { params: { slug: string } }) {
+export default async function Page(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const user = users.find((i) => i.path === `/${params.slug}`);
   const userWorks = allWorks.filter((i) => i.by.includes(params.slug));
   if (!user) {
