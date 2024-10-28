@@ -19,7 +19,6 @@ export const metadata = {
 export default function Page({ params }: { params: { slug: string } }) {
   const user = users.find((i) => i.path === `/${params.slug}`);
   const userWorks = allWorks.filter((i) => i.by.includes(params.slug));
-
   if (!user) {
     notFound();
   }
@@ -131,9 +130,18 @@ export default function Page({ params }: { params: { slug: string } }) {
             })}
           </div>
         </Text>
+        <Text title="Social links">
+          <div className="flex gap-4 flex-wrap">
+            {user.social.map((i) => (
+              <Link key={i.url} className="ylink" href={i.url}>
+                {i.name}
+              </Link>
+            ))}
+          </div>
+        </Text>
         {user.awards && (
           <Text title="Awards">
-            <div className="flex gap-1 flex-wrap">
+            <div className="flex flex-wrap">
               {user.awards.map((i) => (
                 <Badge key={i}>{i}</Badge>
               ))}
