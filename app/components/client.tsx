@@ -170,7 +170,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl font-display whitespace-pre-wrap text-3xl mx-auto max-w-xl antialiased animate-fadeIn gradientMe text-transparent bg-clip-text"
+      className="lg:text-4xl font-display whitespace-pre-wrap text-3xl mx-auto max-w-xl antialiased animate-fadeIn"
     >
       {title.title}
     </h1>
