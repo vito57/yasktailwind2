@@ -1,41 +1,142 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Input */
-.ylink {
-  @apply text-ylightblue dark:text-ytextdark dark:hover:text-yred hover:text-yred transition font-medium;
+@variant dark (&:is(.dark *));
+
+@theme {
+  --text-*: initial;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-sm--letter-spacing: -0.006em;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-base--letter-spacing: -0.011em;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2rem;
+  --text-xl--letter-spacing: -0.017em;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-2xl--letter-spacing: -0.019em;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.5rem;
+  --text-3xl--letter-spacing: -0.021em;
+  --text-4xl: 2.5rem;
+  --text-4xl--line-height: 3.5rem;
+  --text-4xl--letter-spacing: -0.022em;
+
+  --font-*: initial;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-cousine);
+  --font-display: var(--font-serotiva);
+
+  --color-yask: #050884;
+  --color-ybg: #fafafd;
+  --color-ylightblue: #080bd0;
+  --color-yred: #ff2423;
+  --color-ylime: #d6f47c;
+  --color-ygrey: #cfd6df;
+  --color-ytextdark: #c2d2ff;
 }
 
-.animate-fadeIn{
-  animation: fadeIn .4s cubic-bezier(0.4, 0, 0.6, 1);
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
-@keyframes fadeIn {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
+}
+
+@layer utilities {
+  /* Input */
+  .ylink {
+    @apply text-ylightblue dark:text-ytextdark dark:hover:text-yred hover:text-yred transition font-medium;
   }
-}
-.ybutton{
-  @apply text-sm text-center my-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue 
-}
-.ybutton.primary{
-  @apply bg-ylime hover:bg-[#CBEA6E]
-}
-.ybutton.secondary{
-  @apply bg-ytextdark hover:bg-[#B2C4F9]
+
+  .animate-fadeIn {
+    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+  }
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /*  gradient animation on header */
+  @property --yangle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 90deg;
+  }
+  @property --ypercentage {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 10%;
+  }
+  @property --ycolor {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: red;
+  }
+  .gradientMe {
+    /*  needed for firefox to have a valid output */
+    --yangle: 80deg;
+    --ypercentage: 0%;
+    /**/
+    animation: 5s linear infinite ygradient;
+    background-image: linear-gradient(
+      var(--yangle),
+      var(--color-ytextdark),
+      var(--color-yask) 70%
+    );
+  }
+
+  @keyframes ygradient {
+    0% {
+      --yangle: 0deg;
+    }
+
+    100% {
+      --yangle: 360deg;
+    }
+  }
+  /*  end gradient animation on header */
+
+  .ybutton {
+    @apply text-sm text-center my-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue;
+  }
+  .ybutton.primary {
+    @apply bg-ylime hover:bg-[#CBEA6E];
+  }
+  .ybutton.secondary {
+    @apply bg-ytextdark hover:bg-[#B2C4F9];
+  }
 }
 
 @layer base {
   @font-face {
-    font-family: 'Serotiva';
+    font-family: "Serotiva";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/fonts/Serotiva.woff2) format('woff2');
+    src: url(/fonts/Serotiva.woff2) format("woff2");
   }
 }

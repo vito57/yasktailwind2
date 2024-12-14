@@ -270,7 +270,7 @@ export function PortfolioItem({
   return (
     <Link key={keyNum} href={href} className="group/item">
       <figure>
-        <div className="overflow-hidden rounded">
+        <div className="overflow-hidden rounded-sm">
           {isVideo ? (
             <Video src={videoUrl} poster={poster} />
           ) : (
@@ -287,7 +287,7 @@ export function PortfolioItem({
           )}
         </div>
 
-        <figcaption className="flex text-sm  group-hover/item:text-ylightblue group-hover/item:dark:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
+        <figcaption className="flex text-sm  group-hover/item:text-ylightblue dark:group-hover/item:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
           {title && <span>{title}</span>}
           {type && <span>{type}</span>}
         </figcaption>
@@ -421,7 +421,7 @@ export function FeedItem({
 }: feedItemProps) {
   return (
     <Link key={keyNum} href={href} className="group/item">
-      <figure className="overflow-hidden relative rounded">
+      <figure className="overflow-hidden relative rounded-sm">
         <Image
           src={imageSrc}
           width={800}
