@@ -512,8 +512,8 @@ export function FeedItem({
   type,
 }: feedItemProps) {
   return (
-    <Link key={keyNum} href={href} className="group/item">
-      <figure className="overflow-hidden relative rounded-sm">
+    <figure className="relative ">
+      <Link key={keyNum} href={href} className="group/item ">
         <Image
           src={imageSrc}
           width={800}
@@ -521,14 +521,14 @@ export function FeedItem({
           placeholder={`data:image/svg+xml;base64,${toBase64(
             shimmer(800, 600)
           )}`}
-          className="w-full ease-in group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
+          className="w-full ease-in rounded-xl group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
           alt={imageAlt}
         />
-        <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all">
-          View on Dribbble
-        </span>
-      </figure>
-    </Link>
+      </Link>
+      <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all">
+        View on Dribbble
+      </span>
+    </figure>
   );
 }
 //END FEED ITEM
