@@ -53,7 +53,7 @@
     "type": "Native App",
     "path": "/works/starc",
     "date": "2020",
-     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "user":"Dimka Novikov", 
+     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
     "role":"starc founder"}
   },
   {
@@ -63,7 +63,7 @@
     "type": "Native App",
     "path": "/works/starcios",
     "date": "2021",
-     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "user":"Dimka Novikov", 
+     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
     "role":"starc founder"}
   },
 
@@ -74,7 +74,12 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/domkino",
-    "date": "2019"
+    "date": "2019",
+            "testimonials": {
+      "testimonial" : "Runet Prize 2019", 
+      "user":"Runet",
+      "img":"RU",
+      "role":"Runet Team"}
   },
   {
     "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
@@ -92,7 +97,12 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/bober",
-    "date": "2019"
+    "date": "2019",
+            "testimonials": {
+      "testimonial" : "Runet Prize 2021", 
+      "user":"Runet",
+      "img":"RU",
+      "role":"Runet Team"}
   },
   {
     "cover": { "url": "/img/darlen.png", "videoUrl": "" },
@@ -118,16 +128,25 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/karusel",
-    "date": "2021"
+    "date": "2021",
+        "testimonials": {
+      "testimonial" : "Runet Prize 2016", 
+      "user":"Runet",
+      "img":"RU",
+      "role":"Runet Team"}
   },
   {
     "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
-
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
     "path": "/works/bootsy",
-    "date": "2021"
+    "date": "2021",
+    "testimonials": {
+      "testimonial" : "Featured product", 
+      "user":"UI8",
+      "img":"UI",
+      "role":"UI8 Team"}
   },
   {
     "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },

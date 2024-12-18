@@ -145,7 +145,7 @@ export function Button({
 }
 //testimonials
 interface TestimonialsButtonProps {
-  dataset: { testimonial: string; user: string; role: string };
+  dataset: { testimonial: string; user: string; img: string; role: string };
 }
 export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
   return (
@@ -217,7 +217,7 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
 
           <div className="flex items-center gap-2">
             <div className="bg-yred flex items-center  font-bold text-ytextdark p-2 rounded-full text-sm  leading-4 aspect-square">
-              DN
+              {dataset.img}
             </div>
             <div>
               <p className="text-ybrown font-bold leading-4 text-sm">
@@ -347,7 +347,7 @@ interface portfolioItemProps {
   isVideo?: boolean;
   videoUrl: string;
   testimonials?:
-    | { testimonial: string; user: string; role: string }
+    | { testimonial: string; user: string; img: string; role: string }
     | undefined;
 }
 export function PortfolioItem({
