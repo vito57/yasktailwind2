@@ -512,8 +512,8 @@ export function FeedItem({
   type,
 }: feedItemProps) {
   return (
-    <figure className="relative ">
-      <Link key={keyNum} href={href} className="group/item ">
+    <figure className="relative group/item ">
+      <Link key={keyNum} href={href} className="">
         <Image
           src={imageSrc}
           width={800}
