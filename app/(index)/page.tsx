@@ -17,6 +17,7 @@ export default function Works() {
               poster={i.cover.url}
               isVideo={!!i.cover.videoUrl}
               type={i.type}
+              testimonials={i.testimonials}
               videoUrl={i.cover.videoUrl}
             />
           );

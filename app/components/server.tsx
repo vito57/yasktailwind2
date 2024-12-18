@@ -143,6 +143,97 @@ export function Button({
     </Link>
   );
 }
+//testimonials
+interface TestimonialsButtonProps {
+  dataset: { testimonial: string; user: string; role: string };
+}
+export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
+  return (
+    <div className="absolute ytestimonials flex w-9 h-9 z-10 overflow-visible flex-col top-1 right-1  ">
+      <label
+        className="ytestimonials_button has-[:checked]:bg-ylime cursor-pointer peer relative inline-block fill-ylime has-[:checked]:fill-yred rounded-full p-1.5 hover:scale-105 transform-gpu transition-transform bg-yred group primary
+        "
+      >
+        <input type="checkbox" className="invisible hidden peer" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          className="peer-checked:hidden"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M8 12C8.55229 12 9 11.5523 9 11C9 10.4477 8.55229 10 8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12Z" />
+          <path d="M13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11Z" />
+          <path d="M16 12C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10C15.4477 10 15 10.4477 15 11C15 11.5523 15.4477 12 16 12Z" />
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M17 19H15L12.7071 21.2929C12.3166 21.6834 11.6834 21.6834 11.2929 21.2929L9 19H7C4.23858 19 2 16.7614 2 14V8C2 5.23858 4.23858 3 7 3H17C19.7614 3 22 5.23858 22 8V14C22 16.7614 19.7614 19 17 19ZM14.3787 17.5L12 19.8787L9.62132 17.5H7C5.067 17.5 3.5 15.933 3.5 14V8C3.5 6.067 5.067 4.5 7 4.5H17C18.933 4.5 20.5 6.067 20.5 8V14C20.5 15.933 18.933 17.5 17 17.5H14.3787Z"
+          />
+        </svg>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="hidden fill-yred peer-checked:block"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M3.46967 3.46967C3.76256 3.17678 4.23744 3.17678 4.53033 3.46967L12 10.9393L19.4697 3.46967C19.7626 3.17678 20.2374 3.17678 20.5303 3.46967C20.8232 3.76256 20.8232 4.23744 20.5303 4.53033L13.0607 12L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L12 13.0607L4.53033 20.5303C4.23744 20.8232 3.76256 20.8232 3.46967 20.5303C3.17678 20.2374 3.17678 19.7626 3.46967 19.4697L10.9393 12L3.46967 4.53033C3.17678 4.23744 3.17678 3.76256 3.46967 3.46967Z"
+          />
+        </svg>
+      </label>
+      <div className="hidden flex-col peer-hover:flex peer-has-[:checked]:flex items-end ytestimonials_testimonial">
+        <svg
+          width="20"
+          height="10"
+          viewBox="0 0 20 10"
+          fill="none"
+          className="fill-ylime mr-2"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M10 0C10 5.52286 5.52283 10 0 10H20C14.4772 10 10 5.52286 10 0Z" />
+        </svg>
+
+        <div className="reletive p-5 flex flex-col gap-3 rounded-2xl w-72  bg-ylime">
+          <svg
+            width="19"
+            height="14"
+            viewBox="0 0 19 14"
+            fill="none"
+            className="fill-ydarkbrown"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5.225 0C2.33931 0 0 2.29827 0 5.13333V12.6C0 13.3732 0.637994 14 1.425 14H5.225C6.01201 14 6.65 13.3732 6.65 12.6V8.86667C6.65 8.09347 6.01201 7.46667 5.225 7.46667H2.85V5.13333C2.85 3.84467 3.91332 2.8 5.225 2.8H6.175C6.96201 2.8 7.6 2.1732 7.6 1.4C7.6 0.626801 6.96201 0 6.175 0H5.225Z" />
+            <path d="M16.625 0C13.7393 0 11.4 2.29827 11.4 5.13333V12.6C11.4 13.3732 12.038 14 12.825 14H16.625C17.412 14 18.05 13.3732 18.05 12.6V8.86667C18.05 8.09347 17.412 7.46667 16.625 7.46667H14.25V5.13333C14.25 3.84467 15.3133 2.8 16.625 2.8H17.575C18.362 2.8 19 2.1732 19 1.4C19 0.626801 18.362 0 17.575 0H16.625Z" />
+          </svg>
+
+          <p className="text-ydarkbrown text-sm font-medium leading-5">
+            {dataset.testimonial}
+          </p>
+
+          <div className="flex items-center gap-2">
+            <div className="bg-yred flex items-center  font-bold text-ytextdark p-2 rounded-full text-sm  leading-4 aspect-square">
+              DN
+            </div>
+            <div>
+              <p className="text-ybrown font-bold leading-4 text-sm">
+                {dataset.user}
+              </p>
+              <p className="text-ybrown capitalize leading-4 text-sm">
+                {dataset.role}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 //BADGE
 interface BadgeProps {
   className?: string;
@@ -255,6 +346,9 @@ interface portfolioItemProps {
   poster: string;
   isVideo?: boolean;
   videoUrl: string;
+  testimonials?:
+    | { testimonial: string; user: string; role: string }
+    | undefined;
 }
 export function PortfolioItem({
   keyNum,
@@ -263,36 +357,34 @@ export function PortfolioItem({
   imageAlt,
   title,
   type,
+  testimonials,
   videoUrl,
   poster,
   isVideo = false,
 }: portfolioItemProps) {
   return (
-    <Link key={keyNum} href={href} className="group/item">
-      <figure>
-        <div className="overflow-hidden rounded-sm">
-          {isVideo ? (
-            <Video src={videoUrl} poster={poster} />
-          ) : (
-            <Image
-              src={imageSrc}
-              width={800}
-              height={600}
-              placeholder={`data:image/svg+xml;base64,${toBase64(
-                shimmer(800, 600)
-              )}`}
-              className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
-              alt={imageAlt}
-            />
-          )}
-        </div>
+    <figure key={keyNum} className="group/item">
+      <div className="relative">
+        {testimonials && <TestimonialsButton dataset={testimonials} />}
+        <Link href={href}>
+          <Image
+            src={imageSrc}
+            width={800}
+            height={600}
+            placeholder={`data:image/svg+xml;base64,${toBase64(
+              shimmer(800, 600)
+            )}`}
+            className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey rounded-xl"
+            alt={imageAlt}
+          />
+        </Link>
+      </div>
 
-        <figcaption className="flex text-sm  group-hover/item:text-ylightblue dark:group-hover/item:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
-          {title && <span>{title}</span>}
-          {type && <span>{type}</span>}
-        </figcaption>
-      </figure>
-    </Link>
+      <figcaption className="flex text-sm  group-hover/item:text-ylightblue dark:group-hover/item:text-ytextdark/75 dark:text-ytextdark transition py-0.5 justify-between text-yask">
+        {title && <span>{title}</span>}
+        {type && <span>{type}</span>}
+      </figcaption>
+    </figure>
   );
 }
 //END PORTFOLIO ITEM

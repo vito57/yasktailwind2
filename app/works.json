@@ -52,7 +52,9 @@
     "by": ["vitaly"],
     "type": "Native App",
     "path": "/works/starc",
-    "date": "2020"
+    "date": "2020",
+     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "user":"Dimka Novikov", 
+    "role":"starc founder"}
   },
   {
     "cover": { "url": "/img/starcios.png", "videoUrl": "" },
@@ -60,7 +62,9 @@
     "by": ["vitaly"],
     "type": "Native App",
     "path": "/works/starcios",
-    "date": "2021"
+    "date": "2021",
+     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "user":"Dimka Novikov", 
+    "role":"starc founder"}
   },
 
   {

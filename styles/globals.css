@@ -35,6 +35,9 @@
   --color-ylime: #d6f47c;
   --color-ygrey: #cfd6df;
   --color-ytextdark: #c2d2ff;
+  --color-ybrown: #845005;
+  --color-ydarkbrown: #5C3804;
+  --color-yblue: #84A5FF;
 }
 
 @utility container {
