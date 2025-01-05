@@ -74,12 +74,7 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/domkino",
-    "date": "2019",
-            "testimonials": {
-      "testimonial" : "Runet Prize 2019", 
-      "user":"Runet",
-      "img":"RU",
-      "role":"Runet Team"}
+    "date": "2019"
   },
   {
     "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
@@ -97,12 +92,7 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/bober",
-    "date": "2019",
-            "testimonials": {
-      "testimonial" : "Runet Prize 2021", 
-      "user":"Runet",
-      "img":"RU",
-      "role":"Runet Team"}
+    "date": "2019"
   },
   {
     "cover": { "url": "/img/darlen.png", "videoUrl": "" },
@@ -128,12 +118,7 @@
     "by": ["vitaly"],
     "type": "Website",
     "path": "/works/karusel",
-    "date": "2021",
-        "testimonials": {
-      "testimonial" : "Runet Prize 2016", 
-      "user":"Runet",
-      "img":"RU",
-      "role":"Runet Team"}
+    "date": "2021"
   },
   {
     "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
@@ -141,12 +126,7 @@
     "by": ["gala", "vitaly"],
     "type": "UI Icon Set",
     "path": "/works/bootsy",
-    "date": "2021",
-    "testimonials": {
-      "testimonial" : "Featured product", 
-      "user":"UI8",
-      "img":"UI",
-      "role":"UI8 Team"}
+    "date": "2021"
   },
   {
     "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
