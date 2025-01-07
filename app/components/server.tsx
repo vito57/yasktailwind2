@@ -424,7 +424,7 @@ interface ArticleFigureProps {
 }
 export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
   return (
-    <figure className="mb-8">
+    <figure className="mb-6">
       {children}
       {figcaption && (
         <figcaption className="text-sm text-center font-mono">
