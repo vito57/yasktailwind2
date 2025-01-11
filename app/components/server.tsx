@@ -74,7 +74,7 @@ export function Text({ title, children }: TextProps) {
         </div>
       )}
 
-      <div className={` ${title ? false : "ml-auto"} basis-3/4`}>
+      <div className={` ${title ? false : "ml-auto"} text-pretty basis-3/4`}>
         {children}
       </div>
     </div>
