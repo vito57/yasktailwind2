@@ -3,7 +3,7 @@
     "cover": { "url": "/img/chess.png", "videoUrl": "" },
     "title": "Mikhail Tal Chess",
     "by": ["vitaly"],
-    "type": "AI Chess",
+    "type": "Design",
     "path": "/works/chess",
     "date": "2024"
   },
@@ -11,7 +11,7 @@
     "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
-    "type": "Code editor, Branding",
+    "type": "Design, Branding",
     "path": "/works/drugcode",
     "date": "2021"
   },
@@ -50,7 +50,7 @@
     "cover": { "url": "/img/starc.png", "videoUrl": "" },
     "title": "Starc Android",
     "by": ["vitaly"],
-    "type": "Native App",
+    "type": "App Design",
     "path": "/works/starc",
     "date": "2020",
      "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
@@ -60,7 +60,7 @@
     "cover": { "url": "/img/starcios.png", "videoUrl": "" },
     "title": "Starc IOS",
     "by": ["vitaly"],
-    "type": "Native App",
+    "type": "App Design",
     "path": "/works/starcios",
     "date": "2021",
      "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
@@ -72,7 +72,7 @@
 
     "title": "Domkino",
     "by": ["vitaly"],
-    "type": "Website",
+    "type": "Web Design",
     "path": "/works/domkino",
     "date": "2019"
   },
@@ -81,7 +81,7 @@
     "coverVideo": false,
     "title": "BowlersLink",
     "by": ["vitaly"],
-    "type": "Website",
+    "type": "Web Design",
     "path": "/works/bowlerslink",
     "date": "2024"
   },
@@ -90,7 +90,7 @@
 
     "title": "Bober",
     "by": ["vitaly"],
-    "type": "Website",
+    "type": "Web Design",
     "path": "/works/bober",
     "date": "2019"
   },
@@ -99,7 +99,7 @@
 
     "title": "Darlen",
     "by": ["vitaly"],
-    "type": "UI/UX, App",
+    "type": "UI/UX Design",
     "path": "/works/darlen",
     "date": "2021"
   },  {
@@ -107,7 +107,7 @@
 
     "title": "RestEvents",
     "by": ["vitaly", "gala"],
-    "type": "Website",
+    "type": "Web Design",
     "path": "/works/restevents",
     "date": "2024"
   },
@@ -116,7 +116,7 @@
 
     "title": "Karusel",
     "by": ["vitaly"],
-    "type": "Website",
+    "type": "Web Design",
     "path": "/works/karusel",
     "date": "2021"
   },
@@ -124,7 +124,7 @@
     "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
+    "type": "Icon Set",
     "path": "/works/bootsy",
     "date": "2021"
   },
@@ -133,7 +133,7 @@
 
     "title": "Bootsy Icons Duotone",
     "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
+    "type": "Icon Set",
     "path": "/works/bootsyduotone",
     "date": "2022"
   },
@@ -142,7 +142,7 @@
 
     "title": "Iconsaur",
     "by": ["gala", "vitaly"],
-    "type": "UI Icon Set",
+    "type": "Icon Set",
     "path": "/works/iconsaur",
     "date": "2024"
   },
@@ -160,7 +160,7 @@
 
     "title": "Poehali TV",
     "by": ["vitaly"],
-    "type": "UI/UX, App",
+    "type": "UI/UX Design",
     "path": "/works/poehali",
     "date": "2018"
   }
