@@ -34,7 +34,7 @@ const Page = () => {
               src="/works/angleicons/cover.png"
               width={3200}
               height={1372}
-              className="bg-transparent  w-full"
+              className="bg-transparent w-full"
               alt="Iconsaur"
             />
           </ArticleHeroSection>
@@ -82,7 +82,7 @@ const Page = () => {
             <BodyImage
               src="/works/angleicons/lined_title.png"
               alt="lined and filled"
-              className="bg-transparent"
+              className="bg-stone-100"
               width={3200}
               height={640}
             />
@@ -100,7 +100,7 @@ const Page = () => {
             <BodyImage
               src="/works/angleicons/makes_title.png"
               alt="makes your design different"
-              className="bg-transparent"
+              className="bg-stone-100"
               width={3200}
               height={640}
             />
@@ -117,7 +117,7 @@ const Page = () => {
             <BodyImage
               src="/works/angleicons/2400_title.png"
               alt="2400 unique icons"
-              className="bg-transparent"
+              className="bg-stone-100"
               width={3200}
               height={640}
             />
@@ -132,12 +132,7 @@ const Page = () => {
 
         <Section id="summary" className="container">
           <Text title="Summary">
-            <Summary
-              designer="gala"
-              year="2024"
-              client="UI8"
-             
-            />
+            <Summary designer="gala" year="2024" client="UI8" />
           </Text>
         </Section>
       </Article>
