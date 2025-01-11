@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dribbble from "../../public/dribbble.svg";
 import ui8 from "../../public/ui8.svg";
-import { Suspense } from "react";
+import { Children, Suspense } from "react";
 //shimmer
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -249,9 +249,25 @@ export function Badge({ className, href, children }: BadgeProps) {
 }
 
 //END BADGE
+
+//IMAGE GRID
+interface ArticleImageGridProps {
+  children: React.ReactNode;
+}
+export function ArticleImageGrid(props: ArticleImageGridProps) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+      {props.children}
+    </div>
+  );
+}
+//END IMAGE GRID
+
+//ArticleImageSection DEPRICATED USE ARTICLEIMAGEGRID
 interface ArticleImageSectionProps {
   data1: { src: string; caption?: string };
   data2: { src: string; caption?: string };
+  imgset?: { src: string; caption?: string };
   className?: string;
   height?: number;
 }
@@ -260,36 +276,24 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
     <div className="flex flex-col md:flex-row gap-6 mb-6">
       <div className="basis-auto md:basis-1/2">
-        <figure>
+        <ArticleFigure figcaption={props.data1.caption} className="mb-0">
           <BodyImage
             src={props.data1.src}
             className={props.className}
             height={props.height}
             alt={props.data1.caption || props.data1.src}
           />
-
-          {props.data1.caption && (
-            <figcaption className="text-sm text-center font-mono">
-              {props.data1.caption}
-            </figcaption>
-          )}
-        </figure>
+        </ArticleFigure>
       </div>
       <div className="basis-auto md:basis-1/2">
-        <figure>
+        <ArticleFigure figcaption={props.data2.caption} className="mb-0">
           <BodyImage
             src={props.data2.src}
             height={props.height}
             className={props.className}
             alt={props.data2.caption || props.data2.src}
           />
-
-          {props.data2.caption && (
-            <figcaption className="text-sm text-center font-mono">
-              {props.data2.caption}
-            </figcaption>
-          )}
-        </figure>
+        </ArticleFigure>
       </div>
     </div>
   );
@@ -388,7 +392,7 @@ export function PortfolioItem({
   );
 }
 //END PORTFOLIO ITEM
-//Video
+//VIDEO
 interface VideoProps {
   width?: number;
   height?: number;
@@ -416,26 +420,29 @@ export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
     </Suspense>
   );
 }
-//End Video
+//END VIDEO
 //ARTICLE IMAGE
 interface ArticleFigureProps {
   figcaption?: string;
+  className?: string;
   children: React.ReactNode;
 }
-export function ArticleFigure({ figcaption, children }: ArticleFigureProps) {
+export function ArticleFigure({
+  figcaption,
+  children,
+  className = "mb-6",
+}: ArticleFigureProps) {
   return (
-    <figure className="mb-6">
+    <figure className={className}>
       {children}
       {figcaption && (
-        <figcaption className="text-sm text-center font-mono">
-          {figcaption}
-        </figcaption>
+        <figcaption className="text-sm mt-1">{figcaption}</figcaption>
       )}
     </figure>
   );
 }
 //END ARTICLE IMAGE
-//Article Hero
+//PORTFOLIO HERO UNIT
 interface ArticleHeroSectionProps {
   children: React.ReactNode;
   underTitle?: string;
@@ -462,9 +469,7 @@ export function ArticleHeroSection({
           <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-2xl font-display md:text-4xl mb-2 ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
-          {credits && (
-            <p className="text-base font-mono text-sm mb-4 ">{credits}</p>
-          )}
+          {credits && <p className="font-mono text-sm mb-4 ">{credits}</p>}
           <Button
             className="ybutton secondary w-full md:w-auto"
             path={buttonUrl}
@@ -553,8 +558,8 @@ interface SummaryProps {
 }
 export function Summary({ designer, client, link, year }: SummaryProps) {
   return (
-    <>
-      <p className="font-mono">
+    <div>
+      <p className="font-mono text-xl">
         Designer:{" "}
         <Link className="ylink capitalize" href={`/${designer}`}>
           {designer}
@@ -571,7 +576,7 @@ export function Summary({ designer, client, link, year }: SummaryProps) {
         </p>
       )}
       <p className="font-mono">Year: {year} </p>
-    </>
+    </div>
   );
 }
 //End Summary
