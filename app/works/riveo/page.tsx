@@ -20,13 +20,12 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[#1E208D]">
+        <ArticleHeader>
           <ArticleFigure>
             <BodyImage
               src="/works/riveo/cover.png"
               width={1120}
               height={416}
-              className=" w-full"
               alt="riveo app"
             />
           </ArticleFigure>
