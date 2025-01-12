@@ -43,7 +43,7 @@ const Page = () => {
               while I was there.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig1] Node editor">
             <BodyImage
               src="/works/drugcode/node_editor.png"
               alt="Node editor"
@@ -59,7 +59,7 @@ const Page = () => {
               products, to rebrand and redesign the product.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 2] Code editor">
             <BodyImage
               src="/works/drugcode/code_editor.png"
               alt="Code editor"
@@ -72,7 +72,7 @@ const Page = () => {
               useful for designer and management
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 3] File system">
             <BodyImage
               src="/works/drugcode/file_system.png"
               alt="File system"
@@ -81,7 +81,17 @@ const Page = () => {
           <Text>
             <p>Add, delete, rename projects</p>
           </Text>
-          <ArticleFigure>
+          <ArticleImageSection
+            image1={{
+              src: "/works/drugcode/node_preview.png",
+              caption: "[fig 4] Node preview",
+            }}
+            image2={{
+              src: "/works/drugcode/light_theme.png",
+              caption: "[fig 5] Light theme",
+            }}
+          />
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/drugcode/node_preview.png"
               alt="Node preview"
@@ -92,7 +102,7 @@ const Page = () => {
               src="/works/drugcode/light_theme.png"
               alt="Light theme"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
 
         {/* BRANDING */}
@@ -108,9 +118,10 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{ src: "/works/drugcode/brand.png" }}
-            data2={{
+            image1={{ src: "/works/drugcode/brand.png", caption: "[fig 6]" }}
+            image2={{
               src: "/works/drugcode/brand-guide.png",
+              caption: "[fig 7]",
             }}
           />
         </Section>
@@ -133,7 +144,7 @@ const Page = () => {
               ensures consistency within our designs.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 8] Default system">
             <BodyImage src="/works/drugcode/ui.png" alt="Drugcode ui" />
           </ArticleFigure>
           <Text title="">
@@ -143,7 +154,7 @@ const Page = () => {
               More then 80 components are created.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 9] Drugcode styles">
             <BodyImage src="/works/drugcode/style.png" alt="Drugcode styles" />
           </ArticleFigure>
           <Text title="">
@@ -153,8 +164,17 @@ const Page = () => {
               halps to understand each other
             </p>
           </Text>
-
-          <ArticleFigure>
+          <ArticleImageSection
+            image1={{
+              src: "/works/drugcode/letf_side_bar.png",
+              caption: "[fig 10] Left sidebar",
+            }}
+            image2={{
+              src: "/works/drugcode/drag.png",
+              caption: "[fig 11] Drug n Drop",
+            }}
+          />
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/drugcode/letf_side_bar.png"
               alt="Left sidebar"
@@ -162,7 +182,7 @@ const Page = () => {
           </ArticleFigure>
           <ArticleFigure>
             <BodyImage src="/works/drugcode/drag.png" alt="Drug n Drop" />
-          </ArticleFigure>
+          </ArticleFigure> */}
           <Text title="">
             <p>
               Collapsible left sidebar, represent file system, with drag and
@@ -170,7 +190,7 @@ const Page = () => {
               block inside a file.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 12] Right sidebar">
             <BodyImage
               src="/works/drugcode/right_side_bar.png"
               alt="Right sidebar"
@@ -187,7 +207,7 @@ const Page = () => {
               works according to specification too.
             </p>
           </Text>
-          <ArticleFigure>
+          <ArticleFigure figcaption="[fig 13]">
             <BodyImage
               src="/works/drugcode/preview.png"
               alt="Drugcode preview"

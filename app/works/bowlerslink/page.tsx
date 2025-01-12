@@ -38,8 +38,8 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{ src: "/works/bowlerslink/logo.png" }}
-            data2={{ src: "/works/bowlerslink/cap.png" }}
+            image1={{ src: "/works/bowlerslink/logo.png" }}
+            image2={{ src: "/works/bowlerslink/cap.png" }}
           ></ArticleImageSection>
           <ArticleFigure>
             <BodyImage

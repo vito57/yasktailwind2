@@ -53,28 +53,28 @@ const Page = () => {
 
           <ArticleImageSection
             className="bg-stone-100"
-            data1={{
+            image1={{
               src: "/works/angleicons/communication.png",
             }}
-            data2={{
+            image2={{
               src: "/works/angleicons/files.png",
             }}
           />
           <ArticleImageSection
             className="bg-stone-100"
-            data1={{
+            image1={{
               src: "/works/angleicons/ui.png",
             }}
-            data2={{
+            image2={{
               src: "/works/angleicons/brands.png",
             }}
           />
           <ArticleImageSection
             className="bg-stone-100"
-            data1={{
+            image1={{
               src: "/works/angleicons/transport.png",
             }}
-            data2={{
+            image2={{
               src: "/works/angleicons/world.png",
             }}
           />
@@ -89,10 +89,10 @@ const Page = () => {
           </ArticleFigure>
           <ArticleImageSection
             className="bg-stone-100"
-            data1={{
+            image1={{
               src: "/works/angleicons/lined.png",
             }}
-            data2={{
+            image2={{
               src: "/works/angleicons/filled.png",
             }}
           />

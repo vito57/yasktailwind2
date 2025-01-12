@@ -45,20 +45,20 @@ const Page = () => {
           </Text>
 
           <ArticleImageSection
-            data1={{ src: "/works/bootsy/1.png" }}
-            data2={{
+            image1={{ src: "/works/bootsy/1.png" }}
+            image2={{
               src: "/works/bootsy/2.png",
             }}
           />
           <ArticleImageSection
-            data1={{ src: "/works/bootsy/3.png" }}
-            data2={{
+            image1={{ src: "/works/bootsy/3.png" }}
+            image2={{
               src: "/works/bootsy/4.png",
             }}
           />
           <ArticleImageSection
-            data1={{ src: "/works/bootsy/5.png" }}
-            data2={{
+            image1={{ src: "/works/bootsy/5.png" }}
+            image2={{
               src: "/works/bootsy/6.png",
             }}
           />

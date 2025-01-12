@@ -44,14 +44,14 @@ const Page = () => {
           </ArticleFigure>
 
           <ArticleImageSection
-            data1={{ src: "/works/bober/3.png" }}
-            data2={{
+            image1={{ src: "/works/bober/3.png" }}
+            image2={{
               src: "/works/bober/logo.png",
             }}
           />
           <ArticleImageSection
-            data1={{ src: "/works/bober/1.png" }}
-            data2={{
+            image1={{ src: "/works/bober/1.png" }}
+            image2={{
               src: "/works/bober/3.png",
             }}
           />

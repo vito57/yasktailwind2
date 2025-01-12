@@ -7,7 +7,7 @@ import {
   ArticleHeader,
   ArticleImageSection,
   BodyImage,
-  Summary
+  Summary,
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,16 +37,19 @@ const Page = () => {
             <p>Design of an adaptive website for the Dom Kino TV channel</p>
           </Text>
 
-
-
-          <ArticleFigure >
+          <ArticleFigure>
             <BodyImage
               src="/works/domkino/layout_1.png"
               alt="DomKino website layout"
             />
           </ArticleFigure>
           <Text title="">
-            <p>When designing a layout, it was necessary to provide as many advertising places as possible and dont forget about users. I prepared different options for layouts with an adaptive and tested them.</p>
+            <p>
+              When designing a layout, it was necessary to provide as many
+              advertising places as possible and dont forget about users. I
+              prepared different options for layouts with an adaptive and tested
+              them.
+            </p>
           </Text>
           <ArticleFigure>
             <BodyImage
@@ -87,19 +90,19 @@ const Page = () => {
             />
           </ArticleFigure>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/domkino/1.png",
             }}
-            data2={{
+            image2={{
               src: "/works/domkino/2.png",
             }}
           />
 
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/domkino/5.png",
             }}
-            data2={{
+            image2={{
               src: "/works/domkino/6.png",
             }}
           />
@@ -107,9 +110,12 @@ const Page = () => {
 
         <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2018" client="PKVS" link="https://www.domkino.tv/"/>
-
-           
+            <Summary
+              designer="vitaly"
+              year="2018"
+              client="PKVS"
+              link="https://www.domkino.tv/"
+            />
           </Text>
         </Section>
       </Article>

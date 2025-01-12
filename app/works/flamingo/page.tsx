@@ -7,7 +7,7 @@ import {
   ArticleFigure,
   BodyImage,
   ArticleHeader,
-  Summary
+  Summary,
 } from "../../components/server";
 
 import Image from "next/image";
@@ -51,7 +51,6 @@ export default function Flamingo() {
               <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
             </ArticleFigure>
           </div>
-
         </Section>
 
         <Section id="style">
@@ -60,8 +59,8 @@ export default function Flamingo() {
               The style guide was vital for both our developers and our
               designers, giving us a shared kit of parts to work from and
               ensures consistency within our designs. This framework was adopted
-              by additional suites and it used across multiple
-              teams at the company today.
+              by additional suites and it used across multiple teams at the
+              company today.
             </p>
           </Text>
         </Section>
@@ -156,41 +155,39 @@ export default function Flamingo() {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/flamingo/u1.png",
               //caption: "Representing function as node",
             }}
-            data2={{
+            image2={{
               src: "/works/flamingo/u2.png",
               //caption: "Wireframes",
             }}
           />
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/flamingo/u3.png",
               //caption: "Representing function as node",
             }}
-            data2={{
+            image2={{
               src: "/works/flamingo/u4.png",
               //caption: "Wireframes",
             }}
           />
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/flamingo/u5.png",
               //caption: "Representing function as node",
             }}
-            data2={{
+            image2={{
               src: "/works/flamingo/u6.png",
               // caption: "Wireframes",
             }}
           />
         </Section>
-        <Section id="summary" >
+        <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2021" client="Sber"/>
-
-           
+            <Summary designer="vitaly" year="2021" client="Sber" />
           </Text>
         </Section>
       </Article>

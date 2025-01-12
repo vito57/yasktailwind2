@@ -52,54 +52,42 @@ const Page = () => {
           </Text>
 
           <ArticleImageSection
-           
-            data1={{
+            image1={{
               src: "/works/iconsaur/1.png",
             }}
-            data2={{
+            image2={{
               src: "/works/iconsaur/2.png",
             }}
           />
           <ArticleImageSection
-           
-            data1={{
+            image1={{
               src: "/works/iconsaur/3.png",
             }}
-            data2={{
+            image2={{
               src: "/works/iconsaur/4.png",
             }}
           />
           <ArticleImageSection
-            
-            data1={{
+            image1={{
               src: "/works/iconsaur/5.png",
             }}
-            data2={{
+            image2={{
               src: "/works/iconsaur/6.png",
             }}
           />
           <ArticleImageSection
-            
-            data1={{
+            image1={{
               src: "/works/iconsaur/7.png",
             }}
-            data2={{
+            image2={{
               src: "/works/iconsaur/8.png",
             }}
           />
-
-
-
         </Section>
 
         <Section id="summary" className="container">
           <Text title="Summary">
-            <Summary
-              designer="gala"
-              year="2024"
-              client="UI8"
-             
-            />
+            <Summary designer="gala" year="2024" client="UI8" />
           </Text>
         </Section>
       </Article>

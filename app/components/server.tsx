@@ -267,9 +267,8 @@ export function ArticleImageGrid(props: ArticleImageGridProps) {
 
 //ArticleImageSection DEPRICATED USE ARTICLEIMAGEGRID
 interface ArticleImageSectionProps {
-  data1: { src: string; caption?: string };
-  data2: { src: string; caption?: string };
-  imgset?: { src: string; caption?: string };
+  image1: { src: string; caption?: string };
+  image2: { src: string; caption?: string };
   className?: string;
   height?: number;
 }
@@ -278,22 +277,22 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
     <div className="flex flex-col md:flex-row gap-6 mb-6">
       <div className="basis-auto md:basis-1/2">
-        <ArticleFigure figcaption={props.data1.caption} className="mb-0">
+        <ArticleFigure figcaption={props.image1.caption} className="mb-0">
           <BodyImage
-            src={props.data1.src}
+            src={props.image1.src}
             className={props.className}
             height={props.height}
-            alt={props.data1.caption || props.data1.src}
+            alt={props.image1.caption || props.image1.src}
           />
         </ArticleFigure>
       </div>
       <div className="basis-auto md:basis-1/2">
-        <ArticleFigure figcaption={props.data2.caption} className="mb-0">
+        <ArticleFigure figcaption={props.image2.caption} className="mb-0">
           <BodyImage
-            src={props.data2.src}
+            src={props.image2.src}
             height={props.height}
             className={props.className}
-            alt={props.data2.caption || props.data2.src}
+            alt={props.image2.caption || props.image2.src}
           />
         </ArticleFigure>
       </div>

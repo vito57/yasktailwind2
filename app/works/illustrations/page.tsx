@@ -38,56 +38,56 @@ const Page = () => {
           </Text>
           <ArticleImageSection
             height={1760 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/2s1760.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/3s1760.png",
             }}
           />
 
           <ArticleImageSection
             height={2170 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/4s2170.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/5s2170.png",
             }}
           />
           <ArticleImageSection
             height={2000 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/6s2000.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/7s2000.png",
             }}
           />
           <ArticleImageSection
             height={2230 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/8s2230.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/9s2230.png",
             }}
           />
           <ArticleImageSection
             height={2160 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/10s2160.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/11s2160.png",
             }}
           />
           <ArticleImageSection
             height={1900 / 2}
-            data1={{
+            image1={{
               src: "/works/illustrations/12s1900.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/13s1900.png",
             }}
           />
@@ -101,10 +101,10 @@ const Page = () => {
           </ArticleFigure>
           <ArticleImageSection
             height={2100}
-            data1={{
+            image1={{
               src: "/works/illustrations/15s2100.png",
             }}
-            data2={{
+            image2={{
               src: "/works/illustrations/16s2100.png",
             }}
           />

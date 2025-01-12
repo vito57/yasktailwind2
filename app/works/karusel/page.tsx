@@ -25,8 +25,8 @@ const Page = () => {
             <BodyImage
               src="/works/karusel/cover.png"
               width={1120}
-              height={416} 
-              className="bg-transparent  w-full"          
+              height={416}
+              className="bg-transparent  w-full"
               alt="Karusel TV"
             />
           </ArticleFigure>
@@ -41,10 +41,10 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/main_desktop.png",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/games_desktop.png",
             }}
           />
@@ -63,22 +63,21 @@ const Page = () => {
             <p>The website is fully responsive.</p>
           </Text>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/main_mobile.png",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/article_mobile.png",
             }}
           />
-                    <ArticleImageSection
-            data1={{
+          <ArticleImageSection
+            image1={{
               src: "/works/karusel/mobile_menu.png",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/games_mobile.png",
             }}
           />
-
         </Section>
         <Section id="styles">
           <Text title="Styles">
@@ -88,14 +87,13 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/style_guide.png",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/templates.png",
             }}
           />
-      
         </Section>
         {/* BRANDING */}
         <Section id="content">
@@ -106,56 +104,59 @@ const Page = () => {
             </p>
           </Text>
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/content.png",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/parallax.png",
             }}
           />
-       
+
           <Text>
             <p>
               I designed and code the adaptive parallax Hero header. 2 types of
               such headers have been made - for pages and for sections
             </p>
           </Text>
-    
+
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/decorator_header.gif",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/contest_header.gif",
             }}
           />
 
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/pitomets_header.gif",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/sadovod_header.gif",
             }}
           />
           <ArticleImageSection
-            data1={{
+            image1={{
               src: "/works/karusel/blue.gif",
             }}
-            data2={{
+            image2={{
               src: "/works/karusel/red.gif",
             }}
           />
         </Section>
         <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2015-2016" client="PKVS" link="https://www.karusel-tv.ru/"/>
+            <Summary
+              designer="vitaly"
+              year="2015-2016"
+              client="PKVS"
+              link="https://www.karusel-tv.ru/"
+            />
 
-          
-              {/* <Link className="ylink" href="https://xd.adobe.com/view/1a850fed-be7f-4ecc-4394-85bbb759d9a9-6cb4/screen/4991d63d-36a1-4724-b5b7-f77ec795e2fd/?fullscreen">
+            {/* <Link className="ylink" href="https://xd.adobe.com/view/1a850fed-be7f-4ecc-4394-85bbb759d9a9-6cb4/screen/4991d63d-36a1-4724-b5b7-f77ec795e2fd/?fullscreen">
 Adobe XD Prototype
               </Link> */}
-          
           </Text>
         </Section>
       </Article>
