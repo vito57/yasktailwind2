@@ -93,6 +93,7 @@ const Page = () => {
               src: "/works/drugcode/light_theme.png",
               caption: "[fig 5] Light theme",
             }}
+            className="bg-[url('/works/drugcode/bg.png')] bg-cover"
           />
         </Section>
 
