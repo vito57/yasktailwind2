@@ -47,6 +47,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/node_editor.png"
               alt="Node editor"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
           <Text>
@@ -63,6 +64,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/code_editor.png"
               alt="Code editor"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
           <Text title="">
@@ -76,6 +78,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/file_system.png"
               alt="File system"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
           <Text>
