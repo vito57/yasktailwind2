@@ -81,9 +81,7 @@ const Page = () => {
               className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
-          <Text>
-            <p>Add, delete, rename projects</p>
-          </Text>
+
           <ArticleImageSection
             image1={{
               src: "/works/drugcode/node_preview.png",
