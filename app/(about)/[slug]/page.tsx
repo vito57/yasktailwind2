@@ -16,7 +16,9 @@ export const metadata = {
   title: "About us",
   description: "We design websites and apps",
 };
-export default async function Page(props: { params: Promise<{ slug: string }> }) {
+export default async function Page(props: {
+  params: Promise<{ slug: string }>;
+}) {
   const params = await props.params;
   const user = users.find((i) => i.path === `/${params.slug}`);
   const userWorks = allWorks.filter((i) => i.by.includes(params.slug));
@@ -163,7 +165,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
           </Text>
         )}
         {user.learn && (
-          <Text title="Learning curve">
+          <Text title="Learning goals">
             {user.learn.map((i) => {
               return <Badge key={i}>{i}</Badge>;
             })}
