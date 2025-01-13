@@ -91,18 +91,6 @@ const Page = () => {
               caption: "[fig 5] Light theme",
             }}
           />
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/drugcode/node_preview.png"
-              alt="Node preview"
-            />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage
-              src="/works/drugcode/light_theme.png"
-              alt="Light theme"
-            />
-          </ArticleFigure> */}
         </Section>
 
         {/* BRANDING */}
