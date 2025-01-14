@@ -9,8 +9,7 @@ import {
   BodyImage,
   Summary,
 } from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
+
 export const metadata = {
   title: "Pobeda - Adaptive web site",
   description: "Website for TV channel",
@@ -33,7 +32,10 @@ const Page = () => {
         </ArticleHeader>
         <Section id="about">
           <Text title="About">
-            <p>Adaptive website for the channel of Soviet films about the Second World War</p>
+            <p>
+              Adaptive website for the channel of Soviet films about the Second
+              World War
+            </p>
           </Text>
 
           <ArticleFigure figcaption="New main page">
