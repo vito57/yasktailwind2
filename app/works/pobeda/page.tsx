@@ -58,7 +58,7 @@ const Page = () => {
 
         <Section id="summary">
           <Text title="Summary">
-            <Summary designer="vitaly" year="2015" client="PKVS" />
+            <Summary designer="vitaly" year="2014" client="PKVS" />
           </Text>
         </Section>
       </Article>
