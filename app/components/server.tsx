@@ -237,19 +237,58 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
 }
 
 //BADGE
-interface BadgeProps {
+interface BadgeButtonProps {
+  className?: string;
+  href?: string;
+  badge?: string;
+  children: React.ReactNode;
+}
+export function BadgeButton({
+  className,
+  href,
+  badge,
+  children,
+}: BadgeButtonProps) {
+  const userOverrides = className ? className : "";
+  const defaultClass =
+    "bg-ygrey relative whitespace-nowrap text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium";
+
+  return href ? (
+    <Link
+      href={href}
+      className={
+        defaultClass +
+        " " +
+        "text-ylightblue hover:brightness-95 transition" +
+        userOverrides
+      }
+    >
+      {" "}
+      {children}
+      {badge ? <BadgeSmall>{badge}</BadgeSmall> : false}
+    </Link>
+  ) : (
+    <span className={defaultClass + " " + userOverrides}>
+      {" "}
+      {children} {badge ? <BadgeSmall>{badge}</BadgeSmall> : false}
+    </span>
+  );
+}
+//END BADGE
+
+//BADGESMALL
+interface BadgeSmallProps {
   className?: string;
   href?: string;
   children: React.ReactNode;
 }
-export function Badge({ className, href, children }: BadgeProps) {
+export function BadgeSmall({ className, href, children }: BadgeSmallProps) {
   return (
-    <span className="bg-ygrey relative whitespace-nowrap text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium ">
+    <span className="bg-yred ml-1 text-ylime relative whitespace-nowrap text-xs  px-0.5 inline-block rounded-sm font-medium ">
       {children}
     </span>
   );
 }
-
 //END BADGE
 
 //IMAGE GRID
@@ -304,28 +343,26 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 export function Footer() {
   return (
     <p className="text-sm text-center mt-8 mb-8">
-      Copyright © 2023 Yaskevich. <br /> Thanks:{" "}
+      Copyright © 2023—2025 Yask.. <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="ylink">
         React
       </Link>
-      ,
+      ,{" "}
       <Link href="https://tailwindcss.com/" className="ylink">
         Tailwind
       </Link>
-      ,
-      <Link href="https://codesandbox.io/" className="ylink">
-        Codesandbox
+      ,{" "}
+      <Link href="https://penpot.app/" className="ylink">
+        Penpot
       </Link>
-      ,
+      ,{" "}
       <Link href="https://nextjs.org/" className="ylink">
         Next
       </Link>
-      ,
+      ,{" "}
       <Link href="https://github.com/" className="ylink">
         Github
       </Link>
-      <br />
-      The site does not collect any information about the users.
     </p>
   );
 }

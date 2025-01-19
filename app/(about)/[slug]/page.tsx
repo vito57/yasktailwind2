@@ -1,7 +1,7 @@
 import {
   Button,
   Text,
-  Badge,
+  BadgeButton,
   PortfolioItem,
   Footer,
   AnimateLayout,
@@ -76,15 +76,22 @@ export default async function Page(props: {
         </Text>
         <Text title="Top skils">
           <div className="flex gap-1 flex-wrap">
-            {user["top skills"].map((i) => (
-              <Badge key={i}>{i}</Badge>
+            {user["top skills"]?.map((i) => (
+              <BadgeButton href={i.href} badge={i.badge}>
+                {i.name}
+              </BadgeButton>
             ))}
           </div>
         </Text>
         <Text title="Tools stack">
           <div className="flex gap-1 flex-wrap">
-            {user.tools.map((i) => (
+            {/* {user.tools.map((i) => (
               <Badge key={i}>{i}</Badge>
+            ))} */}
+            {user.tools?.map((i) => (
+              <BadgeButton key={i.name} href={i.href} badge={i.badge}>
+                {i.name}
+              </BadgeButton>
             ))}
           </div>
         </Text>
@@ -92,7 +99,7 @@ export default async function Page(props: {
           <dl className="mb-8">
             {user.experience.map((i) => (
               <div key={i.date}>
-                <dt key={i.placeLink} className="font-medium">
+                <dt key={i.placeLink} className="font-bold">
                   {i.position} at{" "}
                   <Link href={i.placeLink} className="ylink">
                     {i.place}
@@ -146,7 +153,7 @@ export default async function Page(props: {
           <Text title="Awards">
             <div className="flex flex-wrap">
               {user.awards.map((i) => (
-                <Badge key={i}>{i}</Badge>
+                <BadgeButton key={i}>{i}</BadgeButton>
               ))}
             </div>
           </Text>
@@ -167,7 +174,7 @@ export default async function Page(props: {
         {user.learn && (
           <Text title="Learning goals">
             {user.learn.map((i) => {
-              return <Badge key={i}>{i}</Badge>;
+              return <BadgeButton key={i}>{i}</BadgeButton>;
             })}
           </Text>
         )}

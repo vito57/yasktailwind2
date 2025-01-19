@@ -137,7 +137,7 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
         <div
           className={`hidden md:flex fixed md:static py-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
         >
-          <Tabs className="bg-yask  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
+          <Navigation className="bg-yask  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
           {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
         </div>
         <div className="py-2">
@@ -153,7 +153,7 @@ export function MobileArticleFooter() {
     <div
       className={`flex md:hidden fixed md:static py-4 justify-center left-0 right-0 bottom-0 gap-2 z-10 items-center`}
     >
-      <Tabs className="bg-yred  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
+      <Navigation className="bg-yred  dark:md:text-ytextdark md:text-yask text-white md:bg-transparent" />
       {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
     </div>
   );
@@ -170,7 +170,7 @@ export function Jumbo({ datas }: JumboProps) {
   return (
     <h1
       key={pathname}
-      className="lg:text-4xl font-display whitespace-pre-wrap text-3xl mx-auto max-w-xl antialiased animate-fadeIn"
+      className="lg:text-5xl font-display whitespace-pre-wrap text-3xl mx-auto max-w-xl antialiased animate-fadeIn"
     >
       {title.title}
     </h1>
@@ -180,7 +180,7 @@ export function Jumbo({ datas }: JumboProps) {
 interface TabsProps {
   className?: string;
 }
-export function Tabs({ className }: TabsProps) {
+export function Navigation({ className }: TabsProps) {
   const pathname = usePathname();
   return (
     <menu

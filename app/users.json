@@ -31,31 +31,32 @@
     ],
     "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
     "top skills": [
-      "UI/UX Design",
-      "Web Development",
-      "PWA",
-      "Interactive Design",
-      "Frontend Design",
-      "Design Systems",
-      "Material Design",
-      "Apple Guidelines"
+      {"name":"UI/UX Design", "href":"", "badge":""},
+      {"name":"Frontend",  "href":"", "badge":""},
+      {"name":"PWA",  "href":"", "badge":""},
+      {"name":"Material Design",  "href":"", "badge":""},
+      {"name":"HIG",  "href":"", "badge":""},
+      {"name":"Accessibility",  "href":"https://doka.guide/a11y/", "badge":"new"}
     ],
     "tools": [
-      "Figma",
-      "Framer",
-      "React",
-      "HTML/CSS/JS",
-      "NextJS",
-      "Framer Motion",
-      "Photoshop",
-      "Origami Studio",
-      "Illustrator",
-      "Blender",
-      "Cinema 4D",
-      "Spline 3d",
-      "D3js",
-      "Bootstrap/Tailwind"
+      {"name":"Penpot","href":"https://penpot.app","badge":"new"},
+      {"name":"Figma","href":"https://figma.com", "badge":""},
+      {"name":"Framer","href":"https://www.framer.com/", "badge":""},
+      {"name":"Blender","href":"https://www.blender.org/", "badge":"new"},
+      {"name":"Spline3d","href":"https://spline.design/", "badge":"new"},
+      {"name":"Frame Motion","href":"https://motion.dev/", "badge":""},
+      {"name":"NextJs","href":"https://nextjs.org/", "badge":""},
+      {"name":"Bootstrap","href":"https://getbootstrap.com/", "badge":""},
+      {"name":"Tailwind","href":"https://tailwindcss.com/", "badge":""},
+      {"name":"D3js","href":"https://d3js.org/", "badge":""},
+      {"name":"HTML", "href":"https://doka.guide/", "badge":""},
+      {"name":"CSS", "href":"https://doka.guide/", "badge":""},
+      {"name":"JavaScript", "href":"https://doka.guide/", "badge":""},
+      {"name":"Photoshop", "href":"", "badge":""},
+      {"name":"Origami Studio","href":"https://origami.design/",  "badge":""},
+      {"name":"Illustrator",  "href":"", "badge":""}
     ],
+   
     "experience": [
       {
         "position": "Designer",
@@ -131,17 +132,18 @@
     ],
     "about": "Experienced Icon designer and illustrator",
     "top skills": [
-      "Icon Systems",
-      "Logo Design",
-      "Icon Design",
-      "Illustration"
+ 
+      {"name":"Animation", "href":"", "badge":"new"},
+      {"name":"Icon Systems",  "href":"", "badge":""},
+      {"name":"Logo Design",  "href":"", "badge":""},
+      {"name":"Icon Design",  "href":"", "badge":""},
+      {"name":"Illustrations",  "href":"", "badge":""}
     ],
     "tools": [
-      "Figma",
-      "Photoshop",
-      "Illustrator",
-      "Procreate",
-      "Pen and Pencil"
+      {"name":"Procreate","href":"https://procreate.com/", "badge":""},
+      {"name":"Illustrator",  "href":"", "badge":""},
+      {"name":"ToonBoom","href":"https://www.toonboom.com/", "badge":"new"},
+      {"name":"Pen and Pencil",  "href":"", "badge":""}
     ],
     "experience": [
       {
@@ -177,13 +179,15 @@
     ],
     "about": "Artist, Illustrator and Blogger",
     "top skills": [
-      "Roblox Livel Design",
-      "Illustrations",
-      "Procreate",
-      "Video",
-      "Blogging"
+      {"name":"Roblox Livel Design", "href":"", "badge":""},
+      {"name":"Illustrations",  "href":"", "badge":""}
+     
     ],
-    "tools": ["Procreate", "CapCut", "iPad", "Photoshop"],
+    "tools": [     
+      {"name":"Procreate","href":"https://procreate.com/", "badge":""},
+      {"name":"CupCut","href":"https://www.capcut.com/", "badge":""},
+      {"name":"Pen and Pencil",  "href":"", "badge":""}
+    ],
     "experience": [
       {
         "position": "Have Fun",
