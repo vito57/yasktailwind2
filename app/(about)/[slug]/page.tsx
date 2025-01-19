@@ -85,9 +85,6 @@ export default async function Page(props: {
         </Text>
         <Text title="Tools stack">
           <div className="flex gap-1 flex-wrap">
-            {/* {user.tools.map((i) => (
-              <Badge key={i}>{i}</Badge>
-            ))} */}
             {user.tools?.map((i) => (
               <BadgeButton key={i.name} href={i.href} badge={i.badge}>
                 {i.name}

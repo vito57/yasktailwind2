@@ -92,7 +92,7 @@ export default function About() {
           <dl className="text-base">
             <dt className="font-bold ">Time respectful</dt>
             <dd className="mb-8">
-              Don't waste your own and other people's time.
+              Dont waste your own and other peoples time.
             </dd>
 
             <dt className="font-bold">Robust design</dt>
