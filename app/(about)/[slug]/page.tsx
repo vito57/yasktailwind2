@@ -77,7 +77,7 @@ export default async function Page(props: {
         <Text title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
-              <BadgeButton href={i.href} badge={i.badge}>
+              <BadgeButton key={i.name} href={i.href} badge={i.badge}>
                 {i.name}
               </BadgeButton>
             ))}
