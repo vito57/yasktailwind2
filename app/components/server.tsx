@@ -284,7 +284,7 @@ interface BadgeSmallProps {
 }
 export function BadgeSmall({ className, href, children }: BadgeSmallProps) {
   return (
-    <span className="bg-yred ml-1 text-ylime relative whitespace-nowrap text-xs  px-0.5 inline-block rounded-sm font-medium ">
+    <span className="bg-yblue ml-1 text-ybg relative whitespace-nowrap text-xs  px-0.5 inline-block rounded-sm font-medium ">
       {children}
     </span>
   );
