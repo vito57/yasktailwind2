@@ -149,15 +149,17 @@ export default async function Page(props: {
             ))}
           </div>
         </Text>
-        {user.awards && (
+        {/* {user.awards && (
           <Text title="Awards">
             <div className="flex flex-wrap">
               {user.awards.map((i) => (
-                <BadgeButton key={i}>{i}</BadgeButton>
+                <BadgeButton key={i.name} href={i.href}>
+                  {i.name}
+                </BadgeButton>
               ))}
             </div>
           </Text>
-        )}
+        )} */}
 
         <Text title="Education">
           <p>{user.education}</p>
@@ -174,7 +176,7 @@ export default async function Page(props: {
         {user.learn && (
           <Text title="Learning goals">
             {user.learn.map((i) => {
-              return <BadgeButton key={i}>{i}</BadgeButton>;
+              return <BadgeButton key={i.name}>{i.name}</BadgeButton>;
             })}
           </Text>
         )}

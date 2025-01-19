@@ -100,15 +100,19 @@
     ],
 
     "awards": [
-      "🏆 Runet Award 2015",
-      "🏆 Runet Award 2016",
-      "🏆 Runet Award 2018",
-      "🏆 Runet Award 2021"
+       {"name":"Runet Award 2015", "href":"", "badge":""},
+       {"name":"Runet Award 2015", "href":"", "badge":""},
+       {"name":"Runet Award 2018", "href":"", "badge":""},
+       {"name":"Runet Award 2021", "href":"", "badge":""}
+   
     ],
 
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
     "courses": ["MITx: Mobile Application Experiences, 2012"],
-    "learn":["Spline3d", "React Three Fiber"]
+    "learn":[      
+       {"name":"Spline3d", "href":"", "badge":""},
+       {"name":"Blender modeling", "href":"", "badge":""}
+]
   },
   {
     "name": "Gala",
@@ -158,8 +162,9 @@
 
     "awards": ["🏆 UI8 featured product"],
     "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
-    "courses": null,
-    "learn":["Painting"]
+    "courses": ["Animation artist. Merinov School"],
+    "learn":[       {"name":"Animation", "href":"", "badge":""}
+]
 
   },
   {
@@ -203,6 +208,7 @@
     "education": "1494 elmentry school, since 2023",
 
     "courses": null,
-    "learn":["Painting"]
+    "learn":[       {"name":"Painting", "href":"", "badge":""}
+]
   }
 ]
