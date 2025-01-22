@@ -275,14 +275,14 @@ export function SpanButton({
 }
 //END BADGE
 
-//BADGE text higliter
+//BADGE text hightliter
 interface BadgeProps {
   className?: string;
   children: React.ReactNode;
 }
 export function Badge({ className, children }: BadgeProps) {
   const DefaultClass =
-    "bg-yblue text-ybg ml-1 text-[75%] relative whitespace-nowrap leading-none p-0.5 inline-block rounded-sm font-medium align-baseline capitalize";
+    "bg-yblue text-ybg ml-1 text-xs relative whitespace-nowrap leading-none p-0.5 inline-block rounded-sm font-medium align-baseline capitalize";
   return <span className={DefaultClass}>{children}</span>;
 }
 //END BADGE
