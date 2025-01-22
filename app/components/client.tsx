@@ -141,7 +141,7 @@ export function ArticleTopMenu({ title, className }: ArticleTopMenuProps) {
           {/* <Button path="mailto:vito57rus@yandex.ru" className="hidden md:block">Send email</Button> */}
         </div>
         <div className="py-2">
-          <Button href="mailto:vito57rus@yandex.ru">Send email</Button>
+          <Button path="mailto:vito57rus@yandex.ru">Send email</Button>
         </div>
       </div>
     </div>
