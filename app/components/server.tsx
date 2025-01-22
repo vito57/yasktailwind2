@@ -61,7 +61,7 @@ export function BodyText({ children }: BodyTextProps) {
   return <p>{children}</p>;
 }
 //end body text
-// TEXT
+// TEXT main text layout block
 interface TextProps {
   title?: string;
 
@@ -83,6 +83,7 @@ export function Text({ title, children }: TextProps) {
   );
 }
 //END TEXT
+//SECTION section layout
 interface SectionProps {
   className?: string;
   fluid?: boolean;
@@ -102,6 +103,8 @@ export function Section({
     </section>
   );
 }
+//END SECTION
+//TOPMENU
 export function TopMenu() {
   return (
     <div className="px-4 w-fit flex gap-2">
@@ -127,6 +130,9 @@ export function TopMenu() {
     </div>
   );
 }
+//END TOP MENU
+
+//BUTTON
 interface ButtonProps {
   path: string;
   className?: string;
@@ -136,15 +142,18 @@ interface ButtonProps {
 export function Button({
   children,
   rel,
-  className = "ybutton primary",
+  className = "text-ylightblue bg-ylime",
   path,
 }: ButtonProps) {
+  const BtnClass = `text-sm text-center m-0.5 font-medium rounded-xl px-3 py-2 inline-block transition-all hover:brightness-95 focus:brightness-95 ${className}`;
+
   return (
-    <Link href={path || "/"} rel={rel} className={`${className}`}>
+    <Link href={path || "/"} rel={rel} className={BtnClass}>
       {children}
     </Link>
   );
 }
+//END BUTTON
 //testimonials
 interface TestimonialsButtonProps {
   dataset: { testimonial: string; user: string; img: string; role: string };
@@ -237,57 +246,44 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
 }
 
 //BADGE
-interface BadgeButtonProps {
+interface SpanButtonProps {
   className?: string;
   href?: string;
   badge?: string;
   children: React.ReactNode;
 }
-export function BadgeButton({
+export function SpanButton({
   className,
   href,
   badge,
   children,
-}: BadgeButtonProps) {
+}: SpanButtonProps) {
   const userOverrides = className ? className : "";
   const defaultClass =
     "bg-ygrey relative whitespace-nowrap text-sm py-2 mx-0.5 my-0.5 px-4 inline-block rounded-xl font-medium";
 
   return href ? (
-    <Link
-      href={href}
-      className={
-        defaultClass +
-        " " +
-        "text-ylightblue hover:brightness-95 transition" +
-        userOverrides
-      }
-    >
-      {" "}
+    <Button path={href} className="text-ylightblue bg-ygrey">
       {children}
-      {badge ? <BadgeSmall>{badge}</BadgeSmall> : false}
-    </Link>
+      {badge ? <Badge>{badge}</Badge> : false}
+    </Button>
   ) : (
     <span className={defaultClass + " " + userOverrides}>
-      {" "}
-      {children} {badge ? <BadgeSmall>{badge}</BadgeSmall> : false}
+      {children} {badge ? <Badge>{badge}</Badge> : false}
     </span>
   );
 }
 //END BADGE
 
-//BADGESMALL
-interface BadgeSmallProps {
+//BADGE text higliter
+interface BadgeProps {
   className?: string;
-  href?: string;
   children: React.ReactNode;
 }
-export function BadgeSmall({ className, href, children }: BadgeSmallProps) {
-  return (
-    <span className="bg-yblue ml-1 text-ybg relative whitespace-nowrap text-xs  px-0.5 inline-block rounded-sm font-medium ">
-      {children}
-    </span>
-  );
+export function Badge({ className, children }: BadgeProps) {
+  const DefaultClass =
+    "bg-yblue text-ybg ml-1 text-[75%] relative whitespace-nowrap leading-none p-0.5 inline-block rounded-sm font-medium align-baseline capitalize";
+  return <span className={DefaultClass}>{children}</span>;
 }
 //END BADGE
 

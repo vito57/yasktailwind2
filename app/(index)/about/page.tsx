@@ -30,7 +30,7 @@ export default function About() {
               </figcaption>
               <div>
                 <Button
-                  path={i.path}
+                  href={i.path}
                   className="inline-block whitespace-nowrap ybutton secondary"
                 >
                   {" "}
@@ -125,7 +125,7 @@ export default function About() {
             <li className="mb-8">
               <Button
                 className="ybutton secondary"
-                path="mailto:vito57rus@gmail.com"
+                href="mailto:vito57rus@gmail.com"
               >
                 vitalyyask@gmail.com
               </Button>
@@ -135,7 +135,7 @@ export default function About() {
                 <Button
                   className="ybutton secondary"
                   rel="nofollow"
-                  path="https://wa.me/79778192253"
+                  href="https://wa.me/79778192253"
                 >
                   Whatsapp chat
                 </Button>

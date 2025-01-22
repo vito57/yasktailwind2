@@ -6,9 +6,11 @@
   --text-*: initial;
   --text-xs: 0.75rem;
   --text-xs--line-height: 1rem;
+
   --text-sm: 0.875rem;
   --text-sm--line-height: 1.25rem;
   --text-sm--letter-spacing: -0.006em;
+  
   --text-base: 1rem;
   --text-base--line-height: 1.5rem;
   --text-base--letter-spacing: -0.011em;
@@ -38,9 +40,8 @@
   --font-mono: var(--font-cousine);
   --font-display: var(--font-serotiva);
 
-  --color-yask: #050884;
+  
   --color-ybg: #fafafd;
-  --color-ylightblue: #080bd0;
   --color-yred: #ff2423;
   --color-ylime: #d6f47c;
   --color-ygrey: #cfd6df;
@@ -48,6 +49,8 @@
   --color-ybrown: #845005;
   --color-ydarkbrown: #5C3804;
   --color-yblue: #84A5FF;
+  --color-yask: #050884;
+  --color-ylightblue: #080bd0;
 }
 
 @utility container {

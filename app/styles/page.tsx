@@ -1,7 +1,8 @@
 import Link from "next/link";
-export default function Styles() {
+import { SpanButton, Badge, Button } from "../components/server";
+export default function Page() {
   return (
-    <div className="container">
+    <div className="container my-10">
       <h1 className="h1 mb-8">
         Header 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
         aliquam asperiores.{" "}
@@ -11,7 +12,7 @@ export default function Styles() {
         </Link>{" "}
         perspiciatis accusantium ducimus ipsa similique vitae corporis possimus
         ut minus. Magnam delectus quia consequuntur accusantium. Quibusdam,
-        earum!
+        earum! <Badge>Some Badge Text</Badge>
       </h1>
       <p className="text-xl mb-8">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -22,6 +23,7 @@ export default function Styles() {
           Iste numquam{" "}
         </Link>{" "}
         nemo ut cumque. Accusantium quidem distinctio autem aut, magnam commodi?
+        <Badge>Some Badge Text</Badge>
       </p>
       <p className="text-base mb-8">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vel rem
@@ -31,8 +33,8 @@ export default function Styles() {
           Iste numquam{" "}
         </Link>{" "}
         accusantium soluta nulla repellendus aut voluptas eaque suscipit
-        adipisci omnis repellat, sed, culpa unde repudiandae porro cupiditate
-        eius!
+        adipisci omnis repellat, sed, culpa <Badge>Some Badge Text</Badge> unde
+        repudiandae porro cupiditate eius!
       </p>
       <p className="text-sm mb-8">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
@@ -77,7 +79,7 @@ export default function Styles() {
         Header 5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Adipisci tempora error possimus repellat labore quos hic rerum, deleniti
         placeat aut soluta veritatis sapiente, nobis doloribus est harum id
-        neque qui!
+        neque qui! <Badge>Some Badge Text</Badge>
       </h5>
       <h6 className="h6 mb-8">
         Header 6 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -85,6 +87,20 @@ export default function Styles() {
         consequatur nesciunt suscipit est eveniet exercitationem recusandae
         explicabo fugit fuga nisi, dolores delectus beatae ut.
       </h6>
+      <div>
+        <h5 className="h5 mb-8">Button</h5>
+        <Button path="/">Some button</Button>
+        <Button path="/" className="bg-yred text-ybg">
+          Some button
+        </Button>
+        <Button path="/" className="bg-ydarkbrown text-ylime">
+          Some button1
+        </Button>
+        <Button path="/" className="bg-ygrey">
+          Some button222 <Badge>New</Badge>
+        </Button>
+        <SpanButton>BadgeButton</SpanButton>
+      </div>
     </div>
   );
 }

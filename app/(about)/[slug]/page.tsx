@@ -1,7 +1,7 @@
 import {
   Button,
   Text,
-  BadgeButton,
+  SpanButton,
   PortfolioItem,
   Footer,
   AnimateLayout,
@@ -52,7 +52,7 @@ export default async function Page(props: {
         </header>
         <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
-            <Button className="ybutton secondary" path={user.resume}>
+            <Button className="bg-ytextdark text-ylightblue" path={user.resume}>
               Resume.pdf
             </Button>
           ) : (
@@ -77,18 +77,18 @@ export default async function Page(props: {
         <Text title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
-              <BadgeButton key={i.name} href={i.href} badge={i.badge}>
+              <SpanButton key={i.name} href={i.href} badge={i.badge}>
                 {i.name}
-              </BadgeButton>
+              </SpanButton>
             ))}
           </div>
         </Text>
         <Text title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools?.map((i) => (
-              <BadgeButton key={i.name} href={i.href} badge={i.badge}>
+              <SpanButton key={i.name} href={i.href} badge={i.badge}>
                 {i.name}
-              </BadgeButton>
+              </SpanButton>
             ))}
           </div>
         </Text>
@@ -173,7 +173,7 @@ export default async function Page(props: {
         {user.learn && (
           <Text title="Learning goals">
             {user.learn.map((i) => {
-              return <BadgeButton key={i.name}>{i.name}</BadgeButton>;
+              return <SpanButton key={i.name}>{i.name}</SpanButton>;
             })}
           </Text>
         )}
