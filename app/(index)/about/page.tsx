@@ -21,7 +21,7 @@ export default function About() {
                 src={i.avatar}
                 width={176}
                 height={176}
-                className=" size-16 md:size-44 group-hover/item:scale-[1.01] rounded-full duration-200 transition-transform transform-gpu"
+                className=" size-16 md:size-44 group-hover/item:scale-[1.01]  duration-200 transition-transform transform-gpu"
                 alt={i.name}
               />
               <figcaption className="transition grow py-0.5 md:text-center text-yask">

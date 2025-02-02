@@ -32,7 +32,7 @@ export default async function Page(props: {
       <AnimateLayout className="container">
         <header className="text-center relative rounded-xl pt-4">
           <Image
-            className="inline-block mb-2 rounded-full"
+            className="inline-block mb-2"
             src={user.avatar}
             width={80}
             height={80}
@@ -42,13 +42,13 @@ export default async function Page(props: {
           <Link href={`mailto:${user.email}`} className="ylink text-base">
             {user.email}
           </Link>
-          <blockquote className="absolute hidden md:block top-0 text-base right-0 italic text-left max-w-xs">
+          {/* <blockquote className="absolute hidden md:block top-0 text-base right-0 italic text-left max-w-xs">
             {user.tagline} Feel free to{" "}
             <Link href={user.email} className="ylink ">
               drop me a line
             </Link>
             !
-          </blockquote>
+          </blockquote> */}
         </header>
         <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
