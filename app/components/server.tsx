@@ -339,7 +339,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 export function Footer() {
   return (
     <p className="text-sm text-center mt-8 mb-8">
-      Copyright © 2023—2025 Yask.. <br /> Thanks:{" "}
+      Copyright © 2023—2025 Yaskevich. <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="ylink">
         React
       </Link>

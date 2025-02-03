@@ -33,7 +33,7 @@
 
   --text-5xl: 2.5rem;
   --text-5xl--line-height: 3.5rem;
-      --text-5xl--letter-spacing: -0.022em;
+  --text-5xl--letter-spacing: -0.022em;
 
   --font-*: initial;
   --font-sans: var(--font-inter);
