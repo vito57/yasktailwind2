@@ -32,7 +32,7 @@ export default async function Page(props: {
       <AnimateLayout className="container">
         <header className="text-center relative rounded-xl pt-4">
           <Image
-            className="inline-block mb-2"
+            className="inline-block mb-2 rounded-full"
             src={user.avatar}
             width={80}
             height={80}
