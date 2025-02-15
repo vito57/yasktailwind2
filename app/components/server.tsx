@@ -503,9 +503,7 @@ export function ArticleHeroSection({
           <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
           <h1 className="text-2xl font-display md:text-5xl mb-2 ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
-          {credits && (
-            <p className="text-sm tracking-widest mb-4 ">{credits}</p>
-          )}
+          {credits && <p className="text-sm  mb-4 ">{credits}</p>}
           <Button
             className="ybutton secondary w-full md:w-auto"
             path={buttonUrl}
