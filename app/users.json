@@ -39,6 +39,7 @@
       {"name":"Accessibility",  "href":"https://doka.guide/a11y/", "badge":"new"}
     ],
     "tools": [
+      {"name":"Play", "href":"https://createwithplay.com/", "badge":"new"},
       {"name":"Penpot","href":"https://penpot.app","badge":"new"},
       {"name":"Figma","href":"https://figma.com", "badge":""},
       {"name":"Framer","href":"https://www.framer.com/", "badge":""},
