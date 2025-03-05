@@ -4,7 +4,6 @@ import {
   Text,
   ArticleFigure,
   Section,
- 
   ArticleHeader,
   BodyImage,
   Summary,
@@ -31,7 +30,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" >
+        <Section id="about">
           <Text title="About">
             <p>
               Design a native application for IOS. For mobile devices and
@@ -62,7 +61,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/starcios/3.png" alt="Starc Mobile" />
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/starcios/f1.png"
               alt="Starc Mobile"
@@ -70,9 +69,9 @@ const Page = () => {
               height={5790}
               className="bg-transparent"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
-        <Section id="tablet" >
+        <Section id="tablet">
           <Text title="Tablet experience">
             <p></p>
           </Text>
@@ -91,15 +90,17 @@ const Page = () => {
               width={3501}
               height={1776}
               alt="Starc tablet"
-             
             />
           </ArticleFigure>
         </Section>
         <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2021" client="Starc" link="https://starc.app/"/>
-
-            
+            <Summary
+              designer="vitaly"
+              year="2021"
+              client="Starc"
+              link="https://starc.app/"
+            />
           </Text>
         </Section>
       </Article>

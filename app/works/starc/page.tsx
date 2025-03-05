@@ -4,7 +4,6 @@ import {
   Text,
   ArticleFigure,
   Section,
- 
   ArticleHeader,
   BodyImage,
   Summary,
@@ -31,7 +30,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </ArticleHeader>
-        <Section id="about" >
+        <Section id="about">
           <Text title="About">
             <p>
               Design a native application for Android. For mobile devices and
@@ -63,9 +62,9 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/starc/3.png" alt="Starc Mobile" />
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage src="/works/starc/f1.png" alt="Starc Mobile" />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <Section id="tablet">
           <Text title="Tablet experience">
@@ -80,15 +79,18 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/starc/6.png" alt="Starc tablet" />
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage src="/works/starc/f2.png" alt="Starc tablet" />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <Section id="summary">
           <Text title="Summary">
-          <Summary designer="vitaly" year="2021" client="Starc" link="https://starc.app/"/>
-
-           
+            <Summary
+              designer="vitaly"
+              year="2021"
+              client="Starc"
+              link="https://starc.app/"
+            />
           </Text>
         </Section>
       </Article>
