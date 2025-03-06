@@ -84,14 +84,14 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/starcios/6.png" alt="Starc tablet" />
           </ArticleFigure>
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/starcios/f2.png"
               width={3501}
               height={1776}
               alt="Starc tablet"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <Section id="summary">
           <Text title="Summary">
