@@ -76,15 +76,7 @@
     "path": "/works/domkino",
     "date": "2019"
   },
-  {
-    "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
-    "coverVideo": false,
-    "title": "BowlersLink",
-    "by": ["vitaly"],
-    "type": "Web Design",
-    "path": "/works/bowlerslink",
-    "date": "2024"
-  },
+
   {
     "cover": { "url": "/img/bober.png", "videoUrl": "" },
 

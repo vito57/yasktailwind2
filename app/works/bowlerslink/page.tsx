@@ -20,7 +20,10 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
+        <Section>
+          <h1 className="text-2xl text-center text-white py-6">We are working on the presentation. It will appear soon</h1>
+        </Section>
+        {/* <ArticleHeader>
           <ArticleFigure>
             <BodyImage
               src="/works/bowlerslink/cover.png"
@@ -48,9 +51,7 @@ const Page = () => {
             />
           </ArticleFigure>
 
-          {/* <ArticleFigure figcaption="News section">
-            <BodyImage src="/works/bowlerslink/news.png" alt="News" />
-          </ArticleFigure> */}
+       
           <ArticleFigure>
             <BodyImage src="/works/bowlerslink/mobile1.png" alt="Mobile" />
           </ArticleFigure>
@@ -63,7 +64,7 @@ const Page = () => {
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" client="BlackSheep" />
           </Text>
-        </Section>
+        </Section> */}
       </Article>
     </AnimateLayout>
   );
