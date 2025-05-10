@@ -79,6 +79,7 @@ export function BodyColor({ children }: BodyColorProps) {
     "/works/pobeda",
     "/works/riveo",
     "/works/restevents",
+    "/works/taytega"
   ];
   const colorClass = dark.includes(pathname)
     ? "dark bg-zinc-950 text-ytextdark"

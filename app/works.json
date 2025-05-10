@@ -1,9 +1,16 @@
-[  
+[      {
+  "cover": { "url": "/img/taytega.png", "videoUrl": "" },
+  "title": "Taytega AG",
+  "by": ["vitaly"],
+  "type": "Design, Branding",
+  "path": "/works/taytega",
+  "date": "2024"
+},
     {
     "cover": { "url": "/img/chess.png", "videoUrl": "" },
     "title": "Mikhail Tal Chess",
     "by": ["vitaly"],
-    "type": "Design",
+    "type": "Design, Branding",
     "path": "/works/chess",
     "date": "2024"
   },
