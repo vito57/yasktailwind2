@@ -435,7 +435,7 @@ interface VideoProps {
 }
 export function Video({ width, poster, height, src }: VideoProps) {
   return (
-    <Suspense fallback={<p>Loading video...</p>}>
+   
       <video
         className="w-full"
         width={width}
@@ -451,7 +451,7 @@ export function Video({ width, poster, height, src }: VideoProps) {
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </Suspense>
+   
   );
 }
 //END VIDEO
