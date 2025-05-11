@@ -1,4 +1,11 @@
 [      {
+  "cover": { "url": "/img/aides.png", "videoUrl": "" },
+  "title": "Aides App",
+  "by": ["vitaly"],
+  "type": "Design, IOS",
+  "path": "/works/aides",
+  "date": "2025"
+},{
   "cover": { "url": "/img/taytega.png", "videoUrl": "" },
   "title": "Taytega AG",
   "by": ["vitaly"],

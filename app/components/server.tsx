@@ -431,13 +431,13 @@ interface VideoProps {
   width?: number;
   height?: number;
   src: string;
-  poster: string;
+  poster?: string;
 }
-export function Video({ width = 800, poster, height = 600, src }: VideoProps) {
+export function Video({ width, poster, height, src }: VideoProps) {
   return (
     <Suspense fallback={<p>Loading video...</p>}>
       <video
-        className="w-full ease-in -z-10 object-cover group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey "
+        className="w-full"
         width={width}
         height={height}
         poster={poster}
