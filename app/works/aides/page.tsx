@@ -41,7 +41,7 @@ const Page = () => {
             </p>
           </Text>
   
-          <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat">
+          <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
               <Video
               width={1600}
               height={1200}
@@ -84,23 +84,32 @@ const Page = () => {
               caption: "[fig 7] Character page and user profile. Dark mode",
             }}
           />
+                     <ArticleImageSection
+            height={954}
+            className="bg-transparent"
+            image1={{
+              src: "/works/aides/aides-list.png",
+              caption: "[fig 8] Chats list",
+            }}
+            image2={{
+              src: "/works/aides/aides-list-black.png",
+              caption: "[fig 9] Chats list. Dark mode",
+            }}
+          />
  <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
               src: "/works/aides/aides-chat.png",
-              caption: "[fig 8] Chat",
+              caption: "[fig 10] Chat",
             }}
             image2={{
               src: "/works/aides/aides-chat-black.png",
-              caption: "[fig 9] Chat. Dark mode",
+              caption: "[fig 11] Chat. Dark mode",
             }}
           />
 
-      
-
         </Section>
-
         <Section id="summary">
           <Text title="Summary">
             <Summary designer="vitaly" year="2025" client="SD" />
