@@ -28,9 +28,7 @@ export default function WorkLayout({
                 poster={i.cover.url}
                 imageAlt={i.title}
                 //title={i.title}
-               // type={i.type}
-                isVideo={!!i.cover.videoUrl}
-                videoUrl={i.cover.videoUrl}
+                // type={i.type}
               />
             );
           })}

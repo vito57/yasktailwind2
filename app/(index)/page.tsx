@@ -15,10 +15,8 @@ export default function Works() {
               imageAlt={i.title}
               title={i.title}
               poster={i.cover.url}
-              isVideo={!!i.cover.videoUrl}
               type={i.type}
               testimonials={i.testimonials}
-              videoUrl={i.cover.videoUrl}
             />
           );
         })}

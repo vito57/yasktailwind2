@@ -130,8 +130,6 @@ export default async function Page(props: {
                   imageAlt={i.title}
                   title={i.title}
                   poster={i.cover.url}
-                  isVideo={!!i.cover.videoUrl}
-                  videoUrl={i.cover.videoUrl}
                 />
               );
             })}
