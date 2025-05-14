@@ -3,6 +3,7 @@ import Image from "next/image";
 import dribbble from "../../public/dribbble.svg";
 import ui8 from "../../public/ui8.svg";
 import { Children, Suspense } from "react";
+
 //shimmer
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -382,8 +383,7 @@ interface portfolioItemProps {
   title?: string;
   type?: string;
   poster: string;
-  isVideo?: boolean;
-  videoUrl: string;
+
   testimonials?:
     | { testimonial: string; user: string; img: string; role: string }
     | undefined;
@@ -396,9 +396,6 @@ export function PortfolioItem({
   title,
   type,
   testimonials,
-  videoUrl,
-  poster,
-  isVideo = false,
 }: portfolioItemProps) {
   return (
     <figure key={keyNum} className="group/item">
@@ -435,26 +432,25 @@ interface VideoProps {
 }
 export function Video({ width, poster, height, src }: VideoProps) {
   return (
-   
-      <video
-        className="w-full"
-        width={width}
-        height={height}
-        poster={poster}
-        controls={false}
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-   
+    <video
+      className="w-full"
+      width={width}
+      height={height}
+      poster={poster}
+      controls={false}
+      playsInline
+      autoPlay
+      muted
+      loop
+      preload="none"
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   );
 }
 //END VIDEO
+
 //ARTICLE IMAGE
 interface ArticleFigureProps {
   figcaption?: string;

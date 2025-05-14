@@ -11,11 +11,10 @@ import {
   ArticleImageGrid,
   Video,
 } from "../../components/server";
-
+import { Suspense } from "react";
 export const metadata = {
   title: "Ai Aides Concept Design",
-  description:
-    "Artificial intelligence aides",
+  description: "Artificial intelligence aides",
 };
 
 const Page = () => {
@@ -36,19 +35,22 @@ const Page = () => {
         <Section id="about">
           <Text title="About">
             <p>
-            Native IOS app design concept. The application allows you to create characters, customize them, have a chat with them. The task is to quickly make a design concept and test ideas for a native application with AI assistants.
-            At the first stage, basic character mechanics and chat were implemented. 
+              Native IOS app design concept. The application allows you to
+              create characters, customize them, have a chat with them. The task
+              is to quickly make a design concept and test ideas for a native
+              application with AI assistants. At the first stage, basic
+              character mechanics and chat were implemented.
             </p>
           </Text>
-  
+
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
-              <Video
+            <Video
               width={1600}
               height={1200}
-                src="/works/aides/aides.mp4"
-              />
-            </ArticleFigure>
-    <ArticleImageSection
+              src="https://yask.vercel.app/works/aides/aides.mp4"
+            />
+          </ArticleFigure>
+          <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
@@ -60,7 +62,7 @@ const Page = () => {
               caption: "[fig 3] Main screen. Dark mode",
             }}
           />
-            <ArticleImageSection
+          <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
@@ -72,7 +74,7 @@ const Page = () => {
               caption: "[fig 5] Context menu and notification. Dark mode",
             }}
           />
-                 <ArticleImageSection
+          <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
@@ -84,7 +86,7 @@ const Page = () => {
               caption: "[fig 7] Character page and user profile. Dark mode",
             }}
           />
-                     <ArticleImageSection
+          <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
@@ -96,7 +98,7 @@ const Page = () => {
               caption: "[fig 9] Chats list. Dark mode",
             }}
           />
- <ArticleImageSection
+          <ArticleImageSection
             height={954}
             className="bg-transparent"
             image1={{
@@ -108,7 +110,6 @@ const Page = () => {
               caption: "[fig 11] Chat. Dark mode",
             }}
           />
-
         </Section>
         <Section id="summary">
           <Text title="Summary">
