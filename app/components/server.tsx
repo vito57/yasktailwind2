@@ -163,7 +163,7 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
   return (
     <div className="absolute ytestimonials flex w-9 h-9 z-10 overflow-visible flex-col top-1 right-1">
       <label
-        className="ytestimonials_button has-[:checked]:bg-ylime cursor-pointer peer relative inline-block fill-ylime has-[:checked]:fill-yred rounded-full p-1.5 hover:scale-105 transform-gpu transition-transform bg-yred group primary
+        className="ytestimonials_button has-checked:bg-ylime cursor-pointer peer relative inline-block fill-ylime has-checked:fill-yred rounded-full p-1.5 hover:scale-105 transform-gpu transition-transform bg-yred group primary
         "
       >
         <input type="checkbox" className="invisible hidden peer" />
@@ -198,7 +198,7 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
           />
         </svg>
       </label>
-      <div className="hidden flex-col peer-hover:flex peer-has-[:checked]:flex items-end ytestimonials_testimonial">
+      <div className="hidden flex-col peer-hover:flex peer-has-checked:flex items-end ytestimonials_testimonial">
         <svg
           width="20"
           height="10"

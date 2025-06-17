@@ -45,7 +45,7 @@
 
   --font-*: initial;
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-cousine);
+  --font-mono: var(--font-firacode);
   --font-display: var(--font-serotiva);
 
   
@@ -59,6 +59,7 @@
   --color-yblue: #84A5FF;
   --color-yask: #050884;
   --color-ylightblue: #080bd0;
+  --color-ylightgrey: #f2f2f2;
 }
 
 @utility container {
@@ -144,6 +145,8 @@
   }
   /*  end gradient animation on header */
 
+/* Buttons */
+
   .ybutton {
     @apply text-sm text-center my-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue;
   }
@@ -153,6 +156,9 @@
   .ybutton.secondary {
     @apply bg-ytextdark hover:bg-[#B2C4F9];
   }
+
+  /* Headlines */
+
   .h1{
     @apply text-5xl
   }
@@ -171,6 +177,59 @@
   .h6{
     @apply text-base font-bold
   }
+/* Code formating */
+    :not(pre)>code,
+    code {@apply bg-ylightgrey px-0.5 inline-block}
+
+
+    /* Meter */
+        meter {
+          
+          --background:var(--color-black);
+          --optimum: var(--color-ylime);
+          --sub-optimum: var(--color-ybrown);
+          --sub-sub-optimum: var(--color-yred);
+    
+          /* The gray background in Firefox */
+          background: var(--background);
+          @apply inline-block rounded-full;
+        }
+    
+        /* The gray background in Chrome, etc. */
+        meter::-webkit-meter-bar {
+          background: var(--color-white);
+          @apply rounded-full;
+        }
+    
+        /* The green (optimum) bar in Firefox */
+        meter:-moz-meter-optimum::-moz-meter-bar {
+          background: var(--optimum);
+        }
+    
+        /* The green (optimum) bar in Chrome etc. */
+        meter::-webkit-meter-optimum-value {
+          background: var(--optimum);
+        }
+    
+        /* The yellow (sub-optimum) bar in Firefox */
+        meter:-moz-meter-sub-optimum::-moz-meter-bar {
+          background: var(--sub-optimum);
+        }
+    
+        /* The yellow (sub-optimum) bar in Chrome etc. */
+        meter::-webkit-meter-suboptimum-value {
+          background: var(--sub-optimum);
+        }
+    
+        /* The red (even less good) bar in Firefox */
+        meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+          background: var(--sub-sub-optimum);
+        }
+    
+        /* The red (even less good) bar in Chrome etc. */
+        meter::-webkit-meter-even-less-good-value {
+          background: var(--sub-sub-optimum);
+        }
 }
 
 @layer base {
