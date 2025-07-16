@@ -34,37 +34,41 @@ const Page = () => {
           <Text title="About">
             <p>Refactoring UI/UX of Riveo app</p>
           </Text>
-          {/* <ArticleFigure>
-            <BodyImage src="/works/riveo/about.png" alt="riveo main" />
-          </ArticleFigure> */}
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/review.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/newui.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/editor.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/preview_mode.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/share.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/create.png" alt="riveo main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/riveo/preview.png" alt="riveo main" />
           </ArticleFigure>
         </Section>
 
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

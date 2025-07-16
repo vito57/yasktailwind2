@@ -50,7 +50,7 @@ const Page = () => {
           </ArticleFigure>
         </Section>
 
-        <aside id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="vitaly"

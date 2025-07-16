@@ -216,7 +216,7 @@ const Page = () => {
           />
         </Section>
 
-        <aside id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" client="UESMO/Sber" />
           </Text>

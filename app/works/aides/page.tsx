@@ -116,11 +116,11 @@ const Page = () => {
             }}
           />
         </Section>
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2025" client="SD" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

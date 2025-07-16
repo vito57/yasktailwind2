@@ -53,37 +53,37 @@ const Page = () => {
               and simple interaction experience for all devices.
             </p>
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/1.png" alt="Starc Mobile" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/2.png" alt="Starc Mobile" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/3.png" alt="Starc Mobile" />
           </ArticleFigure>
-          {/* <ArticleFigure>
-            <BodyImage src="/works/starc/f1.png" alt="Starc Mobile" />
-          </ArticleFigure> */}
-        </Section>
-        <Section id="tablet">
+
+          <br />
           <Text title="Tablet experience">
             <p></p>
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/4.png" alt="Starc tablet" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/5.png" alt="Starc tablet" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starc/6.png" alt="Starc tablet" />
           </ArticleFigure>
-          {/* <ArticleFigure>
-            <BodyImage src="/works/starc/f2.png" alt="Starc tablet" />
-          </ArticleFigure> */}
         </Section>
-        <Section id="summary">
+        <aside id="summary">
           <Text title="Summary">
             <Summary
               designer="vitaly"
@@ -92,7 +92,7 @@ const Page = () => {
               link="https://starc.app/"
             />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

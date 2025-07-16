@@ -50,7 +50,7 @@ const Page = () => {
               same as Bootstrap icons. Makes your website or app look different.
             </p>
           </Text>
-
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/iconsaur/1.png",
@@ -59,6 +59,7 @@ const Page = () => {
               src: "/works/iconsaur/2.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/iconsaur/3.png",
@@ -67,6 +68,7 @@ const Page = () => {
               src: "/works/iconsaur/4.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/iconsaur/5.png",
@@ -75,6 +77,7 @@ const Page = () => {
               src: "/works/iconsaur/6.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/iconsaur/7.png",
@@ -85,11 +88,11 @@ const Page = () => {
           />
         </Section>
 
-        <Section id="summary" className="container">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="gala" year="2024" client="UI8" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

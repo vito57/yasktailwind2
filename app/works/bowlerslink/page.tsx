@@ -59,7 +59,7 @@ const Page = () => {
           ></ArticleImageSection>
         </Section>
 
-        <aside id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" client="BlackSheep" />
           </Text>

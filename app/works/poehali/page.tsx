@@ -19,7 +19,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/poehali/bg.png')] bg-cover">
+        <ArticleHeader className="bg-slate-900">
           <ArticleFigure>
             <BodyImage
               src="/works/poehali/cover.png"
@@ -34,25 +34,29 @@ const Page = () => {
           <Text title="About">
             <p>Adaptive web site for TV channel</p>
           </Text>
-
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/poehali/main.png" alt="Restevents main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/poehali/2.png" alt="Poehali main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/poehali/adaptive1.png" alt="Poehali main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/poehali/adaptive2.png" alt="Poehali main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/poehali/styles.png" alt="Poehali main" />
           </ArticleFigure>
         </Section>
 
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="vitaly"
@@ -61,7 +65,7 @@ const Page = () => {
               link="https://www.poehali.tv/"
             />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

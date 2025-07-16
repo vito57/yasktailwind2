@@ -63,9 +63,8 @@ export default function Flamingo() {
               company today.
             </p>
           </Text>
-        </Section>
-        {/* GUIDE */}
-        <Section id="guides">
+          <br />
+
           <Text title="Process">
             <ol className="list-decimal list-inside">
               <li>Defining a goals and finding a problems</li>
@@ -83,6 +82,7 @@ export default function Flamingo() {
               <li>Make process of scaling, contributing and review</li>
             </ol>
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/principles.png"
@@ -91,6 +91,7 @@ export default function Flamingo() {
               alt="Flamingo"
             />
           </ArticleFigure>
+          <br />
           <Text>
             Principles are the most important part of any system. They determine
             the shape of the future product, and the product review process will
@@ -100,17 +101,17 @@ export default function Flamingo() {
             view a good solution as being as simple, predictable, fast to
             produce, and consistent in style as possible.
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/list_and_flow.png"
               width={1120}
               height={500}
+              className="bg-slate-100"
               alt="Flamingo"
             />
           </ArticleFigure>
-        </Section>
-        {/* COMPONENTS */}
-        <Section id="components">
+          <br />
           <Text title="Guides">
             <p>
               The Style Guide also served as a home for product design
@@ -122,29 +123,49 @@ export default function Flamingo() {
               standards.
             </p>
           </Text>
+          <br />
           <ArticleFigure>
-            <BodyImage src="/works/flamingo/styles.png" alt="Flamingo" />
+            <BodyImage
+              src="/works/flamingo/styles.png"
+              className="bg-slate-100"
+              alt="Flamingo"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/guides.png"
               width={1120}
               height={600}
+              className="bg-slate-100"
               alt="Flamingo"
             />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
-            <BodyImage src="/works/flamingo/components.png" alt="Flamingo" />
+            <BodyImage
+              src="/works/flamingo/components.png"
+              className="bg-slate-100"
+              alt="Flamingo"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
-            <BodyImage src="/works/flamingo/components2.png" alt="Flamingo" />
+            <BodyImage
+              className="bg-slate-100"
+              src="/works/flamingo/components2.png"
+              alt="Flamingo"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
-            <BodyImage src="/works/flamingo/components3.png" alt="Flamingo" />
+            <BodyImage
+              className="bg-slate-100"
+              src="/works/flamingo/components3.png"
+              alt="Flamingo"
+            />
           </ArticleFigure>
-        </Section>
-        {/* WORKFOW */}
-        <Section id="workflow">
+          <br />
           <Text title="Examples">
             <p>
               In addition to documenting components and their usage, I crafted
@@ -154,7 +175,9 @@ export default function Flamingo() {
               and education.
             </p>
           </Text>
+          <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{
               src: "/works/flamingo/u1.png",
               //caption: "Representing function as node",
@@ -164,7 +187,9 @@ export default function Flamingo() {
               //caption: "Wireframes",
             }}
           />
+          <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{
               src: "/works/flamingo/u3.png",
               //caption: "Representing function as node",
@@ -174,7 +199,9 @@ export default function Flamingo() {
               //caption: "Wireframes",
             }}
           />
+          <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{
               src: "/works/flamingo/u5.png",
               //caption: "Representing function as node",
@@ -185,11 +212,11 @@ export default function Flamingo() {
             }}
           />
         </Section>
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2021" client="Sber" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

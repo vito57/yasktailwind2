@@ -19,7 +19,6 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-
         <ArticleHeader>
           <ArticleFigure>
             <BodyImage
@@ -37,39 +36,79 @@ const Page = () => {
               Adaptive website and logo design for engineering company Taytega
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 1] Branding">
-            <BodyImage src="/works/taytega/taytega-logo.png" alt="Taytega logo" />
-            
+            <BodyImage
+              src="/works/taytega/taytega-logo.png"
+              alt="Taytega logo"
+              className="bg-stone-900"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="[fig 2] Logo">
-            <BodyImage src="/works/taytega/taytega-logo-2.png" alt="Taytega logo" />
+            <BodyImage
+              src="/works/taytega/taytega-logo-2.png"
+              alt="Taytega logo"
+              className="bg-stone-900"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="[fig 3] Main and inner page">
-            <BodyImage src="/works/taytega/taytega1.png" alt="Main and inner page" />
+            <BodyImage
+              src="/works/taytega/taytega1.png"
+              alt="Main and inner page"
+              className="bg-stone-900"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="[fig 4] Inner pages">
-            <BodyImage src="/works/taytega/taytega2.png" alt="Inner pages" />
+            <BodyImage
+              src="/works/taytega/taytega2.png"
+              className="bg-stone-900"
+              alt="Inner pages"
+            />
           </ArticleFigure>
+          <br />
           <ArticleImageSection
-            image1={{ src: "/works/taytega/taytega3.png", caption:"[fig 5] Inner pages" }}
-            image2={{ src: "/works/taytega/taytega4.png", caption:"[fig 6] Inner pages" }}
+            className="bg-stone-900"
+            image1={{
+              src: "/works/taytega/taytega3.png",
+              caption: "[fig 5] Inner pages",
+            }}
+            image2={{
+              src: "/works/taytega/taytega4.png",
+              caption: "[fig 6] Inner pages",
+            }}
           ></ArticleImageSection>
+          <br />
 
-       
-       
           <ArticleFigure figcaption="[fig 7] Overview">
-            <BodyImage src="/works/taytega/taytega5.png" alt="Work overview" />
+            <BodyImage
+              src="/works/taytega/taytega5.png"
+              className="bg-stone-900"
+              alt="Work overview"
+            />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="[fig 8] Mobile">
-            <BodyImage src="/works/taytega/taytega7.png" alt="Mobile design" />
+            <BodyImage
+              className="bg-stone-900"
+              src="/works/taytega/taytega7.png"
+              alt="Mobile design"
+            />
           </ArticleFigure>
         </Section>
 
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
-            <Summary designer="vitaly" year="2024" link={"https://taytega.ru/"} client="BlackSheep" />
+            <Summary
+              designer="vitaly"
+              year="2024"
+              link={"https://taytega.ru/"}
+              client="BlackSheep"
+            />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

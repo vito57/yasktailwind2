@@ -35,7 +35,8 @@ const Page = () => {
           <Text title="About">
             <p>Logo and Adaptive web site for catering company</p>
           </Text>
-          <div className="columns-2 mb-6">
+          <br />
+          <div className="columns-2">
             <ArticleFigure>
               <BodyImage
                 width={1440}
@@ -73,6 +74,7 @@ const Page = () => {
               />
             </ArticleFigure>
           </div>
+          <br />
           <ArticleFigure>
             <BodyImage
               className="bg-transparent"
@@ -82,11 +84,11 @@ const Page = () => {
             />
           </ArticleFigure>
         </Section>
-        <Section id="summary">
+        <aside id="summary">
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" client="black-sheep.ru" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

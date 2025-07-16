@@ -41,9 +41,7 @@ const Page = () => {
               and IOS experience was made.
             </p>
           </Text>
-        </Section>
-
-        <Section id="mobile">
+          <br />
           <Text title="Mobile experience">
             <p>
               The Starc application reinventing the screenwriting software. It
@@ -52,48 +50,36 @@ const Page = () => {
               experience for all devices.
             </p>
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/1.png" alt="Starc Mobile" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/2.png" alt="Starc Mobile" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/3.png" alt="Starc Mobile" />
           </ArticleFigure>
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/starcios/f1.png"
-              alt="Starc Mobile"
-              width={2068}
-              height={5790}
-              className="bg-transparent"
-            />
-          </ArticleFigure> */}
-        </Section>
-        <Section id="tablet">
+          <br />
           <Text title="Tablet experience">
             <p></p>
           </Text>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/4.png" alt="Starc tablet" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/5.png" alt="Starc tablet" />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage src="/works/starcios/6.png" alt="Starc tablet" />
           </ArticleFigure>
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/starcios/f2.png"
-              width={3501}
-              height={1776}
-              alt="Starc tablet"
-            />
-          </ArticleFigure> */}
         </Section>
-        <Section id="summary">
+        <aside id="summary">
           <Text title="Summary">
             <Summary
               designer="vitaly"
@@ -102,7 +88,7 @@ const Page = () => {
               link="https://starc.app/"
             />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

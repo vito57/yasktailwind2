@@ -37,30 +37,33 @@ const Page = () => {
               World War
             </p>
           </Text>
-
+          <br />
           <ArticleFigure figcaption="New main page">
             <BodyImage src="/works/pobeda/main.png" alt="Pobeda main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="Articles">
             <BodyImage src="/works/pobeda/articles.png" alt="Pobeda articles" />
           </ArticleFigure>
-
+          <br />
           <ArticleFigure figcaption="Article">
             <BodyImage src="/works/pobeda/article.png" alt="Article" />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="Schedule">
             <BodyImage src="/works/pobeda/schedule.png" alt="Schedule" />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="Mobile adoptation">
             <BodyImage src="/works/pobeda/mobile.png" alt="Bober main" />
           </ArticleFigure>
         </Section>
 
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="vitaly" year="2014" client="PKVS" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

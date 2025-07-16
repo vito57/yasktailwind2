@@ -138,11 +138,11 @@ const Page = () => {
           </ArticleFigure>
         </Section>
 
-        <Section id="summary" className="container">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary designer="gala" year="2024" client="UI8" />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

@@ -40,6 +40,7 @@ const Page = () => {
               many more. Made by a small team of 5 people. My role is designer.
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/main_desktop.png",
@@ -48,20 +49,12 @@ const Page = () => {
               src: "/works/karusel/games_desktop.png",
             }}
           />
-          {/* <ArticleFigure>
-            <BodyImage src="/works/karusel/main_desktop.png" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/karusel/games_desktop.png" />
-          </ArticleFigure> */}
-          {/* <ArticleFigure>
-            <BodyImage src="/works/karusel/video_desktop.png" />
-          </ArticleFigure> */}
-        </Section>
-        <Section id="mobile">
+
+          <br />
           <Text title="Mobile">
             <p>The website is fully responsive.</p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/main_mobile.png",
@@ -70,6 +63,7 @@ const Page = () => {
               src: "/works/karusel/article_mobile.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/mobile_menu.png",
@@ -78,14 +72,14 @@ const Page = () => {
               src: "/works/karusel/games_mobile.png",
             }}
           />
-        </Section>
-        <Section id="styles">
+          <br />
           <Text title="Styles">
             <p>
               The design is based on Bootstrap. Prepared Bootstrap theme,
               created wireframes and prototypes.
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/style_guide.png",
@@ -94,15 +88,14 @@ const Page = () => {
               src: "/works/karusel/templates.png",
             }}
           />
-        </Section>
-        {/* BRANDING */}
-        <Section id="content">
+          <br />
           <Text title="Content design">
             <p>
               I created and drew tons of 2d and 3d content for a large number of
               parallax headers
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/content.png",
@@ -111,14 +104,14 @@ const Page = () => {
               src: "/works/karusel/parallax.png",
             }}
           />
-
+          <br />
           <Text>
             <p>
               I designed and code the adaptive parallax Hero header. 2 types of
               such headers have been made - for pages and for sections
             </p>
           </Text>
-
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/decorator_header.gif",
@@ -127,7 +120,7 @@ const Page = () => {
               src: "/works/karusel/contest_header.gif",
             }}
           />
-
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/pitomets_header.gif",
@@ -136,6 +129,7 @@ const Page = () => {
               src: "/works/karusel/sadovod_header.gif",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/karusel/blue.gif",
@@ -145,7 +139,7 @@ const Page = () => {
             }}
           />
         </Section>
-        <Section id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="vitaly"
@@ -158,7 +152,7 @@ const Page = () => {
 Adobe XD Prototype
               </Link> */}
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );
