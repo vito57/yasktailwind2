@@ -110,6 +110,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            className="bg-zinc-900"
             image1={{ src: "/works/drugcode/brand.png", caption: "[fig 6]" }}
             image2={{
               src: "/works/drugcode/brand-guide.png",
@@ -134,7 +135,11 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 8] Default system">
-            <BodyImage src="/works/drugcode/ui.png" alt="Drugcode ui" />
+            <BodyImage
+              src="/works/drugcode/ui.png"
+              className="bg-zinc-900"
+              alt="Drugcode ui"
+            />
           </ArticleFigure>
           <br />
           <Text title="">
@@ -146,7 +151,11 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 9] Drugcode styles">
-            <BodyImage src="/works/drugcode/style.png" alt="Drugcode styles" />
+            <BodyImage
+              src="/works/drugcode/style.png"
+              className="bg-zinc-900"
+              alt="Drugcode styles"
+            />
           </ArticleFigure>
           <br />
           <Text title="">
@@ -158,6 +167,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            className="bg-zinc-900"
             image1={{
               src: "/works/drugcode/letf_side_bar.png",
               caption: "[fig 10] Left sidebar",
@@ -179,6 +189,7 @@ const Page = () => {
           <br />
           <ArticleFigure figcaption="[fig 12] Right sidebar">
             <BodyImage
+              className="bg-zinc-900"
               src="/works/drugcode/right_side_bar.png"
               alt="Right sidebar"
             />
@@ -198,6 +209,7 @@ const Page = () => {
           <br />
           <ArticleFigure figcaption="[fig 13]">
             <BodyImage
+              className="bg-zinc-900"
               src="/works/drugcode/preview.png"
               alt="Drugcode preview"
             />

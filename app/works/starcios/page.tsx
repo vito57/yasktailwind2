@@ -52,15 +52,27 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/1.png" alt="Starc Mobile" />
+            <BodyImage
+              src="/works/starcios/1.png"
+              className="bg-slate-100"
+              alt="Starc Mobile"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/2.png" alt="Starc Mobile" />
+            <BodyImage
+              src="/works/starcios/2.png"
+              className="bg-slate-100"
+              alt="Starc Mobile"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/3.png" alt="Starc Mobile" />
+            <BodyImage
+              src="/works/starcios/3.png"
+              className="bg-slate-100"
+              alt="Starc Mobile"
+            />
           </ArticleFigure>
           <br />
           <Text title="Tablet experience">
@@ -68,15 +80,27 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/4.png" alt="Starc tablet" />
+            <BodyImage
+              src="/works/starcios/4.png"
+              className="bg-slate-100"
+              alt="Starc tablet"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/5.png" alt="Starc tablet" />
+            <BodyImage
+              src="/works/starcios/5.png"
+              className="bg-slate-100"
+              alt="Starc tablet"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/starcios/6.png" alt="Starc tablet" />
+            <BodyImage
+              src="/works/starcios/6.png"
+              className="bg-slate-100"
+              alt="Starc tablet"
+            />
           </ArticleFigure>
         </Section>
         <aside id="summary" className="container">
