@@ -98,7 +98,7 @@ const Page = () => {
             }}
             className="bg-[url('/works/drugcode/bg.png')] bg-cover"
           />
-
+          <br />
           <Text title="Branding">
             <p>
               When I joined in February 2019, the web service was in its
@@ -117,7 +117,7 @@ const Page = () => {
               caption: "[fig 7]",
             }}
           />
-
+          <br />
           <Text title="Style Guide">
             <p className="mb-8">
               I worked with our team and the Drugcode developers to craft a
@@ -221,7 +221,7 @@ const Page = () => {
               drag, resize, etc.
             </p>
           </Text>
-
+          <br />
           <Text title="Workflow">
             <ol className=" list-decimal list-inside">
               <li>
