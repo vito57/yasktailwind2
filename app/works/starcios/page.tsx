@@ -79,7 +79,7 @@ const Page = () => {
             <BodyImage src="/works/starcios/6.png" alt="Starc tablet" />
           </ArticleFigure>
         </Section>
-        <aside id="summary">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="vitaly"

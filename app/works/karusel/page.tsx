@@ -56,6 +56,8 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            height={1008}
+            className="bg-slate-100"
             image1={{
               src: "/works/karusel/main_mobile.png",
             }}
@@ -65,6 +67,8 @@ const Page = () => {
           />
           <br />
           <ArticleImageSection
+            height={1008}
+            className="bg-slate-100"
             image1={{
               src: "/works/karusel/mobile_menu.png",
             }}
@@ -81,6 +85,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{
               src: "/works/karusel/style_guide.png",
             }}
@@ -97,6 +102,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{
               src: "/works/karusel/content.png",
             }}
