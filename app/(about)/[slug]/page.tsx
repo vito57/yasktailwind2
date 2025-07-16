@@ -74,6 +74,7 @@ export default async function Page(props: {
         <Text title="About">
           <p>{user.about}</p>
         </Text>
+        <br />
         <Text title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
@@ -83,6 +84,7 @@ export default async function Page(props: {
             ))}
           </div>
         </Text>
+        <br />
         <Text title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools?.map((i) => (
@@ -92,6 +94,7 @@ export default async function Page(props: {
             ))}
           </div>
         </Text>
+        <br />
         <Text title="Experience">
           <dl className="mb-8">
             {user.experience.map((i) => (
@@ -103,15 +106,13 @@ export default async function Page(props: {
                   </Link>
                 </dt>
                 <dd key={i.date} className="mb-8">
-                  <p>{i.date}</p>
+                  <time>{i.date}</time>
                   <p>
-                    <span className="font-medium">Responsibilities:</span>{" "}
-                    {i.responsible}
+                    <em>Responsibilities:</em> {i.responsible}
                   </p>
                   {i.achievements && (
                     <p>
-                      <span className="font-medium">Achivments:</span>{" "}
-                      {i.achievements}
+                      <em>Achivments:</em> {i.achievements}
                     </p>
                   )}
                 </dd>
@@ -119,6 +120,7 @@ export default async function Page(props: {
             ))}
           </dl>
         </Text>
+        <br />
         <Text title="Projects">
           <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
             {userWorks.map((i) => {
@@ -135,6 +137,7 @@ export default async function Page(props: {
             })}
           </div>
         </Text>
+        <br />
         <Text title="Social links">
           <div className="flex gap-4 flex-wrap">
             {user.social.map((i) => (
@@ -144,6 +147,7 @@ export default async function Page(props: {
             ))}
           </div>
         </Text>
+        <br />
         {/* {user.awards && (
           <Text title="Awards">
             <div className="flex flex-wrap">
@@ -159,21 +163,38 @@ export default async function Page(props: {
         <Text title="Education">
           <p>{user.education}</p>
         </Text>
+        <br />
         {user.courses && (
-          <Text title="Courses">
-            <ul>
-              {user.courses.map((i) => {
-                return <li key={i}>{i}</li>;
+          <>
+            <Text title="Courses">
+              <ul>
+                {user.courses.map((i) => {
+                  return <li key={i}>{i}</li>;
+                })}
+              </ul>
+            </Text>
+            <br />
+          </>
+        )}
+        {user.languages && (
+          <>
+            <Text title="Languages">
+              {user.languages.map((i) => {
+                return <span key={i}>{i} </span>;
               })}
-            </ul>
-          </Text>
+            </Text>
+            <br />
+          </>
         )}
         {user.learn && (
-          <Text title="Learning goals">
-            {user.learn.map((i) => {
-              return <SpanButton key={i.name}>{i.name}</SpanButton>;
-            })}
-          </Text>
+          <>
+            <Text title="Learning goals">
+              {user.learn.map((i) => {
+                return <SpanButton key={i.name}>{i.name}</SpanButton>;
+              })}
+            </Text>
+            <br />
+          </>
         )}
         <Footer />
       </AnimateLayout>

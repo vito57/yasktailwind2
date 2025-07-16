@@ -29,10 +29,7 @@ export default function About() {
                 <p className=" text-sm">{i.occupation}</p>
               </figcaption>
               <div>
-                <Button
-                  path={i.path}
-                  className="inline-block whitespace-nowrap ybutton secondary"
-                >
+                <Button path={i.path} className=" secondary">
                   {" "}
                   Read more{" "}
                 </Button>
@@ -43,97 +40,90 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-6">
         <div className="md:w-4/12">
-          <h2 className="md:text-3xl text-2xl mb-8">
+          <h2 className="md:text-3xl text-2xl">
             <span className="text-yred">(a)</span>
             <br />
-            We are designers, with extensive work experience. We can help you
-            with design.
+            We are designers, with extensive work experience. We do:
           </h2>
+          <br />
           <dl>
-            <dt className="font-bold">Front-end design</dt>
-            <dd className="mb-8">
+            <dt>Front-end design</dt>
+            <dd>
               Design and frontend development together. The output is mockups
               (Figma or Penpot) and production ready code (Nextjs,Tailwind or
               HTML, CSS, JS).
             </dd>
-
-            <dt className="font-bold">UI/UX design</dt>
-            <dd className="mb-8">
+            <br />
+            <dt>UI/UX design</dt>
+            <dd>
               Desktop, mobile or web. The output is well ducumented mockups in
               Figma or Penpot.
             </dd>
-
-            <dt className="font-bold">Design systems</dt>
-            <dd className="mb-8">
+            <br />
+            <dt>Design systems</dt>
+            <dd>
               Design systems for any platform. Optimisation of design processes.
               Help to write documentation, mentoring, and consulting. Figma or
               Penpot in output.
             </dd>
-            <dt className="font-bold">Design icon systems</dt>
-            <dd className="mb-8">
+            <br />
+            <dt>Design icon systems</dt>
+            <dd>
               We design large and small icon sets, and develop icon systems.
             </dd>
-            <dt className="font-bold">Content design</dt>
-            <dd className="mb-8">
-              Illustrations, banners, graphics and animations
-            </dd>
+            <br />
+            <dt>Content design</dt>
+            <dd>Illustrations, banners, graphics and animations</dd>
           </dl>
         </div>
         <div className="md:w-3/12 ">
-          <h2 className="md:text-3xl text-2xl mb-8 ">
+          <h2 className="md:text-3xl text-2xl ">
             <span className="text-yred">(b)</span>
             <br />
             Principles.
           </h2>
-          <blockquote className="mb-8 px-2 py-1 border-l border-yask bg-slate-50 text-sm">
+          <br />
+          <blockquote className="text-sm">
             Everything we need — simple, <br /> everything complicated — not
             need.{" "}
           </blockquote>
+          <br />
           <dl className="text-base">
-            <dt className="font-bold ">Time respectful</dt>
-            <dd className="mb-8">
-              Dont waste your own and other peoples time.
-            </dd>
-
-            <dt className="font-bold">Robust design</dt>
-            <dd className="mb-8">
+            <dt>Time respectful</dt>
+            <dd>Dont waste your own and other peoples time.</dd>
+            <br />
+            <dt>Robust design</dt>
+            <dd>
               Understanding the product, following platform guidelines,
               understand technologies and process, makes the design reasonable
               and robustness.
             </dd>
-
-            <dt className="font-bold">Infinite learning</dt>
-            <dd className="mb-8">
-              To be in a good feet, keep an eye on technology.
-            </dd>
-            <dt className="font-bold">Humor</dt>
-            <dd className="mb-8">
-              Humor and good mood are the key to productivity. 😊
-            </dd>
+            <br />
+            <dt>Infinite learning</dt>
+            <dd>To be in a good feet, keep an eye on technology.</dd>
+            <br />
+            <dt>Humor</dt>
+            <dd>Humor and good mood are the key to productivity. 😊</dd>
           </dl>
         </div>
         <div className="md:w-3/12 ">
-          <h2 className="md:text-3xl text-2xl mb-8 ">
+          <h2 className="md:text-3xl text-2xl ">
             <span className="text-yred">(c)</span>
             <br />
             Contacts.
           </h2>
-          <p className="text-base mb-8">
-            Feel free to ask questions in any way convenient for you.
-          </p>
-          <ul className="text-base list-inside md:list-outside list-decimal">
-            <li className="mb-8">
-              <Button
-                className="ybutton secondary"
-                path="mailto:vito57rus@gmail.com"
-              >
+          <br />
+
+          <ul className="text-base list-none">
+            <li>
+              <Button path="mailto:vitalyyask@gmail.com">
                 vitalyyask@gmail.com
               </Button>
             </li>
             <li>
               <noindex>
                 <Button
-                  className="ybutton secondary"
+                  className="secondary"
                   rel="nofollow"
                   path="https://wa.me/79778192253"
                 >

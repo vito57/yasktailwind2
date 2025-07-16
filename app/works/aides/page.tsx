@@ -42,7 +42,7 @@ const Page = () => {
               character mechanics and chat were implemented.
             </p>
           </Text>
-
+          <br />
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
             <Video
               width={1600}
@@ -50,9 +50,10 @@ const Page = () => {
               src="https://yask.vercel.app/works/aides/aides.mp4"
             />
           </ArticleFigure>
+          <br />
           <ArticleImageSection
             height={954}
-            className="bg-transparent"
+            className="bg-slate-50"
             image1={{
               src: "/works/aides/aides-start.png",
               caption: "[fig 2] Main screen",
@@ -62,9 +63,10 @@ const Page = () => {
               caption: "[fig 3] Main screen. Dark mode",
             }}
           />
+          <br />
           <ArticleImageSection
             height={954}
-            className="bg-transparent"
+            className="bg-slate-50"
             image1={{
               src: "/works/aides/aides-context-notify.png",
               caption: "[fig 4] Context menu and notification",
@@ -74,6 +76,7 @@ const Page = () => {
               caption: "[fig 5] Context menu and notification. Dark mode",
             }}
           />
+          <br />
           <ArticleImageSection
             height={954}
             className="bg-transparent"
@@ -86,6 +89,7 @@ const Page = () => {
               caption: "[fig 7] Character page and user profile. Dark mode",
             }}
           />
+          <br />
           <ArticleImageSection
             height={954}
             className="bg-transparent"
@@ -98,6 +102,7 @@ const Page = () => {
               caption: "[fig 9] Chats list. Dark mode",
             }}
           />
+          <br />
           <ArticleImageSection
             height={954}
             className="bg-transparent"

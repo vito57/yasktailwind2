@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
+        <ArticleHeader className="bg-slate-50">
           <ArticleHeroSection
             underTitle="Bootsy Icons"
             buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
@@ -43,26 +43,28 @@ const Page = () => {
           <Text title="About">
             <p>Multiplatform interface icons set, based on Bootstrap</p>
           </Text>
-
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsy/1.png" }}
             image2={{
               src: "/works/bootsy/2.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsy/3.png" }}
             image2={{
               src: "/works/bootsy/4.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsy/5.png" }}
             image2={{
               src: "/works/bootsy/6.png",
             }}
           />
-
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/bootsy/f1.png"
@@ -72,7 +74,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </Section>
-        <Section id="summary" className="container">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="gala"
@@ -81,7 +83,7 @@ const Page = () => {
               link="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
             />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

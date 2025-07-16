@@ -3,7 +3,7 @@
     "name": "Vitaly",
     "email": "vitalyyask@gmail.com",
     "avatar": "/about/vitaly.png",
-    "occupation": "User Interface Designer",
+    "occupation": "Interface Designer",
     "resume": "/about/vitaly_yaskevich_sv.pdf",
     "tagline": "Hi! I can help with design systems, banners, landings & coding.",
     "path": "/vitaly",
@@ -64,23 +64,23 @@
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
         "date": "since 2021",
-        "responsible": "content creation, virtual assistant skills, scripting, design, flow, testing, systematization, theming and branding.",
-        "achievements": "design and prototype of the skill Sports, Journal, .etc. Launching commercial projects based on skills. Runet Prize 2021"
+        "responsible": "content creation; virtual assistant skills; scripting; design; flow; testing; systematization; theming and branding;",
+        "achievements": "designed and launched 3 applications(Sports, Journal, Tech News), launching commercial projects based on skills/apps, get Runet Award 2021"
       },
       {
         "position": "Designer",
         "place": "Sber",
         "placeLink": "https://www.sberbank.com",
         "date": "2019—2021",
-        "responsible": "a) systematization of the design process (design system), writing guidelines, implementation and development of components (IOS, Android, Web), internal team processes (review, design supervision, etc., creation and implementation); b) DrugCode - a platform for creating micro-applications in Sberdrug. Design, systematization, flow, processes.",
-        "achievements": "a) creating of a design system, systematization of the design process, implementation and description of the review process and the principles and metrics of the team’s work; b) Implementation of a component system in DrugCode, quality control, review of micro-applications from third-party developers, collection of information and addition to the library of components (IOS, Android, Web)."
+        "responsible": "a) systematization of the design process (design system); writing guidelines; implementation and development of components (IOS, Android, Web), internal team processes (review, design supervision, etc., creation and implementation); b) DrugCode - a platform for creating micro-applications in Sberdrug. Design, systematization, flow, processes.",
+        "achievements": "a) creating of a design system; systematization of the design process; implementation and description of the review process and the principles and metrics of the team’s work; b) implementation of a component system in DrugCode; quality control; review of micro-applications from third-party developers; collection of information and addition to the library of components (IOS, Android, Web);"
       },
       {
         "position": "Designer",
         "place": "PKVS",
         "placeLink": "https://www.karusel-tv.ru/",
         "date": "2015—2019",
-        "responsible": "user interaction design and interface design, responsive web design, front-end development, graphic design.",
+        "responsible": "user interaction design and interface design; responsive web design; front-end development; graphic design;",
         "achievements": "design and front-end development of karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru(Runet Award 2019), kanal-o.ru, poehali.tv, и etc."
       },
       {
@@ -88,7 +88,7 @@
         "place": "Art. Lebedev Studio",
         "placeLink": "https://www.artlebedev.ru/vetrov/",
         "date": "2013—2015",
-        "responsible": "scripting, design, flow, testing, systematization, theming and branding. Content products. Voice Interfaces.",
+        "responsible": "scripting; design; flow; testing; systematization; theming and branding; content products; voice interfaces;",
         "achievements": false
       },
       {
@@ -96,7 +96,7 @@
         "place": "Yask",
         "placeLink": "/",
         "date": "since 2008",
-        "responsible": "user interface design, coding, theming and branding"
+        "responsible": "user interface design; coding; theming and branding;"
       }
     ],
 
@@ -110,6 +110,7 @@
 
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
     "courses": ["MITx: Mobile Application Experiences, 2012"],
+    "languages": ["🇷🇺 Russian", "🇬🇧 English"],
     "learn":[      
        {"name":"Spline3d", "href":"", "badge":""},
        {"name":"Blender modeling", "href":"", "badge":""}
@@ -119,7 +120,7 @@
     "name": "Gala",
     "email": "gala57rus@yandex.ru",
     "avatar": "/about/gala.png",
-    "occupation": "Icon Designer, Illustrator",
+    "occupation": "Animation artist, Icon Designer, Illustrator",
     "resume": null,
     "tagline": "Hi! I can help with logo design, illustrations, icon systems.",
     "path": "/gala",
@@ -164,6 +165,7 @@
     "awards": ["🏆 UI8 featured product"],
     "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
     "courses": ["Animation artist. Merinov School"],
+    "languages": ["🇷🇺 Russian", "🇬🇧 English"],
     "learn":[       {"name":"Animation", "href":"", "badge":""}
 ]
 
@@ -209,7 +211,8 @@
     "education": "1494 elmentry school, since 2023",
 
     "courses": null,
-    "learn":[       {"name":"Painting", "href":"", "badge":""}
+    "languages": ["🇷🇺 Russian", "🇬🇧 English", "🇫🇷 Franch"],
+    "learn":[       {"name":"Painting", "href":"", "badge":""},{"name":"Franch language", "href":"", "badge":""}
 ]
   }
 ]

@@ -124,7 +124,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning={true}
-      className={`${inter.variable} ${serotiva.variable} ${firacode.variable} antialiased`}
+      className={`${inter.variable} ${serotiva.variable} ${jbm.variable} antialiased`}
     >
       <BodyColor>{children}</BodyColor>
       <Pwa />

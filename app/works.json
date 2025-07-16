@@ -5,13 +5,6 @@
   "type": "Design, IOS",
   "path": "/works/aides",
   "date": "2025"
-},{
-  "cover": { "url": "/img/taytega.png", "videoUrl": "" },
-  "title": "Taytega AG",
-  "by": ["vitaly"],
-  "type": "Design, Branding",
-  "path": "/works/taytega",
-  "date": "2024"
 },
     {
     "cover": { "url": "/img/chess.png", "videoUrl": "" },
@@ -37,7 +30,14 @@
     "type": "Design System",
     "path": "/works/flamingo",
     "date": "2021"
-  },
+  },{
+  "cover": { "url": "/img/taytega.png", "videoUrl": "" },
+  "title": "Taytega AG",
+  "by": ["vitaly"],
+  "type": "Design, Branding",
+  "path": "/works/taytega",
+  "date": "2024"
+},
 
   {
     "cover": { "url": "/img/riveo.png", "videoUrl": "" },
@@ -47,7 +47,15 @@
     "path": "/works/riveo",
     "date": "2024"
   },
-
+  {
+    "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
+    "coverVideo": false,
+    "title": "BowlersLink",
+    "by": [ "vitaly"],
+    "type": "Web design",
+    "path": "/works/bowlerslink",
+    "date": "2024"
+  },
 
   {
     "cover": { "url": "/img/angleicons.png", "videoUrl": "" },

@@ -2,7 +2,7 @@ export default function Page() {
   return (
     <div className="container my-10">
       <header role="banner">
-        <h1 className="h1 font-display">Yask style guide</h1>
+        <h1 className="h1">YASKWORK</h1>
         <small>
           Jump to:{" "}
           <a href="#headings" className="ylink">
@@ -42,7 +42,7 @@ export default function Page() {
       <br />
       <hr />
       <br />
-      <main>
+      <main className=" md:text-xl">
         <section id="fonts">
           <h3 className="h3">
             <a href="#fonts" className="ylink">
@@ -51,10 +51,10 @@ export default function Page() {
             <span>Fonts</span>
           </h3>
           <br />
-          <p className="text-xl">
+          <p className="">
             <span>font-sans: Inter</span>
             <br />
-            <span className="font-mono">font-mono:Fira Code</span>
+            <span className="font-mono">font-mono:JetBrains Mono</span>
             <br />
             <span className="font-display">font-display: Serotiva</span>
           </p>
@@ -69,46 +69,91 @@ export default function Page() {
             </a>{" "}
             <span> Headings</span>
           </h3>
-
+          <br />
           <p>
             Elements <code>h1</code>, <code>h2</code>, <code>h3</code>,
-            <code>h4</code>, <code>h5</code>, <code>h6</code> make up the
+            <code>h4</code>, <code>h5</code>, <code>h6</code> make up the{" "}
             <em>heading content</em> category.
           </p>
           <br />
           <hgroup>
             <h1 className="h1">
-              <code>h1</code> I am most important.
+              h1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h1>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              omnis debitis et id? Molestias, dolorem aliquid! Magni doloribus
+              officia itaque vel modi, laborum porro repudiandae cum sed
+              explicabo, at officiis.
+            </p>
             <br />
             <h2 className="h2">
-              <code>h2</code> Back in my quaint{" "}
-              <a href="#" className="ylink">
-                garden
-              </a>
+              h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veniam saepe deserunt assumenda cum velit quaerat eos, est beatae
+              corrupti, dolores asperiores alias officia nostrum. Cupiditate
+              officiis libero excepturi voluptatem aliquid.
             </h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos ipsum quibusdam odio nisi placeat tempore, quaerat
+              excepturi et vel nostrum nemo mollitia dicta molestiae, expedita
+              neque blanditiis explicabo, veniam est.
+            </p>
             <br />
             <h3 className="h3">
-              <code>h3</code> Jaunty{" "}
-              <a href="#" className="ylink">
-                zinnias
-              </a>{" "}
-              vie with flaunting phlox.
+              h3. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Labore iste saepe quidem sapiente, delectus iure dolorum rem
+              commodi enim porro adipisci odio illum est incidunt eius quas hic
+              et fugit!
             </h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              culpa quam tempore ipsa nihil voluptates porro earum at omnis
+              tenetur a accusamus, suscipit, quibusdam voluptate dolores? Cum
+              natus itaque corporis?
+            </p>
             <br />
             <h4 className="h4">
-              <code>h4</code> Five or six big jet planes zoomed quickly by the
-              new tower.
+              h4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              nemo doloremque dignissimos at quia dolor quisquam, esse deserunt,
+              perferendis dicta reiciendis voluptatem! Tempore sapiente nihil
+              voluptate natus, a ipsam obcaecati!
             </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto exercitationem animi laudantium nam est error, id,
+              asperiores, rerum eos qui ut sit ullam beatae optio pariatur?
+              Quisquam in explicabo ea.
+            </p>
             <br />
             <h5 className="h5">
-              <code>h5</code> Expect skilled signwriters to use many jazzy,
-              quaint old alphabets effectively.
+              h5. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolores vitae rerum odit vel soluta nemo error, fugiat tempore
+              corrupti, voluptate neque molestiae impedit! At magnam magni
+              reprehenderit deserunt similique nostrum?
             </h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur, odio consequuntur. Ullam quo fugiat vel minus
+              recusandae culpa saepe excepturi enim, eaque rerum hic distinctio
+              atque similique nobis ratione modi?
+            </p>
             <br />
             <h6 className="h6">
-              <code>h6</code> Pack my box with five dozen liquor jugs.
+              h6. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur explicabo doloribus magnam magni, molestias ducimus?
+              Aut deserunt voluptate tempore sed, eum corporis temporibus
+              deleniti a expedita, hic repellat. Magni, cumque!
             </h6>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              inventore assumenda quis pariatur quasi sed suscipit corrupti!
+              Quis, unde ea, consectetur aliquid minus alias nobis,
+              reprehenderit a odio perspiciatis similique!
+            </p>
             <br />
           </hgroup>
           <br />
@@ -140,42 +185,21 @@ export default function Page() {
               </a>{" "}
               Sections
             </h3>
-            <p className="text-xl">
+            <br />
+            <p className=" ">
               Elements <code>article</code>, <code>aside</code>,{" "}
               <code>nav</code>,<code>section</code> make up the
               <em>sectioning content</em> category.
             </p>
-            <nav>
-              <p className="text-xl">
-                These links are contained in a <code>nav</code> element.
-              </p>
-              <br />
-              <ul className="text-xl">
-                <li>
-                  <a href="#" className="ylink">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="ylink">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="ylink">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <br />
-            </nav>
           </header>
           <article>
-            <p className="text-xl">
+            <p className="">
               This paragraph is nested inside an <code>article</code> element.
-              It contains many different, sometimes useful,
-              <a href="http://www.w3schools.com/tags/">HTML5 elements</a>. Of
-              course there are classics like <em>emphasis</em>,{" "}
+              It contains many different, sometimes useful,{" "}
+              <a className="ylink" href="http://www.w3schools.com/tags/">
+                HTML5 elements
+              </a>
+              . Of course there are classics like <em>emphasis</em>,{" "}
               <strong>strong</strong>, and <small>small</small> but there are
               many others as well. Hover the following text for abbreviation
               element:
@@ -184,7 +208,7 @@ export default function Page() {
               <ins>inserted</ins> text.
             </p>
             <br />
-            <p className="text-xl">
+            <p className="">
               You can also use <kbd>keyboard text</kbd>, which sometimes is
               styled similarly to the <code>&lt;code&gt;</code> or{" "}
               <samp>samp</samp> elements. Even more specifically, there is an
@@ -195,27 +219,27 @@ export default function Page() {
             </p>
             <br />
             <section>
-              <p className="text-xl">
+              <p className="">
                 This paragraph is contained in a <code>section</code> element of
                 its parent <code>article</code> element.
               </p>
-              <p className="text-xl">
+              <p className="">
                 ↓ The following paragraph has the <code>hidden</code> attribute
                 and should not be displayed. ↓
               </p>
               <p hidden>→ You should not see this paragraph. ←</p>
-              <p className="text-xl">
+              <p className="">
                 ↑ The previous paragraph should not be displayed. ↑
               </p>
             </section>
           </article>
           <aside>
-            <p className="text-xl">
+            <p className="">
               This is contained in an <code>aside</code> element.
             </p>
           </aside>
           <footer>
-            <p className="text-xl">
+            <p className="">
               See the
               <a
                 target="_blank"
@@ -235,7 +259,8 @@ export default function Page() {
             <h3 className="h3">
               <a href="#phrasing">#</a> Phrasing
             </h3>
-            <p className="text-xl">
+            <br />
+            <p className="">
               Elements <code>abbr</code>, <code>b</code>, <code>bdi</code>,
               <code>bdo</code>, <code>br</code>, <code>cite</code>,
               <code>code</code>, <code>data</code>, <code>del</code>,
@@ -245,38 +270,29 @@ export default function Page() {
               <code>s</code>,<code>samp</code>, <code>small</code>,{" "}
               <code>span</code>,<code>strong</code>, <code>sub</code>,{" "}
               <code>sup</code>,<code>time</code>, <code>u</code>,{" "}
-              <code>var</code>,<code>wbr</code>, and others make up the
+              <code>var</code>,<code>wbr</code>, and others make up the{" "}
               <em>phrasing content</em> category.
             </p>
           </header>
           <br />
-          <p className="text-xl">
-            <code>abbr</code>: Some vehicles meet the
-            <abbr title="Super Ultra Low Emission Vehicle">SULEV</abbr>
+          <p className="">
+            <code>abbr</code>: Some vehicles meet the{" "}
+            <abbr title="Super Ultra Low Emission Vehicle">SULEV</abbr>{" "}
             standard.
-            <br />
-            <code>br</code> was used to make this sentence start on a new line.
           </p>
           <br />
-          <p className="text-xl">
-            <code>bdi</code>: Some languages read right to left,
-            <bdi lang="ar">مرحبا</bdi>. <code>bdo</code>:
-            <bdo dir="rtl">The normal direction has been overridden.</bdo>
-          </p>
-          <br />
-          <p className="text-xl">
+          <p className="">
             <code>em</code> is used for <em>emphasis</em> and usually renders as
             italics, contrast that with <code>i</code> which is used for
             alternate voice or to offset from the normal (such as a phrase from
             a different language or taxonomic designation): <i>E. coli</i> can
-            be bad.
-            <code>strong</code> is used for
+            be bad. <code>strong</code> is used for{" "}
             <strong>importance or urgency</strong> and usually renders as bold,
             contrast that with <code>b</code> which is used to
             <b>draw attention</b> without the semantic meaning of importance.
           </p>
           <br />
-          <p className="text-xl">
+          <p className="">
             <code>cite</code>: In the words of <cite>Charles Bukowski</cite> —
             <q>
               An intellectual says a simple thing in a hard way. An artist says
@@ -284,38 +300,44 @@ export default function Page() {
             </q>
           </p>
           <br />
-          <p className="text-xl">
-            <code>data</code> can be used to specify
-            <data value="2018-09-24T05:00-07:00">5 A.M.</data> that is
-            machine-readable, but <code>time</code> is a better choice for
-            specifying <time dateTime="2018-09-24T05:00-07:00">5 A.M.</time> in
-            a machine-readable format.
+          <p className="">
+            <code>data</code> can be used to specify{" "}
+            <data value="2018-09-24T05:00-07:00">
+              5 <sup>A.M.</sup>
+            </data>{" "}
+            that is machine-readable, but <code>time</code> is a better choice
+            for specifying{" "}
+            <time dateTime="2018-09-24T05:00-07:00">
+              5 <sup>A.M.</sup>
+            </time>{" "}
+            in a machine-readable format.
           </p>
           <br />
-          <p className="text-xl">
-            <code>del</code> can be
+          <p className="">
+            <code>del</code> can be{" "}
             <del dateTime="2017-10-11T01:25-07:00">varily</del> used to mark
-            deletions. <code>ins</code> marks
+            deletions. <code>ins</code> marks{" "}
             <ins dateTime="2007-12-19 00:00Z">insertions</ins>. <code>s</code>:
             similar to <code>del</code>, but used to mark content that is no
             longer relevant. <s>Windows XP version available.</s> <code>u</code>
             : a holdover with no real meaning that should be <u>removed</u>.
-            <code>mark</code>: the HTML equivalent of the
+            <code>mark</code>: the HTML equivalent of the{" "}
             <mark>yellow highlighter</mark>. <code>span</code>: a
             <span>generic element</span> with no meaning by itself.
           </p>
           <br />
-          <p className="text-xl">
-            <code>dfn</code>: Foreign phrases add a certain
+          <p className="">
+            <code>dfn</code>: Foreign phrases add a certain{" "}
             <dfn lang="fr" title="French: indefinable quality">
               je ne sais quoi
-            </dfn>
+            </dfn>{" "}
             to one's prose.
           </p>
           <br />
-          <p className="text-xl">
-            <code>q</code>: The W3C page <cite>About W3C</cite> says the W3C’s
-            mission is
+          <p className="">
+            <code>q</code>: The W3C page{" "}
+            <cite className="text-bold leading-1.5">About W3C</cite> says the
+            W3C’s mission is
             <q cite="https://www.w3.org/Consortium/">
               To lead the World Wide Web to its full potential by developing
               protocols and guidelines that ensure long-term growth for the Web
@@ -323,28 +345,15 @@ export default function Page() {
             .
           </p>
           <br />
-          <p className="text-xl">
-            <code>kbd</code> and <code>samp</code>: I did this:
-            <pre>
-              <samp>
-                c:\&gt;<kbd>format c: /yes</kbd>
-              </samp>
-            </pre>
-          </p>
-
-          <p className="text-xl">
-            Is that bad? Press{" "}
-            <kbd>
-              <kbd>Ctrl</kbd>
-            </kbd>
-            +
-            <kbd>
-              <kbd>F5</kbd>
-            </kbd>{" "}
-            for a hard reload.
+          <code>kbd</code> and <code>samp</code>: I did this:
+          <samp>
+            c:\&gt;<kbd>format c: /yes</kbd>
+          </samp>
+          <p className="">
+            Is that bad? Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> for a hard reload.
           </p>
           <br />
-          <p className="text-xl">
+          <p className="">
             <code>var</code>: To log in, type{" "}
             <kbd>
               ssh <var>user</var> @example.com
@@ -352,11 +361,25 @@ export default function Page() {
             , where <var>user</var> is your user ID.
           </p>
           <br />
-          <p className="text-xl">
-            <code>meter</code> and <code>progress</code>:{" "}
-            <label htmlFor="fuel">Storage space usage:</label>{" "}
+          <p className="">
+            <code>meter</code> and <code>progress</code>:
+            <br />
+            <label htmlFor="fuelLow">Low:</label>{" "}
             <meter
-              id="fuel"
+              id="fuelLow"
+              min="0"
+              max="100"
+              low={33}
+              high={60}
+              optimum={80}
+              value="20"
+            >
+              at 50/100
+            </meter>{" "}
+            <br />
+            <label htmlFor="fuelMedium">Medium:</label>{" "}
+            <meter
+              id="fueMedium"
               min="0"
               max="100"
               low={33}
@@ -366,33 +389,31 @@ export default function Page() {
             >
               at 50/100
             </meter>{" "}
+            <br />
+            <label htmlFor="fuelLarge">Max:</label>{" "}
+            <meter
+              id="fueLarge"
+              min="0"
+              max="100"
+              low={33}
+              high={60}
+              optimum={80}
+              value="87"
+            >
+              at 50/100
+            </meter>{" "}
+            <br />
             Progress:{" "}
-            <progress value="37" max="100">
+            <progress value="57" max="100">
               37%
             </progress>
           </p>
+          <br />
           <p>
-            <code>sub</code> is used for subscripts: H<sub>2</sub>O.
-            <code>sup</code> is used for superscripts: E = MC<sup>2</sup>.
-            <code>small</code> is used for side comments:
             <q>
               I wrote this whole document.
               <small>[Editor's note: no he did not]</small>
             </q>
-            <code>wbr</code>: used to specify where a word may break and it is
-            super
-            <wbr />
-            cali
-            <wbr />
-            fragil
-            <wbr />
-            istic
-            <wbr />
-            expiali
-            <wbr />
-            do
-            <wbr />
-            cious.
           </p>
           <footer>
             <p>
@@ -406,13 +427,15 @@ export default function Page() {
             </p>
           </footer>
         </section>
+        <br />
         <hr />
+        <br />
         <section id="palpable">
           <header>
-            <h3>
+            <h3 className="h3">
               <a href="#palpable">#</a> Palpable Content
             </h3>
-            <p>
+            <p className="">
               Elements <code>a</code>, <code>address</code>,
               <code>blockquote</code>, <code>button</code>, <code>details</code>
               ,<code>dl</code>, <code>fieldset</code>, <code>figure</code>,
@@ -423,26 +446,49 @@ export default function Page() {
               <em>palpable content</em> category.
             </p>
           </header>
-          <p>
-            <code>a</code>: <a href="http://example.com">Example</a>.
+          <br />
+          <p className="">
+            <code>a</code>:{" "}
+            <a className="ylink" href="http://example.com">
+              Example
+            </a>
+            .
           </p>
-          <p>
+          <br />
+          <p className="">
             <code>address</code>:
           </p>
-          <address>
+          <address className="">
             1 Infinite Loop
             <br />
             Cupertino, CA 95014
             <br />
             United States
           </address>
+          <br />
           <p>
             <code>blockquote</code>:
           </p>
-          <blockquote>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero,
+            ipsam illo nostrum necessitatibus sapiente pariatur unde repudiandae
+            quas quisquam omnis sit nesciunt fugiat vero voluptates est
+            consequuntur quia ullam!
+          </p>
+          <br />
+          <blockquote className="">
             <p>I quickly explained that many big jobs involve few hazards</p>
           </blockquote>
-          <blockquote>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            dolorum officiis animi quod voluptas obcaecati sunt atque veniam
+            corporis similique aspernatur, voluptatibus, porro assumenda soluta
+            veritatis doloribus exercitationem quasi libero!
+          </p>
+          <br />
+          <blockquote className="">
             <p>
               This is a mult-line blockquote with a cite reference. People think
               focus means saying yes to the thing you’ve got to focus on. But
@@ -451,18 +497,28 @@ export default function Page() {
               actually as proud of the things we haven’tdone as the things I
               have done. Innovation is saying no to 1,000 things.
             </p>
+            <br />
             <footer>
-              Steve Jobs,
+              <em> Steve Jobs,</em>{" "}
               <cite>Apple Worldwide Developers’ Conference, 1997</cite>
             </footer>
           </blockquote>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            ipsam adipisci eum, porro vero natus dolorum rem accusantium?
+            Assumenda quo non harum omnis facere iste rem vero est recusandae
+            cumque!
+          </p>
+          <br />
           <p>
             <code>details</code> and <code>summary</code>:
           </p>
+          <br />
           <details>
             <summary>
-              Copying...
-              <progress max="375505392" value="97543282"></progress> 25%
+              Loading: <progress max="375505392" value="97543282"></progress>{" "}
+              25%
             </summary>
             <dl>
               <dt>Transfer rate:</dt>
@@ -475,6 +531,16 @@ export default function Page() {
               <dd>320×240</dd>
             </dl>
           </details>
+          <details>
+            <summary>More</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+              similique earum temporibus harum beatae neque voluptatum eius sint
+              excepturi, adipisci optio reiciendis aut eligendi veniam totam
+              natus itaque consequatur minima.
+            </p>
+          </details>
+          <br />
           <p>
             <code>dl</code>:
           </p>
@@ -492,94 +558,128 @@ export default function Page() {
             <dt>blockquote</dt>
             <dd>Defines a section that is quoted from another source</dd>
           </dl>
+          <br />
           <p>
             <code>figure</code>:
           </p>
           <figure>
-            <img src="https://www.fillmurray.com/402/295" />
+            <img src="/works/aides/aides-start.png" />
             <figcaption>
-              Figure 1: A picture of Bill Murray from
-              <a href="https://www.fillmurray.com/">fillmurray.com</a>
+              Figure 1: A picture of Bill Murray from{" "}
+              <a className="ylink" href="yask.work">
+                yask.work
+              </a>
             </figcaption>
           </figure>
           <br />
-          <br />
-          <h4 id="forms">
+
+          <h4 id="forms" className="h4">
             <a href="#forms">#</a> Forms
           </h4>
-          <hr />
+
+          <br />
           <form>
             <p>
-              <label htmlFor="example-input-email">Email address</label>
-              <input type="email" id="example-input-email" />
+              <label htmlFor="example-input-email" className="text-base">
+                Email address
+              </label>
+
+              <input
+                type="email"
+                placeholder="vito@yask.work"
+                id="example-input-email"
+              />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-number">Number</label>
               <input type="number" id="example-input-number" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-password">Password</label>
               <input type="password" id="example-input-password" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-search">Search</label>
               <input type="search" id="example-input-search" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-tel">Telephone number</label>
               <input type="tel" id="example-input-tel" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-text">Text</label>
               <input type="text" id="example-input-text" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-readonly">Read-only</label>
               <input type="text" readOnly value="Can't touch this!" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-disabled">Disabled</label>
-              <input type="text" disabled value="Not available" />
+              <input
+                type="text"
+                placeholder="disabled"
+                disabled
+                value="Not available"
+              />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-url">URL</label>
               <input type="url" id="example-input-url" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-color">Color</label>
               <input type="color" id="example-input-color" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-date">Date</label>
               <input type="date" id="example-input-date" />
             </p>
+            <br />
+
             <p>
               <label htmlFor="example-input-date-time">Date / Time</label>
               <input type="datetime" id="example-input-date-time" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-date-time-local">
                 Date / Time local
               </label>
               <input type="datetime-local" id="example-input-date-time-local" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-month">Month</label>
               <input type="month" id="example-input-month" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-week">Week</label>
               <input type="week" id="example-input-week" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-time">Time</label>
               <input type="time" id="example-input-time" />
             </p>
+            <br />
             <p>
               <label htmlFor="example-input-file">File input</label>
               <input type="file" id="example-input-file" />
             </p>
-            <p>
+            <br />
+            {/* <p>
               <label htmlFor="example-input-range">Range input</label>
               <input
                 type="range"
@@ -589,6 +689,7 @@ export default function Page() {
                 value="3"
               />
             </p>
+            <br /> */}
             <p>
               <label htmlFor="example-select1">Select</label>
               <select id="example-select1">
@@ -599,6 +700,7 @@ export default function Page() {
                 <option>5</option>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-select1a">Select with size</label>
               <select id="example-select1a" size={2}>
@@ -609,6 +711,7 @@ export default function Page() {
                 <option>5</option>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-select2">Multiple select</label>
               <select multiple id="example-select2">
@@ -619,6 +722,7 @@ export default function Page() {
                 <option>5</option>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-optgroup">
                 Select with optgroup: Favorite Car
@@ -634,6 +738,7 @@ export default function Page() {
                 </optgroup>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-optgroup2">
                 Select with optgroup and size:Favorite Dish
@@ -649,6 +754,7 @@ export default function Page() {
                 </optgroup>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-optgroup3">
                 Multiple select with optgroup: Public transport
@@ -668,26 +774,27 @@ export default function Page() {
                 </optgroup>
               </select>
             </p>
+            <br />
             <p>
               <label htmlFor="example-textarea">Textarea</label>
               <textarea id="example-textarea" rows={3}></textarea>
             </p>
+            <br />
             <fieldset>
               <legend>I am legend</legend>
-              <div>
+              <div className="flex gap-2 items-center ">
                 <input
                   type="radio"
                   name="option-radio"
                   id="option-radio1"
                   value="option1"
-                  checked
                 />
                 <label htmlFor="option-radio1">
                   Option one is this and that&mdash;be sure to include why it's
                   great
                 </label>
               </div>
-              <div>
+              <div className="flex gap-2 items-center ">
                 <input
                   type="radio"
                   name="option-radio"
@@ -699,7 +806,7 @@ export default function Page() {
                   deselect option one
                 </label>
               </div>
-              <div>
+              <div className="flex gap-2 items-center ">
                 <input
                   type="radio"
                   name="option-radio"
@@ -710,13 +817,19 @@ export default function Page() {
                 <label>Option three is disabled</label>
               </div>
             </fieldset>
+            <br />
             <fieldset>
               <legend>I am also legend</legend>
-              <input type="checkbox" id="checkbox1" />
-              <label htmlFor="checkbox1">Check me out</label>
-              <input type="checkbox" id="checkbox2" />
-              <label htmlFor="checkbox2">and/or check me out</label>
+              <div className="flex gap-2 items-center ">
+                <input type="checkbox" id="checkbox1" />
+                <label htmlFor="checkbox1">Check me out</label>
+              </div>
+              <div className="flex gap-2 items-center ">
+                <input type="checkbox" id="checkbox2" />
+                <label htmlFor="checkbox2">and/or check me out</label>
+              </div>
             </fieldset>
+            <br />
             <p>
               <button type="button" name="button">
                 Button
@@ -791,22 +904,22 @@ export default function Page() {
           <p>
             <code>pre</code>:
           </p>
-          <pre>
+          {/* <pre>
             display: block; padding: 7px; background-color: #F5F5F5; border: 1px
             solid #E1E1E8; border-radius: 3px; white-space: pre-wrap;
             word-break: break-all; font-family: Menlo, Monaco; line-height:
             160%;
-          </pre>
-          <pre>
+          </pre> */}
+          {/* <pre>
             <samp>
               You are in an open field west of a big white house with a boarded
               front door. There is a small mailbox here.
             </samp>{" "}
             <kbd>open mailbox</kbd>
             <samp>Opening the mailbox reveals: A leaflet.</samp>
-          </pre>
+          </pre> */}
           <br />
-          <br />
+
           <h4 id="tables">
             <a href="#tables">#</a> Tables
           </h4>

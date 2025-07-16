@@ -3,7 +3,7 @@
 @variant dark (&:is(.dark *));
 
 @theme {
-  
+
   --breakpoint-sm: 36rem;
   --breakpoint-md: 48rem;
   --breakpoint-lg: 62rem;
@@ -17,38 +17,38 @@
 
   --text-sm: 0.875rem;
   --text-sm--line-height: 1.25rem;
-  --text-sm--letter-spacing: -0.006em;
-  
+  /* --text-sm--letter-spacing: -0.006em; */
+
   --text-base: 1rem;
   --text-base--line-height: 1.5rem;
-  --text-base--letter-spacing: -0.011em;
+  /* --text-base--letter-spacing: -0.011em; */
 
   --text-xl: 1.25rem;
   --text-xl--line-height: 2rem;
-  --text-xl--letter-spacing: -0.017em;
+  /* --text-xl--letter-spacing: -0.017em; */
 
   --text-2xl: 1.5rem;
-  --text-2xl--line-height: 2.25rem;
-  --text-2xl--letter-spacing: -0.019em;
+  --text-2xl--line-height: 2rem;
+  /* --text-2xl--letter-spacing: -0.019em; */
 
   --text-3xl: 1.75rem;
-  --text-3xl--line-height: 2.5rem;
-  --text-3xl--letter-spacing: -0.021em;
+  --text-3xl--line-height: 2.25rem;
+  /* --text-3xl--letter-spacing: -0.021em; */
 
   --text-4xl: 2rem;
-  --text-4xl--line-height: 3rem;
-  --text-4xl--letter-spacing: -0.022em;
+  --text-4xl--line-height: 2.5rem;
+  /* --text-4xl--letter-spacing: -0.022em; */
 
   --text-5xl: 2.5rem;
-  --text-5xl--line-height: 3.5rem;
-  --text-5xl--letter-spacing: -0.022em;
+  --text-5xl--line-height: 3rem;
+  /* --text-5xl--letter-spacing: -0.022em; */
 
   --font-*: initial;
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-firacode);
+  --font-mono: var(--font-jbm);
   --font-display: var(--font-serotiva);
 
-  
+
   --color-ybg: #fafafd;
   --color-yred: #ff2423;
   --color-ylime: #d6f47c;
@@ -57,9 +57,13 @@
   --color-ybrown: #845005;
   --color-ydarkbrown: #5C3804;
   --color-yblue: #84A5FF;
+  --color-ypink: #ffb18a;
+  --color-ygreen: #268505;
   --color-yask: #050884;
   --color-ylightblue: #080bd0;
   --color-ylightgrey: #f2f2f2;
+  --color-yviolet: #AE24FF;
+  --color-ygreen: #268505;
 }
 
 @utility container {
@@ -76,6 +80,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -83,156 +88,7 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-}
 
-@layer utilities {
-  /* Input */
-  .ylink {
-    @apply text-ylightblue dark:text-ytextdark dark:hover:text-yred hover:text-yred transition font-medium;
-  }
-
-  .animate-fadeIn {
-    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.6, 1);
-  }
-  @keyframes fadeIn {
-    0% {
-      transform: translateY(-10px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  /*  gradient animation on header */
-  @property --yangle {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 90deg;
-  }
-  @property --ypercentage {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 10%;
-  }
-  @property --ycolor {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: red;
-  }
-  .gradientMe {
-    /*  needed for firefox to have a valid output */
-    --yangle: 80deg;
-    --ypercentage: 0%;
-    /**/
-    animation: 5s linear infinite ygradient;
-    background-image: linear-gradient(
-      var(--yangle),
-      var(--color-ytextdark),
-      var(--color-yask) 70%
-    );
-  }
-
-  @keyframes ygradient {
-    0% {
-      --yangle: 0deg;
-    }
-
-    100% {
-      --yangle: 360deg;
-    }
-  }
-  /*  end gradient animation on header */
-
-/* Buttons */
-
-  .ybutton {
-    @apply text-sm text-center my-0.5 font-medium transition-colors rounded-xl px-3 py-2 text-ylightblue;
-  }
-  .ybutton.primary {
-    @apply bg-ylime hover:bg-[#CBEA6E];
-  }
-  .ybutton.secondary {
-    @apply bg-ytextdark hover:bg-[#B2C4F9];
-  }
-
-  /* Headlines */
-
-  .h1{
-    @apply text-5xl
-  }
-  .h2{
-    @apply text-4xl
-  }
-  .h3{
-    @apply text-3xl
-  }
-  .h4{
-    @apply text-2xl
-  }
-  .h5{
-    @apply text-xl font-bold
-  }
-  .h6{
-    @apply text-base font-bold
-  }
-/* Code formating */
-    :not(pre)>code,
-    code {@apply bg-ylightgrey px-0.5 inline-block}
-
-
-    /* Meter */
-        meter {
-          
-          --background:var(--color-black);
-          --optimum: var(--color-ylime);
-          --sub-optimum: var(--color-ybrown);
-          --sub-sub-optimum: var(--color-yred);
-    
-          /* The gray background in Firefox */
-          background: var(--background);
-          @apply inline-block rounded-full;
-        }
-    
-        /* The gray background in Chrome, etc. */
-        meter::-webkit-meter-bar {
-          background: var(--color-white);
-          @apply rounded-full;
-        }
-    
-        /* The green (optimum) bar in Firefox */
-        meter:-moz-meter-optimum::-moz-meter-bar {
-          background: var(--optimum);
-        }
-    
-        /* The green (optimum) bar in Chrome etc. */
-        meter::-webkit-meter-optimum-value {
-          background: var(--optimum);
-        }
-    
-        /* The yellow (sub-optimum) bar in Firefox */
-        meter:-moz-meter-sub-optimum::-moz-meter-bar {
-          background: var(--sub-optimum);
-        }
-    
-        /* The yellow (sub-optimum) bar in Chrome etc. */
-        meter::-webkit-meter-suboptimum-value {
-          background: var(--sub-optimum);
-        }
-    
-        /* The red (even less good) bar in Firefox */
-        meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-          background: var(--sub-sub-optimum);
-        }
-    
-        /* The red (even less good) bar in Chrome etc. */
-        meter::-webkit-meter-even-less-good-value {
-          background: var(--sub-sub-optimum);
-        }
-}
-
-@layer base {
   @font-face {
     font-family: "Serotiva";
     font-style: normal;
@@ -240,4 +96,383 @@
     font-display: swap;
     src: url(/fonts/Serotiva.woff2) format("woff2");
   }
+
+  /* Headlines */
+
+  .h1 {
+    @apply text-5xl
+  }
+
+  .h2 {
+    @apply text-4xl
+  }
+
+  .h3 {
+    @apply text-3xl
+  }
+
+  .h4 {
+    @apply text-2xl
+  }
+
+  .h5 {
+    @apply text-xl font-bold
+  }
+
+  .h6 {
+    @apply text-base font-bold
+  }
+
+  /* Sections */
+  section, article, aside {
+    @apply mb-8;
+  }
+
+  /* Code formating */
+  :not(pre)>code,
+  code {
+    @apply bg-ylightblue/6 px-1 font-medium inline-block rounded-md
+  }
+
+  /* mark */
+  mark {
+    @apply bg-ylime;
+  }
+
+  /* dfn */
+  dfn {
+    @apply italic;
+  }
+
+  /* dfn */
+  var {
+    @apply italic font-mono;
+  }
+
+  /* progress */
+  progress {
+
+    @apply align-middle h-2;
+  }
+
+  progress[value]::-webkit-progress-value {
+    @apply bg-yask rounded-md;
+
+  }
+
+  progress[value]::-webkit-progress-bar {
+    @apply bg-ygrey rounded-md;
+  }
+
+  /* kbd */
+  kbd {
+    @apply inline-block shadow shadow-yask/40 rounded-md px-1 font-mono;
+  }
+
+  /* abbr */
+  abbr {
+    @apply font-medium tracking-wide decoration-dotted decoration-from-font underline-offset-4;
+  }
+
+  /* em */
+  em {
+    @apply font-medium italic tracking-wide;
+  }
+
+  /* strong */
+  strong {
+    @apply tracking-wide;
+  }
+
+  /* cite */
+  cite {
+    @apply tracking-wide;
+  }
+
+  /* q */
+  q {
+    @apply font-medium;
+  }
+
+  /* data time */
+  data,
+  time {
+    @apply font-medium;
+  }
+
+  /* address */
+  address {
+    @apply tracking-wide font-medium;
+  }
+
+  /* blockquote */
+  blockquote {
+    @apply border-l-1 border-yask pl-[1em];
+  }
+
+
+
+  /* forms */
+  input {
+    @apply block appearance-none;
+  }
+
+  input:disabled {
+    @apply opacity-40 bg-ylightgrey cursor-not-allowed;
+  }
+
+  input:not([type="image"], [type='button'], [type='reset'], [type='submit'], [type="range"], [type="checkbox"], [type="radio"]) {
+    @apply outline-1 outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all;
+  }
+
+  /* input hover */
+  input:not(:disabled):not([readonly]) {
+    @apply focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
+  }
+
+
+
+  input:read-only {
+    @apply bg-ylightgrey;
+  }
+
+  input::-webkit-datetime-edit {
+    @apply p-0 block;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    @apply size-[1.25em] border-2 border-yask rounded-md bg-transparent transition-all bg-top shrink-0;
+  }
+
+  input[type=checkbox]:not(:disabled),
+  input[type=radio]:not(:disabled) {
+    @apply hover:border-ylightblue cursor-pointer focus:ring-4 focus:ring-ylightblue/20;
+  }
+
+  input[type=checkbox]:checked,
+  input[type=radio]:checked {
+    @apply bg-[url("/ui/icons/checkbox.svg")] bg-no-repeat bg-size-[.75em] bg-center border-ylightblue;
+  }
+
+  input[type=checkbox]:disabled,
+  input[type=radio]:disabled {
+    @apply opacity-40;
+  }
+
+  input[type=radio] {
+    @apply rounded-full;
+  }
+
+  input[type=file] {
+    @apply p-0 overflow-hidden bg-transparent;
+  }
+
+  input[type=file]:not(:disabled):not([readonly]) {
+    @apply cursor-pointer;
+  }
+
+  input::file-selector-button {
+    @apply bg-ylightgrey px-3 py-1 mr-2 font-medium transition-colors;
+  }
+
+  input:hover:not(:disabled):not([readonly])::file-selector-button {
+    @apply bg-gray-200;
+  }
+
+  input[type="color"] {
+    block-size: 2em;
+    @apply p-1;
+  }
+
+  /* -webkit */
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    @apply p-0;
+  }
+
+  input[type="color"]::-webkit-color-swatch {
+    @apply rounded-lg border-0;
+  }
+
+
+  /* firefox */
+  input[type=color]::-moz-focus-inner {
+    @apply p-0;
+  }
+
+  input[type=color]::-moz-color-swatch {
+    @apply rounded-lg border-0;
+  }
+
+  /* input[type=file]:not(:disabled):not([readonly]) {
+    @apply bg-yask;
+  } */
+
+  /* input:not(:disabled):not([readonly]) {
+    @apply hover: outline-yred;
+  } */
+
+  /* input:disabled {
+    @apply bg-ylightgrey opacity-40;
+  } */
+  /* textarea */
+  textarea {
+    @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
+  }
+
+  /* select */
+  select {
+    /* appearance: none; */
+    /* background-image: url("/works/aides/aides-start.png"); */
+    @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue bg-[url("/ui/icons/chevron-down.svg")] bg-no-repeat bg-size-[20] bg-position-[right_.5rem_center];
+  }
+
+  select:disabled {
+    @apply bg-ylightgrey;
+  }
+
+  select[multiple],
+  select[size]:not([size="1"]) {
+    /* padding-right: $form-select-padding-x;
+      background-image: none; */
+    @apply bg-none;
+  }
+
+  select::-moz-focusring {
+    @apply text-shadow-none text-transparent;
+  }
+
+  label {
+    @apply inline-block;
+  }
+
+  /* details */
+  details {
+    @apply border-b-2 border-yask/8 transition-all;
+  }
+
+  details[open] {
+    @apply pb-4;
+  }
+
+  details>summary {
+    @apply py-2 cursor-pointer hover:bg-ybg text-ylightblue transition-colors;
+  }
+
+
+
+  /* dl */
+  dl dt {
+    @apply font-bold;
+  }
+
+  /* del */
+  del {
+    @apply text-yred px-1 inline-block bg-yred/8 no-underline before:content-['-'];
+  }
+
+  /* ins */
+  ins {
+    @apply text-ygreen px-1 inline-block bg-ylime/16 no-underline before:content-['+'];
+  }
+
+  /* Meter */
+  meter {
+    --background: transparent;
+    --optimum: var(--color-ygreen);
+    --sub-optimum: var(--color-ypink);
+    --sub-sub-optimum: var(--color-yred);
+
+    /* The gray background in Firefox */
+    background: var(--background);
+    @apply inline-block appearance-none rounded-full p-0 m-0 align-middle h-2;
+  }
+
+  /* The gray background in Chrome, etc. */
+  meter::-webkit-meter-bar {
+    background: var(--color-ygrey);
+    @apply rounded-full;
+  }
+
+  /* The green (optimum) bar in Firefox */
+  meter:-moz-meter-optimum::-moz-meter-bar {
+    background: var(--optimum);
+    @apply rounded-full;
+  }
+
+  /* The green (optimum) bar in Chrome etc. */
+  meter::-webkit-meter-optimum-value {
+    background: var(--optimum);
+    @apply rounded-full;
+  }
+
+  /* The yellow (sub-optimum) bar in Firefox */
+  meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: var(--sub-optimum);
+    @apply rounded-full;
+  }
+
+  /* The yellow (sub-optimum) bar in Chrome etc. */
+  meter::-webkit-meter-suboptimum-value {
+    background: var(--sub-optimum);
+    @apply rounded-full;
+  }
+
+  /* The red (even less good) bar in Firefox */
+  meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: var(--sub-sub-optimum);
+    @apply rounded-full;
+  }
+
+  /* The red (even less good) bar in Chrome etc. */
+  meter::-webkit-meter-even-less-good-value {
+    background: var(--sub-sub-optimum);
+    @apply rounded-full;
+  }
+
+
+}
+
+@layer utilities {
+
+  .ylink {
+    @apply text-ylightblue dark:text-white dark:hover:text-yred hover:text-yred visited:text-yviolet transition font-medium;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  /* Buttons */
+
+
+  .ybutton,
+  input[type=button],
+  input[type=submit] {
+    @apply text-sm text-center my-0.5 font-medium transition-all rounded-xl px-3 py-2 inline-block cursor-pointer text-ylightblue;
+  }
+
+  .ybutton.primary {
+    @apply bg-ylime hover:brightness-105;
+  }
+
+  .ybutton.secondary {
+    @apply bg-ytextdark hover:brightness-105;
+  }
+
+
 }

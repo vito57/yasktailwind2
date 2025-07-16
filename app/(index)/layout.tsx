@@ -11,13 +11,6 @@ export default function WorksLayout({
     <div className="container">
       <header id="header" className="pt-4 md:pt-10">
         <div className="text-center relative">
-          <Image
-            alt="Peace"
-            className="hidden md:block absolute left-[15%] top-[50%] -mt-4"
-            width={96 / 2}
-            height={96 / 2}
-            src={"/peace.png"}
-          />
           <Logo />
 
           <Jumbo datas={data} />

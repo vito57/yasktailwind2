@@ -20,10 +20,10 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <Section>
+        {/* <Section>
           <h1 className="text-2xl text-center text-white py-6">We are working on the presentation. It will appear soon</h1>
-        </Section>
-        {/* <ArticleHeader>
+        </Section> */}
+        <ArticleHeader>
           <ArticleFigure>
             <BodyImage
               src="/works/bowlerslink/cover.png"
@@ -40,31 +40,30 @@ const Page = () => {
               Adaptive website and logo concept for bowling educational platform
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bowlerslink/logo.png" }}
             image2={{ src: "/works/bowlerslink/cap.png" }}
           ></ArticleImageSection>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/bowlerslink/main.png"
               alt="BowlersLink main page"
             />
           </ArticleFigure>
-
-       
-          <ArticleFigure>
-            <BodyImage src="/works/bowlerslink/mobile1.png" alt="Mobile" />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/bowlerslink/mobile2.png" alt="Mobile" />
-          </ArticleFigure>
+          <br />
+          <ArticleImageSection
+            image1={{ src: "/works/bowlerslink/mobile1.png" }}
+            image2={{ src: "/works/bowlerslink/mobile2.png" }}
+          ></ArticleImageSection>
         </Section>
 
-        <Section id="summary">
+        <aside id="summary">
           <Text title="Summary">
             <Summary designer="vitaly" year="2024" client="BlackSheep" />
           </Text>
-        </Section> */}
+        </aside>
       </Article>
     </AnimateLayout>
   );

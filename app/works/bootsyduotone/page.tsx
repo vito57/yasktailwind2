@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-[url('/works/bootsyduotone/bg.png')] bg-cover">
+        <ArticleHeader className="bg-slate-900">
           <ArticleHeroSection
             underTitle="Bootsy Doutone Icons"
             title="1700+ High-Quality UI Vector Icons"
@@ -43,28 +43,28 @@ const Page = () => {
           <Text title="About">
             <p>Multiplatform interface icons set, based on Bootstrap</p>
           </Text>
-
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsyduotone/1.jpeg" }}
             image2={{
               src: "/works/bootsyduotone/2.jpeg",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsyduotone/3.jpeg" }}
             image2={{
               src: "/works/bootsyduotone/4.jpeg",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bootsyduotone/6.jpeg" }}
             image2={{
               src: "/works/bootsyduotone/5.jpeg",
             }}
           />
-        </Section>
-
-        <Section id="summary">
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/bootsy/f1.png"
@@ -74,7 +74,7 @@ const Page = () => {
             />
           </ArticleFigure>
         </Section>
-        <Section id="summary" className="container">
+        <aside id="summary" className="container">
           <Text title="Summary">
             <Summary
               designer="gala"
@@ -83,7 +83,7 @@ const Page = () => {
               link="https://ui8.net/gala-yask/products/bootsy-duotone-icons---duotone-icon-set"
             />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

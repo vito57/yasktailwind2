@@ -38,7 +38,7 @@ export function BodyImage({
   width = 1600,
   height = 1200,
   className,
-  defaultClass = "dark:bg-zinc-900 bg-slate-100 w-full rounded-xl",
+  defaultClass = "w-full rounded-xl",
   alt = "Yask",
 }: BodyImage) {
   return (
@@ -70,17 +70,13 @@ interface TextProps {
 }
 export function Text({ title, children }: TextProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-2 mb-6">
-      {title && (
-        <div className="basis-1/4">
-          <h3 className="font-bold">{title}</h3>
-        </div>
-      )}
+    <dl className="flex flex-col md:flex-row gap-2">
+      {title && <dt className="basis-1/4">{title}</dt>}
 
-      <div className={` ${title ? false : "ml-auto"} text-pretty basis-3/4`}>
+      <dd className={` ${title ? false : "ml-auto"} text-pretty basis-3/4`}>
         {children}
-      </div>
-    </div>
+      </dd>
+    </dl>
   );
 }
 //END TEXT
@@ -99,7 +95,7 @@ export function Section({
 }: SectionProps) {
   const isFluid = fluid ? null : "container";
   return (
-    <section className={`${className} ${isFluid} mb-8`} id={id}>
+    <section className={`${className} ${isFluid}`} id={id}>
       {children}
     </section>
   );
@@ -109,7 +105,7 @@ export function Section({
 export function TopMenu() {
   return (
     <div className="px-4 w-fit flex gap-2">
-      <Button path="mailto:vito57rus@gmail.com">Send email</Button>
+      <Button path="mailto:vitalyyask@gmail.com">Send email</Button>
       <Link href="https://dribbble.com/yask">
         <Image
           src={dribbble}
@@ -143,10 +139,10 @@ interface ButtonProps {
 export function Button({
   children,
   rel,
-  className = "text-ylightblue bg-ylime",
+  className = "primary",
   path,
 }: ButtonProps) {
-  const BtnClass = `text-sm text-center m-0.5 font-medium rounded-xl px-3 py-2 inline-block transition-all hover:brightness-95 focus:brightness-95 ${className}`;
+  const BtnClass = `ybutton ${className}`;
 
   return (
     <Link href={path || "/"} rel={rel} className={BtnClass}>
@@ -311,9 +307,9 @@ interface ArticleImageSectionProps {
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-6 mb-6">
+    <div className="flex flex-col md:flex-row gap-6">
       <div className="basis-auto md:basis-1/2">
-        <ArticleFigure figcaption={props.image1.caption} className="mb-0">
+        <ArticleFigure figcaption={props.image1.caption}>
           <BodyImage
             src={props.image1.src}
             className={props.className}
@@ -323,7 +319,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
         </ArticleFigure>
       </div>
       <div className="basis-auto md:basis-1/2">
-        <ArticleFigure figcaption={props.image2.caption} className="mb-0">
+        <ArticleFigure figcaption={props.image2.caption}>
           <BodyImage
             src={props.image2.src}
             height={props.height}
@@ -409,7 +405,7 @@ export function PortfolioItem({
             placeholder={`data:image/svg+xml;base64,${toBase64(
               shimmer(800, 600)
             )}`}
-            className="w-full ease-in group-hover/item:scale-[1.01] duration-200 block transition-transform transform-gpu bg-ygrey rounded-xl"
+            className="w-full ease-in group-hover/item:brightness-95 duration-200 block transition-all transform-gpu bg-ygrey rounded-xl"
             alt={imageAlt}
           />
         </Link>
@@ -460,7 +456,7 @@ interface ArticleFigureProps {
 export function ArticleFigure({
   figcaption,
   children,
-  className = "mb-6",
+  className,
 }: ArticleFigureProps) {
   return (
     <figure className={className}>
@@ -492,18 +488,15 @@ export function ArticleHeroSection({
   credits,
 }: ArticleHeroSectionProps) {
   return (
-    <figure className="mb-8 relative">
+    <figure className="relative">
       {children}
       <figcaption className="relative pb-8 md:pb-0 md:absolute  md:top-8 md:right-8 md:bottom-8 md:left-8 top-0 left-0  flex flex-col justify-center ">
         <div className="md:max-w-md">
           <p className="text-sm md:text-base mb-2 ">{underTitle}</p>
-          <h1 className="text-2xl font-display md:text-5xl mb-2 ">{title}</h1>
+          <h1 className="h1 font-display mb-2 ">{title}</h1>
           <p className="text-base mb-4 ">{subTitle}</p>
-          {credits && <p className="text-sm  mb-4 ">{credits}</p>}
-          <Button
-            className="ybutton secondary w-full md:w-auto"
-            path={buttonUrl}
-          >
+          {/* {credits && <p className="text-sm font-mono mb-4 ">{credits}</p>} */}
+          <Button className="secondary" path={buttonUrl}>
             {btnTxt}
           </Button>
         </div>

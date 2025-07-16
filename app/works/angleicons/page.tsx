@@ -50,7 +50,7 @@ const Page = () => {
               same as Bootstrap icons. Makes your website or app look different.
             </p>
           </Text>
-
+          <br />
           <ArticleImageSection
             className="bg-stone-100"
             image1={{
@@ -60,6 +60,7 @@ const Page = () => {
               src: "/works/angleicons/files.png",
             }}
           />
+          <br />
           <ArticleImageSection
             className="bg-stone-100"
             image1={{
@@ -69,6 +70,7 @@ const Page = () => {
               src: "/works/angleicons/brands.png",
             }}
           />
+          <br />
           <ArticleImageSection
             className="bg-stone-100"
             image1={{
@@ -78,6 +80,7 @@ const Page = () => {
               src: "/works/angleicons/world.png",
             }}
           />
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/angleicons/lined_title.png"
@@ -87,6 +90,7 @@ const Page = () => {
               height={640}
             />
           </ArticleFigure>
+          <br />
           <ArticleImageSection
             className="bg-stone-100"
             image1={{
@@ -96,6 +100,7 @@ const Page = () => {
               src: "/works/angleicons/filled.png",
             }}
           />
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/angleicons/makes_title.png"
@@ -105,6 +110,7 @@ const Page = () => {
               height={640}
             />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/angleicons/preview.png"
@@ -113,6 +119,7 @@ const Page = () => {
               height={2400}
             />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage
               src="/works/angleicons/2400_title.png"
@@ -122,6 +129,7 @@ const Page = () => {
               height={640}
             />
           </ArticleFigure>
+          <br />
           <ArticleFigure>
             <BodyImage
               className="bg-stone-100"

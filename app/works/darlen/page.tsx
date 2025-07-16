@@ -4,7 +4,6 @@ import {
   Text,
   ArticleFigure,
   Section,
- 
   ArticleHeader,
   BodyImage,
   Summary,
@@ -41,25 +40,26 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/darlen/1.png" alt="Darlen" />
           </ArticleFigure>
+
           <ArticleFigure>
             <BodyImage src="/works/darlen/2.png" alt="Darlen" />
           </ArticleFigure>
+
           <ArticleFigure>
             <BodyImage src="/works/darlen/3.png" alt="Darlen" />
           </ArticleFigure>
         </Section>
 
-        <Section id="summary" >
+        <aside id="summary">
           <Text title="Summary">
-          <Summary 
-          designer="vitaly" 
-          year="2019" 
-          client="BlackSheep" 
-          link="https://apps.apple.com/ru/app/darlen/id1524331706"/>
-
-            
+            <Summary
+              designer="vitaly"
+              year="2019"
+              client="BlackSheep"
+              link="https://apps.apple.com/ru/app/darlen/id1524331706"
+            />
           </Text>
-        </Section>
+        </aside>
       </Article>
     </AnimateLayout>
   );

@@ -43,6 +43,7 @@ const Page = () => {
               while I was there.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig1] Node editor">
             <BodyImage
               src="/works/drugcode/node_editor.png"
@@ -50,6 +51,7 @@ const Page = () => {
               className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
+          <br />
           <Text>
             <p>
               Drugcode is a internal banking web platform for building web
@@ -60,6 +62,7 @@ const Page = () => {
               products, to rebrand and redesign the product.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 2] Code editor">
             <BodyImage
               src="/works/drugcode/code_editor.png"
@@ -67,6 +70,7 @@ const Page = () => {
               className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
+          <br />
           <Text title="">
             <p>
               Code editor baced on Monaco editor with all features. Any code
@@ -74,6 +78,7 @@ const Page = () => {
               useful for designer and management
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 3] File system">
             <BodyImage
               src="/works/drugcode/file_system.png"
@@ -81,7 +86,7 @@ const Page = () => {
               className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
           </ArticleFigure>
-
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/drugcode/node_preview.png",
@@ -93,11 +98,7 @@ const Page = () => {
             }}
             className="bg-[url('/works/drugcode/bg.png')] bg-cover"
           />
-        </Section>
 
-        {/* BRANDING */}
-
-        <Section id="branding">
           <Text title="Branding">
             <p>
               When I joined in February 2019, the web service was in its
@@ -107,6 +108,7 @@ const Page = () => {
               redesign the product.
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/drugcode/brand.png", caption: "[fig 6]" }}
             image2={{
@@ -114,11 +116,7 @@ const Page = () => {
               caption: "[fig 7]",
             }}
           />
-        </Section>
 
-        {/* UI/UX */}
-
-        <Section id="ux">
           <Text title="Style Guide">
             <p className="mb-8">
               I worked with our team and the Drugcode developers to craft a
@@ -134,9 +132,11 @@ const Page = () => {
               ensures consistency within our designs.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 8] Default system">
             <BodyImage src="/works/drugcode/ui.png" alt="Drugcode ui" />
           </ArticleFigure>
+          <br />
           <Text title="">
             <p>
               We follow the pattern Template / Region / Component / Element /
@@ -144,9 +144,11 @@ const Page = () => {
               More then 80 components are created.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 9] Drugcode styles">
             <BodyImage src="/works/drugcode/style.png" alt="Drugcode styles" />
           </ArticleFigure>
+          <br />
           <Text title="">
             <p>
               Understanding how material design works, help to prepare tokens
@@ -154,6 +156,7 @@ const Page = () => {
               halps to understand each other
             </p>
           </Text>
+          <br />
           <ArticleImageSection
             image1={{
               src: "/works/drugcode/letf_side_bar.png",
@@ -164,15 +167,8 @@ const Page = () => {
               caption: "[fig 11] Drug n Drop",
             }}
           />
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/drugcode/letf_side_bar.png"
-              alt="Left sidebar"
-            />
-          </ArticleFigure>
-          <ArticleFigure>
-            <BodyImage src="/works/drugcode/drag.png" alt="Drug n Drop" />
-          </ArticleFigure> */}
+          <br />
+
           <Text title="">
             <p>
               Collapsible left sidebar, represent file system, with drag and
@@ -180,12 +176,14 @@ const Page = () => {
               block inside a file.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 12] Right sidebar">
             <BodyImage
               src="/works/drugcode/right_side_bar.png"
               alt="Right sidebar"
             />
           </ArticleFigure>
+          <br />
           <Text title="">
             <p>
               The task is to display in an understandable form, props, CSS
@@ -197,22 +195,21 @@ const Page = () => {
               works according to specification too.
             </p>
           </Text>
+          <br />
           <ArticleFigure figcaption="[fig 13]">
             <BodyImage
               src="/works/drugcode/preview.png"
               alt="Drugcode preview"
             />
           </ArticleFigure>
+          <br />
           <Text title="">
             <p>
               Visual editor and preview. Change colors, add or remove elements,
               drag, resize, etc.
             </p>
           </Text>
-        </Section>
 
-        {/* WORKFOW */}
-        <Section id="workflow">
           <Text title="Workflow">
             <ol className=" list-decimal list-inside">
               <li>
@@ -225,9 +222,7 @@ const Page = () => {
               <li>Field supervision</li>
             </ol>
           </Text>
-        </Section>
-        {/* HAVE FUN */}
-        <Section id="summary">
+          <br />
           <Text title="Summary">
             <Summary designer="vitaly" year="2021" client="Sber" />
           </Text>

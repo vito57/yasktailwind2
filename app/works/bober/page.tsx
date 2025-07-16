@@ -35,20 +35,22 @@ const Page = () => {
           <Text title="About">
             <p>Adaptive web site and logo for TV channel</p>
           </Text>
-
+          <br />
           <ArticleFigure figcaption="New main page layout">
             <BodyImage src="/works/bober/main.png" alt="Bober main" />
           </ArticleFigure>
+          <br />
           <ArticleFigure figcaption="Alternative main and article page">
             <BodyImage src="/works/bober/main2.png" alt="Bober main" />
           </ArticleFigure>
-
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bober/3.png" }}
             image2={{
               src: "/works/bober/logo.png",
             }}
           />
+          <br />
           <ArticleImageSection
             image1={{ src: "/works/bober/1.png" }}
             image2={{
