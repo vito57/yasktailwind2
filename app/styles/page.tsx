@@ -214,7 +214,7 @@ export default function Page() {
               <samp>samp</samp> elements. Even more specifically, there is an
               element just for <var>variables</var>. Not to be mistaken with
               block quotes below, the quote element lets you denote something as
-              <q>quoted text</q>. Lastly don't forget the sub (H<sub>2</sub>O)
+              <q>quoted text</q>. Lastly dont forget the sub (H<sub>2</sub>O)
               and sup (E = MC<sup>2</sup>) elements.
             </p>
             <br />
@@ -331,7 +331,7 @@ export default function Page() {
             <dfn lang="fr" title="French: indefinable quality">
               je ne sais quoi
             </dfn>{" "}
-            to one's prose.
+            to ones prose.
           </p>
           <br />
           <p className="">
@@ -412,7 +412,7 @@ export default function Page() {
           <p>
             <q>
               I wrote this whole document.
-              <small>[Editor's note: no he did not]</small>
+              <small>[Editors note: no he did not]</small>
             </q>
           </p>
           <footer>
@@ -563,7 +563,7 @@ export default function Page() {
             <code>figure</code>:
           </p>
           <figure>
-            <img src="/works/aides/aides-start.png" />
+            <img src="/works/aides/aides-start.png" alt="s" />
             <figcaption>
               Figure 1: A picture of Bill Murray from{" "}
               <a className="ylink" href="yask.work">
@@ -790,7 +790,7 @@ export default function Page() {
                   value="option1"
                 />
                 <label htmlFor="option-radio1">
-                  Option one is this and that&mdash;be sure to include why it's
+                  Option one is this and that&mdash;be sure to include why its
                   great
                 </label>
               </div>
