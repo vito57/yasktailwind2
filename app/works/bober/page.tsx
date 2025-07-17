@@ -37,14 +37,23 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="New main page layout">
-            <BodyImage src="/works/bober/main.png" alt="Bober main" />
+            <BodyImage
+              src="/works/bober/main.png"
+              className="bg-slate-100"
+              alt="Bober main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure figcaption="Alternative main and article page">
-            <BodyImage src="/works/bober/main2.png" alt="Bober main" />
+            <BodyImage
+              src="/works/bober/main2.png"
+              className="bg-slate-100"
+              alt="Bober main"
+            />
           </ArticleFigure>
           <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{ src: "/works/bober/3.png" }}
             image2={{
               src: "/works/bober/logo.png",
@@ -52,6 +61,7 @@ const Page = () => {
           />
           <br />
           <ArticleImageSection
+            className="bg-slate-100"
             image1={{ src: "/works/bober/1.png" }}
             image2={{
               src: "/works/bober/3.png",
