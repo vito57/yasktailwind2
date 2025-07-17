@@ -24,6 +24,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage src="/works/illustrations/1.png" alt="1" />
           </ArticleFigure>
+          <br />
           <Text title="Vol. 1">
             <p>
               Remake of illustrations by{" "}
@@ -97,8 +98,7 @@ const Page = () => {
             }}
           />
           <br />
-        </Section>
-        <Section>
+
           <Text title="Vol. 2">
             <p>A series of illustrations for a book. Paper, ink</p>
           </Text>
@@ -116,8 +116,7 @@ const Page = () => {
               src: "/works/illustrations/16s2100.png",
             }}
           />
-        </Section>
-        <Section>
+          <br />
           <Text title="Vol. 3">
             <p>Educational illustrations. Paper, pencil</p>
           </Text>
