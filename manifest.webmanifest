@@ -2,5 +2,5 @@
   "name": "Yask Design portfolio site",
   "short_name": "Yask Design",
   "description": "Design portfolio",
-  "start_url": "https://yask.work"
+  "start_url": "https://yask.vercel.app"
 }
