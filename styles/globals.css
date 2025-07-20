@@ -1,9 +1,6 @@
-@import "tailwindcss";
-
-@variant dark (&:is(.dark *));
+@import 'tailwindcss';
 
 @theme {
-
   --breakpoint-sm: 36rem;
   --breakpoint-md: 48rem;
   --breakpoint-lg: 62rem;
@@ -48,21 +45,20 @@
   --font-mono: var(--font-jbm);
   --font-display: var(--font-serotiva);
 
-
   --color-ybg: #fafafd;
   --color-yred: #ff2423;
   --color-ylime: #d6f47c;
   --color-ygrey: #cfd6df;
   --color-ytextdark: #c2d2ff;
   --color-ybrown: #845005;
-  --color-ydarkbrown: #5C3804;
-  --color-yblue: #84A5FF;
+  --color-ydarkbrown: #5c3804;
+  --color-yblue: #84a5ff;
   --color-ypink: #ffb18a;
   --color-ygreen: #268505;
   --color-yask: #050884;
   --color-ylightblue: #080bd0;
   --color-ylightgrey: #f2f2f2;
-  --color-yviolet: #AE24FF;
+  --color-yviolet: #ae24ff;
   --color-ygreen: #268505;
 }
 
@@ -70,6 +66,8 @@
   margin-inline: auto;
   padding-inline: 1rem;
 }
+
+@variant dark (&:is(.dark *));
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -207,7 +205,7 @@
 
   /* blockquote */
   blockquote {
-    @apply border-l-1 border-yask pl-[1em];
+    @apply border-l border-yask pl-[1em];
   }
 
 
