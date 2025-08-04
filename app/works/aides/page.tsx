@@ -8,7 +8,6 @@ import {
   ArticleHeader,
   BodyImage,
   Summary,
-  ArticleImageGrid,
   Video,
 } from "../../components/server";
 import { Suspense } from "react";
