@@ -1,12 +1,13 @@
-[      {
-  "cover": { "url": "/img/aides.png", "videoUrl": "" },
-  "title": "Aides App",
-  "by": ["vitaly"],
-  "type": "Design, IOS",
-  "path": "/works/aides",
-  "date": "2025"
-},
-    {
+[
+  {
+    "cover": { "url": "/img/aides.png", "videoUrl": "" },
+    "title": "Aides App",
+    "by": ["vitaly"],
+    "type": "Design, IOS",
+    "path": "/works/aides",
+    "date": "2025"
+  },
+  {
     "cover": { "url": "/img/chess.png", "videoUrl": "" },
     "title": "Mikhail Tal Chess",
     "by": ["vitaly"],
@@ -14,7 +15,7 @@
     "path": "/works/chess",
     "date": "2024"
   },
-{
+  {
     "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
@@ -22,7 +23,7 @@
     "path": "/works/drugcode",
     "date": "2021"
   },
-    {
+  {
     "cover": { "url": "/img/flamingo.png", "videoUrl": "" },
 
     "title": "Flamingo",
@@ -30,14 +31,15 @@
     "type": "Design System",
     "path": "/works/flamingo",
     "date": "2021"
-  },{
-  "cover": { "url": "/img/taytega.png", "videoUrl": "" },
-  "title": "Taytega AG",
-  "by": ["vitaly"],
-  "type": "Design, Branding",
-  "path": "/works/taytega",
-  "date": "2024"
-},
+  },
+  {
+    "cover": { "url": "/img/taytega.png", "videoUrl": "" },
+    "title": "Taytega AG",
+    "by": ["vitaly"],
+    "type": "Design, Branding",
+    "path": "/works/taytega",
+    "date": "2024"
+  },
 
   {
     "cover": { "url": "/img/riveo.png", "videoUrl": "" },
@@ -51,7 +53,7 @@
     "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
     "coverVideo": false,
     "title": "BowlersLink",
-    "by": [ "vitaly"],
+    "by": ["vitaly"],
     "type": "Web design",
     "path": "/works/bowlerslink",
     "date": "2024"
@@ -67,7 +69,6 @@
     "date": "2024"
   },
 
-
   {
     "cover": { "url": "/img/starc.png", "videoUrl": "" },
     "title": "Starc Android",
@@ -75,8 +76,12 @@
     "type": "App Design",
     "path": "/works/starc",
     "date": "2020",
-     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
-    "role":"starc founder"}
+    "testimonials": {
+      "testimonial": "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!",
+      "img": "DN",
+      "user": "Dimka Novikov",
+      "role": "starc founder"
+    }
   },
   {
     "cover": { "url": "/img/starcios.png", "videoUrl": "" },
@@ -85,8 +90,12 @@
     "type": "App Design",
     "path": "/works/starcios",
     "date": "2021",
-     "testimonials": {"testimonial" : "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!", "img":"DN", "user":"Dimka Novikov", 
-    "role":"starc founder"}
+    "testimonials": {
+      "testimonial": "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!",
+      "img": "DN",
+      "user": "Dimka Novikov",
+      "role": "starc founder"
+    }
   },
 
   {
@@ -116,7 +125,8 @@
     "type": "UI/UX Design",
     "path": "/works/darlen",
     "date": "2021"
-  },  {
+  },
+  {
     "cover": { "url": "/img/restevents.png", "videoUrl": "" },
 
     "title": "RestEvents",
@@ -177,14 +187,5 @@
     "type": "UI/UX Design",
     "path": "/works/poehali",
     "date": "2018"
-  },
-    {
-    "cover": { "url": "/img/pobeda.png", "videoUrl": "" },
-
-    "title": "Pobeda TV",
-    "by": ["vitaly"],
-    "type": "UI/UX Design",
-    "path": "/works/pobeda",
-    "date": "2014"
   }
 ]
