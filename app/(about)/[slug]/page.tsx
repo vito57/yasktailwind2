@@ -38,7 +38,7 @@ export default async function Page(props: {
             height={80}
             alt={user.name}
           />
-          <h1 className="text-3xl font-bold">{user.name}</h1>
+          <h1 className="text-3xl font-bold">{user.name} Yask</h1>
           <Link href={`mailto:${user.email}`} className="ylink text-base">
             {user.email}
           </Link>
