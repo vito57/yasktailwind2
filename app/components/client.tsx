@@ -4,7 +4,13 @@ import Image from "next/image";
 
 import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
-import { ReactNode, useState, useEffect, useLayoutEffect } from "react";
+import {
+  ReactNode,
+  useState,
+  useEffect,
+  useLayoutEffect,
+  Suspense,
+} from "react";
 import data from "../main.json";
 //PWA
 

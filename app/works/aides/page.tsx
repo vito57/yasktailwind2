@@ -8,9 +8,8 @@ import {
   ArticleHeader,
   BodyImage,
   Summary,
-  Video,
 } from "../../components/server";
-import { Suspense } from "react";
+import Video from "@/app/components/video";
 export const metadata = {
   title: "Ai Aides Concept Design",
   description: "Artificial intelligence aides",
@@ -43,11 +42,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
-            <Video
-              width={1600}
-              height={1200}
-              src="https://yask.vercel.app/works/aides/aides.mp4"
-            />
+            <Video />
           </ArticleFigure>
           <br />
           <ArticleImageSection

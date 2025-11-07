@@ -426,23 +426,25 @@ interface VideoProps {
   src: string;
   poster?: string;
 }
-export function Video({ width, poster, height, src }: VideoProps) {
+export async function Video({ width, poster, height, src }: VideoProps) {
   return (
-    <video
-      className="w-full"
-      width={width}
-      height={height}
-      poster={poster}
-      controls={false}
-      playsInline
-      autoPlay
-      muted
-      loop
-      preload="none"
-    >
-      <source src={src} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <Suspense fallback="Loading">
+      <video
+        className="w-full"
+        width={width}
+        height={height}
+        poster={poster}
+        controls={false}
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+      >
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </Suspense>
   );
 }
 //END VIDEO
