@@ -1,5 +1,5 @@
-import { Suspense } from "react";
 import { list } from "@vercel/blob";
+import { Suspense } from "react";
 //VIDEO
 interface VideoProps {
   width?: number;
@@ -7,14 +7,13 @@ interface VideoProps {
   fileName: string;
   poster?: string;
 }
-async function VideoComp({ fileName, width, height, poster }: VideoProps) {
+export async function Video({ fileName, width, height, poster }: VideoProps) {
   const { blobs } = await list({
-    prefix: fileName,
+    prefix: "aides-740Ol2XEnDjflhq8lcisNcAUO9C3o6.mp4",
     limit: 1,
   });
-
+  console.log(blobs);
   const { url } = blobs[0];
-
   return (
     <video
       className="w-full"
@@ -34,11 +33,11 @@ async function VideoComp({ fileName, width, height, poster }: VideoProps) {
   );
 }
 // { width, poster, height, src }: VideoProps
-export default function Video({ fileName }: VideoProps) {
-  return (
-    <Suspense fallback={<p>Loading video...</p>}>
-      <VideoComp fileName={fileName} />
-    </Suspense>
-  );
-}
+// export default function Video() {
+//   return (
+//     <Suspense>
+//       <VideoComp fileName="aides.mp4" />;
+//     </Suspense>
+//   );
+// }
 //END VIDEO

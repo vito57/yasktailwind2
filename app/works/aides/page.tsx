@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   Article,
   AnimateLayout,
@@ -9,7 +10,7 @@ import {
   BodyImage,
   Summary,
 } from "../../components/server";
-import Video from "@/app/components/video";
+import { Video } from "@/app/components/video";
 export const metadata = {
   title: "Ai Aides Concept Design",
   description: "Artificial intelligence aides",
@@ -42,7 +43,13 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
-            <Video />
+            <Suspense fallback="Loading">
+              <Video
+                width={1600}
+                height={1200}
+                fileName="aides-740Ol2XEnDjflhq8lcisNcAUO9C3o6.mp4"
+              />
+            </Suspense>
           </ArticleFigure>
           <br />
           <ArticleImageSection
