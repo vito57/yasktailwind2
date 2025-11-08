@@ -9,7 +9,7 @@ import {
   ArticleHeader,
   BodyImage,
   Summary,
-  VideoLoad,
+  VideoSkeleton,
 } from "../../components/server";
 import { Video } from "@/app/components/video";
 
@@ -45,7 +45,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
-            <Suspense fallback={<VideoLoad width={1600} height={1200} />}>
+            <Suspense fallback={<VideoSkeleton width={1600} height={1200} />}>
               <Video
                 width={1600}
                 height={1200}

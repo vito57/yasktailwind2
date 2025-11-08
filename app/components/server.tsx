@@ -9,8 +9,10 @@ interface VideoLoader {
   width?: number;
   height?: number;
 }
-export function VideoLoad({ width, height }: VideoLoader) {
-  return <div className={`w-full aspect-4/3 bg-ylightgrey `}></div>;
+export function VideoSkeleton({ width, height }: VideoLoader) {
+  return (
+    <div className={`w-full animate-pulse aspect-4/3 bg-ylightgrey `}></div>
+  );
 }
 
 export const Shimmer = (w: number, h: number, c: string = "#ffffff") => `
@@ -535,7 +537,7 @@ export function FeedItem({
         />
       </Link>
       <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 mix-blend-difference text-sm transition-all">
-        View on Dribbble
+        {title || "View on Dribbble"}
       </span>
     </figure>
   );

@@ -5,6 +5,7 @@ import {
   PortfolioItem,
   Footer,
   AnimateLayout,
+  FeedItem,
 } from "@/app/components/server";
 import { ArticleTopMenu, MobileArticleFooter } from "@/app/components/client";
 import Link from "next/link";
@@ -125,7 +126,7 @@ export default async function Page(props: {
           <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
             {userWorks.map((i) => {
               return (
-                <PortfolioItem
+                <FeedItem
                   key={i.path}
                   href={i.path}
                   imageSrc={i.cover}

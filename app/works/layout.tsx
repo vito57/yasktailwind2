@@ -1,4 +1,4 @@
-import { Footer, PortfolioItem, Section } from "../components/server";
+import { FeedItem, Footer, PortfolioItem, Section } from "../components/server";
 import {
   ArticleTopMenu,
   MobileNavBar,
@@ -20,15 +20,14 @@ export default function WorkLayout({
         <div className="grid gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-4 md:grid-cols-4 grid-cols-2">
           {data.map((i) => {
             return (
-              <PortfolioItem
+              <FeedItem
                 key={i.title}
                 keyNum={i.path}
                 href={i.path}
-                imageSrc={i.cover.url}
-                poster={i.cover.url}
+                imageSrc={i.cover}
                 imageAlt={i.title}
-                //title={i.title}
-                // type={i.type}
+                title={i.title}
+                type={i.type}
               />
             );
           })}
