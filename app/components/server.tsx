@@ -5,13 +5,21 @@ import ui8 from "../../public/ui8.svg";
 import { Children, Suspense } from "react";
 
 //shimmer
-const shimmer = (w: number, h: number) => `
-<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+interface VideoLoader {
+  width?: number;
+  height?: number;
+}
+export function VideoLoad({ width, height }: VideoLoader) {
+  return <div className={`w-full aspect-4/3 bg-ylightgrey `}></div>;
+}
+
+export const Shimmer = (w: number, h: number, c: string = "#ffffff") => `
+<svg width="${w}" height="${h}"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="g">
-      <stop stop-color="#f5f5f5" offset="20%" stop-opacity="0" />
-      <stop stop-color="#f5f5f5" offset="50%" stop-opacity="0.5" />
-      <stop stop-color="#f5f5f5" offset="70%" stop-opacity="0"/>
+      <stop stop-color="${c}" offset="20%" stop-opacity="0" />
+      <stop stop-color="${c}" offset="50%" stop-opacity="0.6" />
+      <stop stop-color="${c}" offset="70%" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <rect width="${w}" height="${h}" fill="#f5f5f5" opacity="0" />
@@ -47,9 +55,7 @@ export function BodyImage({
       width={width}
       height={height}
       className={defaultClass + " " + className}
-      placeholder={`data:image/svg+xml;base64,${toBase64(
-        shimmer((width = 1600), (height = 1200))
-      )}`}
+      placeholder={`data:image/svg+xml;base64,${toBase64(Shimmer(1600, 1200))}`}
       alt={alt}
     ></Image>
   );
@@ -303,6 +309,7 @@ interface ArticleImageSectionProps {
   image2: { src: string; caption?: string };
   className?: string;
   height?: number;
+  width?: number;
 }
 
 export function ArticleImageSection(props: ArticleImageSectionProps) {
@@ -314,6 +321,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
             src={props.image1.src}
             className={props.className}
             height={props.height}
+            width={props.width}
             alt={props.image1.caption || props.image1.src}
           />
         </ArticleFigure>
@@ -323,6 +331,7 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
           <BodyImage
             src={props.image2.src}
             height={props.height}
+            width={props.width}
             className={props.className}
             alt={props.image2.caption || props.image2.src}
           />
@@ -378,7 +387,6 @@ interface portfolioItemProps {
   imageAlt: string;
   title?: string;
   type?: string;
-  poster: string;
 
   testimonials?:
     | { testimonial: string; user: string; img: string; role: string }
@@ -403,9 +411,9 @@ export function PortfolioItem({
             width={800}
             height={600}
             placeholder={`data:image/svg+xml;base64,${toBase64(
-              shimmer(800, 600)
+              Shimmer(800, 600)
             )}`}
-            className="w-full ease-in group-hover/item:brightness-95 duration-200 block transition-all transform-gpu bg-ygrey rounded-xl"
+            className="w-full ease-in group-hover/item:brightness-95 duration-200 block transition-all transform-gpu bg-ylightgrey rounded-xl"
             alt={imageAlt}
           />
         </Link>
@@ -419,35 +427,6 @@ export function PortfolioItem({
   );
 }
 //END PORTFOLIO ITEM
-//VIDEO
-interface VideoProps {
-  width?: number;
-  height?: number;
-  src: string;
-  poster?: string;
-}
-export async function Video({ width, poster, height, src }: VideoProps) {
-  return (
-    <Suspense fallback="Loading">
-      <video
-        className="w-full"
-        width={width}
-        height={height}
-        poster={poster}
-        controls={false}
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </Suspense>
-  );
-}
-//END VIDEO
 
 //ARTICLE IMAGE
 interface ArticleFigureProps {
@@ -542,20 +521,20 @@ export function FeedItem({
   type,
 }: feedItemProps) {
   return (
-    <figure className="relative group/item ">
+    <figure className="relative group/item overflow-hidden">
       <Link key={keyNum} href={href} className="">
         <Image
           src={imageSrc}
           width={800}
           height={600}
           placeholder={`data:image/svg+xml;base64,${toBase64(
-            shimmer(800, 600)
+            Shimmer(800, 600)
           )}`}
-          className="w-full ease-in rounded-xl group-hover/item:scale-[1.02] duration-200 block transition-transform transform-gpu"
+          className="w-full ease-in rounded-xl group-hover/item:brightness-95 duration-200 block transition-all transform-gpu"
           alt={imageAlt}
         />
       </Link>
-      <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 text-sm transition-all">
+      <span className="text-white absolute right-2 -bottom-8 group-hover/item:bottom-2 mix-blend-difference text-sm transition-all">
         View on Dribbble
       </span>
     </figure>

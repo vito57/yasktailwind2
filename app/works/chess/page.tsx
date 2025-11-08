@@ -49,8 +49,7 @@ const Page = () => {
           <br />
 
           <ArticleImageSection
-            height={924}
-            className="bg-transparent"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/chess/overview.png",
               caption: "[fig 0] Light mode",
@@ -74,7 +73,8 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{
               src: "/works/chess/1.png",
               caption: "[fig 2] Sidebar open",
@@ -98,7 +98,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/3.png", caption: "[fig 3] Tips" }}
             image2={{
               src: "/works/chess/4.png",
@@ -113,7 +114,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/5.png", caption: "[fig 5]" }}
             image2={{
               src: "/works/chess/6.png",
@@ -128,7 +130,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/7.png", caption: "[fig 7]" }}
             image2={{
               src: "/works/chess/8.png",
@@ -146,7 +149,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/9.png", caption: "[fig 9]" }}
             image2={{
               src: "/works/chess/10.png",
@@ -157,7 +161,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/11.png", caption: "[fig 11]" }}
             image2={{
               src: "/works/chess/12.png",
@@ -175,7 +180,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
-            className="bg-transparent"
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/13.png", caption: "[fig 13]" }}
             image2={{
               src: "/works/chess/14.png",
@@ -194,7 +200,7 @@ const Page = () => {
               src="/works/chess/15.png"
               width={1704}
               height={824}
-              className="bg-transparent"
+              className="bg-ylightgrey"
               alt="[fig 15] Adaptive layout"
             />
           </ArticleFigure>
@@ -208,6 +214,8 @@ const Page = () => {
 
           <ArticleImageSection
             height={924}
+            width={1464}
+            className="bg-ylightgrey"
             image1={{ src: "/works/chess/16.png", caption: "[fig 16]" }}
             image2={{
               src: "/works/chess/17.png",

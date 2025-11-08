@@ -1,5 +1,5 @@
 import { list } from "@vercel/blob";
-import { Suspense } from "react";
+import { Shimmer } from "./server";
 //VIDEO
 interface VideoProps {
   width?: number;
@@ -9,7 +9,7 @@ interface VideoProps {
 }
 export async function Video({ fileName, width, height, poster }: VideoProps) {
   const { blobs } = await list({
-    prefix: "aides-740Ol2XEnDjflhq8lcisNcAUO9C3o6.mp4",
+    prefix: fileName,
     limit: 1,
   });
   console.log(blobs);

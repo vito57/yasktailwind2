@@ -1,16 +1,8 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-
 import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
-import {
-  ReactNode,
-  useState,
-  useEffect,
-  useLayoutEffect,
-  Suspense,
-} from "react";
+import { useState, useEffect } from "react";
 import data from "../main.json";
 //PWA
 

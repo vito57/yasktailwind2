@@ -128,10 +128,9 @@ export default async function Page(props: {
                 <PortfolioItem
                   key={i.path}
                   href={i.path}
-                  imageSrc={i.cover.url}
+                  imageSrc={i.cover}
                   imageAlt={i.title}
                   title={i.title}
-                  poster={i.cover.url}
                 />
               );
             })}

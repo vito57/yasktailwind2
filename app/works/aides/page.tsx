@@ -9,8 +9,10 @@ import {
   ArticleHeader,
   BodyImage,
   Summary,
+  VideoLoad,
 } from "../../components/server";
 import { Video } from "@/app/components/video";
+
 export const metadata = {
   title: "Ai Aides Concept Design",
   description: "Artificial intelligence aides",
@@ -43,7 +45,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure figcaption="[fig 1] One of the versions of animation of transition to chat. Made in Origami Studio">
-            <Suspense fallback="Loading">
+            <Suspense fallback={<VideoLoad width={1600} height={1200} />}>
               <Video
                 width={1600}
                 height={1200}
@@ -54,7 +56,7 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={954}
-            className="bg-slate-50"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/aides/aides-start.png",
               caption: "[fig 2] Main screen",
@@ -67,7 +69,7 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={954}
-            className="bg-slate-50"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/aides/aides-context-notify.png",
               caption: "[fig 4] Context menu and notification",
@@ -80,7 +82,7 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={954}
-            className="bg-transparent"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/aides/aides-profile.png",
               caption: "[fig 6] Charecter page and user profile",
@@ -93,7 +95,7 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={954}
-            className="bg-transparent"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/aides/aides-list.png",
               caption: "[fig 8] Chats list",
@@ -106,7 +108,7 @@ const Page = () => {
           <br />
           <ArticleImageSection
             height={954}
-            className="bg-transparent"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/aides/aides-chat.png",
               caption: "[fig 10] Chat",

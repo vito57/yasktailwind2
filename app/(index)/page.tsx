@@ -11,10 +11,9 @@ export default function Works() {
               key={i.title}
               keyNum={i.path}
               href={i.path}
-              imageSrc={i.cover.url}
+              imageSrc={i.cover}
               imageAlt={i.title}
               title={i.title}
-              poster={i.cover.url}
               type={i.type}
               testimonials={i.testimonials}
             />

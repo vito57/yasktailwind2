@@ -9,8 +9,7 @@ import {
   BodyImage,
   Summary,
 } from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
+
 export const metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode editor design",
@@ -48,7 +47,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/node_editor.png"
               alt="Node editor"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
             />
           </ArticleFigure>
           <br />
@@ -67,7 +66,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/code_editor.png"
               alt="Code editor"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
             />
           </ArticleFigure>
           <br />
@@ -83,7 +82,7 @@ const Page = () => {
             <BodyImage
               src="/works/drugcode/file_system.png"
               alt="File system"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
             />
           </ArticleFigure>
           <br />
@@ -96,7 +95,7 @@ const Page = () => {
               src: "/works/drugcode/light_theme.png",
               caption: "[fig 5] Light theme",
             }}
-            className="bg-[url('/works/drugcode/bg.png')] bg-cover"
+            className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
           />
           <br />
           <Text title="Branding">

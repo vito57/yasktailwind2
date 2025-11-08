@@ -2,7 +2,7 @@ import { AnimateLayout } from "../../components/server";
 
 // Set the Access Token
 
-import { FeedItem } from "@/app/components/server";
+import { FeedItem, PortfolioItem } from "@/app/components/server";
 export const metadata = {
   title: "Design Feed",
   description: "Design feed",

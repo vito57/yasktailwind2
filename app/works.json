@@ -1,6 +1,6 @@
 [
   {
-    "cover": { "url": "/img/aides.png", "videoUrl": "" },
+    "cover": "/img/aides.png",
     "title": "Aides App",
     "by": ["vitaly"],
     "type": "Design, IOS",
@@ -8,7 +8,7 @@
     "date": "2025"
   },
   {
-    "cover": { "url": "/img/chess.png", "videoUrl": "" },
+    "cover": "/img/chess.png",
     "title": "Mikhail Tal Chess",
     "by": ["vitaly"],
     "type": "Design, Branding",
@@ -16,7 +16,7 @@
     "date": "2024"
   },
   {
-    "cover": { "url": "/img/drugcode.png", "videoUrl": "" },
+    "cover": "/img/drugcode.png",
     "title": "DrugCode+",
     "by": ["vitaly", "vera"],
     "type": "Design, Branding",
@@ -24,7 +24,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/flamingo.png", "videoUrl": "" },
+    "cover": "/img/flamingo.png",
 
     "title": "Flamingo",
     "by": ["vitaly"],
@@ -33,7 +33,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/taytega.png", "videoUrl": "" },
+    "cover": "/img/taytega.png",
     "title": "Taytega AG",
     "by": ["vitaly"],
     "type": "Design, Branding",
@@ -42,7 +42,7 @@
   },
 
   {
-    "cover": { "url": "/img/riveo.png", "videoUrl": "" },
+    "cover": "/img/riveo.png",
     "title": "Riveo",
     "by": ["vitaly"],
     "type": "Refactoring UI",
@@ -50,7 +50,7 @@
     "date": "2024"
   },
   {
-    "cover": { "url": "/img/bowlerslink.png", "videoUrl": "" },
+    "cover": "/img/bowlerslink.png",
     "coverVideo": false,
     "title": "BowlersLink",
     "by": ["vitaly"],
@@ -60,7 +60,7 @@
   },
 
   {
-    "cover": { "url": "/img/angleicons.png", "videoUrl": "" },
+    "cover": "/img/angleicons.png",
     "coverVideo": false,
     "title": "AngleIcons",
     "by": ["gala", "vitaly"],
@@ -70,7 +70,7 @@
   },
 
   {
-    "cover": { "url": "/img/starc.png", "videoUrl": "" },
+    "cover": "/img/starc.png",
     "title": "Starc Android",
     "by": ["vitaly"],
     "type": "App Design",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "cover": { "url": "/img/starcios.png", "videoUrl": "" },
+    "cover": "/img/starcios.png",
     "title": "Starc IOS",
     "by": ["vitaly"],
     "type": "App Design",
@@ -99,7 +99,7 @@
   },
 
   {
-    "cover": { "url": "/img/domkino.png", "videoUrl": "" },
+    "cover": "/img/domkino.png",
 
     "title": "Domkino",
     "by": ["vitaly"],
@@ -109,7 +109,7 @@
   },
 
   {
-    "cover": { "url": "/img/bober.png", "videoUrl": "" },
+    "cover": "/img/bober.png",
 
     "title": "Bober",
     "by": ["vitaly"],
@@ -118,7 +118,7 @@
     "date": "2019"
   },
   {
-    "cover": { "url": "/img/darlen.png", "videoUrl": "" },
+    "cover": "/img/darlen.png",
 
     "title": "Darlen",
     "by": ["vitaly"],
@@ -127,7 +127,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/restevents.png", "videoUrl": "" },
+    "cover": "/img/restevents.png",
 
     "title": "RestEvents",
     "by": ["vitaly", "gala"],
@@ -136,7 +136,7 @@
     "date": "2024"
   },
   {
-    "cover": { "url": "/img/karusel.png", "videoUrl": "" },
+    "cover": "/img/karusel.png",
 
     "title": "Karusel",
     "by": ["vitaly"],
@@ -145,7 +145,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/bootsyicons.png", "videoUrl": "" },
+    "cover": "/img/bootsyicons.png",
     "title": "Bootsy Icons",
     "by": ["gala", "vitaly"],
     "type": "Icon Set",
@@ -153,7 +153,7 @@
     "date": "2021"
   },
   {
-    "cover": { "url": "/img/bootsyduotone.png", "videoUrl": "" },
+    "cover": "/img/bootsyduotone.png",
 
     "title": "Bootsy Icons Duotone",
     "by": ["gala", "vitaly"],
@@ -162,7 +162,7 @@
     "date": "2022"
   },
   {
-    "cover": { "url": "/img/iconsaur.png", "videoUrl": "" },
+    "cover": "/img/iconsaur.png",
 
     "title": "Iconsaur",
     "by": ["gala", "vitaly"],
@@ -171,8 +171,7 @@
     "date": "2024"
   },
   {
-    "cover": { "url": "/img/illustrations.png", "videoUrl": "" },
-
+    "cover": "/img/illustrations.png",
     "title": "Hand-drawn illustrations",
     "by": ["gala"],
     "type": "Illustrations",
@@ -180,8 +179,7 @@
     "date": "2018"
   },
   {
-    "cover": { "url": "/img/poehali.png", "videoUrl": "" },
-
+    "cover": "/img/poehali.png",
     "title": "Poehali TV",
     "by": ["vitaly"],
     "type": "UI/UX Design",
