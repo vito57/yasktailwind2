@@ -10,9 +10,6 @@ import {
   Summary,
 } from "../../components/server";
 
-import Image from "next/image";
-import Link from "next/link";
-
 export const metadata = {
   title: "Flamingo",
   description: "Story about Drugcode design",
@@ -21,7 +18,7 @@ export default function Flamingo() {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-100">
+        <ArticleHeader className="bg-ylightgrey">
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/cover.png"
@@ -45,7 +42,7 @@ export default function Flamingo() {
             </p>
           </Text>
         </Section>
-        <Section id="preview" className="bg-slate-100" fluid>
+        <Section id="preview" className="bg-ylightgrey" fluid>
           <div className="container">
             <ArticleFigure>
               <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
@@ -88,6 +85,7 @@ export default function Flamingo() {
               src="/works/flamingo/principles.png"
               width={1120}
               height={600}
+              className="bg-ylightgrey"
               alt="Flamingo"
             />
           </ArticleFigure>
@@ -107,7 +105,7 @@ export default function Flamingo() {
               src="/works/flamingo/list_and_flow.png"
               width={1120}
               height={500}
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Flamingo"
             />
           </ArticleFigure>
@@ -127,7 +125,7 @@ export default function Flamingo() {
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/styles.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Flamingo"
             />
           </ArticleFigure>
@@ -137,7 +135,7 @@ export default function Flamingo() {
               src="/works/flamingo/guides.png"
               width={1120}
               height={600}
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Flamingo"
             />
           </ArticleFigure>
@@ -145,14 +143,14 @@ export default function Flamingo() {
           <ArticleFigure>
             <BodyImage
               src="/works/flamingo/components.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Flamingo"
             />
           </ArticleFigure>
           <br />
           <ArticleFigure>
             <BodyImage
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               src="/works/flamingo/components2.png"
               alt="Flamingo"
             />
@@ -160,7 +158,7 @@ export default function Flamingo() {
           <br />
           <ArticleFigure>
             <BodyImage
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               src="/works/flamingo/components3.png"
               alt="Flamingo"
             />
@@ -177,7 +175,7 @@ export default function Flamingo() {
           </Text>
           <br />
           <ArticleImageSection
-            className="bg-slate-100"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/flamingo/u1.png",
               //caption: "Representing function as node",
@@ -189,7 +187,7 @@ export default function Flamingo() {
           />
           <br />
           <ArticleImageSection
-            className="bg-slate-100"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/flamingo/u3.png",
               //caption: "Representing function as node",
@@ -201,7 +199,7 @@ export default function Flamingo() {
           />
           <br />
           <ArticleImageSection
-            className="bg-slate-100"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/flamingo/u5.png",
               //caption: "Representing function as node",
