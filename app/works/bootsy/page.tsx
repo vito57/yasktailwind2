@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-50">
+        <ArticleHeader className="bg-ylightgrey">
           <ArticleHeroSection
             underTitle="Bootsy Icons"
             buttonUrl="https://ui8.net/gala-yask/products/bootsy-icons---bootstrap-icon-set"
@@ -45,6 +45,7 @@ const Page = () => {
           </Text>
           <br />
           <ArticleImageSection
+            className="bg-ylightgrey"
             image1={{ src: "/works/bootsy/1.png" }}
             image2={{
               src: "/works/bootsy/2.png",
@@ -52,6 +53,7 @@ const Page = () => {
           />
           <br />
           <ArticleImageSection
+            className="bg-ylightgrey"
             image1={{ src: "/works/bootsy/3.png" }}
             image2={{
               src: "/works/bootsy/4.png",
@@ -59,20 +61,21 @@ const Page = () => {
           />
           <br />
           <ArticleImageSection
+            className="bg-ylightgrey"
             image1={{ src: "/works/bootsy/5.png" }}
             image2={{
               src: "/works/bootsy/6.png",
             }}
           />
           <br />
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/bootsy/f1.png"
               width={2240}
               height={5333}
               alt="All Icons"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <aside id="summary" className="container">
           <Text title="Summary">

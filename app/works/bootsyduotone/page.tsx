@@ -10,18 +10,17 @@ import {
   Summary,
   ArticleHeroSection,
 } from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
+
 export const metadata = {
-  title: "Drugcode - Code editor design",
-  description: "Story about Drugcode editor design",
+  title: "Bootsy Doutone Icons",
+  description: "Icon set",
 };
 
 const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-900">
+        <ArticleHeader className="bg-zinc-900">
           <ArticleHeroSection
             underTitle="Bootsy Doutone Icons"
             title="1700+ High-Quality UI Vector Icons"
@@ -65,14 +64,14 @@ const Page = () => {
             }}
           />
           <br />
-          <ArticleFigure>
+          {/* <ArticleFigure>
             <BodyImage
               src="/works/bootsy/f1.png"
               width={2240}
               height={5333}
               alt="All Icons"
             />
-          </ArticleFigure>
+          </ArticleFigure> */}
         </Section>
         <aside id="summary" className="container">
           <Text title="Summary">

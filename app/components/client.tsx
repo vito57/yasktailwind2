@@ -4,8 +4,8 @@ import { Button } from "./server";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { useState, useEffect } from "react";
 import data from "../main.json";
-//PWA
 
+//PWA
 export function Pwa() {
   console.log("start");
   let sw: ServiceWorkerContainer | undefined;
@@ -69,7 +69,7 @@ export function BodyColor({ children }: BodyColorProps) {
     "/works/taytega",
   ];
   const colorClass = dark.includes(pathname)
-    ? "dark bg-zinc-950 text-ytextdark"
+    ? "dark bg-zinc-950 text-ygrey"
     : "light text-yask";
   return <body className={colorClass}>{children}</body>;
 }
