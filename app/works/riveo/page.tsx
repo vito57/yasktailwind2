@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader>
+        <ArticleHeader className="bg-zinc-900">
           <ArticleFigure>
             <BodyImage
               src="/works/riveo/cover.png"
