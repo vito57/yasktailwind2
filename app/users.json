@@ -31,33 +31,41 @@
     ],
     "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
     "top skills": [
-      {"name":"UI/UX Design", "href":"", "badge":""},
-      {"name":"Frontend",  "href":"", "badge":""},
-      {"name":"PWA",  "href":"", "badge":""},
-      {"name":"Material Design",  "href":"", "badge":""},
-      {"name":"HIG",  "href":"", "badge":""},
-      {"name":"Accessibility",  "href":"https://doka.guide/a11y/", "badge":"new"}
+      { "name": "UI/UX Design", "href": "", "badge": "" },
+      { "name": "Frontend", "href": "", "badge": "" },
+      { "name": "PWA", "href": "", "badge": "" },
+      { "name": "Material Design", "href": "", "badge": "" },
+      { "name": "HIG", "href": "", "badge": "" },
+      {
+        "name": "Accessibility",
+        "href": "https://doka.guide/a11y/",
+        "badge": "new"
+      }
     ],
     "tools": [
-      {"name":"Play", "href":"https://createwithplay.com/", "badge":"new"},
-      {"name":"Penpot","href":"https://penpot.app","badge":"new"},
-      {"name":"Figma","href":"https://figma.com", "badge":""},
-      {"name":"Framer","href":"https://www.framer.com/", "badge":""},
-      {"name":"Blender","href":"https://www.blender.org/", "badge":"new"},
-      {"name":"Spline3d","href":"https://spline.design/", "badge":"new"},
-      {"name":"Frame Motion","href":"https://motion.dev/", "badge":""},
-      {"name":"NextJs","href":"https://nextjs.org/", "badge":""},
-      {"name":"Bootstrap","href":"https://getbootstrap.com/", "badge":""},
-      {"name":"Tailwind","href":"https://tailwindcss.com/", "badge":""},
-      {"name":"D3js","href":"https://d3js.org/", "badge":""},
-      {"name":"HTML", "href":"https://doka.guide/", "badge":""},
-      {"name":"CSS", "href":"https://doka.guide/", "badge":""},
-      {"name":"JavaScript", "href":"https://doka.guide/", "badge":""},
-      {"name":"Photoshop", "href":"", "badge":""},
-      {"name":"Origami Studio","href":"https://origami.design/",  "badge":""},
-      {"name":"Illustrator",  "href":"", "badge":""}
+      { "name": "Play", "href": "https://createwithplay.com/", "badge": "new" },
+      { "name": "Penpot", "href": "https://penpot.app", "badge": "new" },
+      { "name": "Figma", "href": "https://figma.com", "badge": "" },
+      { "name": "Framer", "href": "https://www.framer.com/", "badge": "" },
+      { "name": "Blender", "href": "https://www.blender.org/", "badge": "new" },
+      { "name": "Spline3d", "href": "https://spline.design/", "badge": "new" },
+      { "name": "Frame Motion", "href": "https://motion.dev/", "badge": "" },
+      { "name": "NextJs", "href": "https://nextjs.org/", "badge": "" },
+      { "name": "Bootstrap", "href": "https://getbootstrap.com/", "badge": "" },
+      { "name": "Tailwind", "href": "https://tailwindcss.com/", "badge": "" },
+      { "name": "D3js", "href": "https://d3js.org/", "badge": "" },
+      { "name": "HTML", "href": "https://doka.guide/", "badge": "" },
+      { "name": "CSS", "href": "https://doka.guide/", "badge": "" },
+      { "name": "JavaScript", "href": "https://doka.guide/", "badge": "" },
+      { "name": "Photoshop", "href": "", "badge": "" },
+      {
+        "name": "Origami Studio",
+        "href": "https://origami.design/",
+        "badge": ""
+      },
+      { "name": "Illustrator", "href": "", "badge": "" }
     ],
-   
+
     "experience": [
       {
         "position": "Designer",
@@ -101,26 +109,25 @@
     ],
 
     "awards": [
-       {"name":"Runet Award 2015", "href":"", "badge":""},
-       {"name":"Runet Award 2015", "href":"", "badge":""},
-       {"name":"Runet Award 2018", "href":"", "badge":""},
-       {"name":"Runet Award 2021", "href":"", "badge":""}
-   
+      { "name": "Runet Award 2015", "href": "", "badge": "" },
+      { "name": "Runet Award 2015", "href": "", "badge": "" },
+      { "name": "Runet Award 2018", "href": "", "badge": "" },
+      { "name": "Runet Award 2021", "href": "", "badge": "" }
     ],
 
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
     "courses": ["MITx: Mobile Application Experiences, 2012"],
     "languages": ["🇷🇺 Russian", "🇬🇧 English"],
-    "learn":[      
-       {"name":"Spline3d", "href":"", "badge":""},
-       {"name":"Blender modeling", "href":"", "badge":""}
-]
+    "learn": [
+      { "name": "Spline3d", "href": "", "badge": "" },
+      { "name": "Blender modeling", "href": "", "badge": "" }
+    ]
   },
   {
     "name": "Gala",
     "email": "gala57rus@yandex.ru",
     "avatar": "/about/gala.png",
-    "occupation": "Animation artist, Icon Designer, Illustrator",
+    "occupation": "Animation artist, Illustrator",
     "resume": null,
     "tagline": "Hi! I can help with logo design, illustrations, icon systems.",
     "path": "/gala",
@@ -138,18 +145,21 @@
     ],
     "about": "Experienced Icon designer and illustrator",
     "top skills": [
- 
-      {"name":"Animation", "href":"", "badge":"new"},
-      {"name":"Icon Systems",  "href":"", "badge":""},
-      {"name":"Logo Design",  "href":"", "badge":""},
-      {"name":"Icon Design",  "href":"", "badge":""},
-      {"name":"Illustrations",  "href":"", "badge":""}
+      { "name": "Animation", "href": "", "badge": "new" },
+      { "name": "Icon Systems", "href": "", "badge": "" },
+      { "name": "Logo Design", "href": "", "badge": "" },
+      { "name": "Icon Design", "href": "", "badge": "" },
+      { "name": "Illustrations", "href": "", "badge": "" }
     ],
     "tools": [
-      {"name":"Procreate","href":"https://procreate.com/", "badge":""},
-      {"name":"Illustrator",  "href":"", "badge":""},
-      {"name":"ToonBoom","href":"https://www.toonboom.com/", "badge":"new"},
-      {"name":"Pen and Pencil",  "href":"", "badge":""}
+      { "name": "Procreate", "href": "https://procreate.com/", "badge": "" },
+      { "name": "Illustrator", "href": "", "badge": "" },
+      {
+        "name": "ToonBoom",
+        "href": "https://www.toonboom.com/",
+        "badge": "new"
+      },
+      { "name": "Pen and Pencil", "href": "", "badge": "" }
     ],
     "experience": [
       {
@@ -166,9 +176,7 @@
     "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
     "courses": ["Animation artist. Merinov School"],
     "languages": ["🇷🇺 Russian", "🇬🇧 English"],
-    "learn":[       {"name":"Animation", "href":"", "badge":""}
-]
-
+    "learn": [{ "name": "Animation", "href": "", "badge": "" }]
   },
   {
     "name": "Vera",
@@ -187,14 +195,13 @@
     ],
     "about": "Artist, Illustrator and Blogger",
     "top skills": [
-      {"name":"Roblox Livel Design", "href":"", "badge":""},
-      {"name":"Illustrations",  "href":"", "badge":""}
-     
+      { "name": "Roblox Livel Design", "href": "", "badge": "" },
+      { "name": "Illustrations", "href": "", "badge": "" }
     ],
-    "tools": [     
-      {"name":"Procreate","href":"https://procreate.com/", "badge":""},
-      {"name":"CupCut","href":"https://www.capcut.com/", "badge":""},
-      {"name":"Pen and Pencil",  "href":"", "badge":""}
+    "tools": [
+      { "name": "Procreate", "href": "https://procreate.com/", "badge": "" },
+      { "name": "CupCut", "href": "https://www.capcut.com/", "badge": "" },
+      { "name": "Pen and Pencil", "href": "", "badge": "" }
     ],
     "experience": [
       {
@@ -212,7 +219,9 @@
 
     "courses": null,
     "languages": ["🇷🇺 Russian", "🇬🇧 English", "🇫🇷 Franch"],
-    "learn":[       {"name":"Painting", "href":"", "badge":""},{"name":"Franch language", "href":"", "badge":""}
-]
+    "learn": [
+      { "name": "Painting", "href": "", "badge": "" },
+      { "name": "Franch language", "href": "", "badge": "" }
+    ]
   }
 ]

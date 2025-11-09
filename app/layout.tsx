@@ -75,21 +75,6 @@ const jbm = JetBrains_Mono({
   ],
 });
 
-const firacode = Fira_Code({
-  variable: "--font-firacode",
-  subsets: ["latin"],
-  weight: ["400"],
-  fallback: [
-    "ui-monospace",
-    "SFMono-Regular",
-    "Menlo",
-    "Monaco",
-    "Consolas",
-    "Liberation Mono",
-    "Courier New",
-    "monospace",
-  ],
-});
 // Font files can be colocated inside of `app`
 const serotiva = localFont({
   variable: "--font-serotiva",

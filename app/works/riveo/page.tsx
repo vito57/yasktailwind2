@@ -36,31 +36,60 @@ const Page = () => {
           </Text>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/review.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/review.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+              height={1080}
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/newui.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/newui.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/editor.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/editor.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/preview_mode.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/preview_mode.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/share.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/share.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/create.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/create.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
           <br />
           <ArticleFigure>
-            <BodyImage src="/works/riveo/preview.png" alt="riveo main" />
+            <BodyImage
+              src="/works/riveo/preview.png"
+              className="bg-zinc-900"
+              alt="riveo main"
+            />
           </ArticleFigure>
         </Section>
 

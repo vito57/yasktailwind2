@@ -1,6 +1,5 @@
 import { Navigation, Jumbo, Logo } from "../components/client";
 import { TopMenu, Footer } from "../components/server";
-import Image from "next/image";
 import data from "../main.json";
 export default function WorksLayout({
   children,

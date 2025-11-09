@@ -84,8 +84,7 @@ export default function About() {
           </h2>
           <br />
           <blockquote className="text-sm">
-            Everything we need — simple, <br /> everything complicated — not
-            need.{" "}
+            Everything you need is simple!
           </blockquote>
           <br />
           <dl className="text-base">

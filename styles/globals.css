@@ -205,9 +205,11 @@
 
   /* blockquote */
   blockquote {
-    @apply border-l border-yask pl-[1em];
+    @apply border-l border-ydarkbrown pl-[1em] text-ydarkbrown;
   }
-
+blockquote > footer{
+@apply text-ybrown
+}
 
 
   /* forms */

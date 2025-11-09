@@ -477,7 +477,7 @@ export default function Page() {
             consequuntur quia ullam!
           </p>
           <br />
-          <blockquote className="">
+          <blockquote>
             <p>I quickly explained that many big jobs involve few hazards</p>
           </blockquote>
           <br />
@@ -497,7 +497,7 @@ export default function Page() {
               actually as proud of the things we haven’tdone as the things I
               have done. Innovation is saying no to 1,000 things.
             </p>
-            <br />
+
             <footer>
               <em> Steve Jobs,</em>{" "}
               <cite>Apple Worldwide Developers’ Conference, 1997</cite>
