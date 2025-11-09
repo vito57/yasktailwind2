@@ -10,8 +10,7 @@ import {
   ArticleFigure,
   ArticleHeroSection,
 } from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
+
 export const metadata = {
   title: "Iconsaur - Bootstrap Based Icon System",
   description: "2400 handcrafted ui icons",

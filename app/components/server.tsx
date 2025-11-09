@@ -167,7 +167,7 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
   return (
     <div className="absolute ytestimonials flex w-9 h-9 z-10 overflow-visible flex-col top-1 right-1">
       <label
-        className="ytestimonials_button has-checked:bg-ylime cursor-pointer peer relative inline-block fill-ylime has-checked:fill-yred rounded-full p-1.5 hover:scale-105 transform-gpu transition-transform bg-yred group primary
+        className="ytestimonials_button has-checked:bg-white cursor-pointer peer relative inline-block fill-yblue has-checked:fill-yblue rounded-full p-1.5 hover:scale-105 transform-gpu transition-transform bg-white group primary
         "
       >
         <input type="checkbox" className="invisible hidden peer" />
@@ -208,13 +208,13 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
           height="10"
           viewBox="0 0 20 10"
           fill="none"
-          className="fill-ylime mr-2"
+          className="fill-white mr-2"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M10 0C10 5.52286 5.52283 10 0 10H20C14.4772 10 10 5.52286 10 0Z" />
         </svg>
 
-        <div className="reletive p-5 flex flex-col gap-3 rounded-2xl w-72  bg-ylime">
+        <div className="reletive p-5 flex flex-col gap-3 rounded-2xl w-72  bg-white">
           <svg
             width="19"
             height="14"
@@ -232,7 +232,7 @@ export function TestimonialsButton({ dataset }: TestimonialsButtonProps) {
           </p>
 
           <div className="flex items-center gap-2">
-            <div className="bg-yred flex items-center  font-bold text-ytextdark p-2 rounded-full text-sm  leading-4 aspect-square">
+            <div className="bg-yblue flex items-center  font-bold text-ylime p-2 rounded-full text-sm  leading-4 aspect-square">
               {dataset.img}
             </div>
             <div>

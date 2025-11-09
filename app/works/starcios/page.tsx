@@ -19,7 +19,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-100">
+        <ArticleHeader className="bg-ylightgrey">
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/cover.png"
@@ -54,7 +54,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/1.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -62,7 +62,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/2.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -70,7 +70,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/3.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -82,7 +82,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/4.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>
@@ -90,7 +90,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/5.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>
@@ -98,7 +98,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starcios/6.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>

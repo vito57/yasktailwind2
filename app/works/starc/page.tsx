@@ -19,7 +19,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-100">
+        <ArticleHeader className="bg-ylightgrey">
           <ArticleFigure>
             <BodyImage
               src="/works/starc/cover.png"
@@ -57,7 +57,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/1.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -65,7 +65,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/2.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -73,7 +73,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/3.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc Mobile"
             />
           </ArticleFigure>
@@ -86,7 +86,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/4.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>
@@ -94,7 +94,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/5.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>
@@ -102,7 +102,7 @@ const Page = () => {
           <ArticleFigure>
             <BodyImage
               src="/works/starc/6.png"
-              className="bg-slate-100"
+              className="bg-ylightgrey"
               alt="Starc tablet"
             />
           </ArticleFigure>
