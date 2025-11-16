@@ -38,7 +38,6 @@ const Page = () => {
 
           <br />
           <ArticleImageSection
-            height={954}
             className="bg-zinc-900"
             image1={{
               src: "/works/evoxo/logo.png",
@@ -65,7 +64,7 @@ const Page = () => {
           <ArticleFigure figcaption="[fig 3] Desktop">
             <BodyImage
               src="/works/evoxo/desktop.png"
-              className="bg-zinc-900"
+              className="bg-ylightgrey"
               alt="[fig 3] Desktop"
             />
           </ArticleFigure>
@@ -73,7 +72,7 @@ const Page = () => {
           <ArticleFigure figcaption="[fig 4] Mobile">
             <BodyImage
               src="/works/evoxo/mobile.png"
-              className="bg-zinc-900"
+              className="bg-ylightgrey"
               alt="[fig 4] Mobile"
             />
           </ArticleFigure>
