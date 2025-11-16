@@ -1,4 +1,11 @@
-[
+[  {
+    "cover": "/img/evoxo.png",
+    "title": "Evoxo",
+    "by": ["vitaly"],
+    "type": "Branding, Web design",
+    "path": "/works/evoxo",
+    "date": "2025"
+  },
   {
     "cover": "/img/aides.png",
     "title": "Aides App",
