@@ -61,19 +61,28 @@ const Page = () => {
               caption: "[fig 4] Mobile",
             }}
           /> */}
-          <ArticleFigure figcaption="[fig 3] Desktop">
+          <ArticleFigure figcaption="[fig 3] Logo sketches">
             <BodyImage
-              src="/works/evoxo/desktop.png"
+              height={240}
+              src="/works/evoxo/logosketch.png"
               className="bg-ylightgrey"
-              alt="[fig 3] Desktop"
+              alt="[fig 3] Logo sketches"
             />
           </ArticleFigure>
           <br />
-          <ArticleFigure figcaption="[fig 4] Mobile">
+          <ArticleFigure figcaption="[fig 4] Desktop">
+            <BodyImage
+              src="/works/evoxo/desktop.png"
+              className="bg-ylightgrey"
+              alt="[fig 4] Desktop"
+            />
+          </ArticleFigure>
+          <br />
+          <ArticleFigure figcaption="[fig 5] Mobile">
             <BodyImage
               src="/works/evoxo/mobile.png"
               className="bg-ylightgrey"
-              alt="[fig 4] Mobile"
+              alt="[fig 5] Mobile"
             />
           </ArticleFigure>
         </Section>
