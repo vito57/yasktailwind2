@@ -1,19 +1,4 @@
-[  {
-    "cover": "/img/evoxo.png",
-    "title": "Evoxo",
-    "by": ["vitaly"],
-    "type": "Branding, Web design",
-    "path": "/works/evoxo",
-    "date": "2025"
-  },
-  {
-    "cover": "/img/aides.png",
-    "title": "Aides App",
-    "by": ["vitaly"],
-    "type": "Design, IOS",
-    "path": "/works/aides",
-    "date": "2025"
-  },
+[
   {
     "cover": "/img/chess.png",
     "title": "Mikhail Tal Chess",
@@ -29,6 +14,22 @@
     "type": "Design, Branding",
     "path": "/works/drugcode",
     "date": "2021"
+  },
+  {
+    "cover": "/img/evoxo.png",
+    "title": "Evoxo",
+    "by": ["vitaly"],
+    "type": "Branding, Web design",
+    "path": "/works/evoxo",
+    "date": "2025"
+  },
+  {
+    "cover": "/img/aides.png",
+    "title": "Aides App",
+    "by": ["vitaly"],
+    "type": "Design, IOS",
+    "path": "/works/aides",
+    "date": "2025"
   },
   {
     "cover": "/img/flamingo.png",

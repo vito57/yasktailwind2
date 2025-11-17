@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <AnimateLayout>
       <Article className="relative">
-        <ArticleHeader className="bg-zinc-900">
+        <ArticleHeader className="bg-ylightgrey">
           <ArticleFigure>
             <BodyImage
               src="/works/evoxo/cover.png"
@@ -38,7 +38,7 @@ const Page = () => {
 
           <br />
           <ArticleImageSection
-            className="bg-zinc-900"
+            className="bg-ylightgrey"
             image1={{
               src: "/works/evoxo/logo.png",
               caption: "[fig 1] Logo",
