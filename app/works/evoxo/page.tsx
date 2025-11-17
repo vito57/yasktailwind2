@@ -62,7 +62,7 @@ const Page = () => {
               caption: "[fig 4] Mobile",
             }}
           /> */}
-          <ArticleFigure figcaption="[fig 3] Logo sketches">
+          {/* <ArticleFigure figcaption="[fig 3] Logo sketches">
             <BodyImage
               height={240}
               src="/works/evoxo/logosketch.png"
@@ -70,7 +70,7 @@ const Page = () => {
               alt="[fig 3] Logo sketches"
             />
           </ArticleFigure>
-          <br />
+          <br /> */}
           <ArticleFigure figcaption="[fig 4] Desktop">
             <BodyImage
               src="/works/evoxo/desktop.png"
