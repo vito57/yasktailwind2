@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Article,
   AnimateLayout,
@@ -11,7 +12,7 @@ import {
   VideoSkeleton,
 } from "../../components/server";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Evoxo",
   description: "Payment sevice. Landing page design",
 };
