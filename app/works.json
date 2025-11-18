@@ -33,21 +33,21 @@
   },
   {
     "cover": "/img/flamingo.png",
-
     "title": "Flamingo",
     "by": ["vitaly"],
     "type": "Design System",
     "path": "/works/flamingo",
     "date": "2021"
   },
-  {
-    "cover": "/img/taytega.png",
-    "title": "Taytega AG",
+      {
+    "cover": "/img/miractal.png",
+    "title": "Mira",
     "by": ["vitaly"],
-    "type": "Design, Branding",
-    "path": "/works/taytega",
-    "date": "2024"
+    "type": "Web Design",
+    "path": "/works/miractal",
+    "date": "2025"
   },
+
 
   {
     "cover": "/img/riveo.png",
@@ -55,6 +55,14 @@
     "by": ["vitaly"],
     "type": "Refactoring UI",
     "path": "/works/riveo",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/taytega.png",
+    "title": "Taytega AG",
+    "by": ["vitaly"],
+    "type": "Design, Branding",
+    "path": "/works/taytega",
     "date": "2024"
   },
   {
