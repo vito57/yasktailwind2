@@ -15,6 +15,14 @@
     "path": "/works/drugcode",
     "date": "2021"
   },
+    {
+    "cover": "/img/flamingo.png",
+    "title": "Flamingo",
+    "by": ["vitaly"],
+    "type": "Design System",
+    "path": "/works/flamingo",
+    "date": "2021"
+  },
   {
     "cover": "/img/evoxo.png",
     "title": "Evoxo+",
@@ -31,14 +39,7 @@
     "path": "/works/aides",
     "date": "2025"
   },
-  {
-    "cover": "/img/flamingo.png",
-    "title": "Flamingo",
-    "by": ["vitaly"],
-    "type": "Design System",
-    "path": "/works/flamingo",
-    "date": "2021"
-  },
+
       {
     "cover": "/img/miractal.png",
     "title": "Mira",
