@@ -15,7 +15,14 @@
     "path": "/works/drugcode",
     "date": "2021"
   },
-
+     {
+    "cover": "/img/flamingo.png",
+    "title": "Flamingo",
+    "by": ["vitaly"],
+    "type": "Design System",
+    "path": "/works/flamingo",
+    "date": "2021"
+  },
   {
     "cover": "/img/evoxo.png",
     "title": "Evoxo+",
@@ -24,14 +31,7 @@
     "path": "/works/evoxo",
     "date": "2025"
   },
-      {
-    "cover": "/img/flamingo.png",
-    "title": "Flamingo",
-    "by": ["vitaly"],
-    "type": "Design System",
-    "path": "/works/flamingo",
-    "date": "2021"
-  },
+ 
   {
     "cover": "/img/aides.png",
     "title": "Aides App",
