@@ -11,9 +11,13 @@ import {
   Summary,
   ArticleImageGrid,
 } from "../../components/server";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Mikhail Tal Chess",
+  openGraph: {
+    title: "Mikhail Tal Chess",
+  },
   description:
     "Chess with artificial intelligence trained on the games of Mikhail Tal",
 };
