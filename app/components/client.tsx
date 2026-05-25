@@ -20,7 +20,7 @@ export function Pwa() {
         .then((registration) => {
           console.log(
             "Service Worker registration successful with scope: ",
-            registration.scope
+            registration.scope,
           );
         })
         .catch((err) => {
@@ -171,12 +171,14 @@ interface TabsProps {
 }
 export function Navigation({ className }: TabsProps) {
   const pathname = usePathname();
+
   return (
     <menu
       className={`${className}  gap-1 transition-transform transition-gpu rounded-xl p-0.5 my-0.5 inline-flex justify-center`}
     >
       {data.map((link: { name: string; href: string }) => {
         const isActive = pathname.endsWith(link.href);
+
         return (
           <li key={link.href}>
             <Link
