@@ -6,6 +6,8 @@ import { BodyColor, Pwa } from "./components/client";
 import { Viewport } from "next";
 
 import image from "./twitter-image.png";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yask.work"),
   title: {
@@ -111,8 +113,13 @@ export default function RootLayout({
       suppressHydrationWarning={true}
       className={`${inter.variable} ${serotiva.variable} ${jbm.variable} antialiased`}
     >
-      <BodyColor>{children}</BodyColor>
+      <BodyColor>
+        <TooltipProvider>{children}</TooltipProvider>
+         <Toaster />
+         </BodyColor>
+     
       <Pwa />
+       
     </html>
   );
 }

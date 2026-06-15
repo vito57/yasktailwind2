@@ -1,13 +1,15 @@
-import { PortfolioItem, AnimateLayout } from "../components/server";
+import { Thumbnail } from "@/components/blocks/thumbnail";
+
 import data from "../works.json";
+import { LayoutAnimated } from "@/components/regions/layoutanimated";
 
 export default function Works() {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
         {data.map((i) => {
           return (
-            <PortfolioItem
+            <Thumbnail
               key={i.title}
               keyNum={i.path}
               href={i.path}
@@ -20,6 +22,6 @@ export default function Works() {
           );
         })}
       </div>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 }

@@ -1,9 +1,7 @@
-import { AnimateLayout } from "../../components/server";
-
-// Set the Access Token
-
-import { FeedItem, PortfolioItem } from "@/app/components/server";
-export const metadata = {
+import { LayoutAnimated } from "@/components/regions/layoutanimated";
+import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
+import { Metadata } from "next/types";
+export const metadata:Metadata = {
   title: "Design Feed",
   description: "Design feed",
 };
@@ -26,11 +24,11 @@ export default async function Feed() {
   const data = await getData();
 
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
         {data.map((i: any) =>
           i.tags.includes("portfolio") ? (
-            <FeedItem
+            <ThumbnailFeed
               key={i.id}
               imageSrc={i.images.hidpi}
               imageAlt={i.title}
@@ -41,6 +39,6 @@ export default async function Feed() {
           )
         )}
       </div>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 }

@@ -1,4 +1,8 @@
 @import 'tailwindcss';
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --breakpoint-sm: 36rem;
@@ -40,9 +44,9 @@
   --text-5xl--line-height: 3rem;
   /* --text-5xl--letter-spacing: -0.022em; */
 
-  --font-*: initial;
+  /* --font-*: initial;
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-jbm);
+  --font-mono: var(--font-jbm); */
   --font-display: var(--font-serotiva);
 
   --color-ybg: #fafafd;
@@ -126,30 +130,29 @@
     @apply mb-8;
   }
 
-  /* Code formating */
+  /* Code formating
   :not(pre)>code,
   code {
     @apply bg-ylightblue/6 px-1 font-medium inline-block rounded-md
-  }
+  } */
 
   /* mark */
-  mark {
+  /* mark {
     @apply bg-ylime;
-  }
+  } */
 
   /* dfn */
-  dfn {
+  /* dfn {
     @apply italic;
-  }
+  } */
 
   /* dfn */
-  var {
+  /* var {
     @apply italic font-mono;
-  }
+  } */
 
   /* progress */
-  progress {
-
+  /* progress {
     @apply align-middle h-2;
   }
 
@@ -160,60 +163,59 @@
 
   progress[value]::-webkit-progress-bar {
     @apply bg-ygrey rounded-md;
-  }
+  } */
 
   /* kbd */
-  kbd {
+  /* kbd {
     @apply inline-block shadow shadow-yask/40 rounded-md px-1 font-mono;
-  }
+  } */
 
   /* abbr */
-  abbr {
+  /* abbr {
     @apply font-medium tracking-wide decoration-dotted decoration-from-font underline-offset-4;
-  }
+  } */
 
   /* em */
-  em {
+  /* em {
     @apply font-medium italic tracking-wide;
-  }
+  } */
 
   /* strong */
-  strong {
+  /* strong {
     @apply tracking-wide;
-  }
+  } */
 
   /* cite */
-  cite {
+  /* cite {
     @apply tracking-wide;
-  }
+  } */
 
   /* q */
-  q {
+  /* q {
     @apply font-medium;
-  }
+  } */
 
   /* data time */
-  data,
+  /* data,
   time {
     @apply font-medium;
-  }
+  } */
 
   /* address */
-  address {
+  /* address {
     @apply tracking-wide font-medium;
-  }
+  } */
 
   /* blockquote */
-  blockquote {
+  /* blockquote {
     @apply border-l border-ydarkbrown pl-[1em] text-ydarkbrown;
   }
 blockquote > footer{
 @apply text-ybrown
-}
-
+} */
 
   /* forms */
-  input {
+  /* input {
     @apply block appearance-none;
   }
 
@@ -223,14 +225,12 @@ blockquote > footer{
 
   input:not([type="image"], [type='button'], [type='reset'], [type='submit'], [type="range"], [type="checkbox"], [type="radio"]) {
     @apply outline-1 outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all;
-  }
+  } */
 
   /* input hover */
-  input:not(:disabled):not([readonly]) {
+  /* input:not(:disabled):not([readonly]) {
     @apply focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
   }
-
-
 
   input:read-only {
     @apply bg-ylightgrey;
@@ -258,51 +258,50 @@ blockquote > footer{
   input[type=checkbox]:disabled,
   input[type=radio]:disabled {
     @apply opacity-40;
-  }
+  } */
 
-  input[type=radio] {
+  /* input[type=radio] {
     @apply rounded-full;
-  }
+  } */
 
-  input[type=file] {
+  /* input[type=file] {
     @apply p-0 overflow-hidden bg-transparent;
-  }
+  } */
 
-  input[type=file]:not(:disabled):not([readonly]) {
+  /* input[type=file]:not(:disabled):not([readonly]) {
     @apply cursor-pointer;
-  }
+  } */
 
-  input::file-selector-button {
+  /* input::file-selector-button {
     @apply bg-ylightgrey px-3 py-1 mr-2 font-medium transition-colors;
-  }
+  } */
 
-  input:hover:not(:disabled):not([readonly])::file-selector-button {
+  /* input:hover:not(:disabled):not([readonly])::file-selector-button {
     @apply bg-gray-200;
-  }
+  } */
 
-  input[type="color"] {
+  /* input[type="color"] {
     block-size: 2em;
     @apply p-1;
-  }
+  } */
 
   /* -webkit */
-  input[type="color"]::-webkit-color-swatch-wrapper {
+  /* input[type="color"]::-webkit-color-swatch-wrapper {
     @apply p-0;
-  }
+  } */
 
-  input[type="color"]::-webkit-color-swatch {
+  /* input[type="color"]::-webkit-color-swatch {
     @apply rounded-lg border-0;
-  }
-
+  } */
 
   /* firefox */
-  input[type=color]::-moz-focus-inner {
+  /* input[type=color]::-moz-focus-inner {
     @apply p-0;
-  }
+  } */
 
-  input[type=color]::-moz-color-swatch {
+  /* input[type=color]::-moz-color-swatch {
     @apply rounded-lg border-0;
-  }
+  } */
 
   /* input[type=file]:not(:disabled):not([readonly]) {
     @apply bg-yask;
@@ -316,120 +315,128 @@ blockquote > footer{
     @apply bg-ylightgrey opacity-40;
   } */
   /* textarea */
-  textarea {
+  /* textarea {
     @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
-  }
+  } */
 
   /* select */
-  select {
+  /* select { */
     /* appearance: none; */
     /* background-image: url("/works/aides/aides-start.png"); */
-    @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue bg-[url("/ui/icons/chevron-down.svg")] bg-no-repeat bg-size-[20] bg-position-[right_.5rem_center];
-  }
+    /* @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue bg-[url("/ui/icons/chevron-down.svg")] bg-no-repeat bg-size-[20] bg-position-[right_.5rem_center];
+  } */
 
-  select:disabled {
+  /* select:disabled {
     @apply bg-ylightgrey;
-  }
+  } */
 
-  select[multiple],
+  /* select[multiple],
   select[size]:not([size="1"]) {
-    /* padding-right: $form-select-padding-x;
-      background-image: none; */
+
     @apply bg-none;
-  }
+  } */
 
-  select::-moz-focusring {
+  /* select::-moz-focusring {
     @apply text-shadow-none text-transparent;
-  }
+  } */
 
-  label {
+  /* label {
     @apply inline-block;
-  }
+  } */
 
   /* details */
-  details {
+  /* details {
     @apply border-b-2 border-yask/8 transition-all;
-  }
+  } */
 
-  details[open] {
+  /* details[open] {
     @apply pb-4;
-  }
+  } */
 
-  details>summary {
+  /* details>summary {
     @apply py-2 cursor-pointer hover:bg-ybg text-ylightblue transition-colors;
-  }
-
-
+  } */
 
   /* dl */
-  dl dt {
+  /* dl dt {
     @apply font-bold;
-  }
+  } */
 
   /* del */
-  del {
+  /* del {
     @apply text-yred px-1 inline-block bg-yred/8 no-underline before:content-['-'];
-  }
+  } */
 
   /* ins */
-  ins {
+  /* ins {
     @apply text-ygreen px-1 inline-block bg-ylime/16 no-underline before:content-['+'];
-  }
+  } */
 
   /* Meter */
-  meter {
+  /* meter {
     --background: transparent;
     --optimum: var(--color-ygreen);
     --sub-optimum: var(--color-ypink);
-    --sub-sub-optimum: var(--color-yred);
+    --sub-sub-optimum: var(--color-yred); */
 
     /* The gray background in Firefox */
-    background: var(--background);
+    /* background: var(--background);
     @apply inline-block appearance-none rounded-full p-0 m-0 align-middle h-2;
-  }
+  } */
 
   /* The gray background in Chrome, etc. */
-  meter::-webkit-meter-bar {
+  /* meter::-webkit-meter-bar {
     background: var(--color-ygrey);
     @apply rounded-full;
-  }
+  } */
 
   /* The green (optimum) bar in Firefox */
-  meter:-moz-meter-optimum::-moz-meter-bar {
+  /* meter:-moz-meter-optimum::-moz-meter-bar {
     background: var(--optimum);
     @apply rounded-full;
-  }
+  } */
 
   /* The green (optimum) bar in Chrome etc. */
-  meter::-webkit-meter-optimum-value {
+  /* meter::-webkit-meter-optimum-value {
     background: var(--optimum);
     @apply rounded-full;
-  }
+  } */
 
   /* The yellow (sub-optimum) bar in Firefox */
-  meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  /* meter:-moz-meter-sub-optimum::-moz-meter-bar {
     background: var(--sub-optimum);
     @apply rounded-full;
-  }
+  } */
 
   /* The yellow (sub-optimum) bar in Chrome etc. */
-  meter::-webkit-meter-suboptimum-value {
+  /* meter::-webkit-meter-suboptimum-value {
     background: var(--sub-optimum);
     @apply rounded-full;
-  }
+  } */
 
   /* The red (even less good) bar in Firefox */
-  meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  /* meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
     background: var(--sub-sub-optimum);
     @apply rounded-full;
-  }
+  } */
 
   /* The red (even less good) bar in Chrome etc. */
-  meter::-webkit-meter-even-less-good-value {
+  /* meter::-webkit-meter-even-less-good-value {
     background: var(--sub-sub-optimum);
     @apply rounded-full;
   }
-
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  } */
+  /* html {
+    @apply font-sans;
+  } */
 
 }
 
@@ -455,10 +462,7 @@ blockquote > footer{
     }
   }
 
-
-
   /* Buttons */
-
 
   .ybutton,
   input[type=button],
@@ -474,5 +478,116 @@ blockquote > footer{
     @apply bg-ytextdark hover:brightness-105;
   }
 
+}
 
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: #050884;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(100% 0.00011 271.152);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #050884;
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: #c2d2ff;
+  --secondary-foreground: #080bd0;
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: #ff2423;
+  --border: #c2d2ff;
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.2857 0.1862 265.51);
+  --foreground: oklch(100% 0.00011 271.152);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
 }

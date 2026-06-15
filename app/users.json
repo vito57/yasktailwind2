@@ -31,33 +31,33 @@
     ],
     "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
     "top skills": [
-      { "name": "UI/UX Design", "href": "", "badge": "" },
-      { "name": "Frontend", "href": "", "badge": "" },
-      { "name": "PWA", "href": "", "badge": "" },
-      { "name": "Material Design", "href": "", "badge": "" },
-      { "name": "HIG", "href": "", "badge": "" },
+      { "name": "UI/UX Design", "href": "https://en.wikipedia.org/wiki/User_experience_design", "badge": "top" },
+      { "name": "Frontend", "href": "https://en.wikipedia.org/wiki/Front_end_and_back_end", "badge": "" },
+      { "name": "PWA", "href": "https://web.dev/explore/progressive-web-apps", "badge": "" },
+      { "name": "Material Design", "href": "https://m3.material.io/", "badge": "" },
+      { "name": "HIG", "href": "https://developer.apple.com/design/human-interface-guidelines/", "badge": "top" },
       {
         "name": "Accessibility",
         "href": "https://doka.guide/a11y/",
         "badge": "new"
       }
     ],
-    "tools": [
-      { "name": "Play", "href": "https://createwithplay.com/", "badge": "new" },
-      { "name": "Penpot", "href": "https://penpot.app", "badge": "new" },
-      { "name": "Figma", "href": "https://figma.com", "badge": "" },
+    "tools": [ 
+      { "name": "Figma", "href": "https://figma.com", "badge": "top" },
+      { "name": "Shadcn", "href": "https://ui.shadcn.com/", "badge": "new" },
+      { "name": "NextJs", "href": "https://nextjs.org/", "badge": "" },
+      { "name": "Tailwind", "href": "https://tailwindcss.com/", "badge": "top" },
       { "name": "Framer", "href": "https://www.framer.com/", "badge": "" },
-      { "name": "Blender", "href": "https://www.blender.org/", "badge": "new" },
+      { "name": "Blender", "href": "https://www.blender.org/", "badge": "" },
       { "name": "Spline3d", "href": "https://spline.design/", "badge": "new" },
       { "name": "Frame Motion", "href": "https://motion.dev/", "badge": "" },
-      { "name": "NextJs", "href": "https://nextjs.org/", "badge": "" },
-      { "name": "Bootstrap", "href": "https://getbootstrap.com/", "badge": "" },
-      { "name": "Tailwind", "href": "https://tailwindcss.com/", "badge": "" },
+      { "name": "Bootstrap", "href": "https://getbootstrap.com/", "badge": "top" },
       { "name": "D3js", "href": "https://d3js.org/", "badge": "" },
-      { "name": "HTML", "href": "https://doka.guide/", "badge": "" },
-      { "name": "CSS", "href": "https://doka.guide/", "badge": "" },
+      { "name": "HTML", "href": "https://doka.guide/", "badge": "top" },
+      { "name": "CSS", "href": "https://doka.guide/", "badge": "top" },
       { "name": "JavaScript", "href": "https://doka.guide/", "badge": "" },
       { "name": "Photoshop", "href": "", "badge": "" },
+      { "name": "Penpot", "href": "https://penpot.app", "badge": "" },
       {
         "name": "Origami Studio",
         "href": "https://origami.design/",
@@ -119,8 +119,7 @@
     "courses": ["MITx: Mobile Application Experiences, 2012"],
     "languages": ["🇷🇺 Russian", "🇬🇧 English"],
     "learn": [
-      { "name": "Spline3d", "href": "", "badge": "" },
-      { "name": "Blender modeling", "href": "", "badge": "" }
+      { "name": "WebGL", "href": "", "badge": "" }
     ]
   },
   {
@@ -182,7 +181,7 @@
     "name": "Vera",
     "email": "vito57rus@gmail.com",
     "avatar": "/about/vera.png",
-    "occupation": "Illustrator",
+    "occupation": "Director",
     "resume": null,
     "tagline": "Hi! I can help with ideas, concepts and illustrations.",
     "path": "/vera",

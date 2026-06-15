@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dribbble from "../../public/dribbble.svg";
 import ui8 from "../../public/ui8.svg";
-import { Children, Suspense } from "react";
+
 
 //shimmer
 interface VideoLoader {
@@ -79,7 +79,7 @@ interface TextProps {
 export function Text({ title, children }: TextProps) {
   return (
     <dl className="flex flex-col md:flex-row gap-2">
-      {title && <dt className="basis-1/4">{title}</dt>}
+      {title && <dt className="basis-1/4 font-bold">{title}</dt>}
 
       <dd className={` ${title ? false : "ml-auto"} text-pretty basis-3/4`}>
         {children}
@@ -138,7 +138,7 @@ export function TopMenu() {
 //END TOP MENU
 
 //BUTTON
-interface ButtonProps {
+interface MyButtonProps {
   path: string;
   className?: string;
   rel?: string;
@@ -149,7 +149,7 @@ export function Button({
   rel,
   className = "primary",
   path,
-}: ButtonProps) {
+}: MyButtonProps) {
   const BtnClass = `ybutton ${className}`;
 
   return (
@@ -347,17 +347,13 @@ export function ArticleImageSection(props: ArticleImageSectionProps) {
 export function Footer() {
   return (
     <p className="text-sm text-center mt-8 mb-8">
-      Copyright © 2023—2025 Yaskevich. <br /> Thanks:{" "}
+      Copyright © 2008—2026 Yaskevich. <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="ylink">
         React
       </Link>
       ,{" "}
       <Link href="https://tailwindcss.com/" className="ylink">
         Tailwind
-      </Link>
-      ,{" "}
-      <Link href="https://penpot.app/" className="ylink">
-        Penpot
       </Link>
       ,{" "}
       <Link href="https://nextjs.org/" className="ylink">

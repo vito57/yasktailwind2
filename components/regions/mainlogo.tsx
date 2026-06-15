@@ -1,0 +1,19 @@
+
+interface LogoProps {
+  width?: number;
+  height?: number;
+  className?: string;
+}
+export function MainLogo({ width = 64, height = 64, className }: LogoProps) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 72 72"
+      className={`fill-yask inline-block text-center dark:fill-ytextdark ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M22.9053 23.4683C12.8791 16.2182 14.5729 20.8013 19.0472 30.5855C20.8555 34.5398 23.094 38.2566 25.7027 41.6749C18.5201 47.7241 15.3063 51.5078 27.5388 51.5078C38.508 51.5078 49.9721 44.5928 39.8186 36.396C44.0231 34.2821 48.3392 32.3565 52.7553 30.632C57.3012 20.8206 58.9881 16.2537 48.9212 23.5375C44.5332 26.7124 40.2122 29.9738 35.9612 33.3207C31.6791 29.9495 27.3262 26.6648 22.9053 23.4683Z" />
+    </svg>
+  );
+}

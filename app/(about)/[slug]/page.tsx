@@ -1,19 +1,20 @@
-import {
-  Button,
-  Text,
-  SpanButton,
-  PortfolioItem,
-  Footer,
-  AnimateLayout,
-  FeedItem,
-} from "@/app/components/server";
+
 import { ArticleTopMenu, MobileArticleFooter } from "@/app/components/client";
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";
 import allWorks from "../../works.json";
 import { notFound } from "next/navigation";
-export const metadata = {
+import { ArticleMainMenu } from "@/components/regions/articlemainmenu";
+import { buttonVariants } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
+import { TextBlock } from "@/components/blocks/textblock";
+import MainFooter from "@/components/regions/mainfooter";
+import { LayoutAnimated } from "@/components/regions/layoutanimated";
+import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
+import { Metadata } from "next/types";
+import { MobileNav } from "@/components/blocks/mobilenav";
+export const metadata:Metadata = {
   title: "About us",
   description: "We design websites and apps",
 };
@@ -28,9 +29,9 @@ export default async function Page(props: {
   }
   return (
     <>
-      <ArticleTopMenu title={`Hi i am ${user.name}`} />
-      <MobileArticleFooter />
-      <AnimateLayout className="container">
+      <ArticleMainMenu title={`Hi i am ${user.name}`} />
+      <MobileNav/>
+      <LayoutAnimated className="container">
         <header className="text-center relative rounded-xl pt-4">
           <Image
             className="inline-block mb-2 rounded-full"
@@ -40,22 +41,16 @@ export default async function Page(props: {
             alt={user.name}
           />
           <h1 className="text-3xl font-bold">{user.name}</h1>
-          <Link href={`mailto:${user.email}`} className="ylink text-base">
+          <Link href={`mailto:${user.email}`} className={buttonVariants({ variant: "link" })}>
             {user.email}
           </Link>
-          {/* <blockquote className="absolute hidden md:block top-0 text-base right-0 italic text-left max-w-xs">
-            {user.tagline} Feel free to{" "}
-            <Link href={user.email} className="ylink ">
-              drop me a line
-            </Link>
-            !
-          </blockquote> */}
+
         </header>
         <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
-            <Button className="bg-ytextdark text-ylightblue" path={user.resume}>
+            <Link className={buttonVariants({ variant: "secondary" })} href={user.resume}>
               Resume.pdf
-            </Button>
+            </Link>
           ) : (
             false
           )}
@@ -64,39 +59,41 @@ export default async function Page(props: {
             <Link key={i.url} href={i.url}>
               <Image
                 src={i.image_path}
-                width={40}
-                height={40}
+                width={36}
+                height={36}
                 className="rounded-full transition-transform hover:scale-105"
                 alt={i.name}
               />
             </Link>
           ))}
         </div>
-        <Text title="About">
+        <TextBlock title="About">
           <p>{user.about}</p>
-        </Text>
+        </TextBlock>
         <br />
-        <Text title="Top skils">
+        <TextBlock title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
-              <SpanButton key={i.name} href={i.href} badge={i.badge}>
-                {i.name}
-              </SpanButton>
+              <Link key={i.name} className={buttonVariants({ variant: "secondary", className: "bg-ygrey", size:"sm" })} href={i.href}>
+                {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
+                </Kbd>}
+              </Link>
             ))}
           </div>
-        </Text>
+        </TextBlock>
         <br />
-        <Text title="Tools stack">
+        <TextBlock title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools?.map((i) => (
-              <SpanButton key={i.name} href={i.href} badge={i.badge}>
-                {i.name}
-              </SpanButton>
+              <Link key={i.name} className={buttonVariants({ variant: "secondary", className: "bg-ygrey", size:"sm" })} href={i.href}>
+                {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
+                </Kbd>}
+              </Link>
             ))}
           </div>
-        </Text>
+        </TextBlock>
         <br />
-        <Text title="Experience">
+        <TextBlock title="Experience">
           <dl className="mb-8">
             {user.experience.map((i) => (
               <div key={i.date}>
@@ -120,13 +117,13 @@ export default async function Page(props: {
               </div>
             ))}
           </dl>
-        </Text>
+        </TextBlock>
         <br />
-        <Text title="Projects">
+        <TextBlock title="Projects">
           <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
             {userWorks.map((i) => {
               return (
-                <FeedItem
+                <ThumbnailFeed
                   key={i.path}
                   href={i.path}
                   imageSrc={i.cover}
@@ -136,9 +133,9 @@ export default async function Page(props: {
               );
             })}
           </div>
-        </Text>
+        </TextBlock>
         <br />
-        <Text title="Social links">
+        <TextBlock title="Social links">
           <div className="flex gap-4 flex-wrap">
             {user.social.map((i) => (
               <Link key={i.url} className="ylink" href={i.url}>
@@ -146,7 +143,7 @@ export default async function Page(props: {
               </Link>
             ))}
           </div>
-        </Text>
+        </TextBlock>
         <br />
         {/* {user.awards && (
           <Text title="Awards">
@@ -160,44 +157,46 @@ export default async function Page(props: {
           </Text>
         )} */}
 
-        <Text title="Education">
+        <TextBlock title="Education">
           <p>{user.education}</p>
-        </Text>
+        </TextBlock>
         <br />
         {user.courses && (
           <>
-            <Text title="Courses">
+            <TextBlock title="Courses">
               <ul>
                 {user.courses.map((i) => {
                   return <li key={i}>{i}</li>;
                 })}
               </ul>
-            </Text>
+            </TextBlock>
             <br />
           </>
         )}
         {user.languages && (
           <>
-            <Text title="Languages">
+            <TextBlock title="Languages">
               {user.languages.map((i) => {
-                return <span key={i}>{i} </span>;
+                return <span key={i}>{i}{" "}</span>;
               })}
-            </Text>
+            </TextBlock>
             <br />
           </>
         )}
         {user.learn && (
           <>
-            <Text title="Learning goals">
+            <TextBlock title="Learning goals">
               {user.learn.map((i) => {
-                return <SpanButton key={i.name}>{i.name}</SpanButton>;
+                return  <span key={i.name}>
+                {i.name}{" "} 
+              </span>;
               })}
-            </Text>
+            </TextBlock>
             <br />
           </>
         )}
-        <Footer />
-      </AnimateLayout>
+        <MainFooter />
+      </LayoutAnimated>
     </>
   );
 }
