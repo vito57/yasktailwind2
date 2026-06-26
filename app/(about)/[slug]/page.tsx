@@ -14,6 +14,7 @@ import { LayoutAnimated } from "@/components/regions/layoutanimated";
 import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
 import { Metadata } from "next/types";
 import { MobileNav } from "@/components/blocks/mobilenav";
+import { Badge } from "@/components/ui/badge";
 export const metadata:Metadata = {
   title: "About us",
   description: "We design websites and apps",
@@ -29,7 +30,7 @@ export default async function Page(props: {
   }
   return (
     <>
-      <ArticleMainMenu title={`Hi i am ${user.name}`} />
+      <ArticleMainMenu />
       <MobileNav/>
       <LayoutAnimated className="container">
         <header className="text-center relative rounded-xl pt-4">
@@ -104,7 +105,7 @@ export default async function Page(props: {
                   </Link>
                 </dt>
                 <dd key={i.date} className="mb-8">
-                  <time>{i.date}</time>
+                  <Badge variant={"secondary"}>{i.date}</Badge>
                   <p>
                     <em>Responsibilities:</em> {i.responsible}
                   </p>
