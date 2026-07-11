@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Article,
   AnimateLayout,
@@ -12,7 +13,7 @@ import {
 } from "../../components/server";
 import Image from "next/image";
 import Link from "next/link";
-export const metadata = {
+export const metadata:Metadata = {
   title: "AngleIcons - Bootstrap Based Icon System",
   description: "2400 handcrafted ui icons",
 };

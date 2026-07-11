@@ -13,7 +13,7 @@ export default function WorkLayout({
     <>
       <ArticleMainMenu />
       <MobileNav />
-      {children}
+     <div className="typeset typeset-notes"> {children}</div> 
       <section id="moreworks" className="container">
         <h2 className="text-xl font-bold mb-8">More works</h2>
         <div className="grid gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-4 md:grid-cols-4 grid-cols-2">

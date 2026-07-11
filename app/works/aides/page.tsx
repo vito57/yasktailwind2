@@ -12,8 +12,9 @@ import {
   VideoSkeleton,
 } from "../../components/server";
 import { Video } from "@/app/components/video";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata:Metadata = {
   title: "Ai Aides Concept Design",
   description: "Artificial intelligence aides",
 };

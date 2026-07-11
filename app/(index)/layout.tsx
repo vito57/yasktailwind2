@@ -1,5 +1,4 @@
 import MainNav from "@/components/regions/mainnav";
-import { Navigation, Jumbo, Logo } from "../components/client";
 import data from "../main.json";
 import MainFooter from "@/components/regions/mainfooter";
 import MainTopMenu from "@/components/regions/maintopmenu";

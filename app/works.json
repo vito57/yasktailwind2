@@ -40,7 +40,6 @@
     "path": "/works/aides",
     "date": "2025"
   },
-
       {
     "cover": "/img/miractal.png",
     "title": "Mira",
@@ -49,8 +48,6 @@
     "path": "/works/miractal",
     "date": "2025"
   },
-
-
   {
     "cover": "/img/riveo.png",
     "title": "Riveo",
@@ -118,7 +115,6 @@
 
   {
     "cover": "/img/domkino.png",
-
     "title": "Domkino",
     "by": ["vitaly"],
     "type": "Web Design",
@@ -137,7 +133,6 @@
   },
   {
     "cover": "/img/darlen.png",
-
     "title": "Darlen",
     "by": ["vitaly"],
     "type": "UI/UX Design",

@@ -46,7 +46,7 @@ interface BodyImage {
 export function BodyImage({
   src,
   width = 1600,
-  height = 1200,
+  height = 1200,  
   className,
   defaultClass = "w-full rounded-xl",
   alt = "Yask",
@@ -493,7 +493,7 @@ export function ArticleHeader({ className, children }: ActicleHeaderProps) {
   return (
     <header
       id="intro"
-      className={`mb-8 pt-[128px] reletive mt-[-128px] ${className}`}
+      className={`mb-8 pt-32 reletive mt-32 ${className}`}
     >
       <div className="container">{children}</div>
     </header>
@@ -546,7 +546,7 @@ interface AnimateLayoutProps {
 }
 export function AnimateLayout({ children, className }: AnimateLayoutProps) {
   return (
-    <main className={`${className} animate-fadeIn text-base md:text-xl`}>
+    <main className={`${className} animate-fadeIn`}>
       {children}
     </main>
   );

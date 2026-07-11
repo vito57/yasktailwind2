@@ -13,7 +13,6 @@ export default function manifest(): MetadataRoute.Manifest {
     display_override: ["fullscreen", "minimal-ui"],
     id: "/",
     prefer_related_applications: true,
-
     orientation: "portrait",
     icons: [
       {

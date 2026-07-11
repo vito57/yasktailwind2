@@ -1,10 +1,9 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Fira_Code } from "next/font/google";
-import localFont from "next/font/local";
+
+import {inter, serotiva} from "@/components/typography/fonts"
 import { BodyColor, Pwa } from "./components/client";
 import { Viewport } from "next";
-
 import image from "./twitter-image.png";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
@@ -40,64 +39,26 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
 };
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  fallback: [
-    "system-ui",
-    " -apple-system",
-    "Segoe UI",
-    "Roboto",
-    "Helvetica Neue",
-    "Noto Sans",
-    "Liberation Sans",
-    "Arial",
-    "sans-serif",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji",
-  ],
-});
 
-const jbm = JetBrains_Mono({
-  variable: "--font-jbm",
-  subsets: ["latin"],
-  weight: ["400"],
-  fallback: [
-    "ui-monospace",
-    "SFMono-Regular",
-    "Menlo",
-    "Monaco",
-    "Consolas",
-    "Liberation Mono",
-    "Courier New",
-    "monospace",
-  ],
-});
+
+// const jbm = JetBrains_Mono({
+//   variable: "--font-jbm",
+//   subsets: ["latin"],
+//   weight: ["400"],
+//   fallback: [
+//     "ui-monospace",
+//     "SFMono-Regular",
+//     "Menlo",
+//     "Monaco",
+//     "Consolas",
+//     "Liberation Mono",
+//     "Courier New",
+//     "monospace",
+//   ],
+// });
 
 // Font files can be colocated inside of `app`
-const serotiva = localFont({
-  variable: "--font-serotiva",
-  src: "./fonts/Serotiva.woff2",
-  display: "swap",
-  fallback: [
-    "system-ui",
-    " -apple-system",
-    "Segoe UI",
-    "Roboto",
-    "Helvetica Neue",
-    "Noto Sans",
-    "Liberation Sans",
-    "Arial",
-    "sans-serif",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji",
-  ],
-});
+
 // END FONT
 export const viewport: Viewport = {
   themeColor: "white",
@@ -111,15 +72,15 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning={true}
-      className={`${inter.variable} ${serotiva.variable} ${jbm.variable} antialiased`}
+      className={`${inter.variable} ${serotiva.variable} antialiased`}
     >
       <BodyColor>
         <TooltipProvider>{children}</TooltipProvider>
-         <Toaster />
-         </BodyColor>
-     
+        <Toaster />
+      </BodyColor>
+
       <Pwa />
-       
+
     </html>
   );
 }

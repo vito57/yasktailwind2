@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Article,
   AnimateLayout,
@@ -9,15 +10,16 @@ import {
   BodyImage,
   Summary,
 } from "../../components/server";
+import { LayoutAnimated } from "@/components/regions/layoutanimated";
 
-export const metadata = {
+export const metadata:Metadata = {
   title: "Taytega - Adaptive web site and logo design for engineering company",
   description: "Website and logo for engineering company",
 };
 
-const Page = () => {
+const Taytega = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
         <ArticleHeader>
           <ArticleFigure>
@@ -110,8 +112,8 @@ const Page = () => {
           </Text>
         </aside>
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 
-export default Page;
+export default Taytega;
