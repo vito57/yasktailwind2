@@ -10,6 +10,7 @@
   --typeset-size: 20px;
   --typeset-leading: 1.6;
   --typeset-flow: 2em;
+ 
 }
 @theme {
   --breakpoint-sm: 36rem;
@@ -51,13 +52,12 @@
   --text-5xl--line-height: 3rem; */
   /* --text-5xl--letter-spacing: -0.022em; */
 
-  /* --font-*: initial;
+  --font-*: initial;
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jbm);
-  --font-display: var(--font-serotiva); */
+  --font-display: var(--font-serotiva);
 
 
-  
   --color-ybg: #fafafd;
   --color-yred: #ff2423;
   --color-ylime: #d6f47c;
@@ -100,13 +100,13 @@
     border-color: var(--color-gray-200, currentColor);
   } */
 
-  @font-face {
+  /* @font-face {
     font-family: "Serotiva";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(/fonts/Serotiva.woff2) format("woff2");
-  }
+  } */
 
   /* Headlines */
 /* 
