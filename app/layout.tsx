@@ -5,6 +5,8 @@ import { inter, serotiva, jbm } from "@/components/typography/fonts"
 import { Pwa } from "@/components/pwa";
 import { Viewport } from "next";
 import MainFooter from "@/components/global/mainfooter";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "sonner";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yask.work"),
   title: {
@@ -49,22 +51,24 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${serotiva.variable} ${jbm.variable} antialiased`}
     >
-        <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-           <MainFooter />
-        </body>
-       {/* <body> {children}
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider> {children} </TooltipProvider>
+          <Toaster />
+        </ThemeProvider>
+        <MainFooter />
+
+      </body>
+      {/* <body> {children}
          
        </body> */}
 
-   
+
       {/* <Toaster /> */}
       {/* <Pwa /> */}
 

@@ -7,24 +7,27 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import Link from "next/link";
 import { toast } from "sonner"
 
-export default function EmailButton(){
-async function CopyEmail() {
-  try {
-    await navigator.clipboard.writeText("vitalyyask@gmail.com");
-   toast.success("Email copyed to clipbord")
-  } catch (err) {
-    console.error('Failed to copy text: ', err);
+export default function EmailButton() {
+  async function CopyEmail() {
+    try {
+      await navigator.clipboard.writeText("vitalyyask@gmail.com");
+      toast.success("Email copyed to clipbord")
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+
   }
-
-}
-    return (
-              <ButtonGroup>
-                <Button variant="secondary" nativeButton={false} render={<Link href="" />}>
-                  vitalyyask@gmail.com
-                </Button>
-           
-                    <p>Copy to clipboard</p>
-
-              </ButtonGroup>
-    )
+  return (
+    <ButtonGroup>
+      <Button variant="secondary" nativeButton={false} render={<Link href="" />}>
+        vitalyyask@gmail.com
+      </Button>
+      <Tooltip>
+        <TooltipTrigger render={<Button variant="secondary" onClick={CopyEmail} size="icon"><Copy /></Button>} />
+        <TooltipContent>
+          Copy to clipboard
+        </TooltipContent>
+      </Tooltip>
+    </ButtonGroup>
+  )
 }
