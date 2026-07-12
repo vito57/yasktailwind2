@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 export function Pwa() {
-  console.log("start");
+
   let sw: ServiceWorkerContainer | undefined;
 
   if (typeof window !== "undefined") {
