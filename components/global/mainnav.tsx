@@ -4,17 +4,17 @@ import data from "../../app/main.json"
 import Link from "next/link";
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 interface MainNavProp {
-  datas?: any;
-  variant?: any;
+    datas?: any;
+    variant?: any;
 }
-export default function MainNav({datas, variant="default"}:MainNavProp) {
+export default function MainNav({ datas, variant = "default" }: MainNavProp) {
     const pathname = usePathname();
     return (
         <Tabs value={pathname}>
             <TabsList className="p-0.5">
-                {data.map((link: { name: string; href: string }) => {                     
+                {data.map((link: { name: string; href: string }) => {
                     return (
-                        <TabsTrigger className="data-active:shadow-lg" key={link.href} nativeButton={false} render={<Link href={link.href} />} value={link.href}>{link.name}</TabsTrigger>
+                        <TabsTrigger className="data-active:shadow-lg data-active:text-destructive hover:data-active:text-destructive/80" key={link.href} nativeButton={false} render={<Link href={link.href} />} value={link.href}>{link.name}</TabsTrigger>
                     );
                 })}
             </TabsList>

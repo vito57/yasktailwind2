@@ -33,7 +33,7 @@ export default async function Page(props: {
     <>
       <ArticleMainMenu />
       <MobileNav />
-      <LayoutAnimated className="container typeset typeset-article">
+      <LayoutAnimated className="container typeset">
         <header className="text-center relative rounded-xl pt-4">
           <Image
             className="inline-block mb-2 rounded-full"
