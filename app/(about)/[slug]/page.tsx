@@ -4,15 +4,15 @@ import Image from "next/image";
 import users from "../../users.json";
 import allWorks from "../../works.json";
 import { notFound } from "next/navigation";
-import  ArticleMainMenu  from "@/components/global/articlemainmenu";
+import ArticleMainMenu from "@/components/global/articlemainmenu";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
-import TextBlock  from "@/components/global/textblock";
+import TextBlock from "@/components/global/textblock";
 import MainFooter from "@/components/global/mainfooter";
-import  LayoutAnimated  from "@/components/global/layoutanimated";
-import  ThumbnailFeed  from "@/components/global/thumbnailfeed";
+import LayoutAnimated from "@/components/global/layoutanimated";
+import ThumbnailFeed from "@/components/global/thumbnailfeed";
 import { Metadata } from "next/types";
-import  MobileNav  from "@/components/global/mobilenav";
+import MobileNav from "@/components/global/mobilenav";
 import { Badge } from "@/components/ui/badge";
 import { FileText } from "lucide-react";
 
@@ -110,7 +110,7 @@ export default async function Page(props: {
                   <p>
                     <span className="font-medium">Responsibilities:</span> {i.responsible}
                   </p>
-                 
+
                   {i.achievements && (
                     <p>
                       <span className="font-medium">Achivments:</span> {i.achievements}
@@ -123,7 +123,7 @@ export default async function Page(props: {
         </TextBlock>
         <br />
         <TextBlock title="Projects">
-          <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 md:grid-cols-2">
+          <div className="grid gap-x-4 gap-y-4 lg:grid-cols-3 grid-cols-2">
             {userWorks.map((i) => {
               return (
                 <ThumbnailFeed

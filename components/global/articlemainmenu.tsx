@@ -42,11 +42,9 @@ export default function ArticleMainMenu({ title, className }: ArticleMainMenuPro
                     className={`hidden md:flex fixed md:static py-2 mr-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
                 >
                     <MainNav variant={"line"} />
+                    <SandEmailButton />
                 </div>
-                <div className="py-2">
-<SandEmailButton />
-              
-                </div>
+
             </div>
         </div>
     );
