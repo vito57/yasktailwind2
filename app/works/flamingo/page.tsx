@@ -1,15 +1,5 @@
 import { Metadata } from "next";
-import {
-  
-  AnimateLayout,
- 
-  Text,
-  ArticleImageSection,
-  ArticleFigure,
-  BodyImage,
-  ArticleHeader,
-  Summary,
-} from "../../components/server";
+
 import LayoutAnimated from "@/components/global/layoutanimated";
 import Article from "@/components/global/article";
 import WorksHeader from "@/components/blocks/worksheader";
@@ -19,7 +9,7 @@ import Section from "@/components/global/section";
 import TextBlock from "@/components/global/textblock";
 import WorksImageStack from "@/components/blocks/worksimagestack";
 import WorksSummary from "@/components/blocks/workssummary";
-export const metadata:Metadata = {
+export const metadata: Metadata = {
   title: "Flamingo",
   description: "Story about Drugcode design",
 };
@@ -53,13 +43,13 @@ export default function Flamingo() {
         </Section>
         <br />
         <Section id="preview" className="bg-secondary" fluid>
-         
-            <WorksFigure>
-              <WorksImage src="/works/flamingo/overview.png" alt="Flamingo" />
-            </WorksFigure>
-          
+
+          <WorksFigure>
+            <WorksImage src="/works/flamingo/overview.png" alt="Flamingo" />
+          </WorksFigure>
+
         </Section>
-<br />
+        <br />
         <Section id="style">
           <TextBlock>
             <p>
@@ -114,7 +104,7 @@ export default function Flamingo() {
               src="/works/flamingo/list_and_flow.png"
               width={1120}
               height={500}
-             
+
               alt="Flamingo"
             />
           </WorksFigure>
@@ -134,7 +124,7 @@ export default function Flamingo() {
           <WorksFigure>
             <WorksImage
               src="/works/flamingo/styles.png"
-             
+
               alt="Flamingo"
             />
           </WorksFigure>
@@ -144,7 +134,7 @@ export default function Flamingo() {
               src="/works/flamingo/guides.png"
               width={1120}
               height={600}
-              
+
               alt="Flamingo"
             />
           </WorksFigure>
@@ -152,14 +142,14 @@ export default function Flamingo() {
           <WorksFigure>
             <WorksImage
               src="/works/flamingo/components.png"
-             
+
               alt="Flamingo"
             />
           </WorksFigure>
           <br />
           <WorksFigure>
             <WorksImage
-             
+
               src="/works/flamingo/components2.png"
               alt="Flamingo"
             />
@@ -167,7 +157,7 @@ export default function Flamingo() {
           <br />
           <WorksFigure>
             <WorksImage
-              
+
               src="/works/flamingo/components3.png"
               alt="Flamingo"
             />
@@ -184,41 +174,41 @@ export default function Flamingo() {
           </TextBlock>
           <br />
           <WorksImageStack
-           
+
             images={[{
               src: "/works/flamingo/u1.png",
               //caption: "Representing function as node",
-            },{
+            }, {
               src: "/works/flamingo/u2.png",
               //caption: "Wireframes",
             }]}
           />
           <br />
           <WorksImageStack
-           
+
             images={[{
               src: "/works/flamingo/u3.png",
               //caption: "Representing function as node",
-            },{
+            }, {
               src: "/works/flamingo/u4.png",
               //caption: "Wireframes",
             }]}
           />
           <br />
           <WorksImageStack
-           
+
             images={[{
               src: "/works/flamingo/u5.png",
               //caption: "Representing function as node",
-            },{
+            }, {
               src: "/works/flamingo/u6.png",
               // caption: "Wireframes",
             }]}
           />
           <br />
-                    <Text title="Summary">
+          <TextBlock title="Summary">
             <WorksSummary designer="vitaly" year="2021" client="Sber" />
-          </Text>
+          </TextBlock>
         </Section>
 
       </Article>

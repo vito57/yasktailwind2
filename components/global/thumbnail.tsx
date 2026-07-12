@@ -10,9 +10,7 @@ interface thumbProps {
   title?: string;
   type?: string;
 
-  testimonials?:
-  | { testimonial: string; user: string; img: string; role: string }
-  | undefined;
+
 }
 export default function Thumbnail({
   keyNum,
@@ -21,14 +19,12 @@ export default function Thumbnail({
   imageAlt,
   title,
   type,
-  testimonials,
+
 }: thumbProps) {
   return (
     <figure key={keyNum} className="group/item">
       <div className="relative">
-        {/* {testimonials && <Toggle aria-label="Toggle bookmark" className="absolute z-10 top-1 right-1" >
-          <BookmarkIcon className="group-data-[state=on]/toggle:fill-foreground" />
-        </Toggle>} */}
+
         <Link href={href}>
           <Image
             src={imageSrc}

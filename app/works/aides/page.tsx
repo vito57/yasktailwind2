@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 
-import { Video } from "@/app/components/video";
+
 import { Metadata } from "next";
 import LayoutAnimated from "@/components/global/layoutanimated";
 import WorksImage from "@/components/blocks/worksimage";
