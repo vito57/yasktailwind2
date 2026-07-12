@@ -62,7 +62,7 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
         <MainFooter />
-
+        <Pwa />
       </body>
       {/* <body> {children}
          

@@ -11,7 +11,7 @@ export default function MainNav({ datas, variant = "default" }: MainNavProp) {
     const pathname = usePathname();
     return (
         <Tabs value={pathname}>
-            <TabsList className="p-0.5">
+            <TabsList >
                 {data.map((link: { name: string; href: string }) => {
                     return (
                         <TabsTrigger className="data-active:shadow-lg data-active:text-destructive hover:data-active:text-destructive/80" key={link.href} nativeButton={false} render={<Link href={link.href} />} value={link.href}>{link.name}</TabsTrigger>
