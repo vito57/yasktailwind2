@@ -19,15 +19,12 @@ async function CopyEmail() {
 }
     return (
               <ButtonGroup>
-                <Button variant="secondary" className="bg-ylime" nativeButton={false} render={<Link href="" />}>
+                <Button variant="secondary" nativeButton={false} render={<Link href="" />}>
                   vitalyyask@gmail.com
                 </Button>
-                <Tooltip >
-                  <TooltipTrigger render={<Button onClick={CopyEmail} variant="secondary" className="bg-ylime"> <Copy /></Button>} />
-                  <TooltipContent>
+           
                     <p>Copy to clipboard</p>
-                  </TooltipContent>
-                </Tooltip>
+
               </ButtonGroup>
     )
 }

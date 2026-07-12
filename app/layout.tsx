@@ -1,12 +1,10 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-
-import {inter, serotiva} from "@/components/typography/fonts"
-import { BodyColor, Pwa } from "./components/client";
+import { ThemeProvider } from "@/components/theme-provider";
+import { inter, serotiva, jbm } from "@/components/typography/fonts"
+import { Pwa } from "@/components/pwa";
 import { Viewport } from "next";
-import image from "./twitter-image.png";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/sonner";
+import MainFooter from "@/components/global/mainfooter";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yask.work"),
   title: {
@@ -40,29 +38,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-// const jbm = JetBrains_Mono({
-//   variable: "--font-jbm",
-//   subsets: ["latin"],
-//   weight: ["400"],
-//   fallback: [
-//     "ui-monospace",
-//     "SFMono-Regular",
-//     "Menlo",
-//     "Monaco",
-//     "Consolas",
-//     "Liberation Mono",
-//     "Courier New",
-//     "monospace",
-//   ],
-// });
-
-// Font files can be colocated inside of `app`
-
-// END FONT
-export const viewport: Viewport = {
-  themeColor: "white",
-};
 export default function RootLayout({
   children,
 }: {
@@ -71,15 +46,27 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning={true}
-      className={`${inter.variable} ${serotiva.variable} antialiased`}
+      suppressHydrationWarning
+      className={`${inter.variable} ${serotiva.variable} ${jbm.variable} antialiased`}
     >
-      <BodyColor>
-        <TooltipProvider>{children}</TooltipProvider>
-        <Toaster />
-      </BodyColor>
+        <body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+           <MainFooter />
+        </body>
+       {/* <body> {children}
+         
+       </body> */}
 
-      <Pwa />
+   
+      {/* <Toaster /> */}
+      {/* <Pwa /> */}
 
     </html>
   );

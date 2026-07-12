@@ -1,148 +1,128 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleHeader,
-  ArticleImageSection,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
-export const metadata = {
+import { Metadata } from "next";
+
+import LayoutAnimated from "@/components/global/layoutanimated";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "DomKino",
   description: "Adaptive website for TV",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-ylightgrey">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader >
+          <WorksFigure>
+            <WorksImage
               src="/works/domkino/cover.png"
               width={1120}
               height={416}
-              //   className="bg-orange-100"
+
               alt="Domkino website"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
 
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>Design of an adaptive website for the Dom Kino TV channel</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/domkino/layout_1.png"
               alt="DomKino website layout"
               className="bg-ylightgrey"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               When designing a layout, it was necessary to provide as many
               advertising places as possible and dont forget about users. I
               prepared different options for layouts with an adaptive and tested
               them.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/domkino/layout_2.png"
               alt="DomKino website layout"
               height={1354}
               className="bg-ylightgrey"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/domkino/layout_3.png"
               alt="DomKino website article"
               className="bg-ylightgrey"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>Regular and rich article(with image header) templates. </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            className="bg-ylightgrey"
-            image1={{
+          <WorksImageStack
+
+            images={[{
               src: "/works/domkino/article_image.png",
-            }}
-            image2={{
+            }, {
               src: "/works/domkino/article.png",
-            }}
+            }]}
           />
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/domkino/article_image.png"
-              alt="DomKino website article"
-              className="bg-ylightgrey"
-            />
-          </ArticleFigure>
-          <br /> */}
-          {/* <ArticleFigure>
-            <BodyImage
-              src="/works/domkino/article.png"
-              alt="DomKino website article"
-              className="bg-ylightgrey"
-            />
-          </ArticleFigure> */}
+
           <br />
-          <Text title="Styles">
+          <TextBlock title="Styles">
             <p>All elements provided in style guide.</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/domkino/styles.png"
               alt="DomKino website styles"
               className="bg-ylightgrey"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/domkino/1.png",
-            }}
-            image2={{
+            }, {
               src: "/works/domkino/2.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/domkino/5.png",
-            }}
-            image2={{
+            }, {
               src: "/works/domkino/6.png",
-            }}
+            }]}
           />
-        </Section>
-
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2018"
               client="PKVS"
               link="https://www.domkino.tv/"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

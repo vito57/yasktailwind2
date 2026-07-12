@@ -1,37 +1,37 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import Image from "next/image";
+import LayoutAnimated from "@/components/global/layoutanimated";
+
+import { Metadata } from "next";
 import Link from "next/link";
-export const metadata = {
+import WorksImage from "@/components/blocks/worksimage";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import TextBlock from "@/components/global/textblock";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+
+export const metadata: Metadata = {
   title: "Starc - Android App",
   description: "Script writing app for Android",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-ylightgrey">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader>
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/cover.png"
               width={1120}
               height={416}
               className="w-full"
               alt="Starc Android App"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Design a native application for Android. For mobile devices and
               tablets. Be close to platform gesign guides as possible. Android
@@ -41,84 +41,84 @@ const Page = () => {
               </Link>{" "}
               experience was made.
             </p>
-          </Text>
+          </TextBlock>
         </Section>
 
         <Section id="mobile">
-          <Text title="Mobile experience">
+          <TextBlock title="Mobile experience">
             <p>
               The Starc application simplifies the process of writing scripts
               and texts. It was necessary to follow the guidlines(Material
               Design) of the platform as much as possible and create a familiar
               and simple interaction experience for all devices.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/1.png"
-              className="bg-ylightgrey"
+
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/2.png"
-              className="bg-ylightgrey"
+
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/3.png"
-              className="bg-ylightgrey"
+
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
 
           <br />
-          <Text title="Tablet experience">
+          <TextBlock title="Tablet experience">
             <p></p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/4.png"
-              className="bg-ylightgrey"
+
               alt="Starc tablet"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/5.png"
-              className="bg-ylightgrey"
+
               alt="Starc tablet"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starc/6.png"
-              className="bg-ylightgrey"
+
               alt="Starc tablet"
             />
-          </ArticleFigure>
-        </Section>
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+          </WorksFigure>
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2021"
               client="Starc"
               link="https://starc.app/"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

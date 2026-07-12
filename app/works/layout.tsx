@@ -1,9 +1,10 @@
 
 import data from "../works.json";
-import { ArticleMainMenu } from "@/components/regions/articlemainmenu";
-import { MobileNav } from "@/components/blocks/mobilenav";
-import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
-import MainFooter from "@/components/regions/mainfooter";
+import  ArticleMainMenu  from "@/components/global/articlemainmenu";
+import  MobileNav  from "@/components/global/mobilenav";
+import  ThumbnailFeed  from "@/components/global/thumbnailfeed";
+import MainFooter from "@/components/global/mainfooter";
+import Section from "@/components/global/section";
 export default function WorkLayout({
   children,
 }: {
@@ -13,10 +14,10 @@ export default function WorkLayout({
     <>
       <ArticleMainMenu />
       <MobileNav />
-     <div className="typeset typeset-notes"> {children}</div> 
-      <section id="moreworks" className="container">
+      <div className="typeset typeset-article">{children}</div>
+      <Section id="moreworks">
         <h2 className="text-xl font-bold mb-8">More works</h2>
-        <div className="grid gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-4 md:grid-cols-4 grid-cols-2">
+        <div className="grid gap-2 md:gap-5  md:grid-cols-4 grid-cols-2">
           {data.map((i) => {
             return (
               <ThumbnailFeed
@@ -31,8 +32,8 @@ export default function WorkLayout({
             );
           })}
         </div>
-      </section>
-      <MainFooter />
+      </Section>
+    
     </>
   );
 }

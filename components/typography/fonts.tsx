@@ -1,4 +1,4 @@
-import {Inter} from "next/font/google";
+import {Inter, JetBrains_Mono} from "next/font/google";
 import localFont from "next/font/local";
 export const inter = Inter({
   variable: "--font-inter",
@@ -6,7 +6,7 @@ export const inter = Inter({
   weight: ["400", "500", "700"],
   fallback: [
     "system-ui",
-    " -apple-system",
+    "-apple-system",
     "Segoe UI",
     "Roboto",
     "Helvetica Neue",
@@ -38,5 +38,20 @@ export const serotiva = localFont({
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji",
+  ],
+});
+export const jbm = JetBrains_Mono({
+  variable: "--font-jbm",
+  subsets: ["latin"],
+  weight: ["400"],
+  fallback: [
+    "ui-monospace",
+    "SFMono-Regular",
+    "Menlo",
+    "Monaco",
+    "Consolas",
+    "Liberation Mono",
+    "Courier New",
+    "monospace",
   ],
 });

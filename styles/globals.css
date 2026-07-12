@@ -1,460 +1,32 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "./typeset.css";
-/* @custom-variant dark (&:is(.dark *)); */
-.typeset-notes {
-  --typeset-font-body: var(--font-inter);
-  --typeset-font-heading: var(--font-inter);
-  --typeset-font-mono: var(--font-jetbrains-mono);
-  --typeset-size: 20px;
-  --typeset-leading: 1.6;
-  --typeset-flow: 2em;
- 
-}
+
 @theme {
-  --breakpoint-sm: 36rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 62rem;
-  --breakpoint-xl: 75rem;
-  --breakpoint-2xl: 87rem;
-  --breakpoint-3xl: 105rem;
-
-  /* --text-*: initial;
-  --text-xs: 0.75rem;
-  --text-xs--line-height: 1rem;
-
-  --text-sm: 0.875rem;
-  --text-sm--line-height: 1.25rem; */
-  /* --text-sm--letter-spacing: -0.006em; */
-
-  /* --text-base: 1rem;
-  --text-base--line-height: 1.5rem; */
-  /* --text-base--letter-spacing: -0.011em; */
-
-  /* --text-xl: 1.25rem;
-  --text-xl--line-height: 2rem; */
-  /* --text-xl--letter-spacing: -0.017em; */
-
-  /* --text-2xl: 1.5rem;
-  --text-2xl--line-height: 2rem; */
-  /* --text-2xl--letter-spacing: -0.019em; */
-
-  /* --text-3xl: 1.75rem;
-  --text-3xl--line-height: 2.25rem; */
-  /* --text-3xl--letter-spacing: -0.021em; */
-
-  /* --text-4xl: 2rem;
-  --text-4xl--line-height: 2.5rem; */
-  /* --text-4xl--letter-spacing: -0.022em; */
-
-  /* --text-5xl: 2.5rem;
-  --text-5xl--line-height: 3rem; */
-  /* --text-5xl--letter-spacing: -0.022em; */
-
   --font-*: initial;
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jbm);
   --font-display: var(--font-serotiva);
-
-
-  --color-ybg: #fafafd;
-  --color-yred: #ff2423;
-  --color-ylime: #d6f47c;
-  --color-ygrey: #cfd6df;
-  --color-ytextdark: #c2d2ff;
-  --color-ybrown: #845005;
-  --color-ydarkbrown: #5c3804;
-  --color-yblue: #84a5ff;
-  --color-ypink: #ffb18a;
-  --color-ygreen: #268505;
-  --color-yask: #050884;
-  --color-ylightblue: #080bd0;
-  --color-ylightgrey: #f2f2f2;
-  --color-yviolet: #ae24ff;
-  --color-ygreen: #268505;
 }
+
+.typeset-article {
+  --typeset-font-body: var(--font-sans);
+  --typeset-font-heading: var(--font-sans);
+  --typeset-font-mono: var(--font-mono);
+  --typeset-size: 20px;
+  --typeset-leading: 1.6;
+  --typeset-flow: 0;
+}
+
+
 
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;
 }
 
-/* @variant dark (&:is(.dark *)); */
-
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-/* @layer base {
-
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  } */
-
-  /* @font-face {
-    font-family: "Serotiva";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/Serotiva.woff2) format("woff2");
-  } */
-
-  /* Headlines */
-/* 
-  .h1 {
-    @apply text-5xl
-  }
-
-  .h2 {
-    @apply text-4xl
-  }
-
-  .h3 {
-    @apply text-3xl
-  }
-
-  .h4 {
-    @apply text-2xl
-  }
-
-  .h5 {
-    @apply text-xl font-bold
-  }
-
-  .h6 {
-    @apply text-base font-bold
-  } */
-
-  /* Sections */
-  /* section, article, aside {
-    @apply mb-8;
-  } */
-
-  /* Code formating
-  :not(pre)>code,
-  code {
-    @apply bg-ylightblue/6 px-1 font-medium inline-block rounded-md
-  } */
-
-  /* mark */
-  /* mark {
-    @apply bg-ylime;
-  } */
-
-  /* dfn */
-  /* dfn {
-    @apply italic;
-  } */
-
-  /* dfn */
-  /* var {
-    @apply italic font-mono;
-  } */
-
-  /* progress */
-  /* progress {
-    @apply align-middle h-2;
-  }
-
-  progress[value]::-webkit-progress-value {
-    @apply bg-yask rounded-md;
-
-  }
-
-  progress[value]::-webkit-progress-bar {
-    @apply bg-ygrey rounded-md;
-  } */
-
-  /* kbd */
-  /* kbd {
-    @apply inline-block shadow shadow-yask/40 rounded-md px-1 font-mono;
-  } */
-
-  /* abbr */
-  /* abbr {
-    @apply font-medium tracking-wide decoration-dotted decoration-from-font underline-offset-4;
-  } */
-
-  /* em */
-  /* em {
-    @apply font-medium italic tracking-wide;
-  } */
-
-  /* strong */
-  /* strong {
-    @apply tracking-wide;
-  } */
-
-  /* cite */
-  /* cite {
-    @apply tracking-wide;
-  } */
-
-  /* q */
-  /* q {
-    @apply font-medium;
-  } */
-
-  /* data time */
-  /* data,
-  time {
-    @apply font-medium;
-  } */
-
-  /* address */
-  /* address {
-    @apply tracking-wide font-medium;
-  } */
-
-  /* blockquote */
-  /* blockquote {
-    @apply border-l border-ydarkbrown pl-[1em] text-ydarkbrown;
-  }
-blockquote > footer{
-@apply text-ybrown
-} */
-
-  /* forms */
-  /* input {
-    @apply block appearance-none;
-  }
-
-  input:disabled {
-    @apply opacity-40 bg-ylightgrey cursor-not-allowed;
-  }
-
-  input:not([type="image"], [type='button'], [type='reset'], [type='submit'], [type="range"], [type="checkbox"], [type="radio"]) {
-    @apply outline-1 outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all;
-  } */
-
-  /* input hover */
-  /* input:not(:disabled):not([readonly]) {
-    @apply focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
-  }
-
-  input:read-only {
-    @apply bg-ylightgrey;
-  }
-
-  input::-webkit-datetime-edit {
-    @apply p-0 block;
-  }
-
-  input[type=checkbox],
-  input[type=radio] {
-    @apply size-[1.25em] border-2 border-yask rounded-md bg-transparent transition-all bg-top shrink-0;
-  }
-
-  input[type=checkbox]:not(:disabled),
-  input[type=radio]:not(:disabled) {
-    @apply hover:border-ylightblue cursor-pointer focus:ring-4 focus:ring-ylightblue/20;
-  }
-
-  input[type=checkbox]:checked,
-  input[type=radio]:checked {
-    @apply bg-[url("/ui/icons/checkbox.svg")] bg-no-repeat bg-size-[.75em] bg-center border-ylightblue;
-  }
-
-  input[type=checkbox]:disabled,
-  input[type=radio]:disabled {
-    @apply opacity-40;
-  } */
-
-  /* input[type=radio] {
-    @apply rounded-full;
-  } */
-
-  /* input[type=file] {
-    @apply p-0 overflow-hidden bg-transparent;
-  } */
-
-  /* input[type=file]:not(:disabled):not([readonly]) {
-    @apply cursor-pointer;
-  } */
-
-  /* input::file-selector-button {
-    @apply bg-ylightgrey px-3 py-1 mr-2 font-medium transition-colors;
-  } */
-
-  /* input:hover:not(:disabled):not([readonly])::file-selector-button {
-    @apply bg-gray-200;
-  } */
-
-  /* input[type="color"] {
-    block-size: 2em;
-    @apply p-1;
-  } */
-
-  /* -webkit */
-  /* input[type="color"]::-webkit-color-swatch-wrapper {
-    @apply p-0;
-  } */
-
-  /* input[type="color"]::-webkit-color-swatch {
-    @apply rounded-lg border-0;
-  } */
-
-  /* firefox */
-  /* input[type=color]::-moz-focus-inner {
-    @apply p-0;
-  } */
-
-  /* input[type=color]::-moz-color-swatch {
-    @apply rounded-lg border-0;
-  } */
-
-  /* input[type=file]:not(:disabled):not([readonly]) {
-    @apply bg-yask;
-  } */
-
-  /* input:not(:disabled):not([readonly]) {
-    @apply hover: outline-yred;
-  } */
-
-  /* input:disabled {
-    @apply bg-ylightgrey opacity-40;
-  } */
-  /* textarea */
-  /* textarea {
-    @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue;
-  } */
-
-  /* select */
-  /* select { */
-    /* appearance: none; */
-    /* background-image: url("/works/aides/aides-start.png"); */
-    /* @apply outline-1 appearance-none outline-yask w-full px-3 py-1 m-0 rounded-lg transition-all block focus:ring-4 hover:outline-ylightblue focus:ring-ylightblue/20 focus:outline-ylightblue bg-[url("/ui/icons/chevron-down.svg")] bg-no-repeat bg-size-[20] bg-position-[right_.5rem_center];
-  } */
-
-  /* select:disabled {
-    @apply bg-ylightgrey;
-  } */
-
-  /* select[multiple],
-  select[size]:not([size="1"]) {
-
-    @apply bg-none;
-  } */
-
-  /* select::-moz-focusring {
-    @apply text-shadow-none text-transparent;
-  } */
-
-  /* label {
-    @apply inline-block;
-  } */
-
-  /* details */
-  /* details {
-    @apply border-b-2 border-yask/8 transition-all;
-  } */
-
-  /* details[open] {
-    @apply pb-4;
-  } */
-
-  /* details>summary {
-    @apply py-2 cursor-pointer hover:bg-ybg text-ylightblue transition-colors;
-  } */
-
-  /* dl */
-  /* dl dt {
-    @apply font-bold;
-  } */
-
-  /* del */
-  /* del {
-    @apply text-yred px-1 inline-block bg-yred/8 no-underline before:content-['-'];
-  } */
-
-  /* ins */
-  /* ins {
-    @apply text-ygreen px-1 inline-block bg-ylime/16 no-underline before:content-['+'];
-  } */
-
-  /* Meter */
-  /* meter {
-    --background: transparent;
-    --optimum: var(--color-ygreen);
-    --sub-optimum: var(--color-ypink);
-    --sub-sub-optimum: var(--color-yred); */
-
-    /* The gray background in Firefox */
-    /* background: var(--background);
-    @apply inline-block appearance-none rounded-full p-0 m-0 align-middle h-2;
-  } */
-
-  /* The gray background in Chrome, etc. */
-  /* meter::-webkit-meter-bar {
-    background: var(--color-ygrey);
-    @apply rounded-full;
-  } */
-
-  /* The green (optimum) bar in Firefox */
-  /* meter:-moz-meter-optimum::-moz-meter-bar {
-    background: var(--optimum);
-    @apply rounded-full;
-  } */
-
-  /* The green (optimum) bar in Chrome etc. */
-  /* meter::-webkit-meter-optimum-value {
-    background: var(--optimum);
-    @apply rounded-full;
-  } */
-
-  /* The yellow (sub-optimum) bar in Firefox */
-  /* meter:-moz-meter-sub-optimum::-moz-meter-bar {
-    background: var(--sub-optimum);
-    @apply rounded-full;
-  } */
-
-  /* The yellow (sub-optimum) bar in Chrome etc. */
-  /* meter::-webkit-meter-suboptimum-value {
-    background: var(--sub-optimum);
-    @apply rounded-full;
-  } */
-
-  /* The red (even less good) bar in Firefox */
-  /* meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: var(--sub-sub-optimum);
-    @apply rounded-full;
-  } */
-
-  /* The red (even less good) bar in Chrome etc. */
-  /* meter::-webkit-meter-even-less-good-value {
-    background: var(--sub-sub-optimum);
-    @apply rounded-full;
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled), [role="button"]:not(:disabled) {
-    cursor: pointer;
-  } */
-  /* html {
-    @apply font-sans;
-  } */
-/* 
-} */
-
 @layer utilities {
-
-  .ylink {
-    @apply text-ylightblue dark:text-white dark:hover:text-yred hover:text-yred visited:text-yviolet transition font-medium;
-  }
-
   .animate-fadeIn {
     animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.6, 1);
   }
@@ -470,59 +42,42 @@ blockquote > footer{
       opacity: 1;
     }
   }
-
-  /* Buttons */
-
-  .ybutton,
-  input[type=button],
-  input[type=submit] {
-    @apply text-sm text-center my-0.5 font-medium transition-all rounded-xl px-3 py-2 inline-block cursor-pointer text-ylightblue;
-  }
-
-  .ybutton.primary {
-    @apply bg-ylime hover:brightness-105;
-  }
-
-  .ybutton.secondary {
-    @apply bg-ytextdark hover:brightness-105;
-  }
-
 }
+/* ShadCNTheme */
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --color-foreground: var(--foreground);
   --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -533,30 +88,31 @@ blockquote > footer{
 }
 
 :root {
+  
+  --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: #050884;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(100% 0.00011 271.152);
+  --card-foreground: #050884;
+  --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #050884;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #c2d2ff;
-  --secondary-foreground: #080bd0;
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: #050884;
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: rgba(5, 8, 132, .6);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: #ff2423;
-  --border: #c2d2ff;
+  --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -567,9 +123,10 @@ blockquote > footer{
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+
 .dark {
-  --background: oklch(0.2857 0.1862 265.51);
-  --foreground: oklch(100% 0.00011 271.152);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -582,15 +139,15 @@ blockquote > footer{
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  --destructive: #ff2423;
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -599,4 +156,14 @@ blockquote > footer{
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }

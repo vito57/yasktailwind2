@@ -10,7 +10,7 @@
     --typeset-font-mono: var(--font-mono);
     --typeset-size: 1em;
     --typeset-leading: 1.75;
-    --typeset-flow: 1.25em;
+    --typeset-flow: 0;
   }
 }
 
@@ -90,10 +90,7 @@
       font-size: 0.8125em;
       line-height: 1.5;
       font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--typeset-muted);
-      margin-block-start: calc(var(--typeset-flow) / 0.8125);
+      
     }
     /* Anchors. */
     &:where([id]) {
@@ -117,6 +114,9 @@
     }
     &:where(a:hover) {
       text-decoration-color: currentColor;
+    }
+    &:where(a.button){
+      text-decoration: none;
     }
     &:where(a:focus-visible) {
       outline: 2px solid var(--color-ring, currentColor);
@@ -199,12 +199,12 @@
     &:where(ul, ol) {
       margin-block-start: var(--typeset-flow);
       margin-block-end: 0;
-      padding-inline-start: 1.5em;
+      /* padding-inline-start: 1.5em; */
     }
-    &:where(li) {
+    /* &:where(li) {
       margin-block-start: 0.5em;
       padding-inline-start: 0.4em;
-    }
+    } */
     &:where(li > p, li > ul, li > ol) {
       margin-block-start: 0.5em;
     }
@@ -228,7 +228,7 @@
 
     /* Disclosures. */
     &:where(details) {
-      margin-block-start: var(--typeset-flow);
+      /* margin-block-start: var(--typeset-flow); */
       margin-block-end: 0;
     }
     &:where(summary) {
@@ -240,7 +240,7 @@
     }
 
     /* Keyboard keys. */
-    &:where(kbd) {
+    /* &:where(kbd) {
       font-family: inherit;
       font-size: 0.85em;
       font-weight: 500;
@@ -248,7 +248,7 @@
       border-block-end-width: 2px;
       border-radius: min(calc(var(--radius, 0.5em) * 0.6), 0.35em);
       padding: 0.0625em 0.35em;
-    }
+    } */
 
     /* Definition lists. */
     &:where(dl) {
@@ -257,16 +257,16 @@
     }
     &:where(dt) {
       font-weight: 500;
-      margin-block-start: 1em;
+      /* margin-block-start: 1em; */
     }
-    &:where(dt + dt) {
+    /* &:where(dt + dt) {
       margin-block-start: 0.25em;
-    }
+    } */
     &:where(dd) {
-      margin-block-start: 0.25em;
+      /* margin-block-start: 0.25em; */
       margin-inline-start: 0;
-      padding-inline-start: 1em;
-      color: var(--typeset-muted);
+      /* padding-inline-start: 1em; */
+     
     }
 
     /* Inline code. */
@@ -360,12 +360,12 @@
       margin-block-end: 0;
       margin-inline: 0;
     }
-    &:where(figcaption, caption) {
+    /* &:where(figcaption, caption) {
       color: var(--typeset-muted);
       font-size: 0.875em;
       text-align: center;
       margin-block-start: calc(0.75em / 0.875);
-    }
+    } */
     &:where(caption) {
       caption-side: bottom;
     }

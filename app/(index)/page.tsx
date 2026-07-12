@@ -1,12 +1,12 @@
-import { Thumbnail } from "@/components/blocks/thumbnail";
+import  Thumbnail  from "@/components/global/thumbnail";
 
 import data from "../works.json";
-import { LayoutAnimated } from "@/components/regions/layoutanimated";
+import  LayoutAnimated  from "@/components/global/layoutanimated";
 
 export default function Works() {
   return (
     <LayoutAnimated>
-      <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
+      <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2">
         {data.map((i) => {
           return (
             <Thumbnail

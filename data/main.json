@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Works",
+    "title": "We Do Web & App Design,\n Animation, Icons and Code",
+    "href": "/"
+  },
+  {
+    "name": "Feed",
+    "title": "We are Happy to Share\n Design Ideas and Freebies",
+    "href": "/feed"
+  },
+  {
+    "name": "About",
+    "title": "Nice to Meet You!\n Let's Introduce Ourselves",
+    "href": "/about"
+  }
+]

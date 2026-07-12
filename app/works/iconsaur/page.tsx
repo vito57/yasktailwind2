@@ -1,45 +1,43 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-  ArticleFigure,
-  ArticleHeroSection,
-} from "../../components/server";
+import LayoutAnimated from "@/components/global/layoutanimated";
 
-export const metadata = {
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksHero from "@/components/blocks/workshero";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import { Metadata } from "next";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "Iconsaur - Bootstrap Based Icon System",
   description: "2400 handcrafted ui icons",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-[#A3E635]">
-          <ArticleHeroSection
+        <WorksHeader className="bg-secondary">
+          <WorksHero
             underTitle="2400 Unique Icons"
             buttonUrl="https://ui8.net/gala-yask/products/iconsaur---bootstrap-icon-system"
             subTitle="Handcrafted multi-purpose icon set for websites, apps, social networks, print and more."
             title="High-Quality Modern Vector UI Icons Set"
             credits="Designed by Gala • Distributed by UI8 • Released 2024"
-            btnTxt="Purchase Set →"
+            btnTxt="Purchase Set"
           >
-            <BodyImage
+            <WorksImage
               src="/works/iconsaur/cover.png"
               width={3360}
               height={1248}
               className="bg-transparent  w-full"
               alt="Iconsaur"
             />
-          </ArticleHeroSection>
-        </ArticleHeader>
+          </WorksHero>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Iconsaur — multi-purpose icon set. Bright and original icons for
               the user interface. The icon library consists of 2400+ unique ui
@@ -48,52 +46,48 @@ const Page = () => {
               choice for Bootstrap or Tailwind users. All icon names, are the
               same as Bootstrap icons. Makes your website or app look different.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/iconsaur/1.png",
-            }}
-            image2={{
+            }, {
               src: "/works/iconsaur/2.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/iconsaur/3.png",
-            }}
-            image2={{
+            }, {
               src: "/works/iconsaur/4.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/iconsaur/5.png",
-            }}
-            image2={{
+            }, {
               src: "/works/iconsaur/6.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/iconsaur/7.png",
-            }}
-            image2={{
+            }, {
               src: "/works/iconsaur/8.png",
-            }}
+            }]}
           />
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary designer="gala" year="2024" client="UI8" />
+          </TextBlock>
         </Section>
 
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="gala" year="2024" client="UI8" />
-          </Text>
-        </aside>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

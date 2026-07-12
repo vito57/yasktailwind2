@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function MainFooter(){
-    return (
-            <p className="text-sm text-center mt-8 mb-8">
+export default function MainFooter() {
+  return (
+    <footer className="text-sm bg-secondary text-center pt-5 pb-5 mt-5">
       Copyright © 2008—2026. Yaskevich. <br /> Thanks:{" "}
       <Link href="https://react.dev/" className="ylink">
         React
@@ -19,6 +19,6 @@ export default function MainFooter(){
       <Link href="https://github.com/" className="ylink">
         Github
       </Link>
-    </p>
-    )
+    </footer>
+  )
 }

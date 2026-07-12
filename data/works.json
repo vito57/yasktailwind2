@@ -1,0 +1,202 @@
+[
+  {
+    "cover": "/img/chess.png",
+    "title": "Mikhail Tal Chess",
+    "by": ["vitaly"],
+    "type": "Design, Branding",
+    "path": "/works/chess",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/drugcode.png",
+    "title": "DrugCode+",
+    "by": ["vitaly", "vera"],
+    "type": "Design, Branding",
+    "path": "/works/drugcode",
+    "date": "2021"
+  },
+     {
+    "cover": "/img/flamingo.png",
+    "title": "Flamingo",
+    "by": ["vitaly"],
+    "type": "Design System",
+    "path": "/works/flamingo",
+    "date": "2021"
+  },
+  {
+    "cover": "/img/evoxo.png",
+    "title": "Evoxo+",
+    "by": ["vitaly", "gala"],
+    "type": "Branding, Web design",
+    "path": "/works/evoxo",
+    "date": "2025"
+  },
+ 
+  {
+    "cover": "/img/aides.png",
+    "title": "Aides App",
+    "by": ["vitaly"],
+    "type": "Design, IOS",
+    "path": "/works/aides",
+    "date": "2025"
+  },
+      {
+    "cover": "/img/miractal.png",
+    "title": "Mira",
+    "by": ["vitaly"],
+    "type": "Web Design",
+    "path": "/works/miractal",
+    "date": "2025"
+  },
+  {
+    "cover": "/img/riveo.png",
+    "title": "Riveo",
+    "by": ["vitaly"],
+    "type": "Refactoring UI",
+    "path": "/works/riveo",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/taytega.png",
+    "title": "Taytega AG",
+    "by": ["vitaly"],
+    "type": "Design, Branding",
+    "path": "/works/taytega",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/bowlerslink.png",
+    "coverVideo": false,
+    "title": "BowlersLink",
+    "by": ["vitaly"],
+    "type": "Web design",
+    "path": "/works/bowlerslink",
+    "date": "2024"
+  },
+
+  {
+    "cover": "/img/angleicons.png",
+    "coverVideo": false,
+    "title": "AngleIcons",
+    "by": ["gala", "vitaly"],
+    "type": "Icon System",
+    "path": "/works/angleicons",
+    "date": "2024"
+  },
+
+  {
+    "cover": "/img/starc.png",
+    "title": "Starc Android",
+    "by": ["vitaly"],
+    "type": "App Design",
+    "path": "/works/starc",
+    "date": "2020",
+    "testimonials": {
+      "testimonial": "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!",
+      "img": "DN",
+      "user": "Dimka Novikov",
+      "role": "starc founder"
+    }
+  },
+  {
+    "cover": "/img/starcios.png",
+    "title": "Starc IOS",
+    "by": ["vitaly"],
+    "type": "App Design",
+    "path": "/works/starcios",
+    "date": "2021",
+    "testimonials": {
+      "testimonial": "The product has been successfully launched! Thank you for standing at the origins of this story and laying the foundation for the design of mobile phones!",
+      "img": "DN",
+      "user": "Dimka Novikov",
+      "role": "starc founder"
+    }
+  },
+
+  {
+    "cover": "/img/domkino.png",
+    "title": "Domkino",
+    "by": ["vitaly"],
+    "type": "Web Design",
+    "path": "/works/domkino",
+    "date": "2019"
+  },
+
+  {
+    "cover": "/img/bober.png",
+
+    "title": "Bober",
+    "by": ["vitaly"],
+    "type": "Web Design",
+    "path": "/works/bober",
+    "date": "2019"
+  },
+  {
+    "cover": "/img/darlen.png",
+    "title": "Darlen",
+    "by": ["vitaly"],
+    "type": "UI/UX Design",
+    "path": "/works/darlen",
+    "date": "2021"
+  },
+  {
+    "cover": "/img/restevents.png",
+
+    "title": "RestEvents",
+    "by": ["vitaly", "gala"],
+    "type": "Web Design",
+    "path": "/works/restevents",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/karusel.png",
+
+    "title": "Karusel",
+    "by": ["vitaly"],
+    "type": "Web Design",
+    "path": "/works/karusel",
+    "date": "2021"
+  },
+  {
+    "cover": "/img/bootsyicons.png",
+    "title": "Bootsy Icons",
+    "by": ["gala", "vitaly"],
+    "type": "Icon Set",
+    "path": "/works/bootsy",
+    "date": "2021"
+  },
+  {
+    "cover": "/img/bootsyduotone.png",
+
+    "title": "Bootsy Icons Duotone",
+    "by": ["gala", "vitaly"],
+    "type": "Icon Set",
+    "path": "/works/bootsyduotone",
+    "date": "2022"
+  },
+  {
+    "cover": "/img/iconsaur.png",
+
+    "title": "Iconsaur",
+    "by": ["gala", "vitaly"],
+    "type": "Icon Set",
+    "path": "/works/iconsaur",
+    "date": "2024"
+  },
+  {
+    "cover": "/img/illustrations.png",
+    "title": "Hand-drawn illustrations",
+    "by": ["gala"],
+    "type": "Illustrations",
+    "path": "/works/illustrations",
+    "date": "2018"
+  },
+  {
+    "cover": "/img/poehali.png",
+    "title": "Poehali TV",
+    "by": ["vitaly"],
+    "type": "UI/UX Design",
+    "path": "/works/poehali",
+    "date": "2018"
+  }
+]

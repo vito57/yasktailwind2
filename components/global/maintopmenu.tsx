@@ -3,10 +3,11 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import ui8 from "../../public/ui8.svg"
 import dribbble from "../../public/dribbble.svg"
+import SandEmailButton from "./sandemailbutton";
 export default function MainTopMenu() {
     return (
         <div className="px-4 w-fit flex gap-2">
-            <Button variant="secondary" className="bg-ylime" nativeButton={false} render={<Link href="mailto:vitalyyask@gmail.com"/>}>Send email</Button>
+            <SandEmailButton/>
             <Link href="https://dribbble.com/yask">
                 <Image
                     src={dribbble}

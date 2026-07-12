@@ -1,10 +1,10 @@
 import Image from "next/image";
 import users from "../../users.json";
 import Link from "next/link";
-import { LayoutAnimated } from "@/components/regions/layoutanimated";
+import  LayoutAnimated  from "@/components/global/layoutanimated";
 import { Metadata } from "next/types";
 import { Button } from "@/components/ui/button";
-import EmailButton from "@/components/blocks/emailbutton";
+import EmailButton from "@/components/global/emailbutton";
 export const metadata: Metadata = {
   title: "About us",
   description: "We design websites and apps",
@@ -27,9 +27,9 @@ export default function About() {
                 className="size-16 md:size-44 group-hover/item:scale-[1.01] rounded-full  duration-200 transition-transform transform-gpu"
                 alt={i.name}
               />
-              <figcaption className="transition grow py-0.5 md:text-center text-yask">
+              <figcaption className="transition grow py-0.5 md:text-center">
                 <p className="font-bold md:text-xl">{i.name}</p>
-                <p className="text-sm opacity-60">{i.occupation}</p>
+                <p className="text-sm text-muted-foreground">{i.occupation}</p>
               </figcaption>
               <div>
                 <Button variant="secondary" nativeButton={false} render={<Link href={i.path} />}>Read more</Button>
@@ -38,10 +38,10 @@ export default function About() {
           );
         })}
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-6">
+      <div className="flex flex-col md:flex-row justify-between gap-5 text-pretty">
         <div className="md:w-4/12">
-          <h2 className="md:text-3xl text-2xl">
-            <span className="text-yred">(a)</span>
+          <h2 className="text-2xl">
+            <small className="text-muted-foreground font-mono">(a)</small>
             <br />
             We do
           </h2>
@@ -77,15 +77,12 @@ export default function About() {
           </dl>
         </div>
         <div className="md:w-3/12 ">
-          <h2 className="md:text-3xl text-2xl ">
-            <span className="text-yred">(b)</span>
+          <h2 className=" text-2xl ">
+            <small className="text-muted-foreground font-mono">(b)</small>
             <br />
             Principles
           </h2>
-          <br />
-          <blockquote className="text-sm mt-6 border-l border-ybrown pl-2 italic text-ybrown">
-            Everything you need is simple!
-          </blockquote>
+
           <br />
           <dl className="text-base">
             <dt className="font-bold">Time respectful</dt>
@@ -106,8 +103,8 @@ export default function About() {
           </dl>
         </div>
         <div className="md:w-3/12 ">
-          <h2 className="md:text-3xl text-2xl ">
-            <span className="text-yred">(c)</span>
+          <h2 className=" text-2xl ">
+            <small className="text-muted-foreground font-mono">(c)</small>
             <br />
             Contacts
           </h2>

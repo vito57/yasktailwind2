@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-  VideoSkeleton,
-} from "../../components/server";
+
+import LayoutAnimated from "@/components/global/layoutanimated";
+import Article from "@/components/global/article";
+import Section from "@/components/global/section";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
 
 export const metadata: Metadata = {
   title: "Evoxo",
@@ -19,81 +17,59 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-ylightgrey">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader>
+          <WorksFigure>
+            <WorksImage
               src="/works/evoxo/cover.png"
               width={1120}
               height={416}
               className="w-full"
               alt="Evoxo"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>Logo and web design for payment service</p>
-          </Text>
+          </TextBlock>
 
           <br />
-          <ArticleImageSection
-            className="bg-ylightgrey"
-            image1={{
+          <WorksImageStack
+
+            images={[{
               src: "/works/evoxo/logo.png",
               caption: "[fig 1] Logo",
-            }}
-            image2={{
+            }, {
               src: "/works/evoxo/bento.png",
               caption: "[fig 2] Style",
-            }}
+            }]}
           />
           <br />
-          {/* <ArticleImageSection
-            height={954}
-            className="bg-zinc-900"
-            image1={{
-              src: "/works/evoxo/desktop.png",
-              caption: "[fig 3] Desktop",
-            }}
-            image2={{
-              src: "/works/evoxo/mobile.png",
-              caption: "[fig 4] Mobile",
-            }}
-          /> */}
-          {/* <ArticleFigure figcaption="[fig 3] Logo sketches">
-            <BodyImage
-              height={240}
-              src="/works/evoxo/logosketch.png"
-              className="bg-ylightgrey"
-              alt="[fig 3] Logo sketches"
-            />
-          </ArticleFigure>
-          <br /> */}
-          <ArticleFigure figcaption="[fig 4] Desktop">
-            <BodyImage
+          <WorksFigure figcaption="[fig 4] Desktop">
+            <WorksImage
               src="/works/evoxo/desktop.png"
-              className="bg-ylightgrey"
+
               alt="[fig 4] Desktop"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure figcaption="[fig 5] Mobile">
-            <BodyImage
+          <WorksFigure figcaption="[fig 5] Mobile">
+            <WorksImage
               src="/works/evoxo/mobile.png"
-              className="bg-ylightgrey"
+
               alt="[fig 5] Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary designer="vitaly" year="2025" client="Evoxo" />
+          </TextBlock>
         </Section>
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="vitaly" year="2025" client="Evoxo" />
-          </Text>
-        </aside>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

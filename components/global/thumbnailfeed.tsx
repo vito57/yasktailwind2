@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shimmer, toBase64 } from "./shimmer";
+import { Shimmer, toBase64 } from "../global/shimmer";
 //FEED ITEM
 interface ThumbnailFeedProps {
   keyNum?: string;
@@ -10,7 +10,7 @@ interface ThumbnailFeedProps {
   title?: string;
   type?: string;
 }
-export function ThumbnailFeed({
+export default function ThumbnailFeed({
   keyNum,
   href,
   imageSrc,
@@ -28,7 +28,7 @@ export function ThumbnailFeed({
           placeholder={`data:image/svg+xml;base64,${toBase64(
             Shimmer(800, 600)
           )}`}
-          className="w-full ease-in rounded-xl group-hover/item:brightness-95 duration-200 block transition-all transform-gpu"
+          className="w-full ease-in rounded-xl bg-secondary group-hover/item:brightness-95 duration-200 block transition-all transform-gpu"
           alt={imageAlt}
         />
       </Link>

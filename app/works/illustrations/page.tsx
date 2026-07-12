@@ -1,31 +1,29 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-  ArticleFigure,
-  ArticleHeroSection,
-} from "../../components/server";
+import { Metadata } from "next";
+
 import Link from "next/link";
-export const metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "Hand-drawn illustrations",
   description: "Hand-drawn illustrations",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
         <Section>
-          <ArticleFigure>
-            <BodyImage src="/works/illustrations/1.png" alt="1" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/illustrations/1.png" alt="1" />
+          </WorksFigure>
           <br />
-          <Text title="Vol. 1">
+          <TextBlock title="Vol. 1">
             <p>
               Remake of illustrations by{" "}
               <Link
@@ -36,107 +34,99 @@ const Page = () => {
               </Link>
               . Paper, watercolor
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={1760 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/2s1760.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/3s1760.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={2170 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/4s2170.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/5s2170.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={2000 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/6s2000.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/7s2000.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={2230 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/8s2230.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/9s2230.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={2160 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/10s2160.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/11s2160.png",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={1900 / 2}
-            image1={{
+            images={[{
               src: "/works/illustrations/12s1900.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/13s1900.png",
-            }}
+            }]}
           />
           <br />
 
-          <Text title="Vol. 2">
+          <TextBlock title="Vol. 2">
             <p>A series of illustrations for a book. Paper, ink</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/illustrations/14.png" alt="14" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/illustrations/14.png" alt="14" />
+          </WorksFigure>
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={2100}
-            image1={{
+            images={[{
               src: "/works/illustrations/15s2100.png",
-            }}
-            image2={{
+            }, {
               src: "/works/illustrations/16s2100.png",
-            }}
+            }]}
           />
           <br />
-          <Text title="Vol. 3">
+          <TextBlock title="Vol. 3">
             <p>Educational illustrations. Paper, pencil</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/illustrations/17.png" alt="17" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/illustrations/17.png" alt="17" />
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/illustrations/18.png" alt="17" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/illustrations/18.png" alt="17" />
+          </WorksFigure>
           <br />
+          <TextBlock title="Summary">
+            <WorksSummary designer="gala" year="2024" />
+          </TextBlock>
         </Section>
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="gala" year="2024" />
-          </Text>
-        </aside>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

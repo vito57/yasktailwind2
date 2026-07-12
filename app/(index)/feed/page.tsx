@@ -1,5 +1,5 @@
-import { LayoutAnimated } from "@/components/regions/layoutanimated";
-import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
+import  LayoutAnimated  from "@/components/global/layoutanimated";
+import  ThumbnailFeed  from "@/components/global/thumbnailfeed";
 import { Metadata } from "next/types";
 export const metadata:Metadata = {
   title: "Design Feed",

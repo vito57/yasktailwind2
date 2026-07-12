@@ -5,16 +5,16 @@ import Link from "next/link";
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 interface MainNavProp {
   datas?: any;
+  variant?: any;
 }
-export default function MainNav({datas}:MainNavProp) {
+export default function MainNav({datas, variant="default"}:MainNavProp) {
     const pathname = usePathname();
-   
     return (
         <Tabs value={pathname}>
-            <TabsList className="bg-primary p-0.5">
+            <TabsList className="p-0.5">
                 {data.map((link: { name: string; href: string }) => {                     
                     return (
-                        <TabsTrigger className="dark data-active:bg-yred" key={link.href} nativeButton={false} render={<Link href={link.href} />} value={link.href}>{link.name}</TabsTrigger>
+                        <TabsTrigger className="data-active:shadow-lg" key={link.href} nativeButton={false} render={<Link href={link.href} />} value={link.href}>{link.name}</TabsTrigger>
                     );
                 })}
             </TabsList>

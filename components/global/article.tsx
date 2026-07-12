@@ -3,7 +3,7 @@ interface ArticleProps {
   className: string;
   children: React.ReactNode;
 }
-export function Article({ children, className }: ArticleProps) {
+export default function Article({ children, className }: ArticleProps) {
   return <article className={`${className} mb-8`}>{children}</article>;
 }
 //END ARTICLE

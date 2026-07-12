@@ -1,18 +1,14 @@
 import Link from "next/link";
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-  ArticleImageGrid,
-} from "../../components/server";
 import { Metadata } from "next";
-
+import LayoutAnimated from "@/components/global/layoutanimated";
+import Article from "@/components/global/article";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import Section from "@/components/global/section";
+import WorksSummary from "@/components/blocks/workssummary";
 export const metadata: Metadata = {
   title: "Mikhail Tal Chess",
   openGraph: {
@@ -24,47 +20,46 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-[#4D7CFE]">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-secondary">
+          <WorksFigure>
+            <WorksImage
               src="/works/chess/cover.png"
               width={1120}
               height={416}
               className="bg-transparent w-full"
               alt="Mikhail Tal Chess"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               UI/UX design of Chess with artificial intelligence, trained on the
               games of{" "}
               <Link
-                className="ylink"
                 href="https://en.wikipedia.org/wiki/Mikhail_Tal"
               >
                 Mikhail Tal
               </Link>
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             className="bg-ylightgrey"
-            image1={{
+            images={[{
               src: "/works/chess/overview.png",
               caption: "[fig 0] Light mode",
-            }}
-            image2={{
+            }, {
               src: "/works/chess/overview-dark.webp",
               caption: "[fig 1] Zen mode",
-            }}
+            }]}
+
           />
           <br />
-          <Text>
+          <TextBlock>
             {" "}
             <p>
               Focus on the game. The user starts playing immediately, there are
@@ -73,168 +68,161 @@ const Page = () => {
               navigation bar is hidden without disturbing the player. It opens
               without blocking the game.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{
+            images={[{
               src: "/works/chess/1.png",
               caption: "[fig 2] Sidebar open",
-            }}
-            image2={{
+            }, {
               src: "/works/chess/2.png",
               caption: "[fig 3] Sidebar closed",
-            }}
+            }]}
+
           />
           <br />
 
-          <Text title="X-ray mode and tips">
+          <TextBlock title="X-ray mode and tips">
             <p>
               The user can see the probability of an artificial intelligence
               move. The user can use the tips of the best move, according to
               artificial intelligence. The quantity of tips depends on the
               difficulty level that the user has chosen.
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/3.png", caption: "[fig 3] Tips" }}
-            image2={{
+            images={[{ src: "/works/chess/3.png", caption: "[fig 3] Tips" }, {
               src: "/works/chess/4.png",
               caption: "[fig 4] AI assist",
-            }}
+            }]}
           />
           <br />
-          <Text title="Dark and light themes">
+          <TextBlock title="Dark and light themes">
             <p>Supporting dark and light theme</p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/5.png", caption: "[fig 5]" }}
-            image2={{
+            images={[{ src: "/works/chess/5.png", caption: "[fig 5]" }, {
               src: "/works/chess/6.png",
               caption: "[fig 6]",
-            }}
+            }]}
           />
           <br />
-          <Text title="Custom board colors">
+          <TextBlock title="Custom board colors">
             <p>The user can customize the color of the board</p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/7.png", caption: "[fig 7]" }}
-            image2={{
+            images={[{ src: "/works/chess/7.png", caption: "[fig 7]" }, {
               src: "/works/chess/8.png",
               caption: "[fig 8]",
-            }}
+            }]}
           />
           <br />
-          <Text title="AI generated rooms">
+          <TextBlock title="AI generated rooms">
             <p>
               The AI generated backgrounds and sounds allow you to play in a
               comfortable environment
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/9.png", caption: "[fig 9]" }}
-            image2={{
+            images={[{ src: "/works/chess/9.png", caption: "[fig 9]" }, {
               src: "/works/chess/10.png",
               caption: "[fig 10]",
-            }}
+            }]}
           />
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/11.png", caption: "[fig 11]" }}
-            image2={{
+            images={[{ src: "/works/chess/11.png", caption: "[fig 11]" }, {
               src: "/works/chess/12.png",
               caption: "[fig 12]",
-            }}
+            }]}
           />
           <br />
-          <Text title="Gamification">
+          <TextBlock title="Gamification">
             <p>
               Analytics during the game helps to monitor the growth process. You
               can share your achievements and statistics.
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/13.png", caption: "[fig 13]" }}
-            image2={{
+            images={[{ src: "/works/chess/13.png", caption: "[fig 13]" }, {
               src: "/works/chess/14.png",
               caption: "[fig 14]",
-            }}
+            }]}
           />
           <br />
-          <Text title="Adaptive design">
+          <TextBlock title="Adaptive design">
             <p>
               The game is fully adaptive and can be launched from any device.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 15] Adaptive layout">
-            <BodyImage
+          <WorksFigure figcaption="[fig 15] Adaptive layout">
+            <WorksImage
               src="/works/chess/15.png"
               width={1704}
               height={824}
               className="bg-ylightgrey"
               alt="[fig 15] Adaptive layout"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="Game assets">
+          <TextBlock title="Game assets">
             <p>
               Pre made and ai driven color themes, and hand drawn chess pieces
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <ArticleImageSection
+          <WorksImageStack
             height={924}
             width={1464}
             className="bg-ylightgrey"
-            image1={{ src: "/works/chess/16.png", caption: "[fig 16]" }}
-            image2={{
+            images={[{ src: "/works/chess/16.png", caption: "[fig 16]" }, {
               src: "/works/chess/17.png",
               caption: "[fig 17]",
-            }}
+            }]}
           />
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary designer="vitaly" year="2024" client="UESMO/Sber" />
+          </TextBlock>
         </Section>
 
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="vitaly" year="2024" client="UESMO/Sber" />
-          </Text>
-        </aside>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

@@ -31,55 +31,27 @@
     ],
     "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
     "top skills": [
-      {
-        "name": "UI/UX Design",
-        "href": "https://en.wikipedia.org/wiki/User_experience_design",
-        "badge": "top"
-      },
-      {
-        "name": "Frontend",
-        "href": "https://en.wikipedia.org/wiki/Front_end_and_back_end",
-        "badge": ""
-      },
-      {
-        "name": "PWA",
-        "href": "https://web.dev/explore/progressive-web-apps",
-        "badge": ""
-      },
-      {
-        "name": "Material Design",
-        "href": "https://m3.material.io/",
-        "badge": ""
-      },
-      {
-        "name": "HIG",
-        "href": "https://developer.apple.com/design/human-interface-guidelines/",
-        "badge": "top"
-      },
+      { "name": "UI/UX Design", "href": "https://en.wikipedia.org/wiki/User_experience_design", "badge": "top" },
+      { "name": "Frontend", "href": "https://en.wikipedia.org/wiki/Front_end_and_back_end", "badge": "" },
+      { "name": "PWA", "href": "https://web.dev/explore/progressive-web-apps", "badge": "" },
+      { "name": "Material Design", "href": "https://m3.material.io/", "badge": "" },
+      { "name": "HIG", "href": "https://developer.apple.com/design/human-interface-guidelines/", "badge": "top" },
       {
         "name": "Accessibility",
         "href": "https://doka.guide/a11y/",
         "badge": "new"
       }
     ],
-    "tools": [
+    "tools": [ 
       { "name": "Figma", "href": "https://figma.com", "badge": "top" },
       { "name": "Shadcn", "href": "https://ui.shadcn.com/", "badge": "new" },
       { "name": "NextJs", "href": "https://nextjs.org/", "badge": "" },
-      {
-        "name": "Tailwind",
-        "href": "https://tailwindcss.com/",
-        "badge": "top"
-      },
+      { "name": "Tailwind", "href": "https://tailwindcss.com/", "badge": "top" },
       { "name": "Framer", "href": "https://www.framer.com/", "badge": "" },
       { "name": "Blender", "href": "https://www.blender.org/", "badge": "" },
       { "name": "Spline3d", "href": "https://spline.design/", "badge": "new" },
       { "name": "Frame Motion", "href": "https://motion.dev/", "badge": "" },
-      {
-        "name": "Bootstrap",
-        "href": "https://getbootstrap.com/",
-        "badge": "top"
-      },
+      { "name": "Bootstrap", "href": "https://getbootstrap.com/", "badge": "top" },
       { "name": "D3js", "href": "https://d3js.org/", "badge": "" },
       { "name": "HTML", "href": "https://doka.guide/", "badge": "top" },
       { "name": "CSS", "href": "https://doka.guide/", "badge": "top" },
@@ -100,39 +72,39 @@
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
         "date": "since 2021",
-        "responsible": "GigaChat UI/UX design, content creation, virtual assistant skill development, scripting, visual design, user flow optimization, testing, systematization, theming, and branding.",
-        "achievements": "Designed and launched three applications — Sports, Journal, and Tech News — and supported the launch of commercial projects built on these skills and applications. Received the Runet Award 2021."
+        "responsible": "content creation; virtual assistant skills; scripting; design; flow; testing; systematization; theming and branding;",
+        "achievements": "designed and launched 3 applications(Sports, Journal, Tech News), launching commercial projects based on skills/apps, get Runet Award 2021"
       },
       {
         "position": "Designer",
         "place": "Sber",
         "placeLink": "https://www.sberbank.com",
         "date": "2019—2021",
-        "responsible": "Led the design process by creating a cross‑platform design system and authoring guidelines; developed reusable iOS, Android, and Web components and established team review and supervision workflows. At DrugCode (Sberdrug) I designed micro‑app flows, implemented a component system, performed quality control of third‑party apps, and expanded the shared component library.",
-        "achievements": "Created and launched a cross‑platform design system and standardized the design process, including documented review workflows, team principles, and performance metrics. Implemented a component system for DrugCode, conducted QA and reviews of third‑party micro‑apps, and expanded the shared iOS/Android/Web component library."
+        "responsible": "a) systematization of the design process (design system); writing guidelines; implementation and development of components (IOS, Android, Web), internal team processes (review, design supervision, etc., creation and implementation); b) DrugCode - a platform for creating micro-applications in Sberdrug. Design, systematization, flow, processes.",
+        "achievements": "a) creating of a design system; systematization of the design process; implementation and description of the review process and the principles and metrics of the team’s work; b) implementation of a component system in DrugCode; quality control; review of micro-applications from third-party developers; collection of information and addition to the library of components (IOS, Android, Web);"
       },
       {
         "position": "Designer",
         "place": "PKVS",
         "placeLink": "https://www.karusel-tv.ru/",
         "date": "2015—2019",
-        "responsible": "Designed user interactions and interfaces, crafted responsive web layouts, developed front‑end components, and produced graphic design assets.",
-        "achievements": "Designed and developed front‑end and UI for karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru (Runet Award 2019), kanal-o.ru, poehali.tv, and other projects."
+        "responsible": "user interaction design and interface design; responsive web design; front-end development; graphic design;",
+        "achievements": "design and front-end development of karusel-tv.ru (Runet Award 2016), domkino.tv, vremya.tv, telecafe.ru, bober.ru(Runet Award 2019), kanal-o.ru, poehali.tv, и etc."
       },
       {
         "position": "Designer",
         "place": "Art. Lebedev Studio",
         "placeLink": "https://www.artlebedev.ru/vetrov/",
         "date": "2013—2015",
-        "responsible": "Handled scripting, interaction and visual design, user flows, and testing; systematized processes and applied theming and branding across products. Developed content products and voice interfaces.",
-        "achievements": "Runet Award 2015"
+        "responsible": "scripting; design; flow; testing; systematization; theming and branding; content products; voice interfaces;",
+        "achievements": false
       },
       {
         "position": "Designer",
         "place": "Yask",
         "placeLink": "/",
         "date": "since 2008",
-        "responsible": "User interface design, coding, theming and branding."
+        "responsible": "user interface design; coding; theming and branding;"
       }
     ],
 
@@ -146,7 +118,9 @@
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
     "courses": ["MITx: Mobile Application Experiences, 2012"],
     "languages": ["🇷🇺 Russian", "🇬🇧 English"],
-    "learn": [{ "name": "WebGL", "href": "", "badge": "" }]
+    "learn": [
+      { "name": "WebGL", "href": "", "badge": "" }
+    ]
   },
   {
     "name": "Gala",

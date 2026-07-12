@@ -1,86 +1,82 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
-export const metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+
+import { Metadata } from "next";
+import WorksImage from "@/components/blocks/worksimage";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksHeader from "@/components/blocks/worksheader";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "Bober - Adaptive web site",
   description: "Website for TV channel",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-100">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-secondary">
+          <WorksFigure>
+            <WorksImage
               src="/works/bober/cover.png"
               width={1120}
               height={416}
-              className="bg-transparent w-full"
+
               alt="Bober TV"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>Adaptive web site and logo for TV channel</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="New main page layout">
-            <BodyImage
+          <WorksFigure figcaption="New main page layout">
+            <WorksImage
               src="/works/bober/main.png"
-              className="bg-slate-100"
-              alt="Bober main"
-            />
-          </ArticleFigure>
-          <br />
-          <ArticleFigure figcaption="Alternative main and article page">
-            <BodyImage
-              src="/works/bober/main2.png"
-              className="bg-slate-100"
-              alt="Bober main"
-            />
-          </ArticleFigure>
-          <br />
-          <ArticleImageSection
-            className="bg-slate-100"
-            image1={{ src: "/works/bober/3.png" }}
-            image2={{
-              src: "/works/bober/logo.png",
-            }}
-          />
-          <br />
-          <ArticleImageSection
-            className="bg-slate-100"
-            image1={{ src: "/works/bober/1.png" }}
-            image2={{
-              src: "/works/bober/3.png",
-            }}
-          />
-        </Section>
 
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+              alt="Bober main"
+            />
+          </WorksFigure>
+          <br />
+          <WorksFigure figcaption="Alternative main and article page">
+            <WorksImage
+              src="/works/bober/main2.png"
+
+              alt="Bober main"
+            />
+          </WorksFigure>
+          <br />
+          <WorksImageStack
+
+            images={[{ src: "/works/bober/3.png" }, {
+              src: "/works/bober/logo.png",
+            }]}
+          />
+          <br />
+          <WorksImageStack
+
+            images={[{ src: "/works/bober/1.png" }, {
+              src: "/works/bober/3.png",
+            }]}
+          />
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2019"
               client="PKVS"
               link="https://bober.ru"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
+
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

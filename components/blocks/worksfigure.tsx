@@ -1,14 +1,14 @@
 //ARTICLE IMAGE
-interface ArticleFigureProps {
+interface WorksFigureProps {
   figcaption?: string;
   className?: string;
   children: React.ReactNode;
 }
-export function ArticleFigure({
+export default function WorksFigure({
   figcaption,
   children,
   className,
-}: ArticleFigureProps) {
+}: WorksFigureProps) {
   return (
     <figure className={className}>
       {children}

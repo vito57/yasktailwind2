@@ -1,120 +1,119 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import Image from "next/image";
+import LayoutAnimated from "@/components/global/layoutanimated";
+
+
 import Link from "next/link";
-export const metadata = {
+import { Metadata } from "next";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksSummary from "@/components/blocks/workssummary";
+import Article from "@/components/global/article";
+import Section from "@/components/global/section";
+export const metadata: Metadata = {
   title: "Starc - IOS native App",
   description: "Script writing app for IOS",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-ylightgrey">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-ylightgrey">
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/cover.png"
               width={1120}
               height={416}
               className=" w-full"
               alt="Starc IOS App"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Design a native application for IOS. For mobile devices and
               tablets. Be close to platform gesign guides as possible.{" "}
-              <Link href={"/works/starc"} className="ylink">
+              <Link href={"/works/starc"}>
                 Android{" "}
               </Link>
               and IOS experience was made.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <Text title="Mobile experience">
+          <TextBlock title="Mobile experience">
             <p>
               The Starc application reinventing the screenwriting software. It
               was necessary to follow the guidlines(HIG) of the platform as much
               as possible and create a familiar and simple interaction
               experience for all devices.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/1.png"
               className="bg-ylightgrey"
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/2.png"
               className="bg-ylightgrey"
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/3.png"
               className="bg-ylightgrey"
               alt="Starc Mobile"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="Tablet experience">
+          <TextBlock title="Tablet experience">
             <p></p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/4.png"
               className="bg-ylightgrey"
               alt="Starc tablet"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/5.png"
               className="bg-ylightgrey"
               alt="Starc tablet"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/starcios/6.png"
               className="bg-ylightgrey"
               alt="Starc tablet"
             />
-          </ArticleFigure>
-        </Section>
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+          </WorksFigure>
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2021"
               client="Starc"
               link="https://starc.app/"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

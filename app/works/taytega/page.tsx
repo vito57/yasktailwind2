@@ -1,18 +1,15 @@
 import { Metadata } from "next";
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import { LayoutAnimated } from "@/components/regions/layoutanimated";
 
-export const metadata:Metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "Taytega - Adaptive web site and logo design for engineering company",
   description: "Website and logo for engineering company",
 };
@@ -21,96 +18,94 @@ const Taytega = () => {
   return (
     <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader>
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader>
+          <WorksFigure>
+            <WorksImage
               src="/works/taytega/cover.png"
               width={1120}
               height={416}
               className="bg-transparent w-full"
               alt="Taytega"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Adaptive website and logo design for engineering company Taytega
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 1] Branding">
-            <BodyImage
+          <WorksFigure figcaption="[fig 1] Branding">
+            <WorksImage
               src="/works/taytega/taytega-logo.png"
               alt="Taytega logo"
-              className="bg-stone-900"
+
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure figcaption="[fig 2] Logo">
-            <BodyImage
+          <WorksFigure figcaption="[fig 2] Logo">
+            <WorksImage
               src="/works/taytega/taytega-logo-2.png"
               alt="Taytega logo"
-              className="bg-stone-900"
+
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure figcaption="[fig 3] Main and inner page">
-            <BodyImage
+          <WorksFigure figcaption="[fig 3] Main and inner page">
+            <WorksImage
               src="/works/taytega/taytega1.png"
               alt="Main and inner page"
-              className="bg-stone-900"
+
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure figcaption="[fig 4] Inner pages">
-            <BodyImage
+          <WorksFigure figcaption="[fig 4] Inner pages">
+            <WorksImage
               src="/works/taytega/taytega2.png"
-              className="bg-stone-900"
+
               alt="Inner pages"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleImageSection
-            className="bg-stone-900"
-            image1={{
+          <WorksImageStack
+
+            images={[{
               src: "/works/taytega/taytega3.png",
               caption: "[fig 5] Inner pages",
-            }}
-            image2={{
+            }, {
               src: "/works/taytega/taytega4.png",
               caption: "[fig 6] Inner pages",
-            }}
-          ></ArticleImageSection>
+            }]}
+          />
           <br />
 
-          <ArticleFigure figcaption="[fig 7] Overview">
-            <BodyImage
+          <WorksFigure figcaption="[fig 7] Overview">
+            <WorksImage
               src="/works/taytega/taytega5.png"
-              className="bg-stone-900"
+
               alt="Work overview"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure figcaption="[fig 8] Mobile">
-            <BodyImage
-              className="bg-stone-900"
+          <WorksFigure figcaption="[fig 8] Mobile">
+            <WorksImage
+
               src="/works/taytega/taytega7.png"
               alt="Mobile design"
             />
-          </ArticleFigure>
-        </Section>
-
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+          </WorksFigure>
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2024"
               link={"https://taytega.ru/"}
               client="BlackSheep"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
+
       </Article>
     </LayoutAnimated>
   );

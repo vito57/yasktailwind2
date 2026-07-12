@@ -1,37 +1,39 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
+import LayoutAnimated from "@/components/global/layoutanimated";
+import Article from "@/components/global/article";
+import Section from "@/components/global/section";
+import { Metadata } from "next";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
 
-export const metadata = {
+
+
+export const metadata: Metadata = {
   title: "Drugcode - Code editor design",
   description: "Story about Drugcode editor design",
 };
 
 const Page = () => {
+
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-zinc-900">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-secondary">
+          <WorksFigure>
+            <WorksImage
               src="/works/drugcode/cover.png"
               width={1120}
               height={416}
-              className="bg-transparen  w-full"
+
               alt="Drugcode cover"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Drugcode allows users to use banking data and create usefull
               internal apps for the web and mobile platforms. As the Designer
@@ -41,17 +43,17 @@ const Page = () => {
               improved collaboration between design and the other disciplines
               while I was there.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig1] Node editor">
-            <BodyImage
+          <WorksFigure figcaption="[fig1] Node editor">
+            <WorksImage
               src="/works/drugcode/node_editor.png"
               alt="Node editor"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text>
+          <TextBlock>
             <p>
               Drugcode is a internal banking web platform for building web
               service, and a mobile apps. When I joined in February 2019, the
@@ -60,45 +62,44 @@ const Page = () => {
               were to oversee the design development of the entire suite of
               products, to rebrand and redesign the product.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 2] Code editor">
-            <BodyImage
+          <WorksFigure figcaption="[fig 2] Code editor">
+            <WorksImage
               src="/works/drugcode/code_editor.png"
               alt="Code editor"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               Code editor baced on Monaco editor with all features. Any code
               have 2 representation, as text and as node. Node functionality is
               useful for designer and management
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 3] File system">
-            <BodyImage
+          <WorksFigure figcaption="[fig 3] File system">
+            <WorksImage
               src="/works/drugcode/file_system.png"
               alt="File system"
-              className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
+              className="bg-[url('/works/drugcode/bg.png')] bg-cover"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleImageSection
-            image1={{
+          <WorksImageStack
+            images={[{
               src: "/works/drugcode/node_preview.png",
               caption: "[fig 4] Node preview",
-            }}
-            image2={{
+            }, {
               src: "/works/drugcode/light_theme.png",
               caption: "[fig 5] Light theme",
-            }}
-            className="bg-[url('/works/drugcode/bg.png')] bg-cover bg-zinc-900"
+            }]}
+            className="bg-[url('/works/drugcode/bg.png')] bg-cover"
           />
           <br />
-          <Text title="Branding">
+          <TextBlock title="Branding">
             <p>
               When I joined in February 2019, the web service was in its
               infancy, and the Desktop tool was in the process of being
@@ -106,18 +107,17 @@ const Page = () => {
               design development of the entire suite of products, to rebrand and
               redesign the product.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            className="bg-zinc-900"
-            image1={{ src: "/works/drugcode/brand.png", caption: "[fig 6]" }}
-            image2={{
+          <WorksImageStack
+
+            images={[{ src: "/works/drugcode/brand.png", caption: "[fig 6]" }, {
               src: "/works/drugcode/brand-guide.png",
               caption: "[fig 7]",
-            }}
+            }]}
           />
           <br />
-          <Text title="Style Guide">
+          <TextBlock title="Style Guide">
             <p className="mb-8">
               I worked with our team and the Drugcode developers to craft a
               style guide, which contains the library of common components used
@@ -131,70 +131,69 @@ const Page = () => {
               designers, giving us a shared kit of parts to work from and
               ensures consistency within our designs.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 8] Default system">
-            <BodyImage
+          <WorksFigure figcaption="[fig 8] Default system">
+            <WorksImage
               src="/works/drugcode/ui.png"
-              className="bg-zinc-900"
+
               alt="Drugcode ui"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               We follow the pattern Template / Region / Component / Element /
               Modifier. A mix of atomic design principles and BEM methodology.
               More then 80 components are created.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 9] Drugcode styles">
-            <BodyImage
+          <WorksFigure figcaption="[fig 9] Drugcode styles">
+            <WorksImage
               src="/works/drugcode/style.png"
-              className="bg-zinc-900"
+
               alt="Drugcode styles"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               Understanding how material design works, help to prepare tokens
               for dark and light themes. The same structure in Figma and in Code
               halps to understand each other
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            className="bg-zinc-900"
-            image1={{
+          <WorksImageStack
+
+            images={[{
               src: "/works/drugcode/letf_side_bar.png",
               caption: "[fig 10] Left sidebar",
-            }}
-            image2={{
+            }, {
               src: "/works/drugcode/drag.png",
               caption: "[fig 11] Drug n Drop",
-            }}
+            }]}
           />
           <br />
 
-          <Text title="">
+          <TextBlock title="">
             <p>
               Collapsible left sidebar, represent file system, with drag and
               drop functionality. Feature - file can be parsed, and view any
               block inside a file.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 12] Right sidebar">
-            <BodyImage
-              className="bg-zinc-900"
+          <WorksFigure figcaption="[fig 12] Right sidebar">
+            <WorksImage
+
               src="/works/drugcode/right_side_bar.png"
               alt="Right sidebar"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               The task is to display in an understandable form, props, CSS
               rules, states, etc. Do not invent new properties, but use the
@@ -204,24 +203,24 @@ const Page = () => {
               the specification. CSS variables, SASS, LESS, etc. Autocomplete
               works according to specification too.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure figcaption="[fig 13]">
-            <BodyImage
-              className="bg-zinc-900"
+          <WorksFigure figcaption="[fig 13]">
+            <WorksImage
+
               src="/works/drugcode/preview.png"
               alt="Drugcode preview"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="">
+          <TextBlock title="">
             <p>
               Visual editor and preview. Change colors, add or remove elements,
               drag, resize, etc.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <Text title="Workflow">
+          <TextBlock title="Workflow">
             <ol className=" list-decimal list-inside">
               <li>
                 Baseline research (Interview, Interview in context,
@@ -232,14 +231,14 @@ const Page = () => {
               <li>Creating design and specification</li>
               <li>Field supervision</li>
             </ol>
-          </Text>
+          </TextBlock>
           <br />
-          <Text title="Summary">
-            <Summary designer="vitaly" year="2021" client="Sber" />
-          </Text>
+          <TextBlock title="Summary">
+            <WorksSummary designer="vitaly" year="2021" client="Sber" />
+          </TextBlock>
         </Section>
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

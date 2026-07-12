@@ -1,73 +1,79 @@
+import { Metadata } from "next";
 import {
   Article,
   AnimateLayout,
   Text,
-  ArticleFigure,
+
   Section,
   ArticleHeader,
-  BodyImage,
+
   Summary,
 } from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
-export const metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+import WorksImage from "@/components/blocks/worksimage";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import TextBlock from "@/components/global/textblock";
+import WorksSummary from "@/components/blocks/workssummary";
+
+export const metadata: Metadata = {
   title: "Poehali - Adaptive web site",
   description: "Website for TV channel",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-slate-900">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-secondary">
+          <WorksFigure>
+            <WorksImage
               src="/works/poehali/cover.png"
               width={1120}
               height={416}
               className="bg-transparent  w-full"
               alt="Poehali TV"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>Adaptive web site for TV channel</p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/poehali/main.png" alt="Restevents main" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/poehali/main.png" alt="Restevents main" />
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/poehali/2.png" alt="Poehali main" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/poehali/2.png" alt="Poehali main" />
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/poehali/adaptive1.png" alt="Poehali main" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/poehali/adaptive1.png" alt="Poehali main" />
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/poehali/adaptive2.png" alt="Poehali main" />
-          </ArticleFigure>
+          <WorksFigure>
+            <WorksImage src="/works/poehali/adaptive2.png" alt="Poehali main" />
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage src="/works/poehali/styles.png" alt="Poehali main" />
-          </ArticleFigure>
-        </Section>
-
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary
+          <WorksFigure>
+            <WorksImage src="/works/poehali/styles.png" alt="Poehali main" />
+          </WorksFigure>
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary
               designer="vitaly"
               year="2019"
               client="PKVS"
               link="https://www.poehali.tv/"
             />
-          </Text>
-        </aside>
+          </TextBlock>
+        </Section>
+
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 

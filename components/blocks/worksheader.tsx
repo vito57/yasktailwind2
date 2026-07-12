@@ -1,13 +1,13 @@
 //ARTICLE HEADER
-interface ActicleHeaderProps {
+interface WorksHeaderProps {
   className?: string;
   children: React.ReactNode;
 }
-export function ArticleHeader({ className, children }: ActicleHeaderProps) {
+export default function WorksHeader({ className, children }: WorksHeaderProps) {
   return (
     <header
       id="intro"
-      className={`mb-8 pt-32 reletive mt-32 ${className}`}
+      className={`mb-8 pt-20 reletive ${className}`}
     >
       <div className="container">{children}</div>
     </header>

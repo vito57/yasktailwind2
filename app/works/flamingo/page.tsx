@@ -1,7 +1,8 @@
+import { Metadata } from "next";
 import {
-  Section,
+  
   AnimateLayout,
-  Article,
+ 
   Text,
   ArticleImageSection,
   ArticleFigure,
@@ -9,29 +10,37 @@ import {
   ArticleHeader,
   Summary,
 } from "../../components/server";
-
-export const metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+import Article from "@/components/global/article";
+import WorksHeader from "@/components/blocks/worksheader";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksImage from "@/components/blocks/worksimage";
+import Section from "@/components/global/section";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+export const metadata:Metadata = {
   title: "Flamingo",
   description: "Story about Drugcode design",
 };
 export default function Flamingo() {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        <ArticleHeader className="bg-ylightgrey">
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader className="bg-secondary">
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/cover.png"
               width={1120}
               height={416}
               className="bg-transparent  w-full"
               alt="Flamingo cover"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
 
         <Section id="About">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               I worked with our team and developers to craft a style guide for
               superapp, which contains the library of common components used in
@@ -40,18 +49,19 @@ export default function Flamingo() {
               for every piece used in the product, from form elements to
               typography and entire screen configurations.
             </p>
-          </Text>
+          </TextBlock>
         </Section>
-        <Section id="preview" className="bg-ylightgrey" fluid>
-          <div className="container">
-            <ArticleFigure>
-              <BodyImage src="/works/flamingo/overview.png" alt="Flamingo" />
-            </ArticleFigure>
-          </div>
+        <br />
+        <Section id="preview" className="bg-secondary" fluid>
+         
+            <WorksFigure>
+              <WorksImage src="/works/flamingo/overview.png" alt="Flamingo" />
+            </WorksFigure>
+          
         </Section>
-
+<br />
         <Section id="style">
-          <Text>
+          <TextBlock>
             <p>
               The style guide was vital for both our developers and our
               designers, giving us a shared kit of parts to work from and
@@ -59,10 +69,10 @@ export default function Flamingo() {
               by additional suites and it used across multiple teams at the
               company today.
             </p>
-          </Text>
+          </TextBlock>
           <br />
 
-          <Text title="Process">
+          <TextBlock title="Process">
             <ol className="list-decimal list-inside">
               <li>Defining a goals and finding a problems</li>
               <li>
@@ -78,19 +88,18 @@ export default function Flamingo() {
               <li>Make guidelines and components</li>
               <li>Make process of scaling, contributing and review</li>
             </ol>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/principles.png"
               width={1120}
               height={600}
-              className="bg-ylightgrey"
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text>
+          <TextBlock>
             Principles are the most important part of any system. They determine
             the shape of the future product, and the product review process will
             be built on them in the future. Sbergdrug is an internal product and
@@ -98,19 +107,19 @@ export default function Flamingo() {
             and simplicity as the main principles. As a designer, you should
             view a good solution as being as simple, predictable, fast to
             produce, and consistent in style as possible.
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/list_and_flow.png"
               width={1120}
               height={500}
-              className="bg-ylightgrey"
+             
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="Guides">
+          <TextBlock title="Guides">
             <p>
               The Style Guide also served as a home for product design
               principles and general advice about typography, accessibility, and
@@ -120,51 +129,51 @@ export default function Flamingo() {
               a way to help reach consensus on common paradigms and industry
               standards.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/styles.png"
-              className="bg-ylightgrey"
+             
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/guides.png"
               width={1120}
               height={600}
-              className="bg-ylightgrey"
+              
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/flamingo/components.png"
-              className="bg-ylightgrey"
+             
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
-              className="bg-ylightgrey"
+          <WorksFigure>
+            <WorksImage
+             
               src="/works/flamingo/components2.png"
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleFigure>
-            <BodyImage
-              className="bg-ylightgrey"
+          <WorksFigure>
+            <WorksImage
+              
               src="/works/flamingo/components3.png"
               alt="Flamingo"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <Text title="Examples">
+          <TextBlock title="Examples">
             <p>
               In addition to documenting components and their usage, I crafted
               do/do not scenarios, and tons of test examples for many elements
@@ -172,50 +181,47 @@ export default function Flamingo() {
               easily avoided pratfalls. The Style Guide was both documentation
               and education.
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            className="bg-ylightgrey"
-            image1={{
+          <WorksImageStack
+           
+            images={[{
               src: "/works/flamingo/u1.png",
               //caption: "Representing function as node",
-            }}
-            image2={{
+            },{
               src: "/works/flamingo/u2.png",
               //caption: "Wireframes",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            className="bg-ylightgrey"
-            image1={{
+          <WorksImageStack
+           
+            images={[{
               src: "/works/flamingo/u3.png",
               //caption: "Representing function as node",
-            }}
-            image2={{
+            },{
               src: "/works/flamingo/u4.png",
               //caption: "Wireframes",
-            }}
+            }]}
           />
           <br />
-          <ArticleImageSection
-            className="bg-ylightgrey"
-            image1={{
+          <WorksImageStack
+           
+            images={[{
               src: "/works/flamingo/u5.png",
               //caption: "Representing function as node",
-            }}
-            image2={{
+            },{
               src: "/works/flamingo/u6.png",
               // caption: "Wireframes",
-            }}
+            }]}
           />
-        </Section>
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="vitaly" year="2021" client="Sber" />
+          <br />
+                    <Text title="Summary">
+            <WorksSummary designer="vitaly" year="2021" client="Sber" />
           </Text>
-        </aside>
+        </Section>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 }

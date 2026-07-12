@@ -1,21 +1,22 @@
 
-import { ArticleTopMenu, MobileArticleFooter } from "@/app/components/client";
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";
 import allWorks from "../../works.json";
 import { notFound } from "next/navigation";
-import { ArticleMainMenu } from "@/components/regions/articlemainmenu";
-import { buttonVariants } from "@/components/ui/button";
+import  ArticleMainMenu  from "@/components/global/articlemainmenu";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
-import { TextBlock } from "@/components/blocks/textblock";
-import MainFooter from "@/components/regions/mainfooter";
-import { LayoutAnimated } from "@/components/regions/layoutanimated";
-import { ThumbnailFeed } from "@/components/blocks/thumbnailfeed";
+import TextBlock  from "@/components/global/textblock";
+import MainFooter from "@/components/global/mainfooter";
+import  LayoutAnimated  from "@/components/global/layoutanimated";
+import  ThumbnailFeed  from "@/components/global/thumbnailfeed";
 import { Metadata } from "next/types";
-import { MobileNav } from "@/components/blocks/mobilenav";
+import  MobileNav  from "@/components/global/mobilenav";
 import { Badge } from "@/components/ui/badge";
-export const metadata:Metadata = {
+import { FileText } from "lucide-react";
+
+export const metadata: Metadata = {
   title: "About us",
   description: "We design websites and apps",
 };
@@ -31,8 +32,8 @@ export default async function Page(props: {
   return (
     <>
       <ArticleMainMenu />
-      <MobileNav/>
-      <LayoutAnimated className="container">
+      <MobileNav />
+      <LayoutAnimated className="container typeset typeset-article">
         <header className="text-center relative rounded-xl pt-4">
           <Image
             className="inline-block mb-2 rounded-full"
@@ -50,7 +51,7 @@ export default async function Page(props: {
         <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
           {user.resume ? (
             <Link className={buttonVariants({ variant: "secondary" })} href={user.resume}>
-              Resume.pdf
+              <FileText /> Resume.pdf
             </Link>
           ) : (
             false
@@ -75,7 +76,7 @@ export default async function Page(props: {
         <TextBlock title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
-              <Link key={i.name} className={buttonVariants({ variant: "secondary", className: "bg-ygrey", size:"sm" })} href={i.href}>
+              <Link key={i.name} className={buttonVariants({ variant: "secondary", size: "sm" })} href={i.href}>
                 {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
                 </Kbd>}
               </Link>
@@ -86,7 +87,7 @@ export default async function Page(props: {
         <TextBlock title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools?.map((i) => (
-              <Link key={i.name} className={buttonVariants({ variant: "secondary", className: "bg-ygrey", size:"sm" })} href={i.href}>
+              <Link key={i.name} className={buttonVariants({ variant: "secondary", size: "sm" })} href={i.href}>
                 {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
                 </Kbd>}
               </Link>
@@ -98,20 +99,21 @@ export default async function Page(props: {
           <dl className="mb-8">
             {user.experience.map((i) => (
               <div key={i.date}>
-                <dt key={i.placeLink} className="font-bold">
+                <dt key={i.placeLink} className="font-medium">
                   {i.position} at{" "}
-                  <Link href={i.placeLink} className="ylink">
+                  <Link href={i.placeLink}>
                     {i.place}
                   </Link>
                 </dt>
                 <dd key={i.date} className="mb-8">
-                  <Badge variant={"secondary"}>{i.date}</Badge>
+                  <code>{i.date}</code>
                   <p>
-                    <em>Responsibilities:</em> {i.responsible}
+                    <span className="font-medium">Responsibilities:</span> {i.responsible}
                   </p>
+                 
                   {i.achievements && (
                     <p>
-                      <em>Achivments:</em> {i.achievements}
+                      <span className="font-medium">Achivments:</span> {i.achievements}
                     </p>
                   )}
                 </dd>
@@ -188,15 +190,14 @@ export default async function Page(props: {
           <>
             <TextBlock title="Learning goals">
               {user.learn.map((i) => {
-                return  <span key={i.name}>
-                {i.name}{" "} 
-              </span>;
+                return <span key={i.name}>
+                  {i.name}{" "}
+                </span>;
               })}
             </TextBlock>
             <br />
           </>
         )}
-        <MainFooter />
       </LayoutAnimated>
     </>
   );

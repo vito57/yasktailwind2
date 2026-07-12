@@ -3,33 +3,34 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useEffect, useState } from "react";
 import MainNav from "./mainnav";
-import { MainLogo } from "./mainlogo";
+import MainLogo from "./mainlogo";
 import { Button, buttonVariants } from "../ui/button";
+import { Mail } from "lucide-react";
+import SandEmailButton from "./sandemailbutton";
 
 //Article top menu
 interface ArticleMainMenuProps {
     title?: string;
     className?: string;
 }
-export function ArticleMainMenu({ title, className }: ArticleMainMenuProps) {
+export default function ArticleMainMenu({ title, className }: ArticleMainMenuProps) {
     const pn = useSelectedLayoutSegment();
     const pathname = title || pn;
-    const [scroll, setScroll] = useState("");
+    // const [scroll, setScroll] = useState("");
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            window.scrollY
-                ? setScroll("backdrop-blur-xl bg-white/90 dark:bg-black/90")
-                : setScroll("");
-        });
-    }, [scroll]);
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         window.scrollY
+    //             ? setScroll("backdrop-blur-xl bg-white/90 dark:bg-black/90")
+    //             : setScroll("");
+    //     });
+    // }, [scroll]);
     return (
         <div
-            className={`z-10 ${title ? "static" : "sticky"
-                } md:sticky top-0 ${scroll}`}
+            className={`fixed top-0 z-10 w-full`}
         >
             <div
-                className={`container px-4 py-1 md:py-2 flex justify-between items-center md:mb-4 `}
+                className={`container px-4 py-1 md:py-2 flex justify-between items-center `}
             >
                 <div className="flex gap-4 grow md:gap-8 items-center">
                     <Link href="/">
@@ -37,16 +38,14 @@ export function ArticleMainMenu({ title, className }: ArticleMainMenuProps) {
                     </Link>
                     <span className={`font-bold capitalize`}>{pathname}</span>
                 </div>
-
                 <div
                     className={`hidden md:flex fixed md:static py-2 mr-2 justify-center left-0 right-0 bottom-0 gap-2 items-center`}
                 >
-                    <MainNav />
+                    <MainNav variant={"line"} />
                 </div>
                 <div className="py-2">
-                   
-                    <Link className={buttonVariants({ variant: "secondary", className:"bg-ylime" })} href="mailto:vitalyyask@yandex.ru">Send email</Link>
-                    
+<SandEmailButton />
+              
                 </div>
             </div>
         </div>

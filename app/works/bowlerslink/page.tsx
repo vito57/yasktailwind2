@@ -1,71 +1,64 @@
-import {
-  Article,
-  AnimateLayout,
-  Text,
-  ArticleFigure,
-  Section,
-  ArticleImageSection,
-  ArticleHeader,
-  BodyImage,
-  Summary,
-} from "../../components/server";
-import Image from "next/image";
-import Link from "next/link";
-export const metadata = {
+import LayoutAnimated from "@/components/global/layoutanimated";
+
+import WorksImage from "@/components/blocks/worksimage";
+import WorksFigure from "@/components/blocks/worksfigure";
+import WorksHeader from "@/components/blocks/worksheader";
+import { Metadata } from "next";
+import TextBlock from "@/components/global/textblock";
+import WorksImageStack from "@/components/blocks/worksimagestack";
+import WorksSummary from "@/components/blocks/workssummary";
+import Section from "@/components/global/section";
+import Article from "@/components/global/article";
+export const metadata: Metadata = {
   title: "Bowlerslink - Adaptive web site for education platform",
   description: "Website for bowling platform",
 };
 
 const Page = () => {
   return (
-    <AnimateLayout>
+    <LayoutAnimated>
       <Article className="relative">
-        {/* <Section>
-          <h1 className="text-2xl text-center text-white py-6">We are working on the presentation. It will appear soon</h1>
-        </Section> */}
-        <ArticleHeader>
-          <ArticleFigure>
-            <BodyImage
+        <WorksHeader>
+          <WorksFigure>
+            <WorksImage
               src="/works/bowlerslink/cover.png"
               width={1120}
               height={416}
               className="bg-transparent w-full"
               alt="Bober TV"
             />
-          </ArticleFigure>
-        </ArticleHeader>
+          </WorksFigure>
+        </WorksHeader>
         <Section id="about">
-          <Text title="About">
+          <TextBlock title="About">
             <p>
               Adaptive website and logo concept for bowling educational platform
             </p>
-          </Text>
+          </TextBlock>
           <br />
-          <ArticleImageSection
-            image1={{ src: "/works/bowlerslink/logo.png" }}
-            image2={{ src: "/works/bowlerslink/cap.png" }}
-          ></ArticleImageSection>
+          <WorksImageStack
+            images={[{ src: "/works/bowlerslink/logo.png" }, { src: "/works/bowlerslink/cap.png" }]}
+          />
           <br />
-          <ArticleFigure>
-            <BodyImage
+          <WorksFigure>
+            <WorksImage
               src="/works/bowlerslink/main.png"
               alt="BowlersLink main page"
             />
-          </ArticleFigure>
+          </WorksFigure>
           <br />
-          <ArticleImageSection
-            image1={{ src: "/works/bowlerslink/mobile1.png" }}
-            image2={{ src: "/works/bowlerslink/mobile2.png" }}
-          ></ArticleImageSection>
+          <WorksImageStack
+            images={[{ src: "/works/bowlerslink/mobile1.png" }, { src: "/works/bowlerslink/mobile2.png" }]}
+          />
+          <br />
+          <TextBlock title="Summary">
+            <WorksSummary designer="vitaly" year="2024" client="BlackSheep" />
+          </TextBlock>
         </Section>
 
-        <aside id="summary" className="container">
-          <Text title="Summary">
-            <Summary designer="vitaly" year="2024" client="BlackSheep" />
-          </Text>
-        </aside>
+
       </Article>
-    </AnimateLayout>
+    </LayoutAnimated>
   );
 };
 
