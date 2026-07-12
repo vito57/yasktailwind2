@@ -1,7 +1,7 @@
-import  Thumbnail  from "@/components/global/thumbnail";
+import Thumbnail from "@/components/global/thumbnail";
 
 import data from "../works.json";
-import  LayoutAnimated  from "@/components/global/layoutanimated";
+import LayoutAnimated from "@/components/global/layoutanimated";
 
 export default function Works() {
   return (
@@ -17,7 +17,7 @@ export default function Works() {
               imageAlt={i.title}
               title={i.title}
               type={i.type}
-              testimonials={i.testimonials}
+
             />
           );
         })}
