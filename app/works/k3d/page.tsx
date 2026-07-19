@@ -44,6 +44,7 @@ const Page = () => {
             <WorksImage
               width={1440}
               height={960}
+
               src="/works/k3d/k3d1.png"
               alt="ui"
             ></WorksImage>
@@ -53,28 +54,23 @@ const Page = () => {
             <WorksImage
               width={1440}
               height={960}
-              src="/works/k3d/k3d2.png"
-              alt="ui"
-            ></WorksImage>
-          </WorksFigure>
-          <br />
-          <WorksFigure figcaption="Generate textures">
-            <WorksImage
-              width={1440}
-              height={960}
+
               src="/works/k3d/k3d3.png"
               alt="ui"
             ></WorksImage>
           </WorksFigure>
+
           <br />
-          <WorksFigure figcaption="Dark mode">
-            <WorksImage
-              width={1440}
-              height={960}
-              src="/works/k3d/k3d4.png"
-              alt="ui"
-            ></WorksImage>
-          </WorksFigure>
+          <WorksImageStack
+            width={1440}
+            height={960}
+            images={[{
+              src: "/works/k3d/k3d2.png",
+            }, {
+              src: "/works/k3d/k3d4.png",
+            }]}
+          ></WorksImageStack>
+
           <br />
           <TextBlock title="Summary">
             <WorksSummary designer="vitaly" year="2026" client="UESMO" />
