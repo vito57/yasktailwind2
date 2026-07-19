@@ -1,5 +1,13 @@
 [
   {
+    "cover": "/img/k3d.png",
+    "title": "3d Model Generator",
+    "by": ["vitaly"],
+    "type": "UI/UX, Branding",
+    "path": "/works/k3d",
+    "date": "2026"
+  },
+  {
     "cover": "/img/chess.png",
     "title": "Mikhail Tal Chess",
     "by": ["vitaly"],
@@ -15,7 +23,7 @@
     "path": "/works/drugcode",
     "date": "2021"
   },
-     {
+  {
     "cover": "/img/flamingo.png",
     "title": "Flamingo",
     "by": ["vitaly"],
@@ -31,7 +39,7 @@
     "path": "/works/evoxo",
     "date": "2025"
   },
- 
+
   {
     "cover": "/img/aides.png",
     "title": "Aides App",
@@ -40,7 +48,7 @@
     "path": "/works/aides",
     "date": "2025"
   },
-      {
+  {
     "cover": "/img/miractal.png",
     "title": "Mira",
     "by": ["vitaly"],
