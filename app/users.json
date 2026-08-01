@@ -4,7 +4,7 @@
     "email": "vitalyyask@gmail.com",
     "avatar": "/about/vitaly.png",
     "occupation": "Interface Designer",
-    "resume": "/about/vitaly_yaskevich_sv.pdf",
+    "resume": null,
     "tagline": "Hi! I can help with design systems, banners, landings & coding.",
     "path": "/vitaly",
     "social": [
@@ -95,13 +95,21 @@
     ],
 
     "experience": [
+            {
+        "position": "Designer",
+        "place": "GigaChat",
+        "placeLink": "https://giga.chat/",
+        "date": "since 2025",
+        "responsible": "Lead the design process for user interfaces, ensuring a seamless and engaging user experience across all platforms.",
+        "achievements": null
+      },
       {
         "position": "Designer",
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
-        "date": "since 2021",
-        "responsible": "GigaChat UI/UX design, content creation, virtual assistant skill development, scripting, visual design, user flow optimization, testing, systematization, theming, and branding.",
-        "achievements": "Designed and launched three applications — Sports, Journal, and Tech News — and supported the launch of commercial projects built on these skills and applications. Received the Runet Award 2021."
+        "date": "2021—2025",
+        "responsible": "UI/UX design, content creation, virtual assistant skill development, scripting, visual design, user flow, testing, systematization, theming, and branding.",
+        "achievements": "Get the Runet Award 2021."
       },
       {
         "position": "Designer",
@@ -168,7 +176,7 @@
         "image_path": "/ui8.svg"
       }
     ],
-    "about": "Experienced Icon designer and illustrator",
+    "about": "Meet Gala, a seasoned icon designer and illustrator with over a decade of experience in creating stunning visuals. With a keen eye for detail and a passion for design, Gala transforms ideas into captivating icons that tell a story. Whether it's for apps, websites, or branding, Gala's work stands out for its creativity and clarity.",
     "top skills": [
       { "name": "Animation", "href": "", "badge": "new" },
       { "name": "Icon Systems", "href": "", "badge": "" },
@@ -205,7 +213,7 @@
   },
   {
     "name": "Vera",
-    "email": "vito57rus@gmail.com",
+    "email": null,
     "avatar": "/about/vera.png",
     "occupation": "Director",
     "resume": null,
@@ -218,7 +226,7 @@
         "image_path": "/dribbble.svg"
       }
     ],
-    "about": "Artist, Illustrator and Blogger",
+    "about": "Meet Vera, a talented 10-year-old artist with a passion for design and illustrations. With her vibrant imagination, she brings her ideas to life on paper, creating whimsical characters and enchanting landscapes that captivate everyone around her.",
     "top skills": [
       { "name": "Roblox Livel Design", "href": "", "badge": "" },
       { "name": "Illustrations", "href": "", "badge": "" }

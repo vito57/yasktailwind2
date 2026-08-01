@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import Image from "next/image";
 import users from "../../users.json";
@@ -15,6 +14,7 @@ import { Metadata } from "next/types";
 import MobileNav from "@/components/global/mobilenav";
 import { Badge } from "@/components/ui/badge";
 import { FileText } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const metadata: Metadata = {
   title: "About us",
@@ -33,26 +33,33 @@ export default async function Page(props: {
     <>
       <ArticleMainMenu />
       <MobileNav />
-      <LayoutAnimated className="container typeset">
-        <header className="text-center relative rounded-xl pt-4">
-          <Image
+      <LayoutAnimated className="container typeset typeset-article">
+        <header className="flex flex-col items-center gap-2 relative pt-10">
+          {/* <Image
             className="inline-block mb-2 rounded-full"
             src={user.avatar}
             width={80}
             height={80}
             alt={user.name}
-          />
-          <h1 className="text-3xl font-bold">{user.name}</h1>
-          <Link href={`mailto:${user.email}`} className={buttonVariants({ variant: "link" })}>
+          /> */}
+          <Avatar className={"size-20"}>
+            <AvatarImage src={user.avatar} alt="Y"></AvatarImage>
+            <AvatarFallback>Y</AvatarFallback>
+          </Avatar>
+          <h1 className="font-display tracking-wide">{user.name} Yask</h1>
+          <Link className="m-0" href={`mailto:${user.email}`}>
             {user.email}
           </Link>
-
         </header>
-        <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10">
+        <div className="flex py-2 md:py-4 gap-2 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10 ">
           {user.resume ? (
-            <Link className={buttonVariants({ variant: "secondary" })} href={user.resume}>
+            <Button
+              render={<Link href={user.resume}></Link>}
+              nativeButton={false}
+              variant={"secondary"}
+            >
               <FileText /> Resume.pdf
-            </Link>
+            </Button>
           ) : (
             false
           )}
@@ -76,9 +83,18 @@ export default async function Page(props: {
         <TextBlock title="Top skils">
           <div className="flex gap-1 flex-wrap">
             {user["top skills"]?.map((i) => (
-              <Link key={i.name} className={buttonVariants({ variant: "secondary", size: "sm" })} href={i.href}>
-                {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
-                </Kbd>}
+              <Link
+                key={i.name}
+                className={buttonVariants({ variant: "secondary", size: "sm" })}
+                href={i.href}
+                role="button"
+              >
+                {i.name}{" "}
+                {i.badge && (
+                  <Kbd data-icon="inline-end" className="translate-x-0.5">
+                    {i.badge}
+                  </Kbd>
+                )}
               </Link>
             ))}
           </div>
@@ -87,9 +103,18 @@ export default async function Page(props: {
         <TextBlock title="Tools stack">
           <div className="flex gap-1 flex-wrap">
             {user.tools?.map((i) => (
-              <Link key={i.name} className={buttonVariants({ variant: "secondary", size: "sm" })} href={i.href}>
-                {i.name}  {i.badge && <Kbd data-icon="inline-end" className="translate-x-0.5">{i.badge}
-                </Kbd>}
+              <Link
+                key={i.name}
+                role="button"
+                className={buttonVariants({ variant: "secondary", size: "sm" })}
+                href={i.href}
+              >
+                {i.name}{" "}
+                {i.badge && (
+                  <Kbd data-icon="inline-end" className="translate-x-0.5">
+                    {i.badge}
+                  </Kbd>
+                )}
               </Link>
             ))}
           </div>
@@ -100,20 +125,19 @@ export default async function Page(props: {
             {user.experience.map((i) => (
               <div key={i.date}>
                 <dt key={i.placeLink} className="font-medium">
-                  {i.position} at{" "}
-                  <Link href={i.placeLink}>
-                    {i.place}
-                  </Link>
+                  {i.position} at <Link href={i.placeLink}>{i.place}</Link>
                 </dt>
                 <dd key={i.date} className="mb-8">
                   <code>{i.date}</code>
                   <p>
-                    <span className="font-medium">Responsibilities:</span> {i.responsible}
+                    <span className="font-medium">Responsibilities:</span>{" "}
+                    {i.responsible}
                   </p>
 
                   {i.achievements && (
                     <p>
-                      <span className="font-medium">Achivments:</span> {i.achievements}
+                      <span className="font-medium">Achivments:</span>{" "}
+                      {i.achievements}
                     </p>
                   )}
                 </dd>
@@ -167,7 +191,7 @@ export default async function Page(props: {
         {user.courses && (
           <>
             <TextBlock title="Courses">
-              <ul>
+              <ul className="list-none">
                 {user.courses.map((i) => {
                   return <li key={i}>{i}</li>;
                 })}
@@ -180,7 +204,7 @@ export default async function Page(props: {
           <>
             <TextBlock title="Languages">
               {user.languages.map((i) => {
-                return <span key={i}>{i}{" "}</span>;
+                return <span key={i}>{i} </span>;
               })}
             </TextBlock>
             <br />
@@ -190,9 +214,7 @@ export default async function Page(props: {
           <>
             <TextBlock title="Learning goals">
               {user.learn.map((i) => {
-                return <span key={i.name}>
-                  {i.name}{" "}
-                </span>;
+                return <span key={i.name}>{i.name} </span>;
               })}
             </TextBlock>
             <br />

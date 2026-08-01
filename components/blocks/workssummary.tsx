@@ -7,9 +7,14 @@ interface WorksSummaryProps {
   link?: any;
   year: string;
 }
-export default function WorksSummary({ designer, client, link, year }: WorksSummaryProps) {
+export default function WorksSummary({
+  designer,
+  client,
+  link,
+  year,
+}: WorksSummaryProps) {
   return (
-    <ul>
+    <ul className="list-none font-mono">
       <li>
         Designer:{" "}
         <Link className="ylink capitalize" href={`/${designer}`}>

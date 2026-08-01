@@ -1,10 +1,20 @@
 import Image from "next/image";
 import users from "../../users.json";
 import Link from "next/link";
-import  LayoutAnimated  from "@/components/global/layoutanimated";
+import LayoutAnimated from "@/components/global/layoutanimated";
 import { Metadata } from "next/types";
 import { Button } from "@/components/ui/button";
 import EmailButton from "@/components/global/emailbutton";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  Item,
+  ItemMedia,
+  ItemContent,
+  ItemTitle,
+  ItemDescription,
+  ItemActions,
+} from "@/components/ui/item";
+import { Plus } from "lucide-react";
 export const metadata: Metadata = {
   title: "About us",
   description: "We design websites and apps",
@@ -20,19 +30,24 @@ export default function About() {
               key={i.path}
               className="group/item mb-4 gap-2 items-center md:justify-self-center flex flex-row md:flex-col  md:py-10"
             >
-              <Image
-                src={i.avatar}
-                width={176}
-                height={176}
-                className="size-16 md:size-44 group-hover/item:scale-[1.01] rounded-full  duration-200 transition-transform transform-gpu"
-                alt={i.name}
-              />
-              <figcaption className="transition grow py-0.5 md:text-center">
-                <p className="font-bold md:text-xl">{i.name}</p>
-                <p className="text-sm text-muted-foreground">{i.occupation}</p>
+              <Avatar className={"size-12 md:size-30 lg:size-40 "}>
+                <AvatarImage src={i.avatar} alt={i.name} />
+                <AvatarFallback>Y</AvatarFallback>
+              </Avatar>
+              <figcaption className="transition grow md:text-center">
+                <p className="font-bold md:text-xl text-ellipsis">{i.name}</p>
+                <p className="text-sm text-muted-foreground text-ellipsis">
+                  {i.occupation}
+                </p>
               </figcaption>
               <div>
-                <Button variant="secondary" nativeButton={false} render={<Link href={i.path} />}>Read more</Button>
+                <Button
+                  variant="secondary"
+                  nativeButton={false}
+                  render={<Link href={i.path} />}
+                >
+                  Read more
+                </Button>
               </div>
             </figure>
           );

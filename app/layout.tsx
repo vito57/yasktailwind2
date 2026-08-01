@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
-import { inter, serotiva, jbm } from "@/components/typography/fonts"
+import { inter, serotiva, jbm } from "@/components/typography/fonts";
 import { Pwa } from "@/components/pwa";
 import { Viewport } from "next";
 import MainFooter from "@/components/global/mainfooter";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "sonner";
+import { Toaster } from "@/components/ui/toast";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yask.work"),
   title: {
@@ -68,10 +68,8 @@ export default function RootLayout({
          
        </body> */}
 
-
       {/* <Toaster /> */}
       {/* <Pwa /> */}
-
     </html>
   );
 }
