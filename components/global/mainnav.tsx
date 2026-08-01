@@ -10,12 +10,16 @@ interface MainNavProp {
 export default function MainNav({ datas, variant = "default" }: MainNavProp) {
   const pathname = usePathname();
   return (
-    <Tabs value={pathname}>
-      <TabsList>
+    <Tabs value={pathname} className={""}>
+      <TabsList
+        className={
+          "group-data-horizontal/tabs:h-11 shadow-md md:group-data-horizontal/tabs:h-9"
+        }
+      >
         {data.map((link: { name: string; href: string }) => {
           return (
             <TabsTrigger
-              className="data-active:shadow-lg data-active:text-destructive hover:data-active:text-destructive/80"
+              className=" data-active:bg-destructive data-active:text-background hover:data-active:text-background/90"
               key={link.href}
               nativeButton={false}
               render={<Link href={link.href} />}
