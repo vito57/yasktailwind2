@@ -30,8 +30,16 @@ export default function About() {
               key={i.path}
               className="group/item mb-4 gap-2 items-center md:justify-self-center flex flex-row md:flex-col  md:py-10"
             >
-              <Avatar className={"size-12 md:size-30 lg:size-40 "}>
-                <AvatarImage src={i.avatar} alt={i.name} />
+              <Avatar
+                className={
+                  "size-12 md:size-30 lg:size-40 p-0.5 bg-linear-[90deg,#C8BFFF,#A8D8F0,#D9F66F,#FFB899,#F5F2EB]"
+                }
+              >
+                <AvatarImage
+                  className={"bg-primary-foreground"}
+                  src={i.avatar}
+                  alt={i.name}
+                />
                 <AvatarFallback>Y</AvatarFallback>
               </Avatar>
               <figcaption className="transition grow md:text-center">

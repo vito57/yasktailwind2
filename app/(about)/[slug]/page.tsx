@@ -49,7 +49,11 @@ export default async function Page(props: {
               "size-20  p-0.5 bg-linear-[90deg,#C8BFFF,#A8D8F0,#D9F66F,#FFB899,#F5F2EB]"
             }
           >
-            <AvatarImage src={user.avatar} alt="Y"></AvatarImage>
+            <AvatarImage
+              className={"bg-primary-foreground"}
+              src={user.avatar}
+              alt="Y"
+            ></AvatarImage>
             <AvatarFallback>Y</AvatarFallback>
           </Avatar>
           <div>
