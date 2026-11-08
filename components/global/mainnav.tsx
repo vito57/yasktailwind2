@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import data from "../../app/main.json";
+import data from "../../data/main.json";
 import Link from "next/link";
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 interface MainNavProp {
@@ -13,7 +13,7 @@ export default function MainNav({ datas, variant = "default" }: MainNavProp) {
     <Tabs value={pathname} className={""}>
       <TabsList
         className={
-          "group-data-horizontal/tabs:h-11 shadow-md md:group-data-horizontal/tabs:h-9"
+          "group-data-horizontal/tabs:h-11 md:group-data-horizontal/tabs:h-9"
         }
       >
         {data.map((link: { name: string; href: string }) => {

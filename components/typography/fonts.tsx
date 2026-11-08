@@ -1,4 +1,4 @@
-import {Inter, JetBrains_Mono} from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import localFont from "next/font/local";
 export const inter = Inter({
   variable: "--font-inter",
@@ -22,7 +22,7 @@ export const inter = Inter({
 });
 export const serotiva = localFont({
   variable: "--font-serotiva",
-  src: "Serotiva.woff2",
+  src: "Serotiva-Light.woff2",
   display: "swap",
   fallback: [
     "system-ui",

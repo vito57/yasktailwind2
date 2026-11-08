@@ -1,6 +1,5 @@
 import MainNav from "@/components/global/mainnav";
-import data from "../main.json";
-import MainFooter from "@/components/global/mainfooter";
+import data from "../../data/main.json";
 import MainTopMenu from "@/components/global/maintopmenu";
 import MainTitle from "@/components/global/maintitle";
 import MainLogo from "@/components/global/mainlogo";
@@ -12,7 +11,7 @@ export default function WorksLayout({
   return (
     <div className="container">
       <header id="header" className="pt-4 md:pt-10">
-        <div className="relative flex  flex-col items-center">
+        <div className="relative flex gap-2 flex-col items-center">
           <MainLogo />
           <MainTitle datas={data} />
         </div>
@@ -24,7 +23,6 @@ export default function WorksLayout({
         <MainNav datas={data} />
       </nav>
       {children}
-
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import users from "../../users.json";
+import users from "../../../data/users.json";
 import Link from "next/link";
 import LayoutAnimated from "@/components/global/layoutanimated";
 import { Metadata } from "next/types";

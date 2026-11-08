@@ -3,7 +3,7 @@
     "name": "Vitaly",
     "email": "vitalyyask@gmail.com",
     "avatar": "/about/vitaly.png",
-    "occupation": "Interface Designer",
+    "occupation": "Web Designer",
     "resume": null,
     "tagline": "Hi! I can help with design systems, banners, landings & coding.",
     "path": "/vitaly",
@@ -22,24 +22,19 @@
         "name": "Github",
         "url": "https://github.com/vito57",
         "image_path": "/github.svg"
-      },
-      {
-        "name": "Behance",
-        "url": "https://www.behance.com/yask",
-        "image_path": "/be.svg"
       }
     ],
-    "about": "Designer with 15+ years intensive experience in Interfaces design, web and app design, frontend development.",
+    "about": "A design engineer with over 15 years of extensive experience in interface design, web and app development, and frontend coding. Passionate about creating seamless user experiences and writing clean, efficient code.",
     "top skills": [
       {
         "name": "UI/UX Design",
         "href": "https://en.wikipedia.org/wiki/User_experience_design",
-        "badge": "top"
+        "badge": "⭐"
       },
       {
         "name": "Frontend",
         "href": "https://en.wikipedia.org/wiki/Front_end_and_back_end",
-        "badge": ""
+        "badge": "⭐"
       },
       {
         "name": "PWA",
@@ -54,35 +49,35 @@
       {
         "name": "HIG",
         "href": "https://developer.apple.com/design/human-interface-guidelines/",
-        "badge": "top"
+        "badge": "⭐"
       },
       {
         "name": "Accessibility",
         "href": "https://doka.guide/a11y/",
-        "badge": "new"
+        "badge": "⭐"
       }
     ],
     "tools": [
-      { "name": "Figma", "href": "https://figma.com", "badge": "top" },
-      { "name": "Shadcn", "href": "https://ui.shadcn.com/", "badge": "new" },
+      { "name": "Figma", "href": "https://figma.com", "badge": "⭐" },
+      { "name": "Shadcn", "href": "https://ui.shadcn.com/", "badge": "⭐" },
       { "name": "NextJs", "href": "https://nextjs.org/", "badge": "" },
       {
         "name": "Tailwind",
         "href": "https://tailwindcss.com/",
-        "badge": "top"
+        "badge": "⭐"
       },
       { "name": "Framer", "href": "https://www.framer.com/", "badge": "" },
       { "name": "Blender", "href": "https://www.blender.org/", "badge": "" },
-      { "name": "Spline3d", "href": "https://spline.design/", "badge": "new" },
+      { "name": "Spline3d", "href": "https://spline.design/", "badge": "⭐" },
       { "name": "Frame Motion", "href": "https://motion.dev/", "badge": "" },
       {
         "name": "Bootstrap",
         "href": "https://getbootstrap.com/",
-        "badge": "top"
+        "badge": "⭐"
       },
       { "name": "D3js", "href": "https://d3js.org/", "badge": "" },
-      { "name": "HTML", "href": "https://doka.guide/", "badge": "top" },
-      { "name": "CSS", "href": "https://doka.guide/", "badge": "top" },
+      { "name": "HTML", "href": "https://doka.guide/", "badge": "⭐" },
+      { "name": "CSS", "href": "https://doka.guide/", "badge": "⭐" },
       { "name": "JavaScript", "href": "https://doka.guide/", "badge": "" },
       { "name": "Photoshop", "href": "", "badge": "" },
       { "name": "Penpot", "href": "https://penpot.app", "badge": "" },
@@ -100,23 +95,34 @@
         "place": "GigaChat",
         "placeLink": "https://giga.chat/",
         "date": "since 2025",
-        "responsible": "Lead the design process for user interfaces, ensuring a seamless and engaging user experience across all platforms.",
+        "logopath": "about/gigachat.png",
+        "responsible": "During my time at the company, I focused on the design process for user interfaces, striving to create a seamless and engaging user experience across various platforms. I collaborated with cross-functional teams to ensure that our designs met user needs and business goals.",
         "achievements": null
+      },
+      {
+        "position": "Designer",
+        "place": "Yask",
+        "placeLink": "/",
+        "logopath": "about/yask.png",
+        "date": "since 2008",
+        "responsible": "User interface design, coding, theming and branding."
       },
       {
         "position": "Designer",
         "place": "SberDevices",
         "placeLink": "https://sberdevices.ru/",
         "date": "2021—2025",
-        "responsible": "UI/UX design, content creation, virtual assistant skill development, scripting, visual design, user flow, testing, systematization, theming, and branding.",
+        "logopath": "about/sberdevices.png",
+        "responsible": "Crafting stunning UI/UX designs, creating captivating content, enhancing virtual assistant skills, scripting with flair, visual artistry, seamless user flows, thorough testing, effective systematization, vibrant theming, and impactful branding.",
         "achievements": "Runet Award 2021"
       },
       {
         "position": "Designer",
         "place": "Sber",
         "placeLink": "https://www.sberbank.com",
+        "logopath": "about/sber.png",
         "date": "2019—2021",
-        "responsible": "Led the design process by creating a cross‑platform design system and authoring guidelines; developed reusable iOS, Android, and Web components and established team review and supervision workflows. At DrugCode (Sberdrug) I designed micro‑app flows, implemented a component system, performed quality control of third‑party apps, and expanded the shared component library.",
+        "responsible": "Spearheaded the design journey by crafting a cohesive cross-platform design system and authoring comprehensive guidelines. Developed versatile components for iOS, Android, and Web, while establishing effective team review and supervision workflows. At DrugCode (Sberdrug), I designed elegant micro-app flows, implemented a robust component system, ensured quality control of third-party applications, and enriched the shared component library.",
         "achievements": "Created and launched a cross‑platform design system and standardized the design process, including documented review workflows, team principles, and performance metrics. Implemented a component system for DrugCode, conducted QA and reviews of third‑party micro‑apps, and expanded the shared iOS/Android/Web component library."
       },
       {
@@ -124,6 +130,7 @@
         "place": "PKVS",
         "placeLink": "https://www.karusel-tv.ru/",
         "date": "2015—2019",
+        "logopath": "about/pkvs.png",
         "responsible": "Designed user interactions and interfaces, crafted responsive web layouts, developed front‑end components, and produced graphic design assets.",
         "achievements": "Runet Award 2016, Runet Award 2019"
       },
@@ -132,23 +139,17 @@
         "place": "Art. Lebedev Studio",
         "placeLink": "https://www.artlebedev.ru/vetrov/",
         "date": "2013—2015",
-        "responsible": "Handled scripting, interaction and visual design, user flows, and testing; systematized processes and applied theming and branding across products. Developed content products and voice interfaces.",
+        "logopath": "about/artlebedev.png",
+        "responsible": "Created engaging user interactions and interfaces, built responsive web designs, developed front-end elements, and produced visual design assets.",
         "achievements": "Runet Award 2015"
-      },
-      {
-        "position": "Designer",
-        "place": "Yask",
-        "placeLink": "/",
-        "date": "since 2008",
-        "responsible": "User interface design, coding, theming and branding."
       }
     ],
 
     "awards": [
-      { "name": "Runet Award 2015", "href": "", "badge": "" },
-      { "name": "Runet Award 2015", "href": "", "badge": "" },
-      { "name": "Runet Award 2018", "href": "", "badge": "" },
-      { "name": "Runet Award 2021", "href": "", "badge": "" }
+      { "name": "Runet Award 2015" },
+      { "name": "Runet Award 2016" },
+      { "name": "Runet Award 2019" },
+      { "name": "Runet Award 2021" }
     ],
 
     "education": "Advertising, Orel State Univercity of Economics and Trading, 2006",
@@ -200,12 +201,14 @@
         "place": "Yask",
         "placeLink": "/",
         "date": "since 2020",
+        "logopath": "about/yask.png",
         "responsible": "Icon systems design, logo design, lettering, illustrations",
         "achievements": "Designed and launch 3 huge icon systems. Bootsy Icons Duotone is featured product on UI8"
       }
     ],
 
-    "awards": ["🏆 UI8 featured product"],
+    "awards": [{ "name": "🏆 UI8 featured product" }],
+
     "education": "Bachelor's degree, Artist Stylist, Orel State Univercity (2004—2009)",
     "courses": ["Animation artist. Merinov School"],
     "languages": ["🇷🇺 Russian", "🇬🇧 English"],
@@ -242,12 +245,18 @@
         "place": "Yask",
         "placeLink": "https://www.sberbank.com",
         "date": "since 2020",
+        "logopath": "about/yask.png",
         "responsible": "drawing, generate ideas, Roblox designer",
         "achievements": "working on it 😊"
       }
     ],
 
-    "awards": null,
+    "awards": [
+      { "name": "Runet Award 2015" },
+      { "name": "Runet Award 2016" },
+      { "name": "Runet Award 2019" },
+      { "name": "Runet Award 2021" }
+    ],
     "education": "1494 elmentry school, since 2023",
 
     "courses": null,

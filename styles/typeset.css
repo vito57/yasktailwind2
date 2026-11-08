@@ -22,7 +22,6 @@
     color: var(--color-foreground, currentColor);
     overflow-wrap: break-word;
     margin-trim: block-start;
-
     @media (min-width: 48rem),
     print {
       font-size: var(--typeset-size);

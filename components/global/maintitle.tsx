@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { usePathname } from "next/navigation";
 
 interface MainTitleProps {
@@ -11,7 +11,7 @@ export default function MainTitle({ datas }: MainTitleProps) {
   return (
     <h1
       key={pathname}
-      className="scroll-m-20 text-center lg:text-4xl text-2xl font-display text-balance text-primary whitespace-pre-wrap antialiased animate-fadeIn"
+      className="scroll-m-20 text-center lg:text-3xl text-2xl font-display text-balance text-primary whitespace-pre-wrap antialiased animate-fadeIn"
     >
       {title.title}
     </h1>

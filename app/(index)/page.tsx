@@ -1,6 +1,6 @@
 import Thumbnail from "@/components/global/thumbnail";
 
-import data from "../works.json";
+import data from "../../data/works.json";
 import LayoutAnimated from "@/components/global/layoutanimated";
 
 export default function Works() {

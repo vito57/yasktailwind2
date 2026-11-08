@@ -1,5 +1,4 @@
-
-import data from "../works.json";
+import data from "../../data/works.json";
 import ArticleMainMenu from "@/components/global/articlemainmenu";
 import MobileNav from "@/components/global/mobilenav";
 import ThumbnailFeed from "@/components/global/thumbnailfeed";
@@ -14,7 +13,7 @@ export default function WorkLayout({
     <>
       <ArticleMainMenu />
       <MobileNav />
-      <div className="typeset">{children}</div>
+      <div>{children}</div>
       <Section id="moreworks">
         <h2 className="text-xl font-bold mb-8">More works</h2>
         <div className="grid gap-2 md:gap-5  md:grid-cols-4 grid-cols-2">
@@ -33,7 +32,6 @@ export default function WorkLayout({
           })}
         </div>
       </Section>
-
     </>
   );
 }
