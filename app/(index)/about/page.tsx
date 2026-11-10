@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <LayoutAnimated>
+      <br />
       <div className="grid md:grid-cols-3">
         {users.map((i) => {
           return (
@@ -61,7 +62,8 @@ export default function About() {
           );
         })}
       </div>
-      <div className="flex flex-col gap-5 text-pretty max-w-4xl mx-auto">
+      <br />
+      <div className="flex flex-col gap-2 text-pretty max-w-4xl mx-auto">
         <div>
           <h2 className="text-2xl">We are doing</h2>
           <br />
