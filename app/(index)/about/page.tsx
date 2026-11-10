@@ -126,6 +126,7 @@ export default function About() {
             <dd>Humor and good mood are the key to productivity. 😊</dd>
           </dl>
         </div> */}
+        <br />
         <div>
           <h2 className="text-2xl ">Contacts</h2>
           <br />
