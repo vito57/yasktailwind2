@@ -43,7 +43,7 @@ export default function About() {
                 <AvatarFallback>Y</AvatarFallback>
               </Avatar>
               <figcaption className="transition grow md:text-center">
-                <p className="font-bold md:text-xl text-ellipsis">{i.name}</p>
+                <p className="font-bold text-ellipsis">{i.name}</p>
                 <p className="text-sm text-muted-foreground text-ellipsis">
                   {i.occupation}
                 </p>
@@ -61,45 +61,44 @@ export default function About() {
           );
         })}
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-5 text-pretty">
-        <div className="md:w-4/12">
-          <h2 className="text-2xl">
-            <small className="text-muted-foreground font-mono">(a)</small>
-            <br />
-            We do
-          </h2>
+      <div className="flex flex-col gap-5 text-pretty max-w-4xl mx-auto">
+        <div>
+          <h2 className="text-2xl">We are doing</h2>
           <br />
           <dl>
             <dt className="font-bold">Front-end design</dt>
             <dd>
-              Design and frontend development together. The output is mockups
-              (Figma or Penpot) and production ready code (Nextjs,Tailwind or
-              HTML, CSS, JS).
+              Combine design with frontend development to create stunning
+              mockups using Figma or Penpot, along with production-ready code in
+              Next.js, Tailwind, or standard HTML, CSS, and JavaScript.
             </dd>
             <br />
-            <dt className="font-bold">UI/UX design</dt>
+            <dt className="font-bold">Product design</dt>
             <dd>
-              Desktop, mobile or web. The output is well ducumented mockups in
-              Figma or Penpot.
+              Whether it's desktop, mobile, or web, you'll receive beautifully
+              crafted mockups in Figma or Penpot, complete with thorough
+              documentation.
             </dd>
             <br />
             <dt className="font-bold">Design systems</dt>
             <dd>
-              Design systems for any platform. Optimisation of design processes.
-              Help to write documentation, mentoring, and consulting. Figma or
-              Penpot in output.
+              Create stunning design systems tailored for any platform. Enhance
+              design workflows and provide support through documentation,
+              mentoring, and consulting. Utilize tools like Figma or Penpot for
+              your designs.
             </dd>
             <br />
             <dt className="font-bold">Design icon systems</dt>
             <dd>
-              We design large and small icon sets, and develop icon systems.
+              We design beautiful icon sets in various sizes and develop
+              harmonious icon systems that enhance user experience.{" "}
             </dd>
             <br />
             <dt className="font-bold">Content design</dt>
             <dd>Illustrations, banners, graphics and animations</dd>
           </dl>
         </div>
-        <div className="md:w-3/12 ">
+        {/* <div className="md:w-3/12 ">
           <h2 className=" text-2xl ">
             <small className="text-muted-foreground font-mono">(b)</small>
             <br />
@@ -124,16 +123,11 @@ export default function About() {
             <dt className="font-bold">Humor</dt>
             <dd>Humor and good mood are the key to productivity. 😊</dd>
           </dl>
-        </div>
-        <div className="md:w-3/12 ">
-          <h2 className=" text-2xl ">
-            <small className="text-muted-foreground font-mono">(c)</small>
-            <br />
-            Contacts
-          </h2>
+        </div> */}
+        <div>
+          <h2 className="text-2xl ">Contacts</h2>
           <br />
-
-          <ul className="text-base list-none">
+          <ul className="list-none">
             <li>
               <EmailButton />
             </li>

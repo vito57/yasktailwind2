@@ -7,14 +7,11 @@ import { notFound } from "next/navigation";
 import ArticleMainMenu from "@/components/global/articlemainmenu";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
-import TextBlock from "@/components/global/textblock";
-import MainFooter from "@/components/global/mainfooter";
 import LayoutAnimated from "@/components/global/layoutanimated";
 import ThumbnailFeed from "@/components/global/thumbnailfeed";
 import { Metadata } from "next/types";
 import MobileNav from "@/components/global/mobilenav";
-import { Badge } from "@/components/ui/badge";
-import { FileText } from "lucide-react";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   RiGithubFill,
@@ -66,7 +63,7 @@ export default async function Page(props: {
           </div>
         </header>
         <div className="flex py-2 md:py-4 gap-3 items-center justify-center w-fit m-auto top-0 sticky z-20 mb-10 ">
-          {user.resume ? (
+          {/* {user.resume ? (
             <Button
               render={<Link href={user.resume}></Link>}
               nativeButton={false}
@@ -76,7 +73,7 @@ export default async function Page(props: {
             </Button>
           ) : (
             false
-          )}
+          )} */}
 
           {user.social.map((i) => (
             <Link
