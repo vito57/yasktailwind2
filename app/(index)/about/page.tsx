@@ -84,10 +84,9 @@ export default function About() {
             <br />
             <dt className="font-bold">Design systems</dt>
             <dd>
-              Create stunning design systems tailored for any platform. Enhance
-              design workflows and provide support through documentation,
-              mentoring, and consulting. Utilize tools like Figma or Penpot for
-              your designs.
+              We create stunning design systems adapted to any platform.
+              Optimize workflows and provide support through documentation,
+              mentoring, and consultations.
             </dd>
             <br />
             <dt className="font-bold">Design icon systems</dt>
@@ -132,6 +131,7 @@ export default function About() {
           <br />
           <ul className="list-none">
             <li>
+              c
               <EmailButton />
             </li>
           </ul>
