@@ -131,7 +131,6 @@ export default function About() {
           <br />
           <ul className="list-none">
             <li>
-              c
               <EmailButton />
             </li>
           </ul>
